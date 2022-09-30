@@ -1,0 +1,327 @@
+\documentclass{report}
+
+\usepackage{geometry}[a4paper, margin=1cm]
+\usepackage{appendix}[toc]
+\usepackage{xeCJK}
+\setCJKmainfont{Source Han Serif}
+\usepackage{inputenc}[utf-8]
+\usepackage{fontspec}
+\setmainfont{FreeSerif}
+\usepackage{babel}[USenglish]
+\usepackage{minted}
+\usepackage{bussproofs}
+\usepackage{qtree}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{tikz-cd}
+\usepackage{tipa}
+\usepackage{listings}
+\usepackage[backend=biber, sorting=none, style=alphabetic]{biblatex}
+\addbibresource{demo_doc.bib}
+\usepackage{xcolor}
+\usepackage{yfonts}
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+
+\setlength\parindent{0pt}
+
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{remark}{Remark}
+
+\title{Semi-Automated Language Changes \\ from Latin to Spanish}
+\author{Chen Zhaoyang \\ \texttt{zc23@illinois.edu}}
+
+\begin{document}
+
+\maketitle
+
+\pagebreak
+
+\begin{abstract}
+
+  This paper talks about an implementation of rule-based phonology in a high-level programming language.
+
+\end{abstract}
+
+\pagebreak
+
+\tableofcontents
+
+\pagebreak
+
+\chapter{Glossary}
+
+\section{Nominal}
+
+\subsection{Declension \textsc{i}}
+
+\begin{tabular}{|c|c|}
+  \hline
+  \textsc{latina} & Español \\
+  \hline
+  \textsc{capra} & cabra \\
+  \hline
+\end{tabular}
+
+\subsection{Declension \textsc{ii}}
+
+\begin{tabular}{|c|c|}
+  \hline
+  \textsc{latina} & Español \\
+  \hline
+  \textsc{murus} & muro \\
+  \hline
+\end{tabular}
+
+\subsection{Declension \textsc{iii}}
+
+\begin{tabular}{|c|c|}
+  \hline
+  \textsc{latina} & Español \\
+  \hline
+  \textsc{panis} & pan \\
+  \hline
+\end{tabular}
+
+\subsection{Declension \textsc{iv}}
+
+\begin{tabular}{|c|c|}
+  \hline
+  \textsc{latina} & Español \\
+  \hline
+  \textsc{fructus} & fructo\footnote{Old Spanish \emph{frucho}} \\
+  \hline
+\end{tabular}
+
+\subsection{Declension \textsc{v}}
+
+\begin{tabular}{|c|c|}
+  \hline
+  \textsc{latina} & Español \\
+  \hline
+  \textsc{dies} & día \\
+  \hline
+\end{tabular}
+
+\section{Pronoun}
+
+\begin{tabular}{|c|c|}
+  \hline
+  \textsc{latina} & Español \\
+  \hline
+  \textsc{ego} & yo \\
+  \hline
+  \textsc{tv} & tú \\
+  \hline
+  \textsc{nos} & nosotros\footnote{Old Spanish \emph{nos}} \\
+  \hline
+  \textsc{vos} & vosotros\footnote{Old Spanish \emph{vos}} \\
+  \hline
+  \textsc{ille} & él \\
+  \hline
+  \textsc{illi} & ellos \\
+  \hline
+\end{tabular}
+
+\section{Numeral}
+
+\begin{tabular}{|c|c|}
+  \hline
+  \textsc{latina} & Español \\
+  \hline
+  \textsc{vnvs} & uno \\
+  \hline
+  \textsc{dvo} & dos \\
+  \hline
+  \textsc{tres} & tres \\
+  \hline
+  \textsc{qvattvor} & cuatro \\
+  \hline
+  \textsc{qvinqve} & cinco \\
+  \hline
+  \textsc{sex} & seis \\
+  \hline
+  \textsc{septem} & siete \\
+  \hline
+  \textsc{octo} & ocho \\
+  \hline
+  \textsc{novem} & nueve \\
+  \hline
+  \textsc{decem} & diez \\
+  \hline
+\end{tabular}
+
+\section{Verbal}
+
+\subsection{Conjugation \textsc{i}}
+
+\begin{tabular}{|c|c|}
+  \hline
+  \textsc{latina} & Español \\
+  \hline
+  \textsc{pensare} & pensar \\
+  \hline
+\end{tabular}
+
+\subsection{Conjugation \textsc{ii}}
+
+\begin{tabular}{|c|c|}
+  \hline
+  \textsc{latina} & Español \\
+  \hline
+  \textsc{habere} & haber \\
+  \hline
+\end{tabular}
+
+\subsection{Conjugation \textsc{iii}}
+
+\begin{tabular}{|c|c|}
+  \hline
+  \textsc{latina} & Español \\
+  \hline
+  \textsc{perdere} & perder \\
+  \hline
+\end{tabular}
+
+\subsection{Conjugation \textsc{iv}}
+
+\begin{tabular}{|c|c|}
+  \hline
+  \textsc{latina} & Español \\
+  \hline
+  \textsc{partire} & partir \\
+  \hline
+\end{tabular}
+
+\chapter{Representation of Segments}
+
+\section{Vocalic}
+
+\section{Consonantal}
+
+\chapter{Representation of Syllables}
+
+\section{Onset}
+
+\subsection{Onset Cluster}
+
+\section{Nucleus}
+
+\section{Coda}
+
+\subsection{Coda Cluster}
+
+\section{Syllable Weight and Stress}
+
+\chapter{Representation of Phonotactics and Sound Changes}
+
+\section{Phonotactics}
+
+\section{Cardinality in String Rewriting}
+
+\section{Context and Admissibility}
+
+\section{Semantics of Sound Changes}
+
+\chapter{Representation of Morphophonology}
+
+\section{Nominal}
+
+\section{Pronoun}
+
+\section{Verbal}
+
+\chapter{Latin $\rightarrow$ Proto-Romance}
+
+\section{Anthology of Sound Changes}
+
+\subsection{Vocalism}
+
+\subsection{Consonantism}
+
+\section{Reflexes by Grammatical Categories}
+
+\subsection{Nominal}
+
+\subsection{Pronoun}
+
+\subsection{Numeral}
+
+\subsection{Verbal}
+
+\chapter{Proto-Romance $\rightarrow$ Western Romance}
+
+\section{Anthology of Sound Changes}
+
+\subsection{Vocalism}
+
+\subsection{Consonantism}
+
+\section{Reflexes by Grammatical Categories}
+
+\subsection{Nominal}
+
+\subsection{Pronoun}
+
+\subsection{Numeral}
+
+\subsection{Verbal}
+
+\chapter{Western Romance $\rightarrow$ Iberian Romance}
+
+\section{Anthology of Sound Changes}
+
+\subsection{Vocalism}
+
+\subsection{Consonantism}
+
+\section{Reflexes by Grammatical Categories}
+
+\subsection{Nominal}
+
+\subsection{Pronoun}
+
+\subsection{Numeral}
+
+\subsection{Verbal}
+
+\chapter{Iberian Romance $\rightarrow$ Old Spanish}
+
+\section{Anthology of Sound Changes}
+
+\subsection{Vocalism}
+
+\subsection{Consonantism}
+
+\section{Reflexes by Grammatical Categories}
+
+\subsection{Nominal}
+
+\subsection{Pronoun}
+
+\subsection{Numeral}
+
+\subsection{Verbal}
+
+\chapter{Old Spanish $\rightarrow$ Modern Spanish}
+
+\section{Anthology of Sound Changes}
+
+\subsection{Vocalism}
+
+\subsection{Consonantism}
+
+\section{Reflexes by Grammatical Categories}
+
+\subsection{Nominal}
+
+\subsection{Pronoun}
+
+\subsection{Numeral}
+
+\subsection{Verbal}
+
+\end{document}

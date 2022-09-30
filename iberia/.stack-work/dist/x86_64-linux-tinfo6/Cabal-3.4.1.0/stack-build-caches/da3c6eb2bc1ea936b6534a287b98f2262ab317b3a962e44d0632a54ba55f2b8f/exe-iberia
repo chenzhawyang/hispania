@@ -1,0 +1,38 @@
+/home/czy/impl/hispania/iberia/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.4.1.0/build/iberia/autogen/cabal_macros.h:
+  hash: fcaa29e267bd50b7814a3e772904be63ee95daa760749018f6b95c3dda04edc6
+/home/czy/.stack/programs/x86_64-linux/ghc-tinfo6-9.0.2/lib/ghc-9.0.2/include/ghcversion.h:
+  hash: b6281754d6dc5c5462a97f01fbffb615a7d9f031384e8e8250fce23e8f43f266
+/home/czy/impl/hispania/iberia/src/IbrRomSegs.hs:
+  hash: e8ad943f29da21fe347ebce36d3c2734822a99994de40b09c9eddfb8092cf492
+/home/czy/impl/hispania/iberia/src/Phonology.hs:
+  hash: aa6afea0023092ee145152a54e2f07721ea5dfefa43d028a5692e2ae31c3b160
+/home/czy/impl/hispania/iberia/src/Main.hs:
+  hash: 36b4234172b25938ecf88a82f014fed25f81f0e4d80953379e7760a4c4060c13
+/home/czy/impl/hispania/iberia/src/LatSegs.hs:
+  hash: b5abc9270ff5706312d523d4440d03ddcf2fb4d815b3aff53347699107715662
+/home/czy/impl/hispania/iberia/package.yaml:
+  hash: 19b6390da9100a86fb713e11bc290154c298a3935b58f09d19c7bfe5a29b2038
+/home/czy/impl/hispania/iberia/README.md:
+  hash: 0a33c0bb7820df820a921272f50fc345b7401d08fc36081cdd1267c425d5706e
+/home/czy/impl/hispania/iberia/src/PrRomSegs.hs:
+  hash: f4ef3371907f98327bf66eaefd7bd62c932a91ecdbf26c68115fc655e9854fd9
+/home/czy/impl/hispania/iberia/iberia.cabal:
+  hash: b7b6b573c392b3c5d1b2f53424dde3402b8cacbcc4406d3144ba6faafa3b2dd2
+/home/czy/impl/hispania/iberia/src/Morphology.hs:
+  hash: 28cb47371764342140291df28da5bfa32d98779e3d043e09f2ecc6100cafdacd
+/usr/include/stdc-predef.h:
+  hash: cb08cd5d4cc059a90833ac48a284d25016e8d56ded8ad4cd98d8ac59cc5053f3
+/home/czy/impl/hispania/iberia/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.4.1.0/build/iberia/autogen/Paths_iberia.hs:
+  hash: 27e6d8eba87bf86e942f75f1e68dcfe8271390546687c85587a70895fd469cfb
+/home/czy/impl/hispania/iberia/src/MSpSegs.hs:
+  hash: 5ac8b92e04837385509144463728bbfd1894b6cb72c8129880ec2c5f276a7ee7
+/home/czy/impl/hispania/iberia/src/OldSpSegs.hs:
+  hash: fdf330f942dc935d9cab3588b65d6b8cb8c5bbeb4b8d2723a2d9615cc159785b
+/home/czy/impl/hispania/iberia/src/PrRomGloss.hs:
+  hash: 43e1a8b7d172115e55779f7347c3f1cf1db7cd182b7c3d9acbda8834a1dde7f2
+/home/czy/impl/hispania/iberia/CHANGELOG.md:
+  hash: 614bd14bf406025856b7aeb6c009b427fd0cb5cdeee07a87205b8debbb7cfadf
+/home/czy/impl/hispania/iberia/src/LatGloss.hs:
+  hash: 42884fdabadf5efd75551402984c87ae7ce96416e642c1bc2ebeb264f17b67bf
+/home/czy/impl/hispania/iberia/src/WRomSegs.hs:
+  hash: b5140689b01080aff24f4ff9f7bdbcd0aea4a731bee1639de4cb1cbae211bcdf
