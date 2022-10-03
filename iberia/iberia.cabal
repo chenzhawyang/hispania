@@ -21,20 +21,18 @@ extra-source-files:
 executable iberia
   main-is: Main.hs
   other-modules:
-      IbrRomSegs
-      LatGloss
-      LatSegs
+      Glossary
       Morphology
-      MSpSegs
-      OldSpSegs
       Phonology
       PrRomGloss
-      PrRomSegs
-      WRomSegs
+      Segments
+      SoundChanges
       Paths_iberia
   hs-source-dirs:
       src
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wpartial-fields -Wredundant-constraints
   build-depends:
       base >=4.7 && <5
+    , bytestring
+    , utf8-string
   default-language: Haskell2010

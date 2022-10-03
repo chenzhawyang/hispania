@@ -31,7 +31,7 @@ version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/home/czy/impl/hispania/iberia/.stack-work/install/x86_64-linux-tinfo6/da3c6eb2bc1ea936b6534a287b98f2262ab317b3a962e44d0632a54ba55f2b8f/9.0.2/bin"
-libdir     = "/home/czy/impl/hispania/iberia/.stack-work/install/x86_64-linux-tinfo6/da3c6eb2bc1ea936b6534a287b98f2262ab317b3a962e44d0632a54ba55f2b8f/9.0.2/lib/x86_64-linux-ghc-9.0.2/iberia-0.1.0.0-LgNoN1VgNnZK3X847CWqZt-iberia"
+libdir     = "/home/czy/impl/hispania/iberia/.stack-work/install/x86_64-linux-tinfo6/da3c6eb2bc1ea936b6534a287b98f2262ab317b3a962e44d0632a54ba55f2b8f/9.0.2/lib/x86_64-linux-ghc-9.0.2/iberia-0.1.0.0-E5gAUv5eKN7iowv1bM4oK-iberia"
 dynlibdir  = "/home/czy/impl/hispania/iberia/.stack-work/install/x86_64-linux-tinfo6/da3c6eb2bc1ea936b6534a287b98f2262ab317b3a962e44d0632a54ba55f2b8f/9.0.2/lib/x86_64-linux-ghc-9.0.2"
 datadir    = "/home/czy/impl/hispania/iberia/.stack-work/install/x86_64-linux-tinfo6/da3c6eb2bc1ea936b6534a287b98f2262ab317b3a962e44d0632a54ba55f2b8f/9.0.2/share/x86_64-linux-ghc-9.0.2/iberia-0.1.0.0"
 libexecdir = "/home/czy/impl/hispania/iberia/.stack-work/install/x86_64-linux-tinfo6/da3c6eb2bc1ea936b6534a287b98f2262ab317b3a962e44d0632a54ba55f2b8f/9.0.2/libexec/x86_64-linux-ghc-9.0.2/iberia-0.1.0.0"

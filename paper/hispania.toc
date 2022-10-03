@@ -1,20 +1,20 @@
 \babel@toc {nil}{}\relax 
-\contentsline {chapter}{\numberline {1}Glossary}{4}{}%
-\contentsline {section}{\numberline {1.1}Nominal}{4}{}%
-\contentsline {subsection}{\numberline {1.1.1}Declension \textsc {i}}{4}{}%
-\contentsline {subsection}{\numberline {1.1.2}Declension \textsc {ii}}{4}{}%
-\contentsline {subsection}{\numberline {1.1.3}Declension \textsc {iii}}{4}{}%
-\contentsline {subsection}{\numberline {1.1.4}Declension \textsc {iv}}{4}{}%
-\contentsline {subsection}{\numberline {1.1.5}Declension \textsc {v}}{4}{}%
-\contentsline {section}{\numberline {1.2}Pronoun}{5}{}%
-\contentsline {section}{\numberline {1.3}Numeral}{5}{}%
-\contentsline {section}{\numberline {1.4}Verbal}{5}{}%
-\contentsline {subsection}{\numberline {1.4.1}Conjugation \textsc {i}}{5}{}%
-\contentsline {subsection}{\numberline {1.4.2}Conjugation \textsc {ii}}{5}{}%
-\contentsline {subsection}{\numberline {1.4.3}Conjugation \textsc {iii}}{5}{}%
-\contentsline {subsection}{\numberline {1.4.4}Conjugation \textsc {iv}}{6}{}%
-\contentsline {chapter}{\numberline {2}Representation of Segments}{7}{}%
-\contentsline {section}{\numberline {2.1}Vocalic}{7}{}%
+\contentsline {chapter}{\numberline {1}Glossary}{3}{}%
+\contentsline {section}{\numberline {1.1}Nominal}{3}{}%
+\contentsline {subsection}{\numberline {1.1.1}Declension \textsc {i}}{3}{}%
+\contentsline {subsection}{\numberline {1.1.2}Declension \textsc {ii}}{3}{}%
+\contentsline {subsection}{\numberline {1.1.3}Declension \textsc {iii}}{3}{}%
+\contentsline {subsection}{\numberline {1.1.4}Declension \textsc {iv}}{3}{}%
+\contentsline {subsection}{\numberline {1.1.5}Declension \textsc {v}}{3}{}%
+\contentsline {section}{\numberline {1.2}Pronoun}{4}{}%
+\contentsline {section}{\numberline {1.3}Numeral}{4}{}%
+\contentsline {section}{\numberline {1.4}Verbal}{4}{}%
+\contentsline {subsection}{\numberline {1.4.1}Conjugation \textsc {i}}{4}{}%
+\contentsline {subsection}{\numberline {1.4.2}Conjugation \textsc {ii}}{4}{}%
+\contentsline {subsection}{\numberline {1.4.3}Conjugation \textsc {iii}}{4}{}%
+\contentsline {subsection}{\numberline {1.4.4}Conjugation \textsc {iv}}{5}{}%
+\contentsline {chapter}{\numberline {2}Representation of Segments}{6}{}%
+\contentsline {section}{\numberline {2.1}Vocalic}{6}{}%
 \contentsline {section}{\numberline {2.2}Consonantal}{7}{}%
 \contentsline {chapter}{\numberline {3}Representation of Syllables}{8}{}%
 \contentsline {section}{\numberline {3.1}Onset}{8}{}%
@@ -35,45 +35,20 @@
 \contentsline {chapter}{\numberline {6}Latin $\rightarrow $ Proto-Romance}{11}{}%
 \contentsline {section}{\numberline {6.1}Anthology of Sound Changes}{11}{}%
 \contentsline {subsection}{\numberline {6.1.1}Vocalism}{11}{}%
-\contentsline {subsection}{\numberline {6.1.2}Consonantism}{11}{}%
-\contentsline {section}{\numberline {6.2}Reflexes by Grammatical Categories}{11}{}%
-\contentsline {subsection}{\numberline {6.2.1}Nominal}{11}{}%
-\contentsline {subsection}{\numberline {6.2.2}Pronoun}{11}{}%
-\contentsline {subsection}{\numberline {6.2.3}Numeral}{11}{}%
-\contentsline {subsection}{\numberline {6.2.4}Verbal}{11}{}%
-\contentsline {chapter}{\numberline {7}Proto-Romance $\rightarrow $ Western Romance}{12}{}%
-\contentsline {section}{\numberline {7.1}Anthology of Sound Changes}{12}{}%
-\contentsline {subsection}{\numberline {7.1.1}Vocalism}{12}{}%
-\contentsline {subsection}{\numberline {7.1.2}Consonantism}{12}{}%
-\contentsline {section}{\numberline {7.2}Reflexes by Grammatical Categories}{12}{}%
-\contentsline {subsection}{\numberline {7.2.1}Nominal}{12}{}%
-\contentsline {subsection}{\numberline {7.2.2}Pronoun}{12}{}%
-\contentsline {subsection}{\numberline {7.2.3}Numeral}{12}{}%
-\contentsline {subsection}{\numberline {7.2.4}Verbal}{12}{}%
-\contentsline {chapter}{\numberline {8}Western Romance $\rightarrow $ Iberian Romance}{13}{}%
-\contentsline {section}{\numberline {8.1}Anthology of Sound Changes}{13}{}%
-\contentsline {subsection}{\numberline {8.1.1}Vocalism}{13}{}%
-\contentsline {subsection}{\numberline {8.1.2}Consonantism}{13}{}%
-\contentsline {section}{\numberline {8.2}Reflexes by Grammatical Categories}{13}{}%
-\contentsline {subsection}{\numberline {8.2.1}Nominal}{13}{}%
-\contentsline {subsection}{\numberline {8.2.2}Pronoun}{13}{}%
-\contentsline {subsection}{\numberline {8.2.3}Numeral}{13}{}%
-\contentsline {subsection}{\numberline {8.2.4}Verbal}{13}{}%
-\contentsline {chapter}{\numberline {9}Iberian Romance $\rightarrow $ Old Spanish}{14}{}%
-\contentsline {section}{\numberline {9.1}Anthology of Sound Changes}{14}{}%
-\contentsline {subsection}{\numberline {9.1.1}Vocalism}{14}{}%
-\contentsline {subsection}{\numberline {9.1.2}Consonantism}{14}{}%
-\contentsline {section}{\numberline {9.2}Reflexes by Grammatical Categories}{14}{}%
-\contentsline {subsection}{\numberline {9.2.1}Nominal}{14}{}%
-\contentsline {subsection}{\numberline {9.2.2}Pronoun}{14}{}%
-\contentsline {subsection}{\numberline {9.2.3}Numeral}{14}{}%
-\contentsline {subsection}{\numberline {9.2.4}Verbal}{14}{}%
-\contentsline {chapter}{\numberline {10}Old Spanish $\rightarrow $ Modern Spanish}{15}{}%
-\contentsline {section}{\numberline {10.1}Anthology of Sound Changes}{15}{}%
-\contentsline {subsection}{\numberline {10.1.1}Vocalism}{15}{}%
-\contentsline {subsection}{\numberline {10.1.2}Consonantism}{15}{}%
-\contentsline {section}{\numberline {10.2}Reflexes by Grammatical Categories}{15}{}%
-\contentsline {subsection}{\numberline {10.2.1}Nominal}{15}{}%
-\contentsline {subsection}{\numberline {10.2.2}Pronoun}{15}{}%
-\contentsline {subsection}{\numberline {10.2.3}Numeral}{15}{}%
-\contentsline {subsection}{\numberline {10.2.4}Verbal}{15}{}%
+\contentsline {paragraph}{Pre-Romance Loss of Quantity}{12}{}%
+\contentsline {paragraph}{Pan-Romance Great Merger}{12}{}%
+\contentsline {paragraph}{Monophthongization}{12}{}%
+\contentsline {subsection}{\numberline {6.1.2}Consonantism}{12}{}%
+\contentsline {section}{\numberline {6.2}Reflexes by Grammatical Categories}{12}{}%
+\contentsline {subsection}{\numberline {6.2.1}Nominal}{12}{}%
+\contentsline {subsection}{\numberline {6.2.2}Pronoun}{12}{}%
+\contentsline {subsection}{\numberline {6.2.3}Numeral}{12}{}%
+\contentsline {subsection}{\numberline {6.2.4}Verbal}{12}{}%
+\contentsline {chapter}{\numberline {7}Proto-Romance $\rightarrow $ Western Romance}{13}{}%
+\contentsline {chapter}{\numberline {8}Western Romance $\rightarrow $ Iberian Romance}{14}{}%
+\contentsline {section}{\numberline {8.1}Anothology of Sound Changes}{14}{}%
+\contentsline {subsection}{\numberline {8.1.1}Vocalism}{14}{}%
+\contentsline {paragraph}{Diphthongization}{14}{}%
+\contentsline {chapter}{\numberline {9}Iberian Romance $\rightarrow $ Old Spanish}{15}{}%
+\contentsline {chapter}{\numberline {10}Old Spanish $\rightarrow $ Modern Spanish}{16}{}%
+\contentsline {chapter}{\numberline {11}References}{17}{}%

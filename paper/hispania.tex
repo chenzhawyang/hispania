@@ -1,6 +1,6 @@
 \documentclass{report}
 
-\usepackage{geometry}[a4paper, margin=1cm]
+\usepackage{geometry}[a4paper]
 \usepackage{appendix}[toc]
 \usepackage{xeCJK}
 \setCJKmainfont{Source Han Serif}
@@ -200,7 +200,68 @@
 
 \section{Vocalic}
 
+\begin{lstlisting}[basicstyle=\ttfamily, mathescape, escapeinside={(:}{:)}]
+  vowel ::= height (:$\times$:) centrality (:$\times$:) duration
+
+  height ::= low | low-mid | mid | high-mid | high
+
+  centrality ::= front | central | back
+
+  duration ::= short | long
+\end{lstlisting}
+
+\begin{minted}[autogobble]{hs}
+  data Vowel = Vowel
+  { height :: Height
+    , centrality :: Centrality
+    , dure :: Duration
+  }
+
+  data Height
+  = Low
+  | LoMid
+  | Mid
+  | HiMid
+  | High
+
+  data Centrality
+  = Front
+  | Cent
+  | Back
+
+  data Duration
+  = Short
+  | Long
+\end{minted}
+
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  & Front & Central & Back \\
+  \hline
+  High & \textsc{i i:} & & \textsc{u u:} \\
+  \hline
+  Mid & \textsc{e e:} & & \textsc{o o:} \\
+  \hline
+  Low & & \textsc{a a:} & \\
+  \hline
+\end{tabular}
+
 \section{Consonantal}
+
+\begin{lstlisting}[basicstyle=\ttfamily, mathescape, escapeinside={(:}{:)}]
+  consonant ::= manner (:$\times$:) place (:$\times$:) voice
+
+  manner ::= nasal | stop | fricative | affricate
+           | approximant | tap | trill | lateral
+
+  place ::= bilabial
+          | dental
+          | palatal
+          | palatoalvelar | velar | labialvelar
+          | glottal
+
+  place ::= voiced | voiceless
+\end{lstlisting}
 
 \chapter{Representation of Syllables}
 
@@ -240,6 +301,86 @@
 
 \subsection{Vocalism}
 
+Latin \\
+
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  & Front & Central & Back \\
+  \hline
+  High & \textsc{i i:} & & \textsc{u u:} \\
+  \hline
+  Mid & \textsc{e e:} & & \textsc{o o:} \\
+  \hline
+  Low & & \textsc{a a:} & \\
+  \hline
+\end{tabular}
+
+Pre-Romance \\
+
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  & Front & Central & Back \\
+  \hline
+  High & i & & u \\
+  \hline
+  High-Mid & \textipa{I} & & \textipa{U} \\
+  \hline
+  Mid & e & & o \\
+  \hline
+  Low-Mid & \textipa{E} & & \textipa{O} \\
+  \hline
+  Low & & a & \\
+  \hline
+\end{tabular}
+
+Proto-Romance after the Great Merger \\
+
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  & Front & Central & Back \\
+  \hline
+  High & i & & u \\
+  \hline
+  Mid & e & & o \\
+  \hline
+  Low-Mid & \textipa{E} & & \textipa{O} \\
+  \hline
+  Low & & a & \\
+  \hline
+\end{tabular}
+
+\paragraph{Pre-Romance Loss of Quantity}
+
+\[ \textbf{v}
+  \begin{cases}
+    \text{long} : \textsc{duration} & \Rightarrow [\text{long} \rightarrow \text{short}]\ \textbf{v} \\
+    \text{short} : \textsc{duration} & \Rightarrow
+                   \begin{cases}
+                     \textsc{a} & \Rightarrow [\text{long} \rightarrow \text{short}]\ \textbf{v} \\
+                     \text{else} & \Rightarrow \begin{cases}
+                                                 \text{high} : \textsc{height} & \Rightarrow [\text{long} \rightarrow \text{short}, \text{high} \rightarrow \text{high-mid}]\ \textbf{v} \\
+                                                 \text{mid} : \textsc{height} & \Rightarrow [\text{long} \rightarrow \text{short}, \text{mid} \rightarrow \text{low-mid}]\ \textbf{v} \\
+                                               \end{cases} \\
+                   \end{cases} \\
+  \end{cases}
+\]
+
+\paragraph{Pan-Romance Great Merger}
+
+\[
+  \textbf{v}
+  \begin{cases}
+    \text{high-mid} : \textsc{height} & \Rightarrow [\text{high-mid} \rightarrow \text{mid}]\ \textbf{v} \\
+    \text{else} & \Rightarrow \textbf{v}
+  \end{cases}
+\]
+
+\paragraph{Monophthongization}
+
+\[ \textsc{oe} \Rightarrow \text{e} \]
+\[ \textsc{au} \Rightarrow \text{o} \]
+\[ \textsc{ae} \Rightarrow \text{\textipa{E}}\footnote{sometimes [e]} \]
+
 \subsection{Consonantism}
 
 \section{Reflexes by Grammatical Categories}
@@ -254,74 +395,26 @@
 
 \chapter{Proto-Romance $\rightarrow$ Western Romance}
 
-\section{Anthology of Sound Changes}
-
-\subsection{Vocalism}
-
-\subsection{Consonantism}
-
-\section{Reflexes by Grammatical Categories}
-
-\subsection{Nominal}
-
-\subsection{Pronoun}
-
-\subsection{Numeral}
-
-\subsection{Verbal}
-
 \chapter{Western Romance $\rightarrow$ Iberian Romance}
 
-\section{Anthology of Sound Changes}
+\section{Anothology of Sound Changes}
 
 \subsection{Vocalism}
 
-\subsection{Consonantism}
+\paragraph{Diphthongization}
 
-\section{Reflexes by Grammatical Categories}
-
-\subsection{Nominal}
-
-\subsection{Pronoun}
-
-\subsection{Numeral}
-
-\subsection{Verbal}
+\[
+  \textbf{v} \vdash \text{low-mid} : \textsc{height}
+  \begin{cases}
+    \text{front} : \textsc{centrality} & \Rightarrow \text{ie} \\
+    \text{back} : \textsc{centrality} & \Rightarrow \text{we} \\
+  \end{cases}
+\]
 
 \chapter{Iberian Romance $\rightarrow$ Old Spanish}
 
-\section{Anthology of Sound Changes}
-
-\subsection{Vocalism}
-
-\subsection{Consonantism}
-
-\section{Reflexes by Grammatical Categories}
-
-\subsection{Nominal}
-
-\subsection{Pronoun}
-
-\subsection{Numeral}
-
-\subsection{Verbal}
-
 \chapter{Old Spanish $\rightarrow$ Modern Spanish}
 
-\section{Anthology of Sound Changes}
-
-\subsection{Vocalism}
-
-\subsection{Consonantism}
-
-\section{Reflexes by Grammatical Categories}
-
-\subsection{Nominal}
-
-\subsection{Pronoun}
-
-\subsection{Numeral}
-
-\subsection{Verbal}
+\chapter{References}
 
 \end{document}

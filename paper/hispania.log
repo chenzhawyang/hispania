@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.4.29)  29 SEP 2022 22:47
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.4.29)  3 OCT 2022 00:44
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1432,19 +1432,26 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 
 ] [1] (./hispania.toc [1
 
-] [2])
+])
 \tf@toc=\write7
 \openout7 = `hispania.toc'.
 
- [3]
+ [2]
 Chapter 1.
-[4
+[3
 
-] [5] [6]
+] [4] [5]
 Chapter 2.
-[7
+\openout3 = `hispania.pyg'.
 
-]
+(./_minted-hispania/default.pygstyle)
+(./_minted-hispania/0A0A694579354AA1C1BEC9A46289138B84D26725CD95CA5B35ADBBCF59C
+BD40F.pygtex
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2.
+) [6
+
+] [7]
 Chapter 3.
 [8
 
@@ -1458,39 +1465,67 @@ Chapter 5.
 
 ]
 Chapter 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--319
+
+ []
+
+LaTeX Font Info:    Trying to load font information for T3+FreeSerif(0) on inpu
+t line 326.
+LaTeX Font Info:    No file T3FreeSerif(0).fd. on input line 326.
+
+LaTeX Font Warning: Font shape `T3/FreeSerif(0)/m/n' undefined
+(Font)              using `T3/cmr/m/n' instead on input line 326.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
+
+ []
+
 [11
 
-]
+] [12]
 Chapter 7.
-[12
-
-]
-Chapter 8.
 [13
 
 ]
-Chapter 9.
+Chapter 8.
 [14
 
 ]
-Chapter 10.
+Chapter 9.
 [15
+
+]
+Chapter 10.
+[16
+
+]
+Chapter 11.
+[17
 
 ] (./hispania.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+runsystem(rm hispania.pyg)...executed.
 
 Package logreq Info: Writing requests to 'hispania.run.xml'.
 \openout1 = `hispania.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32069 strings out of 476156
- 692554 string characters out of 5814963
- 1498313 words of memory out of 5000000
- 52297 multiletter control sequences out of 15000+600000
- 481551 words of font info for 112 fonts, out of 8000000 for 9000
+ 32220 strings out of 476156
+ 695001 string characters out of 5814963
+ 1499404 words of memory out of 5000000
+ 52429 multiletter control sequences out of 15000+600000
+ 482505 words of font info for 120 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 105i,14n,107p,741b,408s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 105i,21n,107p,741b,930s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on hispania.pdf (17 pages).
+Output written on hispania.pdf (19 pages).

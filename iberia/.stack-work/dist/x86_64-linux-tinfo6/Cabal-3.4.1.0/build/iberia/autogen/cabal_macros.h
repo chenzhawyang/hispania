@@ -20,6 +20,26 @@
   (major1) == 4 && (major2) <  15 || \
   (major1) == 4 && (major2) == 15 && (minor) <= 1)
 #endif /* MIN_VERSION_base */
+/* package bytestring-0.10.12.1 */
+#ifndef VERSION_bytestring
+#define VERSION_bytestring "0.10.12.1"
+#endif /* VERSION_bytestring */
+#ifndef MIN_VERSION_bytestring
+#define MIN_VERSION_bytestring(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  10 || \
+  (major1) == 0 && (major2) == 10 && (minor) <= 12)
+#endif /* MIN_VERSION_bytestring */
+/* package utf8-string-1.0.2 */
+#ifndef VERSION_utf8_string
+#define VERSION_utf8_string "1.0.2"
+#endif /* VERSION_utf8_string */
+#ifndef MIN_VERSION_utf8_string
+#define MIN_VERSION_utf8_string(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  0 || \
+  (major1) == 1 && (major2) == 0 && (minor) <= 2)
+#endif /* MIN_VERSION_utf8_string */
 
 /* tool gcc-12.2.0 */
 #ifndef TOOL_VERSION_gcc
@@ -113,7 +133,7 @@
 #endif /* MIN_TOOL_VERSION_strip */
 
 #ifndef CURRENT_COMPONENT_ID
-#define CURRENT_COMPONENT_ID "iberia-0.1.0.0-LgNoN1VgNnZK3X847CWqZt-iberia"
+#define CURRENT_COMPONENT_ID "iberia-0.1.0.0-E5gAUv5eKN7iowv1bM4oK-iberia"
 #endif /* CURRENT_COMPONENT_ID */
 #ifndef CURRENT_PACKAGE_VERSION
 #define CURRENT_PACKAGE_VERSION "0.1.0.0"
