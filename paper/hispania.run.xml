@@ -79,7 +79,7 @@
       <file>hispania.bcf</file>
     </requires>
     <requires type="editable">
-      <file>demo_doc.bib</file>
+      <file>hispania.bib</file>
     </requires>
   </external>
 </requests>

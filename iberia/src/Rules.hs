@@ -9,7 +9,7 @@ import Segments
 {- loss of quantity -}
 
 vowel_quantity_merger :: Vowel -> Vowel
-vowel_quantity_merger v@(Vowel _ _ Long) = v
-vowel_quantity_merger v | v == seg_a = v { dure = Short }
-                        | High <- height v = v { dure = Short, height = HiMid }
-                        | Mid <- height v = v { dure = Short,  height = LoMid }
+vowel_quantity_merger v@(Vowel _ _ Long) = v { dure = Short }
+vowel_quantity_merger v | v == seg_a = v
+                        | High <- height v = v { height = HiMid }
+                        | Mid <- height v = v { height = LoMid }

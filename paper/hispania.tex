@@ -18,7 +18,7 @@
 \usepackage{tipa}
 \usepackage{listings}
 \usepackage[backend=biber, sorting=none, style=alphabetic]{biblatex}
-\addbibresource{demo_doc.bib}
+\addbibresource{hispania.bib}
 \usepackage{xcolor}
 \usepackage{yfonts}
 \usepackage{footnote}
@@ -295,11 +295,9 @@
 
 \section{Verbal}
 
-\chapter{Latin $\rightarrow$ Proto-Romance}
+\chapter{Anthology of Sound Changes}
 
-\section{Anthology of Sound Changes}
-
-\subsection{Vocalism}
+\section{Vocalism}
 
 Latin \\
 
@@ -349,72 +347,194 @@ Proto-Romance after the Great Merger \\
   \hline
 \end{tabular}
 
-\paragraph{Pre-Romance Loss of Quantity}
+\subsection{Pre-Romance Loss of Quantity}
 
-\[ \textbf{v}
+\begin{equation}
+\textbf{V}
   \begin{cases}
-    \text{long} : \textsc{duration} & \Rightarrow [\text{long} \rightarrow \text{short}]\ \textbf{v} \\
-    \text{short} : \textsc{duration} & \Rightarrow
+    \vdash \text{long} : \textsc{duration} & \Rightarrow [\text{long} \rightarrow \text{short}]\ \textbf{V} \\
+    \vdash \text{short} : \textsc{duration} & \Rightarrow
                    \begin{cases}
-                     \textsc{a} & \Rightarrow [\text{long} \rightarrow \text{short}]\ \textbf{v} \\
+                     \textsc{a} & \Rightarrow \textbf{V} \\
                      \text{else} & \Rightarrow \begin{cases}
-                                                 \text{high} : \textsc{height} & \Rightarrow [\text{long} \rightarrow \text{short}, \text{high} \rightarrow \text{high-mid}]\ \textbf{v} \\
-                                                 \text{mid} : \textsc{height} & \Rightarrow [\text{long} \rightarrow \text{short}, \text{mid} \rightarrow \text{low-mid}]\ \textbf{v} \\
+                                                 \vdash \text{high} : \textsc{height} & \Rightarrow [\text{high} \rightarrow \text{high-mid}]\ \textbf{V} \\
+                                                 \vdash \text{mid} : \textsc{height} & \Rightarrow [\text{mid} \rightarrow \text{low-mid}]\ \textbf{V} \\
                                                \end{cases} \\
                    \end{cases} \\
   \end{cases}
-\]
+\end{equation}
 
-\paragraph{Pan-Romance Great Merger}
+\subsection{Pan-Romance Great Merger}
 
-\[
-  \textbf{v}
+\begin{equation}
+  \textbf{V}
   \begin{cases}
-    \text{high-mid} : \textsc{height} & \Rightarrow [\text{high-mid} \rightarrow \text{mid}]\ \textbf{v} \\
-    \text{else} & \Rightarrow \textbf{v}
+    \vdash \text{high-mid} : \textsc{height} & \Rightarrow [\text{high-mid} \rightarrow \text{mid}]\ \textbf{V} \\
+    \vdash \text{else} & \Rightarrow \textbf{V}
   \end{cases}
-\]
+\end{equation}
 
-\paragraph{Monophthongization}
+\subsection{Monophthongization}
 
-\[ \textsc{oe} \Rightarrow \text{e} \]
-\[ \textsc{au} \Rightarrow \text{o} \]
-\[ \textsc{ae} \Rightarrow \text{\textipa{E}}\footnote{sometimes [e]} \]
+\begin{align}
+\textsc{oe} & \Rightarrow \text{e} \\
+\textsc{au} & \Rightarrow \text{o} \\
+\textsc{ae} & \Rightarrow \text{\textipa{E}}\footnote{sometimes [e]}
+\end{align}
+  
+\subsection{Diphthongization}
 
-\subsection{Consonantism}
-
-\section{Reflexes by Grammatical Categories}
-
-\subsection{Nominal}
-
-\subsection{Pronoun}
-
-\subsection{Numeral}
-
-\subsection{Verbal}
-
-\chapter{Proto-Romance $\rightarrow$ Western Romance}
-
-\chapter{Western Romance $\rightarrow$ Iberian Romance}
-
-\section{Anothology of Sound Changes}
-
-\subsection{Vocalism}
-
-\paragraph{Diphthongization}
-
-\[
-  \textbf{v} \vdash \text{low-mid} : \textsc{height}
+\begin{equation}
+  \textbf{V} \vdash \text{low-mid} : \textsc{height}
   \begin{cases}
-    \text{front} : \textsc{centrality} & \Rightarrow \text{ie} \\
-    \text{back} : \textsc{centrality} & \Rightarrow \text{we} \\
+    \vdash \text{front} : \textsc{centrality} & \Rightarrow \text{ie} \\
+    \vdash \text{back} : \textsc{centrality} & \Rightarrow \text{we} \\
   \end{cases}
-\]
+\end{equation}
 
-\chapter{Iberian Romance $\rightarrow$ Old Spanish}
+\subsection{Loss of Hiatus}
 
-\chapter{Old Spanish $\rightarrow$ Modern Spanish}
+\begin{equation}
+  \textbf{V.V} \Rightarrow \textbf{VV}
+\end{equation}
 
-\chapter{References}
+\subsection{Metaphony}
+
+\section{Consonantism}
+
+\subsection{Prothesis in /sC/}
+
+\begin{equation}
+  \#\ \text{s}\textbf{C} \Rightarrow \text{es}.\textbf{C}
+\end{equation}
+
+\subsection{Syncope}
+
+\begin{equation}
+  \textbf{CV.C} \Rightarrow \textbf{CC}
+\end{equation}
+
+\subsection{Betacism}
+
+\begin{align}
+\text{w} & \Rightarrow \text{\textipa{B}} \\
+\text{b} & \Rightarrow \text{\textipa{B}}
+\end{align}
+
+\subsection{Diphthongs from Betacism}
+
+\begin{equation}
+\textbf{V}\text{\textipa{B}} \Rightarrow \textbf{V}\text{w}
+\end{equation}
+
+\subsection{Deaspiration in Popular Latin}
+
+\begin{equation}
+  \text{h} \Rightarrow \varnothing
+\end{equation}
+
+\subsection{Cluster Reduction in /ns/}
+
+\begin{equation}
+  \text{ns} \Rightarrow \text{s}
+\end{equation}
+
+\subsection{Elision of intervocalic /g/}
+
+\begin{equation}
+  \textbf{V}.\text{g}\textbf{V} \Rightarrow \textbf{VV}
+\end{equation}
+
+\subsection{Elision of coda /m/}
+
+\begin{equation}
+  \text{m}\ \# \Rightarrow \varnothing
+\end{equation}
+
+\subsection{Degemination}
+
+\begin{equation}
+  \textbf{CC} \Rightarrow \textbf{C}
+\end{equation}
+
+\subsection{Intervocalic Lenition}
+
+\begin{align}
+  \textbf{V.C}_{[-\text{voice}]}\textbf{V} & \Rightarrow \textbf{V.C}_{[+\text{voice}]}\textbf{V} \\
+  \textbf{V.C}\substack{[+\text{voice}] \\ [+\text{stop}]}\textbf{V} & \Rightarrow \textbf{V.C}\substack{[+\text{voice}] \\ [+\text{fricative}]}\textbf{V}
+\end{align}
+
+\subsection{Debuccalization of onset /f/}
+
+\begin{equation}
+  \#\ \text{f} \Rightarrow \text{h}
+\end{equation}
+
+\subsection{Fortition of onset /j/}
+
+\begin{equation}
+  \#\ \text{j} \Rightarrow \text{\textipa{\textdyoghlig}}
+\end{equation}
+
+\subsection{Palatalization of Consonant Clusters}
+
+\begin{align}
+  \text{kt} & \Rightarrow \text{it} \\
+  \text{kl} & \Rightarrow \text{\textipa{L}}\footnotemark \\
+  \text{n:} & \Rightarrow \text{\textipa{\textltailn}} \\
+  \text{l:} & \Rightarrow \text{\textipa{L}} \\
+  \text{di} & \Rightarrow \text{\textipa{\textdyoghlig}} \\
+  \text{gi} & \Rightarrow \text{\textipa{\textdyoghlig}}
+\end{align}
+\footnotetext{is it so?}
+
+\subsection{Palatalization of Velars}
+
+\begin{equation}
+  \textbf{C}_{[+\text{velar}]}\textbf{V}_{[+\text{front}]} \Rightarrow \textbf{C}_{[+\text{palatal}]}\textbf{V}_{[+\text{front}]}
+\end{equation}
+
+
+\subsection{Palatalization of Dentals}
+
+\begin{equation}
+  \textbf{C}\substack{[+\text{dental}] \\ [+\text{stop}]}\text{i} \Rightarrow \textbf{C}\substack{[+\text{dental}] \\ [+\text{affricate}]}
+\end{equation}
+
+\subsection{Palatalization of /n/ and /j/}
+
+\begin{align}
+  \text{nj} & \Rightarrow \text{\textipa{\textltailn}} \\
+  \text{lj} & \Rightarrow \text{\textipa{L}}
+\end{align}
+
+\subsection{Palatalization of /Cl/ Clusters}
+
+\begin{align}
+  \#\ \textbf{C}\text{l} & \Rightarrow \text{\textipa{L}} \\
+  \text{-}\textbf{C}\text{l-} & \Rightarrow \begin{cases}
+                                              \text{\textipa{\textteshlig}} \\
+                                              \text{\textipa{\textdyoghlig}} \\
+                                              \text{\textipa{\textltailn}} \\
+                                              \text{\textipa{L}}
+                                            \end{cases}
+\end{align}
+
+\subsection{Evolution of /skl/, /sl/, and /tl/}
+
+\begin{align}
+  \text{skl} & \Rightarrow \begin{cases}
+                             \text{\textipa{\texttslig}kl} \\
+                             \text{\textipa{\textteshlig}}
+                           \end{cases}\\
+  \text{sl} & \Rightarrow \text{skl} \\
+  \text{tl} & \Rightarrow \text{kl}
+\end{align}
+
+\chapter{Anthology of Morphophonological Changes}
+
+\nocite{*}
+
+\printbibliography
 
 \end{document}
