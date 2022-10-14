@@ -1,6 +1,6 @@
 \documentclass{report}
 
-\usepackage{geometry}[margin=0.2cm]
+\usepackage{geometry}
 \usepackage{appendix}[toc]
 \usepackage{xeCJK}
 \setCJKmainfont{Source Han Serif}
@@ -65,7 +65,9 @@
 
 \begin{abstract}
   
-  This paper talks about an implementation of rule-based phonology in a high-level programming language.
+  This paper talks about an implementation of rule-based phonology in a high-level programming language. To illustrate the competence of the system, the system is used to implement major sound changes in the historical evolution of Latin to Modern Spanish. To a lesser extent, morphophonological changes from Latin to Spanish are also experimented. \\
+  In the first couple chapters of this paper, we establish notations that represent the phonology and morphology of Latin and its Romance descendants following the tradition and convention of modern rule-based phonology that started to develop in the 1960s. After that we describe the major phonological and morphological changes the predecessors of Spanish had undergone, in the following historical periods: Proto-Romance, Western Romance, Central Iberian Romance, Old Spanish, Early Modern Spanish, and eventually we would be able to derive Modern Spanish. \\
+  After settling the chronology and defining historical changes of Spanish language, in the last part of this project we explore the details of the implementation of a rewriting system that is able to substantiate and automate much of the aforementioned language changes.
 
 \end{abstract}
 
@@ -84,6 +86,8 @@
 \paragraph{Rule-based Phonology}
 
 \paragraph{Romance Historical Linguistics}
+
+\paragraph{Typed Programming Languages}
 
 \chapter{Representation of Segments}
 
@@ -123,18 +127,6 @@
   | Long
 \end{minted}
 
-\begin{tabular}{|c|c|c|c|}
-  \hline
-  & Front & Central & Back \\
-  \hline
-  High & \textsc{i i:} & & \textsc{u u:} \\
-  \hline
-  Mid & \textsc{e e:} & & \textsc{o o:} \\
-  \hline
-  Low & & \textsc{a a:} & \\
-  \hline
-\end{tabular}
-
 \section{Consonantal}
 
 \begin{lstlisting}[basicstyle=\ttfamily, mathescape, escapeinside={(:}{:)}]
@@ -166,17 +158,31 @@
 
 \section{Syllable Weight and Stress}
 
+\chapter{Representation of Morphophonology}
+
+\section{Nominal}
+
+\subsection{Declensions}
+
+\subsection{Cases}
+
+\section{Verbal}
+
+\subsection{Persons}
+
+\subsection{Tense}
+
+\subsection{Aspect}
+
+\subsection{Mood}
+
+\subsection{Voice}
+
 \chapter{Representation of Phonotactics and Sound Changes}
 
 \section{Sound Changes}
 
 \section{Phonotactics}
-
-\chapter{Representation of Morphophonology}
-
-\section{Nominal}
-
-\section{Verbal}
 
 \chapter{Proto-Romance}
 
@@ -186,61 +192,84 @@
 
 \subsection{Vocalic}
 
-Latin \\
-
-\begin{tabular}{|c|c|c|c|}
-  \hline
-  & Front & Central & Back \\
-  \hline
-  High & \textsc{i i:} & & \textsc{u u:} \\
-  \hline
-  Mid & \textsc{e e:} & & \textsc{o o:} \\
-  \hline
-  Low & & \textsc{a a:} & \\
-  \hline
-\end{tabular}
-
-Pre-Romance \\
-
-\begin{tabular}{|c|c|c|c|}
-  \hline
-  & Front & Central & Back \\
-  \hline
-  High & i & & u \\
-  \hline
-  High-Mid & \textipa{I} & & \textipa{U} \\
-  \hline
-  Mid & e & & o \\
-  \hline
-  Low-Mid & \textipa{E} & & \textipa{O} \\
-  \hline
-  Low & & a & \\
-  \hline
-\end{tabular}
-
-Proto-Romance after the Great Merger \\
-
-\begin{tabular}{|c|c|c|c|}
-  \hline
-  & Front & Central & Back \\
-  \hline
-  High & i & & u \\
-  \hline
-  Mid & e & & o \\
-  \hline
-  Low-Mid & \textipa{E} & & \textipa{O} \\
-  \hline
-  Low & & a & \\
-  \hline
-\end{tabular}
+\begin{tcolorbox}[hbox, title=Proto-Romance Vowels after the Great Merger]
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    & Front & Central & Back \\
+    \hline
+    High & i & & u \\
+    \hline
+    Mid & e & & o \\
+    \hline
+    Low-Mid & \textipa{E} & & \textipa{O} \\
+    \hline
+    Low & & a & \\
+    \hline
+  \end{tabular}
+\end{tcolorbox}
 
 \subsection{Consonantal}
+
+\begin{tcolorbox}[title=Proto-Romance Consonants]
+  
+\end{tcolorbox}
 
 \section{Sound Changes}
 
 \subsection{Vocalism}
 
+\begin{tabular}{c c}
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    & Front & Central & Back \\
+    \hline
+    High & \textsc{\u{i} \={i}} & & \textsc{\u{u} \={u}} \\
+    \hline
+    Mid & \textsc{\u{e} \={e}} & & \textsc{\u{o} \={o}} \\
+    \hline
+    Low & & \textsc{\u{a} \={a}} & \\
+    \hline
+  \end{tabular}
+  \quad $\Rightarrow$ & 
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    & Front & Central & Back \\
+    \hline
+    High & i & & u \\
+    \hline
+    High-Mid & \cellcolor{gray} \textipa{I} & & \cellcolor{gray} \textipa{U} \\
+    \hline
+    Mid & e & & o \\
+    \hline
+    Low-Mid & \textipa{E} & & \textipa{O} \\
+    \hline
+    Low & & a & \\
+    \hline
+  \end{tabular}
+  \vspace{0.3cm} \\
+\end{tabular}
+
 \subsection{Consonantism}
+
+\begin{tcolorbox}[hbox, title=Latin Consonants]
+  \begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline
+    & Bilabial & Dental & Palatal & Velar & Labialvelar & Glottal \\
+    \hline
+    Nasal & m & n & & & & \\
+    \hline
+    Stop & p \quad b & t \quad d & & k \quad g & \textipa{k\super w} \quad \textipa{g\super w} & \\
+    \hline
+    Fricative & f & s \quad z & & & & \cellcolor{gray} h \\
+    \hline
+    Approximant & & & j & & w & \\
+    \hline
+    Trill & & r & & & & \\
+    \hline
+    Lateral & & l & & & & \\
+    \hline
+  \end{tabular}
+\end{tcolorbox}
 
 \section{Morphophonology}
 
@@ -252,24 +281,115 @@ Proto-Romance after the Great Merger \\
 
 \epigraph{\textsc{venite igitur descendamvs et confvndamvs ibi lingvam eorvm vt non avdiat vnvsqvisqve vocem proximi svi}}{\textsc{genesis} \textsc{xi}$\bullet$\textsc{vii}}
 
+\section{Phonemic Inventory}
+
+\subsection{Vocalic}
+
+\subsection{Consonantal}
+
+\section{Sound Changes}
+
+\subsection{Vocalism}
+
+\subsection{Consonantalism}
+
+\section{Morphophonology}
+
+\subsection{Nominal}
+
+\subsection{Verbal}
+
 \chapter{Central Iberian Romance}
 
 \epigraph{Yo te aseguro que hoy estarás conmigo en el paraíso.}{Lucas 23:34}
 
+\section{Phonemic Inventory}
+
+\subsection{Vocalic}
+
+\subsection{Consonantal}
+
+\section{Sound Changes}
+
+\subsection{Vocalism}
+
+\subsection{Consonantalism}
+
+\section{Morphophonology}
+
+\subsection{Nominal}
+
+\subsection{Verbal}
+
 \chapter{Old Spanish}
 
-\epigraph{Ya lo vedes, que partirnos emos en vida,
-yo iré e vós fincaredes remanida.}{Cantar de Mio Cid}
+\epigraph{Ya lo vedes, que partirnos emos en vida, yo iré e vós fincaredes remanida.}{Cantar de Mio Cid}
+
+\section{Phonemic Inventory}
+
+\subsection{Vocalic}
+
+\subsection{Consonantal}
+
+\section{Sound Changes}
+
+\subsection{Vocalism}
+
+\subsection{Consonantalism}
+
+\section{Morphophonology}
+
+\subsection{Nominal}
+
+\subsection{Verbal}
 
 \chapter{Early Modern Spanish}
 
-\epigraph{Nunca tan hermosa cosa vido.}{Cristóbal Colón}
+\epigraph{El que sirve una revolución ara en el mar.}{Simón Bolívar}
+
+\section{Phonemic Inventory}
+
+\subsection{Vocalic}
+
+\subsection{Consonantal}
+
+\section{Sound Changes}
+
+\subsection{Vocalism}
+
+\subsection{Consonantalism}
+
+\section{Morphophonology}
+
+\subsection{Nominal}
+
+\subsection{Verbal}
 
 \chapter{Modern Spanish}
 
 \epigraph{Todo está cumplido.}{Juan 19:30}
 
+\section{Phonemic Inventory}
+
+\subsection{Vocalic}
+
+\subsection{Consonantal}
+
+\section{Sound Changes}
+
+\subsection{Vocalism}
+
+\subsection{Consonantalism}
+
+\section{Morphophonology}
+
+\subsection{Nominal}
+
+\subsection{Verbal}
+
 \chapter{Anthology of Sound Changes}
+
+\epigraph{How many years must a mountain exist \\ Before it is washed to the sea?}{Bob Dylan}
 
 \section{Vocalism}
 
@@ -323,7 +443,7 @@ yo iré e vós fincaredes remanida.}{Cantar de Mio Cid}
 
 \subsection{Monophthongs}
 
-\begin{tcolorbox}[title=Late Latin/Pre-Romance Loss of Quantity]  
+\begin{tcolorbox}[title=Proto-Romance Loss of Quantity]  
   \begin{equation}\tag{Loss of Quantity}\label{loss_of_quantity}
     \textbf{V}
     \begin{cases}
@@ -509,6 +629,10 @@ yo iré e vós fincaredes remanida.}{Cantar de Mio Cid}
 
 \section{Nominal}
 
+\subsection{Dissolution of Declension IV \& V}
+
+\subsection{Reduction of the Case System}
+
 \section{Verbal}
 
 \chapter{Glossarium}
@@ -678,6 +802,9 @@ yo iré e vós fincaredes remanida.}{Cantar de Mio Cid}
   \textsc{partire} & partir \\
   \hline
 \end{tabular}
+
+\chapter*{Epilogue: \emph{Mein Jugendtraum}}
+\addcontentsline{toc}{chapter}{Epilogue: \emph{Mein Jugendtraum}}
 
 \nocite{*}
 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.4.29)  14 OCT 2022 00:49
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.4.29)  14 OCT 2022 03:41
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1836,9 +1836,15 @@ File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [1
 
 ]
-Overfull \hbox (4.66467pt too wide) in paragraph at lines 68--69
+Overfull \hbox (4.66446pt too wide) in paragraph at lines 68--71
 []\T1/futs/m/n/10 This paper talks about an implementation of rule-based phonol
-ogy in a high-level programming language. 
+ogy in a high-level programming language.
+ []
+
+
+Overfull \hbox (18.20439pt too wide) in paragraph at lines 68--71
+\T1/futs/m/n/10 In the first couple chapters of this paper, we establish notati
+ons that represent the phonology and morphology
  []
 
 [1] (./hispania.toc
@@ -1854,20 +1860,20 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 2.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 2.
- [1])
+ [1] [2])
 \tf@toc=\write8
 \openout8 = `hispania.toc'.
 
- [2]
+ [3]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 82.
+(Font)              scaled to size 7.35999pt on input line 84.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 82.
+(Font)              scaled to size 6.25598pt on input line 84.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 82.
+(Font)              scaled to size 7.35999pt on input line 84.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 82.
- [3
+(Font)              scaled to size 6.25598pt on input line 84.
+ [4
 
 ]
 Chapter I.
@@ -1878,99 +1884,86 @@ Chapter I.
 BD40F.pygtex
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 2.
-) [4
+) [5
 
-] [5]
+] [6]
 Chapter II.
-[6
-
-]
-Chapter III.
-
-Overfull \hbox (24.07674pt too wide) in paragraph at lines 169--169
-|\T1/futs/b/n/20.74 Representation of Phonotactics and Sound Changes| 
- []
-
 [7
 
 ]
-Chapter IV.
+Chapter III.
 [8
 
 ]
-Chapter V.
+Chapter IV.
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
-
- []
-
-LaTeX Font Info:    Trying to load font information for T3+futs on input line 2
-11.
-LaTeX Font Info:    No file T3futs.fd. on input line 211.
-
-LaTeX Font Warning: Font shape `T3/futs/m/n' undefined
-(Font)              using `T3/cmr/m/n' instead on input line 211.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
-
+Overfull \hbox (24.07674pt too wide) in paragraph at lines 181--181
+|\T1/futs/b/n/20.74 Representation of Phonotactics and Sound Changes| 
  []
 
 [9
 
-] [10]
-Chapter VI.
-[11
-
 ]
-Chapter VII.
+Chapter V.
+LaTeX Font Info:    Trying to load font information for T3+futs on input line 2
+09.
+LaTeX Font Info:    No file T3futs.fd. on input line 209.
+
+LaTeX Font Warning: Font shape `T3/futs/m/n' undefined
+(Font)              using `T3/cmr/m/n' instead on input line 209.
+
+[10
+
+] [11]
+Chapter VI.
 [12
 
 ]
-Chapter VIII.
+Chapter VII.
 [13
 
 ]
-Chapter IX.
+Chapter VIII.
 [14
 
 ]
-Chapter X.
+Chapter IX.
 [15
 
 ]
-Chapter XI.
+Chapter X.
 [16
 
-] [17] [18] [19]
+]
+Chapter XI.
+[17
+
+] [18] [19] [20] [21]
 Chapter XII.
-[20
+[22
 
 ]
 Chapter XIII.
-[21
+[23
 
-] [22] [23]
+] [24] [25] [26
+
+]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 687.
+(hyperref)                be the same. Added a new anchor on input line 814.
 
 
 Package biblatex Warning: Bibliography string 'and' untranslated
-(biblatex)                at entry 'cam_romance' on input line 687.
+(biblatex)                at entry 'cam_romance' on input line 814.
 
 
 Package biblatex Warning: Bibliography string 'editors' untranslated
-(biblatex)                at entry 'cam_romance' on input line 687.
+(biblatex)                at entry 'cam_romance' on input line 814.
 
 
 Package biblatex Warning: Bibliography string 'volume' untranslated
-(biblatex)                at entry 'cam_romance' on input line 687.
+(biblatex)                at entry 'cam_romance' on input line 814.
 
 
 Package biblatex Warning: Using fallback definition for \mkbibdatelong.
@@ -1981,7 +1974,7 @@ Package biblatex Warning: Using fallback definition for \mkbibdatelong.
 
 
 Package biblatex Warning: Bibliography string 'and' untranslated
-(biblatex)                at entry 'romance_his' on input line 687.
+(biblatex)                at entry 'romance_his' on input line 814.
 
 
 Package biblatex Warning: Using fallback definition for \mkbibdatelong.
@@ -1991,7 +1984,7 @@ Package biblatex Warning: Using fallback definition for \mkbibdatelong.
 (biblatex)                for \mkbibdatelong.
 
 
-Overfull \hbox (5.12263pt too wide) in paragraph at lines 687--687
+Overfull \hbox (5.12263pt too wide) in paragraph at lines 814--814
 []\T1/futs/m/n/10 Ti Alkire [] Carol Rosen. \T1/futs/m/it/10 Romance Languages:
  A Historical Introduction\T1/futs/m/n/10 . Cambridge University
  []
@@ -2017,14 +2010,14 @@ Package biblatex Warning: Using fallback definition for \mkbibdatelong.
 (biblatex)                loaded, is faulty or does not contain a definition
 (biblatex)                for \mkbibdatelong.
 
-[24
+[27
 
 ] (./hispania.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `hispania.out' has not changed.
-(rerunfilecheck)             Checksum: C2A8549B254AE6808E6E6AE4AFF5239B;7304.
+(rerunfilecheck)             Checksum: 9B32FEF72463C1942FA508885034E154;13814.
 runsystem(rm hispania.pyg)...executed.
 
 Package logreq Info: Writing requests to 'hispania.run.xml'.
@@ -2032,12 +2025,12 @@ Package logreq Info: Writing requests to 'hispania.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42287 strings out of 476156
- 872162 string characters out of 5814963
- 1667105 words of memory out of 5000000
- 62359 multiletter control sequences out of 15000+600000
- 625605 words of font info for 150 fonts, out of 8000000 for 9000
+ 42318 strings out of 476156
+ 872581 string characters out of 5814963
+ 1668110 words of memory out of 5000000
+ 62389 multiletter control sequences out of 15000+600000
+ 633849 words of font info for 152 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  105i,26n,107p,741b,4671s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on hispania.pdf (26 pages).
+Output written on hispania.pdf (29 pages).
