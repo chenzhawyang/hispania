@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.4.29)  14 OCT 2022 00:31
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.4.29)  14 OCT 2022 00:49
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1644,6 +1644,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip263
 )
+Package hyperref Info: Option `colorlinks' set `true' on input line 55.
 runsystem(which pygmentize && touch hispania.aex)...executed.
 
 runsystem(rm hispania.aex)...executed.
@@ -1658,61 +1659,61 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (./hispania.aux)
 \openout1 = `hispania.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
-4.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 6
+0.
  (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 60.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-54.
+60.
 
 (/usr/share/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 60.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-54.
+60.
 
 (/usr/share/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 60.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-54.
+60.
 
 (/usr/share/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1753,7 +1754,7 @@ Package biblatex Info: Trying to load language 'nil'...
 Package biblatex Info: ... file 'nil.lbx' not found.
 
 Package biblatex Warning: Language 'nil' not supported.
-(biblatex)                Using dummy definitions on input line 54.
+(biblatex)                Using dummy definitions on input line 60.
 
 Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
@@ -1764,12 +1765,279 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'hispania.bbl' found.
 (./hispania.bbl)
-Package biblatex Info: Reference section=0 on input line 54.
-Package biblatex Info: Reference segment=0 on input line 54.
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 54.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 54.
-Package hyperref Info: Link coloring OFF on input line 54.
+Package biblatex Info: Reference section=0 on input line 60.
+Package biblatex Info: Reference segment=0 on input line 60.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 60.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 60.
+Package hyperref Info: Link coloring ON on input line 60.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
 (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count525
+)
+LaTeX Info: Redefining \ref on input line 60.
+LaTeX Info: Redefining \pageref on input line 60.
+LaTeX Info: Redefining \nameref on input line 60.
+
+(./hispania.out) (./hispania.out)
+\@outlinefile=\write7
+\openout7 = `hispania.out'.
+
+LaTeX Font Info:    Trying to load font information for FML+futmi on input line
+ 63.
+
+(/usr/share/texmf-dist/tex/latex/fourier/fmlfutmi.fd
+File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
+)
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 11.03998pt on input line 63.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 63.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.43999pt on input line 63.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 63.
+
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 63.
+
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 6
+3.
+
+(/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 11.03998pt on input line 63.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 63.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.43999pt on input line 63.
+
+
+Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
+(xeCJK)                
+(xeCJK)                Try to use `\setCJKmonofont[...]{...}' to define it.
+
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 6
+3.
+(/usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [1
+
+]
+Overfull \hbox (4.66467pt too wide) in paragraph at lines 68--69
+[]\T1/futs/m/n/10 This paper talks about an implementation of rule-based phonol
+ogy in a high-level programming language. 
+ []
+
+[1] (./hispania.toc
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 2.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 2.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 2.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 2.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 2.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 2.
+ [1])
+\tf@toc=\write8
+\openout8 = `hispania.toc'.
+
+ [2]
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 82.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 82.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 82.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 82.
+ [3
+
+]
+Chapter I.
+\openout3 = `hispania.pyg'.
+
+(./_minted-hispania/default.pygstyle)
+(./_minted-hispania/0A0A694579354AA1C1BEC9A46289138B84D26725CD95CA5B35ADBBCF59C
+BD40F.pygtex
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 2.
+) [4
+
+] [5]
+Chapter II.
+[6
+
+]
+Chapter III.
+
+Overfull \hbox (24.07674pt too wide) in paragraph at lines 169--169
+|\T1/futs/b/n/20.74 Representation of Phonotactics and Sound Changes| 
+ []
+
+[7
+
+]
+Chapter IV.
+[8
+
+]
+Chapter V.
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
+
+ []
+
+LaTeX Font Info:    Trying to load font information for T3+futs on input line 2
+11.
+LaTeX Font Info:    No file T3futs.fd. on input line 211.
+
+LaTeX Font Warning: Font shape `T3/futs/m/n' undefined
+(Font)              using `T3/cmr/m/n' instead on input line 211.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
+
+ []
+
+[9
+
+] [10]
+Chapter VI.
+[11
+
+]
+Chapter VII.
+[12
+
+]
+Chapter VIII.
+[13
+
+]
+Chapter IX.
+[14
+
+]
+Chapter X.
+[15
+
+]
+Chapter XI.
+[16
+
+] [17] [18] [19]
+Chapter XII.
+[20
+
+]
+Chapter XIII.
+[21
+
+] [22] [23]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 687.
+
+
+Package biblatex Warning: Bibliography string 'and' untranslated
+(biblatex)                at entry 'cam_romance' on input line 687.
+
+
+Package biblatex Warning: Bibliography string 'editors' untranslated
+(biblatex)                at entry 'cam_romance' on input line 687.
+
+
+Package biblatex Warning: Bibliography string 'volume' untranslated
+(biblatex)                at entry 'cam_romance' on input line 687.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Bibliography string 'and' untranslated
+(biblatex)                at entry 'romance_his' on input line 687.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Overfull \hbox (5.12263pt too wide) in paragraph at lines 687--687
+[]\T1/futs/m/n/10 Ti Alkire [] Carol Rosen. \T1/futs/m/it/10 Romance Languages:
+ A Historical Introduction\T1/futs/m/n/10 . Cambridge University
+ []
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+[24
+
+] (./hispania.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package rerunfilecheck Info: File `hispania.out' has not changed.
+(rerunfilecheck)             Checksum: C2A8549B254AE6808E6E6AE4AFF5239B;7304.
+runsystem(rm hispania.pyg)...executed.
+
+Package logreq Info: Writing requests to 'hispania.run.xml'.
+\openout1 = `hispania.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 42287 strings out of 476156
+ 872162 string characters out of 5814963
+ 1667105 words of memory out of 5000000
+ 62359 multiletter control sequences out of 15000+600000
+ 625605 words of font info for 150 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 105i,26n,107p,741b,4671s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on hispania.pdf (26 pages).

@@ -29,6 +29,7 @@
 \usepackage{fourier}
 \usepackage{footnote}
 \makesavenoteenv{tabular}
+\makesavenoteenv{table}
 \usepackage{titlesec}
 \renewcommand{\thechapter}{\Roman{chapter}}
 \titleformat{\chapter}[display]{\huge\bf}{\textsc{Capitulum} \thechapter}{1em}{}
@@ -46,7 +47,12 @@
 \pagenumbering{Roman}
 
 \usepackage{hyperref}
-\hypersetup{colorlinks=true}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=magenta,
+  urlcolor=cyan
+}
 
 \title{Semi-Automated Language Changes from Latin to Spanish \\ or, \emph{El sueño de mi juventud: Fonología automatizada}}
 \author{陳朝陽 \\ Chen Zhaoyang \\ \texttt{zc23@illinois.edu}}
@@ -72,8 +78,8 @@
 \chapter*{Introduction}
 \addcontentsline{toc}{chapter}{Introduction}
 
-\epigraph{枯れた技術の水平思考}{横井軍平}
-% \footnotetext{\href{https://en.wikipedia.org/wiki/Gunpei_Yokoi\#Lateral_Thinking_with_Withered_Technology}{``Lateral Thinking of Withered Technology''}}
+\epigraph{枯れた技術の水平思考\footnotemark}{横井軍平}
+\footnotetext{\href{https://en.wikipedia.org/wiki/Gunpei_Yokoi\#Lateral_Thinking_with_Withered_Technology}{``Lateral Thinking of Withered Technology.''}}
 
 \paragraph{Rule-based Phonology}
 
@@ -318,7 +324,7 @@ yo iré e vós fincaredes remanida.}{Cantar de Mio Cid}
 \subsection{Monophthongs}
 
 \begin{tcolorbox}[title=Late Latin/Pre-Romance Loss of Quantity]  
-  \begin{equation}
+  \begin{equation}\tag{Loss of Quantity}\label{loss_of_quantity}
     \textbf{V}
     \begin{cases}
       \vdash \text{long} : \textsc{duration} & \Rightarrow [\text{long} \rightarrow \text{short}]\ \textbf{V} \\
@@ -335,33 +341,33 @@ yo iré e vós fincaredes remanida.}{Cantar de Mio Cid}
 \end{tcolorbox}
 
 \begin{tcolorbox}[title=Pan-Romance Great Merger]
-  \begin{equation}
+  \begin{equation}\tag{Great Merger}\label{eq:great_merger}
     \textbf{V}_{\vdash \text{high-mid}} \Rightarrow [\text{high-mid} \rightarrow \text{mid}]\ \textbf{V}
   \end{equation}
 \end{tcolorbox}
 
 \begin{tcolorbox}[title=Monophthongization]
-  \begin{align}                                                
+  \begin{align*}\tag{Monophthongization}\label{eq:monophthongization}
     \textsc{oe} & \Rightarrow \text{e} \\
     \textsc{au} & \Rightarrow \text{o} \\
     \textsc{ae} & \Rightarrow \text{\textipa{E}} 
-  \end{align}
+  \end{align*}
 \end{tcolorbox}
 
 \begin{tcolorbox}[title=Diphthongization]
-  \begin{align}
+  \begin{align*}\tag{Diphthongization}\label{eq:diphthongization}
       \text{\textipa{E}} \vdash \textsc{stressed} & \Rightarrow \text{ie} \\
       \text{\textipa{O}} \vdash \textsc{stressed} & \Rightarrow \text{we}
-  \end{align}
+  \end{align*}
 \end{tcolorbox}
 
 \subsection{Diphthongs}
 
-\paragraph{Loss of Hiatus}
-
-\begin{equation}
-  \textbf{V.V} \Rightarrow \textbf{VV}
-\end{equation}
+\begin{tcolorbox}[title=Loss of Hiatus]
+  \begin{equation}\tag{Loss of Hiatus}\label{eq:loss_of_hiatus}
+    \textbf{V.V} \Rightarrow \textbf{VV}
+  \end{equation}
+\end{tcolorbox}
 
 \subsection{Metaphony}
 
@@ -504,10 +510,6 @@ yo iré e vós fincaredes remanida.}{Cantar de Mio Cid}
 \section{Nominal}
 
 \section{Verbal}
-
-\chapter{Implementation of Phonotactics and Sound Changes}
-
-\chapter{Implementation of Morphophonological Changes}
 
 \chapter{Glossarium}
 

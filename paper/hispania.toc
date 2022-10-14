@@ -1,62 +1,81 @@
 \babel@toc {nil}{}\relax 
-\contentsline {chapter}{\numberline {1}Glossary}{3}{}%
-\contentsline {section}{\numberline {1.1}Nominal}{3}{}%
-\contentsline {subsection}{\numberline {1.1.1}Declension \textsc {i}}{3}{}%
-\contentsline {subsection}{\numberline {1.1.2}Declension \textsc {ii}}{3}{}%
-\contentsline {subsection}{\numberline {1.1.3}Declension \textsc {iii}}{3}{}%
-\contentsline {subsection}{\numberline {1.1.4}Declension \textsc {iv}}{3}{}%
-\contentsline {subsection}{\numberline {1.1.5}Declension \textsc {v}}{3}{}%
-\contentsline {section}{\numberline {1.2}Pronoun}{4}{}%
-\contentsline {section}{\numberline {1.3}Numeral}{4}{}%
-\contentsline {section}{\numberline {1.4}Verbal}{4}{}%
-\contentsline {subsection}{\numberline {1.4.1}Conjugation \textsc {i}}{4}{}%
-\contentsline {subsection}{\numberline {1.4.2}Conjugation \textsc {ii}}{4}{}%
-\contentsline {subsection}{\numberline {1.4.3}Conjugation \textsc {iii}}{4}{}%
-\contentsline {subsection}{\numberline {1.4.4}Conjugation \textsc {iv}}{5}{}%
-\contentsline {chapter}{\numberline {2}Representation of Segments}{6}{}%
-\contentsline {section}{\numberline {2.1}Vocalic}{6}{}%
-\contentsline {section}{\numberline {2.2}Consonantal}{7}{}%
-\contentsline {chapter}{\numberline {3}Representation of Syllables}{8}{}%
-\contentsline {section}{\numberline {3.1}Onset}{8}{}%
-\contentsline {subsection}{\numberline {3.1.1}Onset Cluster}{8}{}%
-\contentsline {section}{\numberline {3.2}Nucleus}{8}{}%
-\contentsline {section}{\numberline {3.3}Coda}{8}{}%
-\contentsline {subsection}{\numberline {3.3.1}Coda Cluster}{8}{}%
-\contentsline {section}{\numberline {3.4}Syllable Weight and Stress}{8}{}%
-\contentsline {chapter}{\numberline {4}Representation of Phonotactics and Sound Changes}{9}{}%
-\contentsline {section}{\numberline {4.1}Phonotactics}{9}{}%
-\contentsline {section}{\numberline {4.2}Cardinality in String Rewriting}{9}{}%
-\contentsline {section}{\numberline {4.3}Context and Admissibility}{9}{}%
-\contentsline {section}{\numberline {4.4}Semantics of Sound Changes}{9}{}%
-\contentsline {chapter}{\numberline {5}Representation of Morphophonology}{10}{}%
-\contentsline {section}{\numberline {5.1}Nominal}{10}{}%
-\contentsline {section}{\numberline {5.2}Pronoun}{10}{}%
-\contentsline {section}{\numberline {5.3}Verbal}{10}{}%
-\contentsline {chapter}{\numberline {6}Anthology of Sound Changes}{11}{}%
-\contentsline {section}{\numberline {6.1}Vocalism}{11}{}%
-\contentsline {subsection}{\numberline {6.1.1}Pre-Romance Loss of Quantity}{11}{}%
-\contentsline {subsection}{\numberline {6.1.2}Pan-Romance Great Merger}{12}{}%
-\contentsline {subsection}{\numberline {6.1.3}Monophthongization}{12}{}%
-\contentsline {subsection}{\numberline {6.1.4}Diphthongization}{12}{}%
-\contentsline {subsection}{\numberline {6.1.5}Loss of Hiatus}{12}{}%
-\contentsline {subsection}{\numberline {6.1.6}Metaphony}{12}{}%
-\contentsline {section}{\numberline {6.2}Consonantism}{12}{}%
-\contentsline {subsection}{\numberline {6.2.1}Prothesis in /sC/}{12}{}%
-\contentsline {subsection}{\numberline {6.2.2}Syncope}{12}{}%
-\contentsline {subsection}{\numberline {6.2.3}Betacism}{12}{}%
-\contentsline {subsection}{\numberline {6.2.4}Diphthongs from Betacism}{12}{}%
-\contentsline {subsection}{\numberline {6.2.5}Deaspiration in Popular Latin}{12}{}%
-\contentsline {subsection}{\numberline {6.2.6}Cluster Reduction in /ns/}{13}{}%
-\contentsline {subsection}{\numberline {6.2.7}Elision of intervocalic /g/}{13}{}%
-\contentsline {subsection}{\numberline {6.2.8}Elision of coda /m/}{13}{}%
-\contentsline {subsection}{\numberline {6.2.9}Degemination}{13}{}%
-\contentsline {subsection}{\numberline {6.2.10}Intervocalic Lenition}{13}{}%
-\contentsline {subsection}{\numberline {6.2.11}Debuccalization of onset /f/}{13}{}%
-\contentsline {subsection}{\numberline {6.2.12}Fortition of onset /j/}{13}{}%
-\contentsline {subsection}{\numberline {6.2.13}Palatalization of Consonant Clusters}{13}{}%
-\contentsline {subsection}{\numberline {6.2.14}Palatalization of Velars}{13}{}%
-\contentsline {subsection}{\numberline {6.2.15}Palatalization of Dentals}{14}{}%
-\contentsline {subsection}{\numberline {6.2.16}Palatalization of /n/ and /j/}{14}{}%
-\contentsline {subsection}{\numberline {6.2.17}Palatalization of /Cl/ Clusters}{14}{}%
-\contentsline {subsection}{\numberline {6.2.18}Evolution of /skl/, /sl/, and /tl/}{14}{}%
-\contentsline {chapter}{\numberline {7}Anthology of Morphophonological Changes}{15}{}%
+\contentsline {chapter}{Introduction}{III}{}%
+\contentsline {paragraph}{Rule-based Phonology}{III}{}%
+\contentsline {paragraph}{Romance Historical Linguistics}{III}{}%
+\contentsline {chapter}{\numberline {I}Representation of Segments}{IV}{}%
+\contentsline {section}{\numberline {I.1}Vocalic}{IV}{}%
+\contentsline {section}{\numberline {I.2}Consonantal}{V}{}%
+\contentsline {chapter}{\numberline {II}Representation of Syllables}{VI}{}%
+\contentsline {section}{\numberline {II.1}Onset}{VI}{}%
+\contentsline {subsection}{\numberline {II.1.1}Onset Cluster}{VI}{}%
+\contentsline {section}{\numberline {II.2}Nucleus}{VI}{}%
+\contentsline {section}{\numberline {II.3}Coda}{VI}{}%
+\contentsline {subsection}{\numberline {II.3.1}Coda Cluster}{VI}{}%
+\contentsline {section}{\numberline {II.4}Syllable Weight and Stress}{VI}{}%
+\contentsline {chapter}{\numberline {III}Representation of Phonotactics and Sound Changes}{VII}{}%
+\contentsline {section}{\numberline {III.1}Sound Changes}{VII}{}%
+\contentsline {section}{\numberline {III.2}Phonotactics}{VII}{}%
+\contentsline {chapter}{\numberline {IV}Representation of Morphophonology}{VIII}{}%
+\contentsline {section}{\numberline {IV.1}Nominal}{VIII}{}%
+\contentsline {section}{\numberline {IV.2}Verbal}{VIII}{}%
+\contentsline {chapter}{\numberline {V}Proto-Romance}{IX}{}%
+\contentsline {section}{\numberline {V.1}Phonemic Inventory}{IX}{}%
+\contentsline {subsection}{\numberline {V.1.1}Vocalic}{IX}{}%
+\contentsline {subsection}{\numberline {V.1.2}Consonantal}{X}{}%
+\contentsline {section}{\numberline {V.2}Sound Changes}{X}{}%
+\contentsline {subsection}{\numberline {V.2.1}Vocalism}{X}{}%
+\contentsline {subsection}{\numberline {V.2.2}Consonantism}{X}{}%
+\contentsline {section}{\numberline {V.3}Morphophonology}{X}{}%
+\contentsline {subsection}{\numberline {V.3.1}Nominal}{X}{}%
+\contentsline {subsection}{\numberline {V.3.2}Verbal}{X}{}%
+\contentsline {chapter}{\numberline {VI}Western Romance}{XI}{}%
+\contentsline {chapter}{\numberline {VII}Central Iberian Romance}{XII}{}%
+\contentsline {chapter}{\numberline {VIII}Old Spanish}{XIII}{}%
+\contentsline {chapter}{\numberline {IX}Early Modern Spanish}{XIV}{}%
+\contentsline {chapter}{\numberline {X}Modern Spanish}{XV}{}%
+\contentsline {chapter}{\numberline {XI}Anthology of Sound Changes}{XVI}{}%
+\contentsline {section}{\numberline {XI.1}Vocalism}{XVI}{}%
+\contentsline {subsection}{\numberline {XI.1.1}Monophthongs}{XVII}{}%
+\contentsline {subsection}{\numberline {XI.1.2}Diphthongs}{XVII}{}%
+\contentsline {paragraph}{Loss of Hiatus}{XVII}{}%
+\contentsline {subsection}{\numberline {XI.1.3}Metaphony}{XVII}{}%
+\contentsline {section}{\numberline {XI.2}Consonantism}{XVII}{}%
+\contentsline {subsection}{\numberline {XI.2.1}Monolithic Consonants}{XVII}{}%
+\contentsline {subsection}{\numberline {XI.2.2}Consonant Clusters}{XVII}{}%
+\contentsline {paragraph}{Prothesis in /sC/}{XVII}{}%
+\contentsline {paragraph}{Syncope}{XVIII}{}%
+\contentsline {paragraph}{Betacism}{XVIII}{}%
+\contentsline {paragraph}{Diphthongs from Betacism}{XVIII}{}%
+\contentsline {paragraph}{Deaspiration in Popular Latin}{XVIII}{}%
+\contentsline {paragraph}{Cluster Reduction in /ns/}{XVIII}{}%
+\contentsline {paragraph}{Elision of intervocalic /g/}{XVIII}{}%
+\contentsline {paragraph}{Elision of coda /m/}{XVIII}{}%
+\contentsline {paragraph}{Degemination}{XVIII}{}%
+\contentsline {paragraph}{Intervocalic Lenition}{XVIII}{}%
+\contentsline {paragraph}{Debuccalization of onset /f/}{XVIII}{}%
+\contentsline {paragraph}{Fortition of onset /j/}{XVIII}{}%
+\contentsline {paragraph}{Palatalization of Consonant Clusters}{XIX}{}%
+\contentsline {paragraph}{Palatalization of Velars}{XIX}{}%
+\contentsline {paragraph}{Palatalization of Dentals}{XIX}{}%
+\contentsline {paragraph}{Palatalization of /n/ and /j/}{XIX}{}%
+\contentsline {paragraph}{Palatalization of /Cl/ Clusters}{XIX}{}%
+\contentsline {paragraph}{Evolution of /skl/, /sl/, and /tl/}{XIX}{}%
+\contentsline {chapter}{\numberline {XII}Anthology of Morphophonological Changes}{XX}{}%
+\contentsline {section}{\numberline {XII.1}Nominal}{XX}{}%
+\contentsline {section}{\numberline {XII.2}Verbal}{XX}{}%
+\contentsline {chapter}{\numberline {XIII}Implementation of Phonotactics and Sound Changes}{XXI}{}%
+\contentsline {chapter}{\numberline {XIV}Implementation of Morphophonological Changes}{XXII}{}%
+\contentsline {chapter}{\numberline {XV}Glossarium}{XXIII}{}%
+\contentsline {section}{\numberline {XV.1}Nominal}{XXIII}{}%
+\contentsline {subsection}{\numberline {XV.1.1}Declension I \& V}{XXIII}{}%
+\contentsline {subsection}{\numberline {XV.1.2}Declension II \& IV}{XXIII}{}%
+\contentsline {subsection}{\numberline {XV.1.3}Declension III}{XXIII}{}%
+\contentsline {section}{\numberline {XV.2}Pronoun}{XXIV}{}%
+\contentsline {section}{\numberline {XV.3}Numeral}{XXIV}{}%
+\contentsline {section}{\numberline {XV.4}Verbal}{XXIV}{}%
+\contentsline {subsection}{\numberline {XV.4.1}Conjugation I}{XXIV}{}%
+\contentsline {subsection}{\numberline {XV.4.2}Conjugation II}{XXIV}{}%
+\contentsline {subsection}{\numberline {XV.4.3}Conjugation III}{XXIV}{}%
+\contentsline {subsection}{\numberline {XV.4.4}Conjugation IV}{XXV}{}%
+\contentsline {chapter}{Biblipgraphy}{XXVI}{}%
+\contentsline {section}{Romance Linguistics}{XXVI}{}%
