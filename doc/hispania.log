@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.4.29)  18 OCT 2022 21:11
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.4.29)  19 OCT 2022 01:45
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1661,57 +1661,57 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (./hispania.aux)
 \openout1 = `hispania.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 6
-1.
+2.
  (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 62.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-61.
+62.
 
 (/usr/share/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 62.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-61.
+62.
 
 (/usr/share/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 62.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-61.
+62.
 
 (/usr/share/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1783,11 +1783,11 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'hispania.bbl' found.
  (./hispania.bbl)
-Package biblatex Info: Reference section=0 on input line 61.
-Package biblatex Info: Reference segment=0 on input line 61.
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 61.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 61.
-Package hyperref Info: Link coloring ON on input line 61.
+Package biblatex Info: Reference section=0 on input line 62.
+Package biblatex Info: Reference segment=0 on input line 62.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 62.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 62.
+Package hyperref Info: Link coloring ON on input line 62.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1800,48 +1800,48 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count525
 )
-LaTeX Info: Redefining \ref on input line 61.
-LaTeX Info: Redefining \pageref on input line 61.
-LaTeX Info: Redefining \nameref on input line 61.
+LaTeX Info: Redefining \ref on input line 62.
+LaTeX Info: Redefining \pageref on input line 62.
+LaTeX Info: Redefining \nameref on input line 62.
 
 (./hispania.out) (./hispania.out)
 \@outlinefile=\write7
 \openout7 = `hispania.out'.
 
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 64.
+ 65.
 
 (/usr/share/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 64.
+(Font)              scaled to size 11.03998pt on input line 65.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 64.
+(Font)              scaled to size 8.27998pt on input line 65.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 64.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 64.
+(Font)              scaled to size 6.43999pt on input line 65.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 65.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 64.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 65.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 6
-4.
+5.
 
 (/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 64.
+(Font)              scaled to size 11.03998pt on input line 65.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 64.
+(Font)              scaled to size 8.27998pt on input line 65.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 64.
+(Font)              scaled to size 6.43999pt on input line 65.
 
 
 Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
@@ -1849,12 +1849,12 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 (xeCJK)                Try to use `\setCJKmonofont[...]{...}' to define it.
 
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 6
-4.
+5.
 (/usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [1
 
-] [1] (./hispania.toc
+] (./hispania.toc
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 9.19998pt on input line 2.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -1867,108 +1867,73 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 2.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 2.
- [1]
-[2])
+ [1])
 \tf@toc=\write8
 \openout8 = `hispania.toc'.
 
- [3] [4
 
-]
+[2]
 Chapter 1.
-\openout3 = `hispania.pyg'.
-
-(./_minted-hispania/default.pygstyle)
-(./_minted-hispania/0A0A694579354AA1C1BEC9A46289138B84D26725CD95CA5B35ADBBCF59C
-BD40F.pygtex
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 2.
-) [5
-
-] [6]
-Chapter 2.
-[7
-
-]
-Chapter 3.
-[8
-
-]
-Chapter 4.
-[9
-
-]
-Chapter 5.
 LaTeX Font Info:    Trying to load font information for T3+futs on input line 2
-49.
-LaTeX Font Info:    No file T3futs.fd. on input line 249.
+50.
+LaTeX Font Info:    No file T3futs.fd. on input line 250.
 
 LaTeX Font Warning: Font shape `T3/futs/m/n' undefined
-(Font)              using `T3/cmr/m/n' instead on input line 249.
+(Font)              using `T3/cmr/m/n' instead on input line 250.
+
+[3
+
+] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 416--417
+
+ []
 
 
-Overfull \hbox (49.79276pt too wide) in paragraph at lines 273--273
+Overfull \hbox (32.2128pt too wide) in paragraph at lines 444--444
 [] 
  []
 
-[10
+[5] [6] [7] [8]
+Chapter 2.
+[9
 
-] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 413--414
+] [10] [11]
+Chapter 3.
+[12
 
- []
+] [13]
+Chapter 4.
 
-
-Overfull \hbox (32.2128pt too wide) in paragraph at lines 441--441
+Overfull \hbox (13.4228pt too wide) in paragraph at lines 853--853
 [] 
  []
 
-[12] [13] [14]
-Chapter 6.
-[15
+[14
 
-] [16]
-Chapter 7.
-[17
-
-] [18]
-Chapter 8.
-[19
-
-] [20]
-Chapter 9.
-[21
-
-]
-Chapter 10.
-[22
-
-]
+] [15]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1214.
+(hyperref)                be the same. Added a new anchor on input line 1361.
 
-[23
+[16
 
-] [24] (./hispania.aux)
+] [17] (./hispania.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `hispania.out' has not changed.
-(rerunfilecheck)             Checksum: 1731CBF697B3DADC5D5615D8A2140B2E;9428.
-runsystem(rm hispania.pyg)...executed.
-
+(rerunfilecheck)             Checksum: FB2A86B37F724D2B246EF8A857B088D8;5097.
 Package logreq Info: Writing requests to 'hispania.run.xml'.
 \openout1 = `hispania.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43035 strings out of 476156
- 888636 string characters out of 5814963
- 1720436 words of memory out of 5000000
- 63097 multiletter control sequences out of 15000+600000
- 584636 words of font info for 126 fonts, out of 8000000 for 9000
+ 42908 strings out of 476156
+ 886999 string characters out of 5814963
+ 1720302 words of memory out of 5000000
+ 62979 multiletter control sequences out of 15000+600000
+ 580238 words of font info for 124 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  105i,15n,107p,741b,4898s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on hispania.pdf (26 pages).
+Output written on hispania.pdf (18 pages).

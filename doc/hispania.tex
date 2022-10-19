@@ -23,7 +23,7 @@
 \usepackage{tikz-cd}
 \usepackage{tipa}
 \usepackage{listings}
-\usepackage[backend=biber, sorting=none, style=alphabetic, maxcitenames = 2]{biblatex}
+\usepackage[backend=biber, sorting=ynt, style=alphabetic, maxcitenames = 2]{biblatex}
 \addbibresource{hispania.bib}
 \DefineBibliographyStrings{USenglish}{
   andothers = {\textbf{et al}\adddot}
@@ -55,7 +55,8 @@
 \setlength\parindent{0pt}
 % \pagenumbering{Roman}
 
-\title{Semi-Automated Language Changes from Latin to Spanish \\ or, \emph{El sueño de mi juventud: Fonología automatizada}}
+\title{Semi-Automated Language Changes from Latin to Spanish \\ % or, \emph{El sueño de mi juventud: Fonología automatizada}
+}
 \author{陳朝陽 \\ Chen Zhaoyang \\ \texttt{zc23@illinois.edu}}
 
 \begin{document}
@@ -111,118 +112,118 @@
 
 % \pagebreak
 
-\begin{abstract}
+% \begin{abstract}
   
-  This paper talks about an implementation of rule-based phonology in a high-level programming language. To illustrate the competence of the system, the system is used to implement major sound changes in the historical evolution of Latin to Modern Spanish. To a lesser extent, morphophonological changes from Latin to Spanish are also experimented. \\
-  In the first couple chapters of this paper, we establish notations that represent the phonology and morphology of Latin and its Romance descendants following the tradition and convention of modern rule-based phonology that started to develop in the 1960s. After that we describe the major phonological and morphological changes the predecessors of Spanish had undergone, in the following historical periods: Proto-Romance, Western Romance, Central Iberian Romance, Old Spanish, Early Modern Spanish, and eventually we would be able to derive Modern Spanish. \\
-  After settling the chronology and defining historical changes of Spanish language, in the last part of this project we explore the details of the implementation of a rewriting system that is able to substantiate and automate much of the aforementioned language changes.
+%   This paper talks about an implementation of rule-based phonology in a high-level programming language. To illustrate the competence of the system, the system is used to implement major sound changes in the historical evolution of Latin to Modern Spanish. To a lesser extent, morphophonological changes from Latin to Spanish are also experimented. \\
+%   In the first couple chapters of this paper, we establish notations that represent the phonology and morphology of Latin and its Romance descendants following the tradition and convention of modern rule-based phonology that started to develop in the 1960s. After that we describe the major phonological and morphological changes the predecessors of Spanish had undergone, in the following historical periods: Proto-Romance, Western Romance, Central Iberian Romance, Old Spanish, Early Modern Spanish, and eventually we would be able to derive Modern Spanish. \\
+%   After settling the chronology and defining historical changes of Spanish language, in the last part of this project we explore the details of the implementation of a rewriting system that is able to substantiate and automate much of the aforementioned language changes.
 
-\end{abstract}
+% \end{abstract}
 
 \tableofcontents
 
 \pagebreak
 
-\chapter*{Introduction}
-\addcontentsline{toc}{chapter}{Introduction}
+% \chapter*{Introduction}
+% \addcontentsline{toc}{chapter}{Introduction}
 
 % \epigraph{枯れた技術の水平思考\footnotemark}{横井軍平}
 % \footnotetext{\href{https://en.wikipedia.org/wiki/Gunpei_Yokoi\#Lateral_Thinking_with_Withered_Technology}{``Lateral Thinking of Withered Technology.''}}
 
-\section*{Withered Techniques}
+% \section*{Withered Techniques}
 
-\subsection*{Rule-based Phonology}
+% \subsection*{Rule-based Phonology}
 
-\subsection*{Romance Historical Linguistics}
+% \subsection*{Romance Historical Linguistics}
 
-\subsection*{Typed Programming Languages}
+% \subsection*{Typed Programming Languages}
 
-\chapter{Representation of Segments}
+% \chapter{Representation of Segments}
 
 % \epigraph{En el principio era el Verbo, y el Verbo era con Dios, y el Verbo era Dios.}{Juan 1:1}
 
-\section{Vocalic}
+% \section{Vocalic}
 
-\begin{lstlisting}[basicstyle=\ttfamily, mathescape, escapeinside={(:}{:)}]
-  vowel ::= height (:$\times$:) centrality (:$\times$:) duration
+% \begin{lstlisting}[basicstyle=\ttfamily, mathescape, escapeinside={(:}{:)}]
+%   vowel ::= height (:$\times$:) centrality (:$\times$:) duration
 
-  height ::= low | low-mid | mid | high-mid | high
+%   height ::= low | low-mid | mid | high-mid | high
 
-  centrality ::= front | central | back
+%   centrality ::= front | central | back
 
-  duration ::= short | long
-\end{lstlisting}
+%   duration ::= short | long
+% \end{lstlisting}
 
-\begin{minted}[autogobble]{hs}
-  data Vowel = Vowel
-  { height :: Height
-    , centrality :: Centrality
-    , dure :: Duration
-  }
+% \begin{minted}[autogobble]{hs}
+%   data Vowel = Vowel
+%   { height :: Height
+%     , centrality :: Centrality
+%     , dure :: Duration
+%   }
 
-  data Height
-  = Low
-  | LoMid
-  | Mid
-  | HiMid
-  | High
+%   data Height
+%   = Low
+%   | LoMid
+%   | Mid
+%   | HiMid
+%   | High
 
-  data Centrality
-  = Front
-  | Cent
-  | Back
+%   data Centrality
+%   = Front
+%   | Cent
+%   | Back
 
-  data Duration
-  = Short
-  | Long
-\end{minted}
+%   data Duration
+%   = Short
+%   | Long
+% \end{minted}
 
-\section{Consonantal}
+% \section{Consonantal}
 
-\begin{lstlisting}[basicstyle=\ttfamily, mathescape, escapeinside={(:}{:)}]
-  consonant ::= manner (:$\times$:) place (:$\times$:) voice
+% \begin{lstlisting}[basicstyle=\ttfamily, mathescape, escapeinside={(:}{:)}]
+%   consonant ::= manner (:$\times$:) place (:$\times$:) voice
 
-  manner ::= nasal
-           | stop
-           | fricative
-           | non-siblant fricative
-           | affricate
-           | approximant
-           | tap
-           | trill
-           | lateral
+%   manner ::= nasal
+%            | stop
+%            | fricative
+%            | non-siblant fricative
+%            | affricate
+%            | approximant
+%            | tap
+%            | trill
+%            | lateral
 
-  place ::= bilabial
-          | labiodental
-          | dental
-          | alveolar
-          | palatal
-          | palatoalvelar | velar | labialvelar
-          | glottal
+%   place ::= bilabial
+%           | labiodental
+%           | dental
+%           | alveolar
+%           | palatal
+%           | velar | labialvelar
+%           | glottal
 
-  place ::= voiced | voiceless
-\end{lstlisting}
+%   place ::= voiced | voiceless
+% \end{lstlisting}
 
-\chapter{Representation of Syllables}
+% \chapter{Representation of Syllables}
 
-\section{Syllabic Structure}
+% \section{Syllabic Structure}
 
-\section{Syllable Weight and Stress}
+% \section{Syllable Weight and Stress}
 
-\chapter{Representation of Morphophonology}
+% \chapter{Representation of Morphophonology}
 
-\section{Nominal}
+% \section{Nominal}
 
-\section{Verbal}
+% \section{Verbal}
 
-\chapter{Representation of Phonotactics and Sound Changes}
+% \chapter{Representation of Phonotactics and Sound Changes}
 
 % \epigraph{星翳燈幻露泡夢電雲\footnotemark}{金剛經 \S32}
 % \footnotetext{\href{https://www2.hf.uio.no/polyglotta/index.php?page=record\&vid=1176\&mid=1993243}{A shooting star, a clouding of the sight, a lamp, an illusion, a drop of dew, a bubble, a dream, a lightning’s flash, a thunder cloud.}}
 
-\section{Sound Changes}
+% \section{Sound Changes}
 
-\section{Phonotactics}
+% \section{Phonotactics}
 
 \chapter{Proto-Romance}
 
@@ -251,23 +252,25 @@
 \subsection{Consonantal}
 
 \begin{tcolorbox}[title=Proto-Romance Consonants, hbox]
-  \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+  \begin{tabular}{|c|c|c|c|c|c|c|c|}
     \hline
-    & Bilabial & Labiodental & Dental & Alveolar & Palatal & Palatovelar & Velar & Labiovelar \\
+    & Bilabial & Labiodental & Dental & Alveolar & Palatal & Velar & Labiovelar \\
     \hline
-    Nasal & m & & \multicolumn{2}{c|}{n} & \textipa{\textltailn} & & & \\
+    Nasal & m & & \multicolumn{2}{c|}{n} & \textipa{\textltailn} & & \\
     \hline
-    Stop & p \quad b & & t \quad d & \textipa{t\super j} \quad \textipa{d\super j} & \textipa{\textbardotlessj} & \textipa{k\super j} \quad \textipa{g\super j} & k \quad g & \textipa{k\super w} \quad \textipa{g\super w} \\
+    Stop & p \quad b & & t \quad d & & c \quad \textipa{\textbardotlessj} & k \quad g & \textipa{k\super w} \quad \textipa{g\super w} \\
     \hline
-    Fricative & \textipa{B} & f & & & \textipa{J} & & & \\
+    Fricative & \textipa{B} & f & & & \textipa{J} & & \\
     \hline
-    \textquotedbl & & & & s \quad z & & & & \\
+    \textquotedbl & & & & s \quad z & & & \\
     \hline
-    Approximant & & & & & j & & & \\
+    Affricate & & & \textipa{\texttslig} \quad \textipa{\textdzlig} & & & & \\
     \hline
-    Trill & & & \multicolumn{2}{c|}{r} & & & & \\
+    Approximant & & & & & j & & \\
     \hline
-    Lateral & & & \multicolumn{2}{c|}{l} & \textipa{l\super j} & & & \\
+    Trill & & & \multicolumn{2}{c|}{r} & & & \\
+    \hline
+    Lateral & & & \multicolumn{2}{c|}{l} & \textipa{L} & & \\
     \hline
   \end{tabular}
 \end{tcolorbox}
@@ -470,9 +473,35 @@ parab\textcolor{red}{o}la v. parabla \\
   
 \end{tcolorbox}
 
-\begin{tcolorbox}[title=Betacism]
+\begin{tcolorbox}[title=Betacism I]
 
 \end{tcolorbox}
+
+\begin{tcolorbox}[title=Initial Yod Fortition]
+
+\end{tcolorbox}
+
+\begin{tabular}{c c}
+  \textsc{lat.} & Es. \\
+  \hline
+  \textsc{\textcolor{red}{i}ocu} & \textcolor{magenta}{j}uego \quad [x] \\
+  \textsc{\textcolor{red}{i}vis} & \textcolor{magenta}{j}ueves \quad [x] \\
+  \textsc{\textcolor{red}{i}uvene} & \textcolor{magenta}{j}oven \quad [x] \\
+  \textsc{\textcolor{red}{i}udice} & \textcolor{magenta}{j}uez \quad [x] \\
+\end{tabular}
+
+\begin{tcolorbox}[title=Fortition of /w/ in Germanic Loanwords]
+  
+\end{tcolorbox}
+
+\begin{tabular}{c c}
+  Gm. & Es. \\  
+  \hline
+  \textcolor{red}{w}isa & \textcolor{magenta}{gu}isa \\
+  \textcolor{red}{w}erra & \textcolor{magenta}{gu}erra \\
+  \textcolor{red}{w}arten & \textcolor{magenta}{gu}ardar \\
+  \textcolor{red}{w}ant & \textcolor{magenta}{gu}ante \\
+\end{tabular}
 
 \begin{tcolorbox}[title=Deaspiration]
   
@@ -488,6 +517,14 @@ parab\textcolor{red}{o}la v. parabla \\
 
 \begin{tcolorbox}[title=Elision of Coda /m/]
   
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Palatalization and Affrication of Dentals]
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Palatalization of Velars]
+
 \end{tcolorbox}
 
 \section{Morphophonology}
@@ -604,17 +641,69 @@ parab\textcolor{red}{o}la v. parabla \\
   \textsc{h\textcolor{red}{e}ri} & a\textcolor{magenta}{ye}r & h\textcolor{magenta}{ie}r \\
 \end{tabular}
 
-\subsection{Consonantalism}
+\subsection{Consonantism}
 
 \begin{tcolorbox}[title=Degemination]
   
 \end{tcolorbox}
 
-\begin{tcolorbox}[title=Palatalization of Dentals]
-
-\end{tcolorbox}
+\begin{tabular}{c c}
+  \textsc{lat.} & Es. \\
+  \hline
+  \textsc{o\textcolor{red}{ss}u} & hue\textcolor{magenta}{s}o \\
+  \textsc{su\textcolor{red}{mm}a} & su\textcolor{magenta}{m}a \\
+  \textsc{a\textcolor{red}{pp}e\textcolor{red}{ll}at} & a\textcolor{magenta}{p}e\textcolor{magenta}{l}a \\
+  \textsc{li\textcolor{red}{tt}era} & le\textcolor{magenta}{t}ra \\
+  \textsc{si\textcolor{red}{cc}u} & se\textcolor{magenta}{c}o \\
+\end{tabular}
 
 \begin{tcolorbox}[title=Lenition I]
+  
+\end{tcolorbox}
+
+\begin{tabular}{c c}
+  \textsc{lat.} & Es. \\
+  \hline
+  \textsc{sa\textcolor{red}{p}ore} & sa\textcolor{magenta}{b}or [\textipa{B}] \\
+  \textsc{ca\textcolor{red}{p}ut} & ca\textcolor{magenta}{b}o [\textipa{B}] \\
+  \textsc{co\textcolor{red}{p}ertu} & cu\textcolor{magenta}{b}ierto [\textipa{B}] \\
+                & \\
+  \textsc{vi\textcolor{red}{t}a} & vi\textcolor{magenta}{d}a [\textipa{D}] \\
+  \textsc{fa\textcolor{red}{t}a} & ha\textcolor{magenta}{d}a [\textipa{D}] \\
+  \textsc{ca\textcolor{red}{t}ena} & ca\textcolor{magenta}{d}ena [\textipa{D}] \\
+                & \\
+  \textsc{ami\textcolor{red}{c}a} & ami\textcolor{magenta}{g}a [\textipa{G}] \\
+  \textsc{se\textcolor{red}{c}uru} & se\textcolor{magenta}{g}uro [\textipa{G}] \\
+  \textsc{fo\textcolor{red}{c}u} & fue\textcolor{magenta}{g}o [\textipa{G}] \\
+\end{tabular}
+
+\begin{tabular}{c c}  
+  \textsc{lat.} & Es. \\
+  \hline
+  \textsc{le\textcolor{red}{p}re} & lie\textcolor{magenta}{b}re [\textipa{B}] \\
+  \textsc{ca\textcolor{red}{p}ra} & ca\textcolor{magenta}{b}ra [\textipa{B}] \\
+                & \\
+  \textsc{pe\textcolor{red}{t}ra} & pie\textcolor{magenta}{d}ra [\textipa{D}] \\
+  \textsc{pa\textcolor{red}{t}re} & pa\textcolor{magenta}{d}re [\textipa{D}] \\
+                & \\
+  \textsc{hemi-\textcolor{red}{c}rania} & mi\textcolor{magenta}{g}raña [\textipa{G}] \\
+\end{tabular}
+
+\begin{tabular}{c c}
+  \textsc{lat.} & Es. \\
+  \hline
+  \textsc{ser\textcolor{red}{p}ente} & ser\textcolor{magenta}{p}iente \\
+  \textsc{al\textcolor{red}{p}es} & a\textcolor{magenta}{p}les \\
+  \textsc{rum\textcolor{red}{p}ere} & rum\textcolor{magenta}{p}er \\
+                & \\
+  \textsc{or\textcolor{red}{t}ica} & or\textcolor{magenta}{t}iga \\
+  \textsc{men\textcolor{red}{t}a} & men\textcolor{magenta}{t}a \\
+                & \\
+  \textsc{ar\textcolor{red}{c}u} & ar\textcolor{magenta}{c}o \\
+  \textsc{fal\textcolor{red}{c}one} & hal\textcolor{magenta}{c}ón \\
+\end{tabular}
+
+\begin{tcolorbox}[title=Affrication of Palatal Stops]
 
 \end{tcolorbox}
 
@@ -673,7 +762,41 @@ parab\textcolor{red}{o}la v. parabla \\
   \textsc{c\textcolor{red}{a}seu} & q\textcolor{magenta}{ue}so \\
 \end{tabular}
 
-\subsection{Consonantalism}
+\subsection{Consonantism}
+
+\begin{tcolorbox}[title=Lenition II]
+
+\end{tcolorbox}
+
+\begin{tabular}{c c}
+  \textsc{lat} & Es. \\
+  \hline
+  \textsc{ca\textcolor{red}{b}allu} & ca\textcolor{magenta}{b}allo [\textipa{B}] \\
+  \textsc{de\textcolor{red}{b}ere} & de\textcolor{magenta}{b}er [\textipa{B}] \\
+  \textsc{ha\textcolor{red}{b}ere} & ha\textcolor{magenta}{b}er [\textipa{B}] \\
+               & \\
+  \textsc{cru\textcolor{red}{d}u} & cru\textcolor{magenta}{d}o [\textipa{D}] \\
+  \textsc{pe\textcolor{red}{d}e} & pie \\
+               & \\
+  \textsc{au\textcolor{red}{g}ustu} & a\textcolor{magenta}{g}osto [\textipa{G}] \\
+  \textsc{li\textcolor{red}{g}are} & li\textcolor{magenta}{g}ar [\textipa{G}] liar \\
+  \textsc{pa\textcolor{red}{g}anu} & pa\textcolor{magenta}{g}ano [\textipa{G}] \\
+\end{tabular}
+
+\begin{tcolorbox}[title=Palatalization of cluster /kt/]
+
+\end{tcolorbox}
+
+\begin{tabular}{c c}
+  \textsc{lat.} & Es. \\
+  \hline
+  \textsc{di\textcolor{red}{ct}u} & di\textcolor{magenta}{ch}o [\textipa{\textteshlig}] \\
+  \textsc{stri\textcolor{red}{ct}u} & estre\textcolor{magenta}{ch}o [\textipa{\textteshlig}] \\
+  \textsc{pe\textcolor{red}{ct}u} & pe\textcolor{magenta}{ch}o [\textipa{\textteshlig}] \\
+  \textsc{te\textcolor{red}{ct}u} & te\textcolor{magenta}{ch}o [\textipa{\textteshlig}] \\
+  \textsc{no\textcolor{red}{ct}e} & no\textcolor{magenta}{ch}e [\textipa{\textteshlig}] \\
+  \textsc{o\textcolor{red}{ct}o} & o\textcolor{magenta}{ch}o [\textipa{\textteshlig}] \\
+\end{tabular}
 
 \section{Morphophonology}
 
@@ -706,25 +829,25 @@ parab\textcolor{red}{o}la v. parabla \\
 \subsection{Consonantal}
 
 \begin{tcolorbox}[title=Old Spanish Consonants, hbox]
-  \begin{tabular}{|c|c|c|c|c|c|c|c|}
+  \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
     \hline
-    & Bilabial & Dental & Alveolar & Palatal & Velar & Labiovelar & Glottal \\
+    & Bilabial & Labiodental & Dental & Alveolar & Palatal & Velar & Labiovelar & Glottal \\
     \hline
-    Nasal & m & \multicolumn{2}{c|}{n} & \textipa{\textltailn} & & & \\
+    Nasal & m & & \multicolumn{2}{c|}{n} & \textipa{\textltailn} & & & \\
     \hline
-    Stop & p \quad b & t \quad d & & & k \quad g & \textipa{k\super w} \quad \textipa{g\super w} & \\
+    Stop & p \quad b & & t \quad d & & & k \quad g & \textipa{k\super w} \quad \textipa{g\super w} & \\
     \hline
-    Fricative & \textipa{F} \quad \textipa{B} & \textipa{D} & & \textipa{J} & \textipa{G} & & h \\
+    Fricative & \textipa{F} \quad \textipa{B} & f & \textipa{D} & & \textipa{J} & \textipa{G} & & h \\
     \hline
-    \textquotedbl & & & s \quad z & \textipa{S} \quad \textipa{Z} & & & \\
+    \textquotedbl & & & & s \quad z & \textipa{S} \quad \textipa{Z} & & & \\
     \hline
-    Affricate & & \textipa{\texttslig} \quad \textipa{\textdzlig} & & \textipa{\textteshlig} \quad \textipa{\textdyoghlig} & & & \\
+    Affricate & & & \textipa{\texttslig} \quad \textipa{\textdzlig} & & \textipa{\textteshlig} \quad \textipa{\textdyoghlig} & & & \\
     \hline
-    Trill & & \multicolumn{2}{c|}{r} & & & & \\
+    Trill & & & \multicolumn{2}{c|}{r} & & & & \\
     \hline
-    Tap & & \multicolumn{2}{c|}{\textipa{R}} & & & & \\
+    Tap & & & \multicolumn{2}{c|}{\textipa{R}} & & & & \\
     \hline
-    Lateral & & \multicolumn{2}{c|}{l} & \textipa{L} & & & \\
+    Lateral & & & \multicolumn{2}{c|}{l} & \textipa{L} & & & \\
     \hline
   \end{tabular}
 \end{tcolorbox}
@@ -733,7 +856,31 @@ parab\textcolor{red}{o}la v. parabla \\
 
 \subsection{Vocalism}
 
-\subsection{Consonantalism}
+\subsection{Consonantism}
+
+\begin{tcolorbox}[title=Debuccalization of /f/]
+  
+\end{tcolorbox}
+
+\begin{tabular}{c c}
+  \textsc{lat.} & Es. \\
+  \hline
+  \textsc{\textcolor{red}{f}ilu} & \textcolor{magenta}{h}ilo \\
+  \textsc{\textcolor{red}{f}erire} & \textcolor{magenta}{h}erir \\
+  \textsc{\textcolor{red}{f}erro} & \textcolor{magenta}{h}ierro \\
+  \textsc{\textcolor{red}{f}alcone} & \textcolor{magenta}{h}alcón \\
+                & \\
+  \textsc{\textcolor{red}{f}ocu} & \textcolor{magenta}{f}uego \\
+  \textsc{\textcolor{red}{f}ora} & \textcolor{magenta}{f}uera \\
+  \textsc{\textcolor{red}{f}onte} & \textcolor{magenta}{f}uente \\
+  \textsc{\textcolor{red}{f}ronte} & \textcolor{magenta}{f}rente \\
+  \textsc{\textcolor{red}{f}lore} & \textcolor{magenta}{f}lor \\
+  \textsc{\textcolor{red}{f}laccu} & \textcolor{magenta}{f}laco \\
+\end{tabular}
+
+\begin{tcolorbox}[title=Betacism II]
+
+\end{tcolorbox}
 
 \section{Morphophonology}
 
@@ -741,49 +888,49 @@ parab\textcolor{red}{o}la v. parabla \\
 
 \subsection{Verbal}
 
-\chapter{Early Modern Spanish}
+% \chapter{Early Modern Spanish}
 
 % \epigraph{El que sirve una revolución ara en el mar.}{Simón Bolívar}
 
-\section{Phonemic Inventory}
+% \section{Phonemic Inventory}
 
-\subsection{Vocalic}
+% \subsection{Vocalic}
 
-\subsection{Consonantal}
+% \subsection{Consonantal}
 
-\section{Sound Changes}
+% \section{Sound Changes}
 
-\subsection{Vocalism}
+% \subsection{Vocalism}
 
-\subsection{Consonantalism}
+% \subsection{Consonantism}
 
-\section{Morphophonology}
+% \section{Morphophonology}
 
-\subsection{Nominal}
+% \subsection{Nominal}
 
-\subsection{Verbal}
+% \subsection{Verbal}
 
-\chapter{Modern Spanish}
+% \chapter{Modern Spanish}
 
 % \epigraph{Todo está cumplido.}{Juan 19:30}
 
-\section{Phonemic Inventory}
+% \section{Phonemic Inventory}
 
-\subsection{Vocalic}
+% \subsection{Vocalic}
 
-\subsection{Consonantal}
+% \subsection{Consonantal}
 
-\section{Sound Changes}
+% \section{Sound Changes}
 
-\subsection{Vocalism}
+% \subsection{Vocalism}
 
-\subsection{Consonantalism}
+% \subsection{Consonantism}
 
-\section{Morphophonology}
+% \section{Morphophonology}
 
-\subsection{Nominal}
+% \subsection{Nominal}
 
-\subsection{Verbal}
+% \subsection{Verbal}
 
 % \chapter{Anthology of Sound Changes}
 
