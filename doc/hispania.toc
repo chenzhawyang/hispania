@@ -1,134 +1,81 @@
-\babel@toc {nil}{}\relax 
-\contentsline {chapter}{Introduction}{IV}{chapter*.1}%
-\contentsline {paragraph}{Rule-based Phonology}{IV}{paragraph*.2}%
-\contentsline {paragraph}{Romance Historical Linguistics}{IV}{paragraph*.3}%
-\contentsline {paragraph}{Typed Programming Languages}{IV}{paragraph*.4}%
-\contentsline {chapter}{\numberline {I}Representation of Segments}{V}{chapter.1}%
-\contentsline {section}{\numberline {I.1}Vocalic}{V}{section.1.1}%
-\contentsline {section}{\numberline {I.2}Consonantal}{VI}{section.1.2}%
-\contentsline {chapter}{\numberline {II}Representation of Syllables}{VII}{chapter.2}%
-\contentsline {section}{\numberline {II.1}Onset}{VII}{section.2.1}%
-\contentsline {subsection}{\numberline {II.1.1}Onset Cluster}{VII}{subsection.2.1.1}%
-\contentsline {section}{\numberline {II.2}Nucleus}{VII}{section.2.2}%
-\contentsline {section}{\numberline {II.3}Coda}{VII}{section.2.3}%
-\contentsline {subsection}{\numberline {II.3.1}Coda Cluster}{VII}{subsection.2.3.1}%
-\contentsline {section}{\numberline {II.4}Syllable Weight and Stress}{VII}{section.2.4}%
-\contentsline {chapter}{\numberline {III}Representation of Morphophonology}{VIII}{chapter.3}%
-\contentsline {section}{\numberline {III.1}Nominal}{VIII}{section.3.1}%
-\contentsline {subsection}{\numberline {III.1.1}Declensions}{VIII}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {III.1.2}Cases}{VIII}{subsection.3.1.2}%
-\contentsline {section}{\numberline {III.2}Verbal}{VIII}{section.3.2}%
-\contentsline {subsection}{\numberline {III.2.1}Persons}{VIII}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {III.2.2}Tense}{VIII}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {III.2.3}Aspect}{VIII}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {III.2.4}Mood}{VIII}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {III.2.5}Voice}{VIII}{subsection.3.2.5}%
-\contentsline {chapter}{\numberline {IV}Representation of Phonotactics and Sound Changes}{IX}{chapter.4}%
-\contentsline {section}{\numberline {IV.1}Sound Changes}{IX}{section.4.1}%
-\contentsline {section}{\numberline {IV.2}Phonotactics}{IX}{section.4.2}%
-\contentsline {chapter}{\numberline {V}Proto-Romance}{X}{chapter.5}%
-\contentsline {section}{\numberline {V.1}Phonemic Inventory}{X}{section.5.1}%
-\contentsline {subsection}{\numberline {V.1.1}Vocalic}{X}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {V.1.2}Consonantal}{X}{subsection.5.1.2}%
-\contentsline {section}{\numberline {V.2}Sound Changes}{XI}{section.5.2}%
-\contentsline {subsection}{\numberline {V.2.1}Vocalism}{XI}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {V.2.2}Consonantism}{XI}{subsection.5.2.2}%
-\contentsline {section}{\numberline {V.3}Morphophonology}{XI}{section.5.3}%
-\contentsline {subsection}{\numberline {V.3.1}Nominal}{XI}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {V.3.2}Verbal}{XI}{subsection.5.3.2}%
-\contentsline {chapter}{\numberline {VI}Western Romance}{XII}{chapter.6}%
-\contentsline {section}{\numberline {VI.1}Phonemic Inventory}{XII}{section.6.1}%
-\contentsline {subsection}{\numberline {VI.1.1}Vocalic}{XII}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {VI.1.2}Consonantal}{XII}{subsection.6.1.2}%
-\contentsline {section}{\numberline {VI.2}Sound Changes}{XII}{section.6.2}%
-\contentsline {subsection}{\numberline {VI.2.1}Vocalism}{XII}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {VI.2.2}Consonantalism}{XII}{subsection.6.2.2}%
-\contentsline {section}{\numberline {VI.3}Morphophonology}{XII}{section.6.3}%
-\contentsline {subsection}{\numberline {VI.3.1}Nominal}{XII}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {VI.3.2}Verbal}{XII}{subsection.6.3.2}%
-\contentsline {chapter}{\numberline {VII}Central Iberian Romance}{XIII}{chapter.7}%
-\contentsline {section}{\numberline {VII.1}Phonemic Inventory}{XIII}{section.7.1}%
-\contentsline {subsection}{\numberline {VII.1.1}Vocalic}{XIII}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {VII.1.2}Consonantal}{XIII}{subsection.7.1.2}%
-\contentsline {section}{\numberline {VII.2}Sound Changes}{XIII}{section.7.2}%
-\contentsline {subsection}{\numberline {VII.2.1}Vocalism}{XIII}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {VII.2.2}Consonantalism}{XIII}{subsection.7.2.2}%
-\contentsline {section}{\numberline {VII.3}Morphophonology}{XIII}{section.7.3}%
-\contentsline {subsection}{\numberline {VII.3.1}Nominal}{XIII}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {VII.3.2}Verbal}{XIII}{subsection.7.3.2}%
-\contentsline {chapter}{\numberline {VIII}Old Spanish}{XIV}{chapter.8}%
-\contentsline {section}{\numberline {VIII.1}Phonemic Inventory}{XIV}{section.8.1}%
-\contentsline {subsection}{\numberline {VIII.1.1}Vocalic}{XIV}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {VIII.1.2}Consonantal}{XIV}{subsection.8.1.2}%
-\contentsline {section}{\numberline {VIII.2}Sound Changes}{XIV}{section.8.2}%
-\contentsline {subsection}{\numberline {VIII.2.1}Vocalism}{XIV}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {VIII.2.2}Consonantalism}{XIV}{subsection.8.2.2}%
-\contentsline {section}{\numberline {VIII.3}Morphophonology}{XIV}{section.8.3}%
-\contentsline {subsection}{\numberline {VIII.3.1}Nominal}{XIV}{subsection.8.3.1}%
-\contentsline {subsection}{\numberline {VIII.3.2}Verbal}{XIV}{subsection.8.3.2}%
-\contentsline {chapter}{\numberline {IX}Early Modern Spanish}{XV}{chapter.9}%
-\contentsline {section}{\numberline {IX.1}Phonemic Inventory}{XV}{section.9.1}%
-\contentsline {subsection}{\numberline {IX.1.1}Vocalic}{XV}{subsection.9.1.1}%
-\contentsline {subsection}{\numberline {IX.1.2}Consonantal}{XV}{subsection.9.1.2}%
-\contentsline {section}{\numberline {IX.2}Sound Changes}{XV}{section.9.2}%
-\contentsline {subsection}{\numberline {IX.2.1}Vocalism}{XV}{subsection.9.2.1}%
-\contentsline {subsection}{\numberline {IX.2.2}Consonantalism}{XV}{subsection.9.2.2}%
-\contentsline {section}{\numberline {IX.3}Morphophonology}{XV}{section.9.3}%
-\contentsline {subsection}{\numberline {IX.3.1}Nominal}{XV}{subsection.9.3.1}%
-\contentsline {subsection}{\numberline {IX.3.2}Verbal}{XV}{subsection.9.3.2}%
-\contentsline {chapter}{\numberline {X}Modern Spanish}{XVI}{chapter.10}%
-\contentsline {section}{\numberline {X.1}Phonemic Inventory}{XVI}{section.10.1}%
-\contentsline {subsection}{\numberline {X.1.1}Vocalic}{XVI}{subsection.10.1.1}%
-\contentsline {subsection}{\numberline {X.1.2}Consonantal}{XVI}{subsection.10.1.2}%
-\contentsline {section}{\numberline {X.2}Sound Changes}{XVI}{section.10.2}%
-\contentsline {subsection}{\numberline {X.2.1}Vocalism}{XVI}{subsection.10.2.1}%
-\contentsline {subsection}{\numberline {X.2.2}Consonantalism}{XVI}{subsection.10.2.2}%
-\contentsline {section}{\numberline {X.3}Morphophonology}{XVI}{section.10.3}%
-\contentsline {subsection}{\numberline {X.3.1}Nominal}{XVI}{subsection.10.3.1}%
-\contentsline {subsection}{\numberline {X.3.2}Verbal}{XVI}{subsection.10.3.2}%
-\contentsline {chapter}{\numberline {XI}Anthology of Sound Changes}{XVII}{chapter.11}%
-\contentsline {section}{\numberline {XI.1}Vocalism}{XVII}{section.11.1}%
-\contentsline {subsection}{\numberline {XI.1.1}Monophthongs}{XVIII}{subsection.11.1.1}%
-\contentsline {subsection}{\numberline {XI.1.2}Diphthongs}{XIX}{subsection.11.1.2}%
-\contentsline {subsection}{\numberline {XI.1.3}Metaphony}{XIX}{subsection.11.1.3}%
-\contentsline {section}{\numberline {XI.2}Consonantism}{XIX}{section.11.2}%
-\contentsline {subsection}{\numberline {XI.2.1}Monolithic Consonants}{XIX}{subsection.11.2.1}%
-\contentsline {subsection}{\numberline {XI.2.2}Consonant Clusters}{XIX}{subsection.11.2.2}%
-\contentsline {paragraph}{Prothesis in /sC/}{XIX}{paragraph*.12}%
-\contentsline {paragraph}{Syncope}{XIX}{paragraph*.13}%
-\contentsline {paragraph}{Betacism}{XIX}{paragraph*.14}%
-\contentsline {paragraph}{Diphthongs from Betacism}{XIX}{paragraph*.15}%
-\contentsline {paragraph}{Deaspiration in Popular Latin}{XIX}{paragraph*.16}%
-\contentsline {paragraph}{Cluster Reduction in /ns/}{XIX}{paragraph*.17}%
-\contentsline {paragraph}{Elision of intervocalic /g/}{XIX}{paragraph*.18}%
-\contentsline {paragraph}{Elision of coda /m/}{XIX}{paragraph*.19}%
-\contentsline {paragraph}{Degemination}{XIX}{paragraph*.20}%
-\contentsline {paragraph}{Intervocalic Lenition}{XX}{paragraph*.21}%
-\contentsline {paragraph}{Debuccalization of onset /f/}{XX}{paragraph*.22}%
-\contentsline {paragraph}{Fortition of onset /j/}{XX}{paragraph*.23}%
-\contentsline {paragraph}{Palatalization of Consonant Clusters}{XX}{paragraph*.24}%
-\contentsline {paragraph}{Palatalization of Velars}{XX}{paragraph*.25}%
-\contentsline {paragraph}{Palatalization of Dentals}{XX}{paragraph*.26}%
-\contentsline {paragraph}{Palatalization of /n/ and /j/}{XX}{paragraph*.27}%
-\contentsline {paragraph}{Palatalization of /Cl/ Clusters}{XX}{paragraph*.28}%
-\contentsline {paragraph}{Evolution of /skl/, /sl/, and /tl/}{XXI}{paragraph*.29}%
-\contentsline {chapter}{\numberline {XII}Anthology of Morphophonological Changes}{XXII}{chapter.12}%
-\contentsline {section}{\numberline {XII.1}Nominal}{XXII}{section.12.1}%
-\contentsline {subsection}{\numberline {XII.1.1}Dissolution of Declension IV \& V}{XXII}{subsection.12.1.1}%
-\contentsline {subsection}{\numberline {XII.1.2}Reduction of the Case System}{XXII}{subsection.12.1.2}%
-\contentsline {section}{\numberline {XII.2}Verbal}{XXII}{section.12.2}%
-\contentsline {chapter}{\numberline {XIII}Glossarium}{XXIII}{chapter.13}%
-\contentsline {section}{\numberline {XIII.1}Nominal}{XXIII}{section.13.1}%
-\contentsline {subsection}{\numberline {XIII.1.1}Declension I \& V}{XXIII}{subsection.13.1.1}%
-\contentsline {subsection}{\numberline {XIII.1.2}Declension II \& IV}{XXIII}{subsection.13.1.2}%
-\contentsline {subsection}{\numberline {XIII.1.3}Declension III}{XXIII}{subsection.13.1.3}%
-\contentsline {section}{\numberline {XIII.2}Pronoun}{XXIV}{section.13.2}%
-\contentsline {section}{\numberline {XIII.3}Numeral}{XXIV}{section.13.3}%
-\contentsline {section}{\numberline {XIII.4}Verbal}{XXIV}{section.13.4}%
-\contentsline {subsection}{\numberline {XIII.4.1}Conjugation I}{XXIV}{subsection.13.4.1}%
-\contentsline {subsection}{\numberline {XIII.4.2}Conjugation II}{XXIV}{subsection.13.4.2}%
-\contentsline {subsection}{\numberline {XIII.4.3}Conjugation III}{XXIV}{subsection.13.4.3}%
-\contentsline {subsection}{\numberline {XIII.4.4}Conjugation IV}{XXV}{subsection.13.4.4}%
-\contentsline {chapter}{Epilogue: \emph {Mein Jugendtraum}}{XXVI}{chapter*.30}%
-\contentsline {chapter}{Biblipgraphy}{XXVII}{chapter*.31}%
-\contentsline {section}{Romance Linguistics}{XXVII}{section*.32}%
+\babel@toc {USenglish}{}\relax 
+\contentsline {chapter}{Introduction}{4}{chapter*.1}%
+\contentsline {chapter}{\numberline {1}Representation of Segments}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Vocalic}{5}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Consonantal}{6}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Representation of Syllables}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Syllabic Structure}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Syllable Weight and Stress}{7}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Representation of Morphophonology}{8}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Nominal}{8}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Verbal}{8}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Representation of Phonotactics and Sound Changes}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Sound Changes}{9}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Phonotactics}{9}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Proto-Romance}{10}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Phonemic Inventory}{10}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Vocalic}{10}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Consonantal}{10}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Sound Changes}{11}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Vocalism}{11}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Consonantism}{13}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Morphophonology}{14}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Nominal}{14}{subsection.5.3.1}%
+\contentsline {subsubsection}{Dissolution of Declension IV \& V}{14}{subsubsection*.2}%
+\contentsline {subsubsection}{Reduction of the Case System}{14}{subsubsection*.3}%
+\contentsline {subsubsection}{Reorganization of Genders}{14}{subsubsection*.4}%
+\contentsline {subsection}{\numberline {5.3.2}Verbal}{14}{subsection.5.3.2}%
+\contentsline {chapter}{\numberline {6}Western Romance}{15}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Phonemic Inventory}{15}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Vocalic}{15}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Consonantal}{15}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Sound Changes}{16}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Vocalism}{16}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Consonantalism}{16}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}Morphophonology}{16}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Nominal}{16}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Verbal}{16}{subsection.6.3.2}%
+\contentsline {chapter}{\numberline {7}Central Iberian Romance}{17}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Phonemic Inventory}{17}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Vocalic}{17}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Consonantal}{17}{subsection.7.1.2}%
+\contentsline {section}{\numberline {7.2}Sound Changes}{17}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Vocalism}{17}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Consonantalism}{18}{subsection.7.2.2}%
+\contentsline {section}{\numberline {7.3}Morphophonology}{18}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Nominal}{18}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Verbal}{18}{subsection.7.3.2}%
+\contentsline {chapter}{\numberline {8}Old Spanish}{19}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Phonemic Inventory}{19}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Vocalic}{19}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Consonantal}{19}{subsection.8.1.2}%
+\contentsline {section}{\numberline {8.2}Sound Changes}{20}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Vocalism}{20}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Consonantalism}{20}{subsection.8.2.2}%
+\contentsline {section}{\numberline {8.3}Morphophonology}{20}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Nominal}{20}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Verbal}{20}{subsection.8.3.2}%
+\contentsline {chapter}{\numberline {9}Early Modern Spanish}{21}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Phonemic Inventory}{21}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Vocalic}{21}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Consonantal}{21}{subsection.9.1.2}%
+\contentsline {section}{\numberline {9.2}Sound Changes}{21}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Vocalism}{21}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Consonantalism}{21}{subsection.9.2.2}%
+\contentsline {section}{\numberline {9.3}Morphophonology}{21}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Nominal}{21}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}Verbal}{21}{subsection.9.3.2}%
+\contentsline {chapter}{\numberline {10}Modern Spanish}{22}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Phonemic Inventory}{22}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}Vocalic}{22}{subsection.10.1.1}%
+\contentsline {subsection}{\numberline {10.1.2}Consonantal}{22}{subsection.10.1.2}%
+\contentsline {section}{\numberline {10.2}Sound Changes}{22}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}Vocalism}{22}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.2.2}Consonantalism}{22}{subsection.10.2.2}%
+\contentsline {section}{\numberline {10.3}Morphophonology}{22}{section.10.3}%
+\contentsline {subsection}{\numberline {10.3.1}Nominal}{22}{subsection.10.3.1}%
+\contentsline {subsection}{\numberline {10.3.2}Verbal}{22}{subsection.10.3.2}%
+\contentsline {chapter}{Biblipgraphy}{23}{chapter*.5}%
+\contentsline {section}{Phonology}{23}{section*.6}%
+\contentsline {section}{Romance Linguistics}{23}{section*.6}%
+\contentsline {section}{Computer Science}{24}{section*.6}%

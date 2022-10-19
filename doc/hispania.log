@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.4.29)  14 OCT 2022 05:55
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.4.29)  18 OCT 2022 21:11
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -234,23 +234,6 @@ ext;"
 text;"
 
 
-(/usr/share/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2022/02/26 3.73 The Babel package
-\babel@savecnt=\count291
-\U@D=\dimen179
-\l@unhyphenated=\language87
-
-(/usr/share/texmf-dist/tex/generic/babel/xebabel.def
-(/usr/share/texmf-dist/tex/generic/babel/txtbabel.def))
-\bbl@readstream=\read2
-\bbl@dirlevel=\count292
-Package babel Info: You haven't specified a language. I'll use 'nil'
-(babel)             as the main language. Reported on input line 4305.
-
-(/usr/share/texmf-dist/tex/generic/babel/nil.ldf
-Language: nil 2022/02/26 3.73 Nil language
-\l@nil=\language88
-))
 (/usr/share/texmf-dist/tex/latex/minted/minted.sty
 Package: minted 2021/12/24 v2.6 Yet another Pygments shim for LaTeX
 
@@ -271,15 +254,15 @@ Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count293
+\etb@tempcnta=\count291
 )
 (/usr/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2022/04/12 4.2 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count294
-\FV@InFile=\read3
+\FV@CodeLineNo=\count292
+\FV@InFile=\read2
 \FV@TabBox=\box52
-\c@FancyVerbLine=\count295
-\FV@StepNumber=\count296
+\c@FancyVerbLine=\count293
+\FV@StepNumber=\count294
 \FV@OutFile=\write3
 )
 (/usr/share/texmf-dist/tex/latex/upquote/upquote.sty
@@ -292,56 +275,56 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 (/usr/share/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.
-\linenopenalty=\count297
+\linenopenalty=\count295
 \output=\toks20
-\linenoprevgraf=\count298
-\linenumbersep=\dimen180
-\linenumberwidth=\dimen181
-\c@linenumber=\count299
-\c@pagewiselinenumber=\count300
-\c@LN@truepage=\count301
-\c@internallinenumber=\count302
-\c@internallinenumbers=\count303
-\quotelinenumbersep=\dimen182
-\bframerule=\dimen183
-\bframesep=\dimen184
+\linenoprevgraf=\count296
+\linenumbersep=\dimen179
+\linenumberwidth=\dimen180
+\c@linenumber=\count297
+\c@pagewiselinenumber=\count298
+\c@LN@truepage=\count299
+\c@internallinenumber=\count300
+\c@internallinenumbers=\count301
+\quotelinenumbersep=\dimen181
+\bframerule=\dimen182
+\bframesep=\dimen183
 \bframebox=\box53
 LaTeX Info: Redefining \\ on input line 3056.
 )
-\c@FV@TrueTabGroupLevel=\count304
-\c@FV@TrueTabCounter=\count305
+\c@FV@TrueTabGroupLevel=\count302
+\c@FV@TrueTabCounter=\count303
 \FV@TabBox@Group=\box54
 \FV@TmpLength=\skip56
-\c@FV@HighlightLinesStart=\count306
-\c@FV@HighlightLinesStop=\count307
-\FV@LoopCount=\count308
+\c@FV@HighlightLinesStart=\count304
+\c@FV@HighlightLinesStop=\count305
+\FV@LoopCount=\count306
 \FV@NCharsBox=\box55
-\FV@BreakIndent=\dimen185
-\FV@BreakIndentNChars=\count309
-\FV@BreakSymbolSepLeft=\dimen186
-\FV@BreakSymbolSepLeftNChars=\count310
-\FV@BreakSymbolSepRight=\dimen187
-\FV@BreakSymbolSepRightNChars=\count311
-\FV@BreakSymbolIndentLeft=\dimen188
-\FV@BreakSymbolIndentLeftNChars=\count312
-\FV@BreakSymbolIndentRight=\dimen189
-\FV@BreakSymbolIndentRightNChars=\count313
-\c@FancyVerbLineBreakLast=\count314
+\FV@BreakIndent=\dimen184
+\FV@BreakIndentNChars=\count307
+\FV@BreakSymbolSepLeft=\dimen185
+\FV@BreakSymbolSepLeftNChars=\count308
+\FV@BreakSymbolSepRight=\dimen186
+\FV@BreakSymbolSepRightNChars=\count309
+\FV@BreakSymbolIndentLeft=\dimen187
+\FV@BreakSymbolIndentLeftNChars=\count310
+\FV@BreakSymbolIndentRight=\dimen188
+\FV@BreakSymbolIndentRightNChars=\count311
+\c@FancyVerbLineBreakLast=\count312
 \FV@LineBox=\box56
 \FV@LineIndentBox=\box57
-\FV@LineWidth=\dimen190
+\FV@LineWidth=\dimen189
 )
 (/usr/share/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count315
-\calc@Bcount=\count316
-\calc@Adimen=\dimen191
-\calc@Bdimen=\dimen192
+\calc@Acount=\count313
+\calc@Bcount=\count314
+\calc@Adimen=\dimen190
+\calc@Bdimen=\dimen191
 \calc@Askip=\skip57
 \calc@Bskip=\skip58
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count317
+\calc@Ccount=\count315
 \calc@Cskip=\skip59
 )
 (/usr/share/texmf-dist/tex/latex/tools/shellesc.sty
@@ -379,64 +362,64 @@ runsystem(rm -- "hispania.w18")...executed.
 )
 (/usr/share/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count318
-\decimalpart=\count319
+\integerpart=\count316
+\decimalpart=\count317
 )
 Package: xstring 2021/07/21 v1.84 String manipulations (CT)
 )
 (/usr/share/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip60
-\fb@frw=\dimen193
-\fb@frh=\dimen194
-\FrameRule=\dimen195
-\FrameSep=\dimen196
+\fb@frw=\dimen192
+\fb@frh=\dimen193
+\FrameRule=\dimen194
+\FrameSep=\dimen195
 )
 (/usr/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count320
+\c@float@type=\count318
 \float@exts=\toks21
 \float@box=\box58
 \@float@everytoks=\toks22
 \@floatcapt=\box59
 )
-\minted@appexistsfile=\read4
+\minted@appexistsfile=\read3
 \minted@bgbox=\box60
 \minted@code=\write4
-\c@minted@FancyVerbLineTemp=\count321
-\c@minted@pygmentizecounter=\count322
+\c@minted@FancyVerbLineTemp=\count319
+\c@minted@pygmentizecounter=\count320
 \@float@every@listing=\toks23
-\c@listing=\count323
+\c@listing=\count321
 )
 runsystem(mkdir -p _minted-hispania)...executed.
 
 
 (/usr/share/texmf-dist/tex/latex/bussproofs/bussproofs.sty
 Proof Tree (bussproofs) style macros. Version 1.1.
-\theLevel=\count324
-\myMaxLevel=\count325
+\theLevel=\count322
+\myMaxLevel=\count323
 \myBoxA=\box61
 \myBoxB=\box62
 \myBoxC=\box63
 \myBoxD=\box64
 \myBoxLL=\box65
 \myBoxRL=\box66
-\thisAboveSkip=\dimen197
-\thisBelowSkip=\dimen198
-\newScoreStart=\dimen199
-\newScoreEnd=\dimen256
-\newCenter=\dimen257
-\displace=\dimen258
-\leftLowerAmt=\dimen259
-\rightLowerAmt=\dimen260
-\scoreHeight=\dimen261
-\scoreDepth=\dimen262
-\htLbox=\dimen263
-\htRbox=\dimen264
-\htRRbox=\dimen265
-\htRRRbox=\dimen266
-\htAbox=\dimen267
-\htCbox=\dimen268
+\thisAboveSkip=\dimen196
+\thisBelowSkip=\dimen197
+\newScoreStart=\dimen198
+\newScoreEnd=\dimen199
+\newCenter=\dimen256
+\displace=\dimen257
+\leftLowerAmt=\dimen258
+\rightLowerAmt=\dimen259
+\scoreHeight=\dimen260
+\scoreDepth=\dimen261
+\htLbox=\dimen262
+\htRbox=\dimen263
+\htRRbox=\dimen264
+\htRRRbox=\dimen265
+\htAbox=\dimen266
+\htCbox=\dimen267
 ) (/usr/share/texmf-dist/tex/latex/qtree/qtree.sty
 Package: 2008/12/12 v.3.1bQtree: tree-drawing for linguistics
 Package: qtree 2008/12/12 v.3.1bQtree: tree-drawing for linguistics
@@ -460,17 +443,17 @@ File: p2e-xetex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
 \pIIe@GRAPH=\toks24
-\@arclen=\dimen269
-\@arcrad=\dimen270
-\pIIe@tempdima=\dimen271
-\pIIe@tempdimb=\dimen272
-\pIIe@tempdimc=\dimen273
-\pIIe@tempdimd=\dimen274
-\pIIe@tempdime=\dimen275
-\pIIe@tempdimf=\dimen276
+\@arclen=\dimen268
+\@arcrad=\dimen269
+\pIIe@tempdima=\dimen270
+\pIIe@tempdimb=\dimen271
+\pIIe@tempdimc=\dimen272
+\pIIe@tempdimd=\dimen273
+\pIIe@tempdime=\dimen274
+\pIIe@tempdimf=\dimen275
 )
-\c@treecount=\count326
-\c@branchcount=\count327
+\c@treecount=\count324
+\c@branchcount=\count325
 \parentbox=\box67
 \treebox=\box68
 \treeboxone=\box69
@@ -569,9 +552,9 @@ Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 \treewidth=\skip134
 \qta=\toks25
 \qtb=\toks26
-\nbranches=\count328
-\qroofx=\count329
-\qroofy=\count330
+\nbranches=\count326
+\qroofx=\count327
+\qroofy=\count328
 \@qrscratchbox=\box89
 )
 (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
@@ -585,46 +568,46 @@ Package: amstext 2021/08/26 v2.01 AMS text
 (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks27
-\ex@=\dimen277
+\ex@=\dimen276
 ))
 (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen278
+\pmbraise@=\dimen277
 )
 (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2021/08/26 v2.02 operator names
 )
-\inf@bad=\count331
+\inf@bad=\count329
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count332
-\leftroot@=\count333
+\uproot@=\count330
+\leftroot@=\count331
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count334
-\DOTSCASE@=\count335
+\classnum@=\count332
+\DOTSCASE@=\count333
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
 \Mathstrutbox@=\box90
 \strutbox@=\box91
-\big@size=\dimen279
+\big@size=\dimen278
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count336
-\c@MaxMatrixCols=\count337
+\macc@depth=\count334
+\c@MaxMatrixCols=\count335
 \dotsspace@=\muskip17
-\c@parentequation=\count338
-\dspbrk@lvl=\count339
+\c@parentequation=\count336
+\dspbrk@lvl=\count337
 \tag@help=\toks28
-\row@=\count340
-\column@=\count341
-\maxfields@=\count342
+\row@=\count338
+\column@=\count339
+\maxfields@=\count340
 \andhelp@=\toks29
-\eqnshift@=\dimen280
-\alignsep@=\dimen281
-\tagshift@=\dimen282
-\tagwidth@=\dimen283
-\totwidth@=\dimen284
-\lineht@=\dimen285
+\eqnshift@=\dimen279
+\alignsep@=\dimen280
+\tagshift@=\dimen281
+\tagwidth@=\dimen282
+\totwidth@=\dimen283
+\lineht@=\dimen284
 \@envbody=\toks30
 \multlinegap=\skip136
 \multlinetaggap=\skip137
@@ -655,6 +638,34 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headsep=\skip140
 \dth@everypar=\toks37
 )
+(/usr/share/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2022/02/26 3.73 The Babel package
+\babel@savecnt=\count341
+\U@D=\dimen285
+\l@unhyphenated=\language87
+
+(/usr/share/texmf-dist/tex/generic/babel/xebabel.def
+(/usr/share/texmf-dist/tex/generic/babel/txtbabel.def))
+\bbl@readstream=\read4
+\bbl@dirlevel=\count342
+
+(/usr/share/texmf-dist/tex/generic/babel-english/USenglish.ldf
+Language: USenglish 2017/06/06 v3.3r English support from the babel system
+
+(/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language21). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language21). Reported on input line 108.
+)))
+\c@definition=\count343
+\c@theorem=\count344
+\c@lemma=\count345
+\c@remark=\count346
+
 (/usr/share/texmf-dist/tex/latex/tikz-cd/tikz-cd.sty
 Package: tikz-cd 2021/05/04 v1.0 Commutative diagrams with TikZ
 
@@ -714,14 +725,14 @@ Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@yd=\dimen299
 \w@pgf@writea=\write5
 \r@pgf@reada=\read5
-\c@pgf@counta=\count343
-\c@pgf@countb=\count344
-\c@pgf@countc=\count345
-\c@pgf@countd=\count346
+\c@pgf@counta=\count347
+\c@pgf@countb=\count348
+\c@pgf@countc=\count349
+\c@pgf@countd=\count350
 \t@pgf@toka=\toks42
 \t@pgf@tokb=\toks43
 \t@pgf@tokc=\toks44
-\pgf@sys@id@count=\count347
+\pgf@sys@id@count=\count351
 
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
@@ -737,12 +748,12 @@ File: pgfsys-dvipdfmx.def 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 )
-\pgfsys@objnum=\count348
+\pgfsys@objnum=\count352
 )))
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count349
-\pgfsyssoftpath@bigbuffer@items=\count350
+\pgfsyssoftpath@smallbuffer@items=\count353
+\pgfsyssoftpath@bigbuffer@items=\count354
 )
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -771,7 +782,7 @@ Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen300
-\pgfmath@count=\count351
+\pgfmath@count=\count355
 \pgfmath@box=\box93
 \pgfmath@toks=\toks45
 \pgfmath@stack@operand=\toks46
@@ -788,7 +799,7 @@ x) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics
 .code.tex))) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count352
+\c@pgfmathroundto@lastzeros=\count356
 )) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -821,7 +832,7 @@ File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfpic=\box94
 \pgf@hbox=\box95
 \pgf@layerbox@main=\box96
-\pgf@picture@serial@count=\count353
+\pgf@picture@serial@count=\count357
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -849,8 +860,8 @@ File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@max=\dimen324
-\pgf@sys@shading@range@num=\count354
-\pgf@shadingcount=\count355
+\pgf@sys@shading@range@num=\count358
+\pgf@shadingcount=\count359
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -905,7 +916,7 @@ Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.te
 x
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count356
+\pgf@plot@mark@count=\count360
 \pgfplotmarksize=\dimen329
 )
 \tikz@lastx=\dimen330
@@ -920,17 +931,17 @@ File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \tikz@figbox@bg=\box100
 \tikz@tempbox=\box101
 \tikz@tempbox@bg=\box102
-\tikztreelevel=\count357
-\tikznumberofchildren=\count358
-\tikznumberofcurrentchild=\count359
-\tikz@fig@count=\count360
+\tikztreelevel=\count361
+\tikznumberofchildren=\count362
+\tikznumberofcurrentchild=\count363
+\tikz@fig@count=\count364
  (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count361
-\pgfmatrixcurrentcolumn=\count362
-\pgf@matrix@numberofcolumns=\count363
+\pgfmatrixcurrentrow=\count365
+\pgfmatrixcurrentcolumn=\count366
+\pgf@matrix@numberofcolumns=\count367
 )
-\tikz@expandcount=\count364
+\tikz@expandcount=\count368
 
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 topaths.code.tex
@@ -982,23 +993,23 @@ LaTeX Font Warning: Font shape `T3/lmss/m/n' undefined
 (Font)              using `T3/cmr/m/n' instead on input line 357.
 
 ))) (/usr/share/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count365
+\lst@mode=\count369
 \lst@gtempboxa=\box103
 \lst@token=\toks50
-\lst@length=\count366
+\lst@length=\count370
 \lst@currlwidth=\dimen342
-\lst@column=\count367
-\lst@pos=\count368
+\lst@column=\count371
+\lst@pos=\count372
 \lst@lostspace=\dimen343
 \lst@width=\dimen344
-\lst@newlines=\count369
-\lst@lineno=\count370
+\lst@newlines=\count373
+\lst@lineno=\count374
 \lst@maxwidth=\dimen345
 
 (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count371
-\lst@skipnumbers=\count372
+\c@lstnumber=\count375
+\lst@skipnumbers=\count376
 \lst@framebox=\box104
 )
 (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
@@ -1008,15 +1019,15 @@ Package: listings 2020/03/24 1.8d (Carsten Heinz)
 
 (/usr/share/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
 Package: xeCJK-listings 2021/12/12 v3.8.8 xeCJK patch file for listings
-\l__xeCJK_listings_max_char_int=\count373
-\l__xeCJK_listings_flag_int=\count374
+\l__xeCJK_listings_max_char_int=\count377
+\l__xeCJK_listings_flag_int=\count378
 )
 (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2022/02/02 v3.17 programmable bibliographies (PK/MW)
 
 (/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count375
+\lrq@indent=\count379
 
 (/usr/share/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -1025,48 +1036,48 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count376
-\c@listtotal=\count377
-\c@listcount=\count378
-\c@liststart=\count379
-\c@liststop=\count380
-\c@citecount=\count381
-\c@citetotal=\count382
-\c@multicitecount=\count383
-\c@multicitetotal=\count384
-\c@instcount=\count385
-\c@maxnames=\count386
-\c@minnames=\count387
-\c@maxitems=\count388
-\c@minitems=\count389
-\c@citecounter=\count390
-\c@maxcitecounter=\count391
-\c@savedcitecounter=\count392
-\c@uniquelist=\count393
-\c@uniquename=\count394
-\c@refsection=\count395
-\c@refsegment=\count396
-\c@maxextratitle=\count397
-\c@maxextratitleyear=\count398
-\c@maxextraname=\count399
-\c@maxextradate=\count400
-\c@maxextraalpha=\count401
-\c@abbrvpenalty=\count402
-\c@highnamepenalty=\count403
-\c@lownamepenalty=\count404
-\c@maxparens=\count405
-\c@parenlevel=\count406
-\blx@tempcnta=\count407
-\blx@tempcntb=\count408
-\blx@tempcntc=\count409
-\c@blx@maxsection=\count410
-\c@blx@maxsegment@0=\count411
-\blx@notetype=\count412
-\blx@parenlevel@text=\count413
-\blx@parenlevel@foot=\count414
-\c@blx@sectionciteorder@0=\count415
-\blx@entrysetcounter=\count416
-\blx@biblioinstance=\count417
+\c@tabx@nest=\count380
+\c@listtotal=\count381
+\c@listcount=\count382
+\c@liststart=\count383
+\c@liststop=\count384
+\c@citecount=\count385
+\c@citetotal=\count386
+\c@multicitecount=\count387
+\c@multicitetotal=\count388
+\c@instcount=\count389
+\c@maxnames=\count390
+\c@minnames=\count391
+\c@maxitems=\count392
+\c@minitems=\count393
+\c@citecounter=\count394
+\c@maxcitecounter=\count395
+\c@savedcitecounter=\count396
+\c@uniquelist=\count397
+\c@uniquename=\count398
+\c@refsection=\count399
+\c@refsegment=\count400
+\c@maxextratitle=\count401
+\c@maxextratitleyear=\count402
+\c@maxextraname=\count403
+\c@maxextradate=\count404
+\c@maxextraalpha=\count405
+\c@abbrvpenalty=\count406
+\c@highnamepenalty=\count407
+\c@lownamepenalty=\count408
+\c@maxparens=\count409
+\c@parenlevel=\count410
+\blx@tempcnta=\count411
+\blx@tempcntb=\count412
+\blx@tempcntc=\count413
+\c@blx@maxsection=\count414
+\c@blx@maxsegment@0=\count415
+\blx@notetype=\count416
+\blx@parenlevel@text=\count417
+\blx@parenlevel@foot=\count418
+\c@blx@sectionciteorder@0=\count419
+\blx@entrysetcounter=\count420
+\blx@biblioinstance=\count421
 \labelnumberwidth=\skip141
 \labelalphawidth=\skip142
 \biblabelsep=\skip143
@@ -1077,10 +1088,10 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \bibhang=\skip148
 \blx@bcfin=\read6
 \blx@bcfout=\write6
-\blx@langwohyphens=\language89
-\c@mincomprange=\count418
-\c@maxcomprange=\count419
-\c@mincompwidth=\count420
+\blx@langwohyphens=\language88
+\c@mincomprange=\count422
+\c@maxcomprange=\count423
+\c@mincompwidth=\count424
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1091,74 +1102,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'alphabetic.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count421
-\c@savedafterword=\count422
-\c@annotator=\count423
-\c@savedannotator=\count424
-\c@author=\count425
-\c@savedauthor=\count426
-\c@bookauthor=\count427
-\c@savedbookauthor=\count428
-\c@commentator=\count429
-\c@savedcommentator=\count430
-\c@editor=\count431
-\c@savededitor=\count432
-\c@editora=\count433
-\c@savededitora=\count434
-\c@editorb=\count435
-\c@savededitorb=\count436
-\c@editorc=\count437
-\c@savededitorc=\count438
-\c@foreword=\count439
-\c@savedforeword=\count440
-\c@holder=\count441
-\c@savedholder=\count442
-\c@introduction=\count443
-\c@savedintroduction=\count444
-\c@namea=\count445
-\c@savednamea=\count446
-\c@nameb=\count447
-\c@savednameb=\count448
-\c@namec=\count449
-\c@savednamec=\count450
-\c@translator=\count451
-\c@savedtranslator=\count452
-\c@shortauthor=\count453
-\c@savedshortauthor=\count454
-\c@shorteditor=\count455
-\c@savedshorteditor=\count456
-\c@labelname=\count457
-\c@savedlabelname=\count458
-\c@institution=\count459
-\c@savedinstitution=\count460
-\c@lista=\count461
-\c@savedlista=\count462
-\c@listb=\count463
-\c@savedlistb=\count464
-\c@listc=\count465
-\c@savedlistc=\count466
-\c@listd=\count467
-\c@savedlistd=\count468
-\c@liste=\count469
-\c@savedliste=\count470
-\c@listf=\count471
-\c@savedlistf=\count472
-\c@location=\count473
-\c@savedlocation=\count474
-\c@organization=\count475
-\c@savedorganization=\count476
-\c@origlocation=\count477
-\c@savedoriglocation=\count478
-\c@origpublisher=\count479
-\c@savedorigpublisher=\count480
-\c@publisher=\count481
-\c@savedpublisher=\count482
-\c@language=\count483
-\c@savedlanguage=\count484
-\c@origlanguage=\count485
-\c@savedoriglanguage=\count486
-\c@pageref=\count487
-\c@savedpageref=\count488
+\c@afterword=\count425
+\c@savedafterword=\count426
+\c@annotator=\count427
+\c@savedannotator=\count428
+\c@author=\count429
+\c@savedauthor=\count430
+\c@bookauthor=\count431
+\c@savedbookauthor=\count432
+\c@commentator=\count433
+\c@savedcommentator=\count434
+\c@editor=\count435
+\c@savededitor=\count436
+\c@editora=\count437
+\c@savededitora=\count438
+\c@editorb=\count439
+\c@savededitorb=\count440
+\c@editorc=\count441
+\c@savededitorc=\count442
+\c@foreword=\count443
+\c@savedforeword=\count444
+\c@holder=\count445
+\c@savedholder=\count446
+\c@introduction=\count447
+\c@savedintroduction=\count448
+\c@namea=\count449
+\c@savednamea=\count450
+\c@nameb=\count451
+\c@savednameb=\count452
+\c@namec=\count453
+\c@savednamec=\count454
+\c@translator=\count455
+\c@savedtranslator=\count456
+\c@shortauthor=\count457
+\c@savedshortauthor=\count458
+\c@shorteditor=\count459
+\c@savedshorteditor=\count460
+\c@labelname=\count461
+\c@savedlabelname=\count462
+\c@institution=\count463
+\c@savedinstitution=\count464
+\c@lista=\count465
+\c@savedlista=\count466
+\c@listb=\count467
+\c@savedlistb=\count468
+\c@listc=\count469
+\c@savedlistc=\count470
+\c@listd=\count471
+\c@savedlistd=\count472
+\c@liste=\count473
+\c@savedliste=\count474
+\c@listf=\count475
+\c@savedlistf=\count476
+\c@location=\count477
+\c@savedlocation=\count478
+\c@organization=\count479
+\c@savedorganization=\count480
+\c@origlocation=\count481
+\c@savedoriglocation=\count482
+\c@origpublisher=\count483
+\c@savedorigpublisher=\count484
+\c@publisher=\count485
+\c@savedpublisher=\count486
+\c@language=\count487
+\c@savedlanguage=\count488
+\c@origlanguage=\count489
+\c@savedoriglanguage=\count490
+\c@pageref=\count491
+\c@savedpageref=\count492
 \shorthandwidth=\skip149
 \shortjournalwidth=\skip150
 \shortserieswidth=\skip151
@@ -1188,19 +1199,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
-\c@textcitecount=\count489
-\c@textcitetotal=\count490
-\c@textcitemaxnames=\count491
-\c@biburlbigbreakpenalty=\count492
-\c@biburlbreakpenalty=\count493
-\c@biburlnumpenalty=\count494
-\c@biburlucpenalty=\count495
-\c@biburllcpenalty=\count496
+\c@textcitecount=\count493
+\c@textcitetotal=\count494
+\c@textcitemaxnames=\count495
+\c@biburlbigbreakpenalty=\count496
+\c@biburlbreakpenalty=\count497
+\c@biburlnumpenalty=\count498
+\c@biburlucpenalty=\count499
+\c@biburllcpenalty=\count500
 \biburlbigskip=\muskip19
 \biburlnumskip=\muskip20
 \biburlucskip=\muskip21
 \biburllcskip=\muskip22
-\c@smartand=\count497
+\c@smartand=\count501
 )
 Package biblatex Info: Trying to load bibliography style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.bbx' found.
@@ -1212,8 +1223,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count498
-\c@bbx:relatedtotal=\count499
+\c@bbx:relatedcount=\count502
+\c@bbx:relatedtotal=\count503
 ))
 Package biblatex Info: Trying to load citation style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.cbx' found.
@@ -1248,10 +1259,6 @@ Package biblatex Info: ... and expl3
 (/usr/share/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
 Package: blx-case-expl3 2022/02/02 v3.17 expl3 case changing code for biblatex
 ))
-(/usr/share/texmf-dist/tex/latex/yfonts/yfonts.sty
-Package: yfonts 2019/04/04 v1.4 (WaS&NP)
-LaTeX Info: Composite with undeclared \" in encoding LYG on input line 58.
-)
 (/usr/share/texmf-dist/tex/latex/epigraph/epigraph.sty
 Package: epigraph 2020/01/02 v1.5e typesetting epigraphs
 
@@ -1282,9 +1289,9 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@upperbox=\box106
 \tcb@lowerbox=\box107
 \tcb@phantombox=\box108
-\c@tcbbreakpart=\count500
-\c@tcblayer=\count501
-\c@tcolorbox@number=\count502
+\c@tcbbreakpart=\count504
+\c@tcblayer=\count505
+\c@tcolorbox@number=\count506
 \tcb@temp=\box109
 \tcb@temp=\box110
 \tcb@temp=\box111
@@ -1312,7 +1319,7 @@ Package: mathtools 2022/02/07 v1.28a mathematical typesetting tools
 (/usr/share/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count503
+\g_MT_multlinerow_int=\count507
 \l_MT_multwidth_dim=\dimen348
 \origjot=\skip170
 \l_MT_shortvdotswithinadjustabove_dim=\dimen349
@@ -1528,19 +1535,14 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \cftbeforefigskip=\skip199
 \cftfigindent=\skip256
 \cftfignumwidth=\skip257
-\c@lofdepth=\count504
-\c@lotdepth=\count505
+\c@lofdepth=\count508
+\c@lotdepth=\count509
 \cftbeforelottitleskip=\skip258
 \cftafterlottitleskip=\skip259
 \cftbeforetabskip=\skip260
 \cfttabindent=\skip261
 \cfttabnumwidth=\skip262
 )
-\c@definition=\count506
-\c@theorem=\count507
-\c@lemma=\count508
-\c@remark=\count509
-
 (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2022-02-21 v7.00n Hypertext links for LaTeX
 
@@ -1644,7 +1646,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip263
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 54.
+Package hyperref Info: Option `colorlinks' set `true' on input line 53.
 runsystem(which pygmentize && touch hispania.aex)...executed.
 
 runsystem(rm hispania.aex)...executed.
@@ -1659,61 +1661,57 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (./hispania.aux)
 \openout1 = `hispania.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
-9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 6
+1.
  (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 61.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-59.
+61.
 
 (/usr/share/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 61.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-59.
+61.
 
 (/usr/share/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 61.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-59.
+61.
 
 (/usr/share/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1750,12 +1748,32 @@ LaTeX Font Info:    ... okay on input line 59.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count524
-Package biblatex Info: Trying to load language 'nil'...
-Package biblatex Info: ... file 'nil.lbx' not found.
+Package biblatex Info: Trying to load language 'USenglish'...
+Package biblatex Info: ... file 'USenglish.lbx' found.
+(/usr/share/texmf-dist/tex/latex/biblatex/lbx/USenglish.lbx
+File: USenglish.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'american'...
+Package biblatex Info: ... file 'american.lbx' found.
 
-Package biblatex Warning: Language 'nil' not supported.
-(biblatex)                Using dummy definitions on input line 59.
+(/usr/share/texmf-dist/tex/latex/biblatex/lbx/american.lbx
+File: american.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
 
+(/usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+))
+Package biblatex Info: Trying to load language 'american'...
+Package biblatex Info: ... file 'american.lbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/lbx/american.lbx
+File: american.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+)))
 Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
@@ -1764,13 +1782,14 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'hispania.bbl' found.
-(./hispania.bbl)
-Package biblatex Info: Reference section=0 on input line 59.
-Package biblatex Info: Reference segment=0 on input line 59.
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 59.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 59.
-Package hyperref Info: Link coloring ON on input line 59.
- (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+ (./hispania.bbl)
+Package biblatex Info: Reference section=0 on input line 61.
+Package biblatex Info: Reference segment=0 on input line 61.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 61.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 61.
+Package hyperref Info: Link coloring ON on input line 61.
+
+(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
 (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1781,48 +1800,48 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count525
 )
-LaTeX Info: Redefining \ref on input line 59.
-LaTeX Info: Redefining \pageref on input line 59.
-LaTeX Info: Redefining \nameref on input line 59.
+LaTeX Info: Redefining \ref on input line 61.
+LaTeX Info: Redefining \pageref on input line 61.
+LaTeX Info: Redefining \nameref on input line 61.
 
 (./hispania.out) (./hispania.out)
 \@outlinefile=\write7
 \openout7 = `hispania.out'.
 
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 62.
+ 64.
 
 (/usr/share/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 62.
+(Font)              scaled to size 11.03998pt on input line 64.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 62.
+(Font)              scaled to size 8.27998pt on input line 64.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 62.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
+(Font)              scaled to size 6.43999pt on input line 64.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 64.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 64.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 6
-2.
+4.
 
 (/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 62.
+(Font)              scaled to size 11.03998pt on input line 64.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 62.
+(Font)              scaled to size 8.27998pt on input line 64.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 62.
+(Font)              scaled to size 6.43999pt on input line 64.
 
 
 Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
@@ -1830,24 +1849,12 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 (xeCJK)                Try to use `\setCJKmonofont[...]{...}' to define it.
 
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 6
-2.
+4.
 (/usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [1
 
-]
-Overfull \hbox (4.66446pt too wide) in paragraph at lines 67--70
-[]\T1/futs/m/n/10 This paper talks about an implementation of rule-based phonol
-ogy in a high-level programming language.
- []
-
-
-Overfull \hbox (18.20439pt too wide) in paragraph at lines 67--70
-\T1/futs/m/n/10 In the first couple chapters of this paper, we establish notati
-ons that represent the phonology and morphology
- []
-
-[1] (./hispania.toc
+] [1] (./hispania.toc
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 9.19998pt on input line 2.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -1860,23 +1867,15 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 2.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 2.
- [1] [2])
+ [1]
+[2])
 \tf@toc=\write8
 \openout8 = `hispania.toc'.
 
- [3]
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 83.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 83.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 83.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 83.
- [4
+ [3] [4
 
 ]
-Chapter I.
+Chapter 1.
 \openout3 = `hispania.pyg'.
 
 (./_minted-hispania/default.pygstyle)
@@ -1887,137 +1886,76 @@ LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
 ) [5
 
 ] [6]
-Chapter II.
+Chapter 2.
 [7
 
 ]
-Chapter III.
+Chapter 3.
 [8
 
 ]
-Chapter IV.
-
-Overfull \hbox (24.07674pt too wide) in paragraph at lines 180--180
-|\T1/futs/b/n/20.74 Representation of Phonotactics and Sound Changes| 
- []
-
+Chapter 4.
 [9
 
 ]
-Chapter V.
+Chapter 5.
 LaTeX Font Info:    Trying to load font information for T3+futs on input line 2
-11.
-LaTeX Font Info:    No file T3futs.fd. on input line 211.
+49.
+LaTeX Font Info:    No file T3futs.fd. on input line 249.
 
 LaTeX Font Warning: Font shape `T3/futs/m/n' undefined
-(Font)              using `T3/cmr/m/n' instead on input line 211.
+(Font)              using `T3/cmr/m/n' instead on input line 249.
+
+
+Overfull \hbox (49.79276pt too wide) in paragraph at lines 273--273
+[] 
+ []
 
 [10
 
 ] [11]
-Chapter VI.
-[12
+Underfull \hbox (badness 10000) in paragraph at lines 413--414
 
-]
-Chapter VII.
-[13
+ []
 
-]
-Chapter VIII.
-[14
 
-]
-Chapter IX.
+Overfull \hbox (32.2128pt too wide) in paragraph at lines 441--441
+[] 
+ []
+
+[12] [13] [14]
+Chapter 6.
 [15
 
-]
-Chapter X.
-[16
-
-]
-Chapter XI.
+] [16]
+Chapter 7.
 [17
 
-] [18] [19] [20] [21]
-Chapter XII.
-[22
+] [18]
+Chapter 8.
+[19
+
+] [20]
+Chapter 9.
+[21
 
 ]
-Chapter XIII.
-[23
-
-] [24] [25] [26
+Chapter 10.
+[22
 
 ]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 816.
+(hyperref)                be the same. Added a new anchor on input line 1214.
 
+[23
 
-Package biblatex Warning: Bibliography string 'and' untranslated
-(biblatex)                at entry 'cam_romance' on input line 816.
-
-
-Package biblatex Warning: Bibliography string 'editors' untranslated
-(biblatex)                at entry 'cam_romance' on input line 816.
-
-
-Package biblatex Warning: Bibliography string 'volume' untranslated
-(biblatex)                at entry 'cam_romance' on input line 816.
-
-
-Package biblatex Warning: Using fallback definition for \mkbibdatelong.
-(biblatex)                The command should be defined in the .lbx file.
-(biblatex)                If you see this message, the .lbx file could not be
-(biblatex)                loaded, is faulty or does not contain a definition
-(biblatex)                for \mkbibdatelong.
-
-
-Package biblatex Warning: Bibliography string 'and' untranslated
-(biblatex)                at entry 'romance_his' on input line 816.
-
-
-Package biblatex Warning: Using fallback definition for \mkbibdatelong.
-(biblatex)                The command should be defined in the .lbx file.
-(biblatex)                If you see this message, the .lbx file could not be
-(biblatex)                loaded, is faulty or does not contain a definition
-(biblatex)                for \mkbibdatelong.
-
-
-Overfull \hbox (5.12263pt too wide) in paragraph at lines 816--816
-[]\T1/futs/m/n/10 Ti Alkire [] Carol Rosen. \T1/futs/m/it/10 Romance Languages:
- A Historical Introduction\T1/futs/m/n/10 . Cambridge University
- []
-
-
-Package biblatex Warning: Using fallback definition for \mkbibdatelong.
-(biblatex)                The command should be defined in the .lbx file.
-(biblatex)                If you see this message, the .lbx file could not be
-(biblatex)                loaded, is faulty or does not contain a definition
-(biblatex)                for \mkbibdatelong.
-
-
-Package biblatex Warning: Using fallback definition for \mkbibdatelong.
-(biblatex)                The command should be defined in the .lbx file.
-(biblatex)                If you see this message, the .lbx file could not be
-(biblatex)                loaded, is faulty or does not contain a definition
-(biblatex)                for \mkbibdatelong.
-
-
-Package biblatex Warning: Using fallback definition for \mkbibdatelong.
-(biblatex)                The command should be defined in the .lbx file.
-(biblatex)                If you see this message, the .lbx file could not be
-(biblatex)                loaded, is faulty or does not contain a definition
-(biblatex)                for \mkbibdatelong.
-
-[27
-
-] (./hispania.aux)
+] [24] (./hispania.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `hispania.out' has not changed.
-(rerunfilecheck)             Checksum: 9B32FEF72463C1942FA508885034E154;13814.
+(rerunfilecheck)             Checksum: 1731CBF697B3DADC5D5615D8A2140B2E;9428.
 runsystem(rm hispania.pyg)...executed.
 
 Package logreq Info: Writing requests to 'hispania.run.xml'.
@@ -2025,12 +1963,12 @@ Package logreq Info: Writing requests to 'hispania.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42332 strings out of 476156
- 873428 string characters out of 5814963
- 1668103 words of memory out of 5000000
- 62402 multiletter control sequences out of 15000+600000
- 633857 words of font info for 153 fonts, out of 8000000 for 9000
+ 43035 strings out of 476156
+ 888636 string characters out of 5814963
+ 1720436 words of memory out of 5000000
+ 63097 multiletter control sequences out of 15000+600000
+ 584636 words of font info for 126 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 105i,26n,107p,741b,4671s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 105i,15n,107p,741b,4898s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on hispania.pdf (29 pages).
+Output written on hispania.pdf (26 pages).

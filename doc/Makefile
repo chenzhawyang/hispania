@@ -7,9 +7,9 @@ all:
 	xelatex -shell-escape $(DOC).tex
 	xelatex -shell-escape $(DOC).tex
 
-clean-bib:
-	/usr/bin/rm $(DOC).bbl $(DOC).aux
+clean:
+	/usr/bin/rm $(DOC).bbl $(DOC).aux $(DOC).bcf $(DOC).blg $(DOC).log $(DOC).run.xml $(DOC).toc $(DOC).out
 
-.PHONY: clean-bib
+.PHONY: clean
 
 .DEFAULT_GOAL := all

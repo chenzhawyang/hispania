@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'hispania.blg'
-[55] biber:340> INFO - === Fri Oct 14, 2022, 05:55:21
-[65] Biber.pm:418> INFO - Reading 'hispania.bcf'
-[114] Biber.pm:969> INFO - Using all citekeys in bib section 0
-[123] Biber.pm:4383> INFO - Processing section 0
-[131] Biber.pm:4574> INFO - Looking for bibtex file 'hispania.bib' for section 0
-[132] bibtex.pm:1713> INFO - LaTeX decoding ...
-[136] bibtex.pm:1518> INFO - Found BibTeX data source 'hispania.bib'
-[179] UCollate.pm:68> INFO - Overriding locale 'nil' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[179] UCollate.pm:68> INFO - Overriding locale 'nil' defaults 'variable = shifted' with 'variable = non-ignorable'
-[179] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'nil'
-[179] Biber.pm:4209> INFO - No sort tailoring available for locale 'nil'
-[182] bbl.pm:654> INFO - Writing 'hispania.bbl' with encoding 'UTF-8'
-[184] bbl.pm:757> INFO - Output to hispania.bbl
+[57] biber:340> INFO - === Tue Oct 18, 2022, 21:11:43
+[67] Biber.pm:418> INFO - Reading 'hispania.bcf'
+[116] Biber.pm:969> INFO - Using all citekeys in bib section 0
+[126] Biber.pm:4383> INFO - Processing section 0
+[134] Biber.pm:4574> INFO - Looking for bibtex file 'hispania.bib' for section 0
+[134] bibtex.pm:1713> INFO - LaTeX decoding ...
+[146] bibtex.pm:1518> INFO - Found BibTeX data source 'hispania.bib'
+[237] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[237] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[237] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[237] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[248] bbl.pm:654> INFO - Writing 'hispania.bbl' with encoding 'UTF-8'
+[254] bbl.pm:757> INFO - Output to hispania.bbl
