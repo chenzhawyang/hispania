@@ -95,7 +95,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
-      <bcf:value>2</bcf:value>
+      <bcf:value>3</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
@@ -159,7 +159,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortlocale</bcf:key>
-      <bcf:value>USenglish</bcf:value>
+      <bcf:value>english</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortingtemplatename</bcf:key>
@@ -321,7 +321,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
-      <bcf:value>2</bcf:value>
+      <bcf:value>3</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
@@ -2344,7 +2344,35 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">hispania.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">osp_tanakh</bcf:citekey>
+    <bcf:citekey order="2">penny_spanish</bcf:citekey>
+    <bcf:citekey order="3">lloyd_spanish</bcf:citekey>
+    <bcf:citekey order="4">prince_smol_ot</bcf:citekey>
+    <bcf:citekey order="5">spe</bcf:citekey>
+    <bcf:citekey order="6">tpl</bcf:citekey>
+    <bcf:citekey order="7">haskell2010</bcf:citekey>
+    <bcf:citekey order="8">def_sml</bcf:citekey>
+    <bcf:citekey order="9">companion_to_latin</bcf:citekey>
+    <bcf:citekey order="10">latin_paleography</bcf:citekey>
+    <bcf:citekey order="11">latin_paleography</bcf:citekey>
+    <bcf:citekey order="12">latin_paleography</bcf:citekey>
+    <bcf:citekey order="13">companion_to_latin</bcf:citekey>
+    <bcf:citekey order="14">companion_to_latin</bcf:citekey>
+    <bcf:citekey order="15">companion_to_latin</bcf:citekey>
+    <bcf:citekey order="16">companion_to_latin</bcf:citekey>
+    <bcf:citekey order="17">companion_to_latin</bcf:citekey>
+    <bcf:citekey order="18">latin_paleography</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
+    <bcf:citekey order="19">osp_tanakh</bcf:citekey>
+    <bcf:citekey order="20">penny_spanish</bcf:citekey>
+    <bcf:citekey order="21">lloyd_spanish</bcf:citekey>
+    <bcf:citekey order="22">prince_smol_ot</bcf:citekey>
+    <bcf:citekey order="23">spe</bcf:citekey>
+    <bcf:citekey order="24">tpl</bcf:citekey>
+    <bcf:citekey order="25">haskell2010</bcf:citekey>
+    <bcf:citekey order="26">def_sml</bcf:citekey>
+    <bcf:citekey order="27">companion_to_latin</bcf:citekey>
+    <bcf:citekey order="28">latin_paleography</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="ynt">

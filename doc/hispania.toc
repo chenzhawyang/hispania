@@ -1,34 +1,52 @@
-\babel@toc {USenglish}{}\relax 
-\contentsline {part}{I\hspace {1em}A Brief Phonological History of Spanish}{3}{part.1}%
-\contentsline {chapter}{\numberline {1}Proto-Romance}{4}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Phonemic Inventory}{4}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Vocalic}{4}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Consonantal}{4}{subsection.1.1.2}%
-\contentsline {section}{\numberline {1.2}Sound Changes}{5}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Vocalism}{5}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Consonantism}{7}{subsection.1.2.2}%
-\contentsline {chapter}{\numberline {2}Western Romance}{10}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Phonemic Inventory}{10}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Vocalic}{10}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Consonantal}{10}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}Sound Changes}{11}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Vocalism}{11}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Consonantism}{11}{subsection.2.2.2}%
-\contentsline {chapter}{\numberline {3}Central Iberian Romance}{13}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Phonemic Inventory}{13}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Vocalic}{13}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Consonantal}{13}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Sound Changes}{13}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Vocalism}{13}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Consonantism}{14}{subsection.3.2.2}%
-\contentsline {chapter}{\numberline {4}Old Spanish}{15}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Phonemic Inventory}{15}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Vocalic}{15}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Consonantal}{15}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Sound Changes}{16}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Vocalism}{16}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Consonantism}{16}{subsection.4.2.2}%
-\contentsline {chapter}{Biblipgraphy}{17}{chapter*.1}%
-\contentsline {section}{Phonology}{17}{section*.2}%
-\contentsline {section}{Romance Linguistics}{17}{section*.2}%
-\contentsline {section}{Computer Science}{18}{section*.2}%
+\contentsline {chapter}{Introduction}{4}{chapter*.2}%
+\contentsline {chapter}{Notational Conventions}{6}{chapter*.8}%
+\contentsline {part}{Automated Phonology}{10}{part*.19}%
+\contentsline {chapter}{\numberline {1}Statics: Segments, Syllables, and Lexemes}{10}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Representation of Segments}{10}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Vocalic}{10}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Consonantal}{10}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Representation of Syllables and Lexemes}{11}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Syllabic Structure}{11}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Syllable Weight and Stress}{13}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Syllabification}{14}{subsection.1.2.3}%
+\contentsline {chapter}{\numberline {2}Dynamics: Sound Changes}{15}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Representation of Sound Changes}{15}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Rule Ordering}{15}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Representation of Phonotactics}{15}{section.2.3}%
+\contentsline {part}{A Phonological History of Spanish}{17}{part*.20}%
+\contentsline {chapter}{Misc. Remarks and Comments}{17}{chapter*.21}%
+\contentsline {chapter}{\numberline {3}Proto-Romance}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Phonemic Inventory}{19}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Vocalic}{19}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Consonantal}{19}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Sound Changes}{20}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Vocalism}{20}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Consonantism}{22}{subsection.3.2.2}%
+\contentsline {chapter}{\numberline {4}Western Romance}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Phonemic Inventory}{27}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Vocalic}{27}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Consonantal}{27}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Sound Changes}{28}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Vocalism}{28}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Consonantism}{28}{subsection.4.2.2}%
+\contentsline {chapter}{\numberline {5}Old Spanish}{31}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Phonemic Inventory}{31}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Vocalic}{31}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Consonantal}{31}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Sound Changes}{32}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Vocalism}{32}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Consonantism}{33}{subsection.5.2.2}%
+\contentsline {chapter}{\numberline {6}Modern Spanish}{36}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Phonemic Inventory}{36}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Vocalic}{36}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Consonantal}{36}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Sound Changes}{36}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Vocalism}{36}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Consonantism}{36}{subsection.6.2.2}%
+\contentsline {subsubsection}{The Fate of Dental Affricates}{37}{section*.23}%
+\contentsline {chapter}{Epilogue: \emph {Mein liebester Jugendtraum}}{38}{chapter*.24}%
+\contentsline {chapter}{Biblipgraphy}{39}{chapter*.25}%
+\contentsline {section}{Phonology}{39}{section*.26}%
+\contentsline {section}{Romance Linguistics}{39}{section*.27}%
+\contentsline {section}{Computation}{40}{section*.28}%
+\contentsline {section}{Misc.}{41}{section*.29}%

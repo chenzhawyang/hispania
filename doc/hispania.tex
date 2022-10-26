@@ -1,234 +1,430 @@
-\documentclass{report}
+\documentclass{report}[12pt]
 
 \usepackage{geometry}[a4paper]
 \usepackage{appendix}[toc]
+\usepackage{inputenc}[uft8]
+\usepackage{fontenc}[T1]
 \usepackage{xeCJK}
 \setCJKmainfont{Source Han Serif}
-\usepackage{inputenc}[utf-8]
 \usepackage{fontspec}
-\setmainfont{Noto Serif}
+\setmainfont{Libertinus Serif}
 \usepackage{minted}
 \usepackage{bussproofs}
 \usepackage{qtree}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
-\usepackage[USenglish]{babel}
+\usepackage{alphabeta}
+\usepackage{tikz-cd}
+\usepackage{tipa}
+\usepackage{listings}
+\usepackage[backend=biber, sorting=ynt, style=alphabetic]{biblatex}
+\addbibresource{hispania.bib}
+\usepackage{xcolor}
+\usepackage{epigraph}
+\usepackage{bookmark}
+\usepackage{tcolorbox}
+\usepackage{colortbl}
+\usepackage{mathtools}
+\usepackage{stmaryrd}
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+\makesavenoteenv{table}
+\usepackage{footmisc}[hang, flushmargin, bottom]
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=cyan,
+  filecolor=magenta,
+  citecolor=violet,
+}
+\usepackage{graphicx}
+\graphicspath{{../pics/}}
+\usepackage{unicode-math}
+\setmathfont{Libertinus Math}
+
+\setlength\parindent{0pt}
+\setlength\footnotemargin{0pt}
 
 \newtheorem{definition}{Definition}
 \newtheorem{theorem}{Theorem}
 \newtheorem{lemma}{Lemma}
 \newtheorem{remark}{Remark}
 
-\usepackage{tikz-cd}
-\usepackage{tipa}
-\usepackage{listings}
-\usepackage[backend=biber, sorting=ynt, style=alphabetic, maxcitenames = 2]{biblatex}
-\addbibresource{hispania.bib}
-\DefineBibliographyStrings{USenglish}{
-  andothers = {\textbf{et al}\adddot}
-}
-\usepackage{xcolor}
-\usepackage{epigraph}
-\usepackage{tcolorbox}
-\usepackage{colortbl}
-\usepackage{mathtools}
-\usepackage{stmaryrd}
-\usepackage{fourier}
-\usepackage{footnote}
-\makesavenoteenv{tabular}
-\makesavenoteenv{table}
-\usepackage{titlesec}
-% \renewcommand{\thechapter}{\Roman{chapter}}
-% \titleformat{\chapter}[display]{\huge\bf}{\textsc{Capitulum} \thechapter}{1em}{}
-\usepackage{tocloft}
-\setlength\cftchapnumwidth{3em}
-\setlength\cftsecnumwidth{3em}
-\setlength\cftsubsecnumwidth{4em}
-\usepackage{hyperref}
-\hypersetup{
-  colorlinks=true,
-  linkcolor=cyan,
-  filecolor=magenta,
-}
-
-\setlength\parindent{0pt}
-% \pagenumbering{Roman}
-
-\title{Semi-Automated Language Changes from Latin to Spanish \\ or, \emph{El sueño de mi juventud: Fonología automatizada}}
+\title{El sueño de mi juventud: \\ Fonología automatizada}
 \author{陳朝陽 \\ Chen Zhaoyang \\ \texttt{zc23@illinois.edu}}
 
 \begin{document}
 
 \maketitle
 
-% \pagebreak
+\pagebreak
 
-% \hspace{0pt}
-% \vfill
+\hspace{0pt}
+\vfill
 
-% \begin{center}
-%   Dedicated to Victoria
-% \end{center}
+\begin{center}
+  \includegraphics[scale=1.25]{pidal.jpg} \\
+  \vspace{0.2cm}
+  \Huge{Ramón Menédez Pidal \\ 1869 -- 1968}
+\end{center}
 
-% \hspace{0pt}
-% \vfill
+\vfill  
+\hspace{0pt}
 
-% \pagebreak
+\thispagestyle{empty}
 
-% \hspace{0pt}
-% \vfill
+\pagebreak
 
-% \begin{center}
-%   \begin{flushleft}
-%   Cansado estoy de llamar; \\
-%   mi garganta se ha enronquecido; \\
-%   Han desfallecido mis ojos esperando a mi Dios. \\
-%   \end{flushleft}
-%   \vspace{0.5cm}
-%   \begin{flushright}
-%     Salmos 69:3
-%   \end{flushright}
-% \end{center}
-
-% \begin{center}
-%   \begin{flushleft}
-%     危冠切浮雲\ 長劍出天外 \\
-%     細故何足慮\ 高度跨一世 \\
-%     非子為我馭\ 逍遙遊荒裔 \\
-%     顧謝西王母\ 吾將從此逝 \\
-%     豈與蓬戶士\ 彈琴誦言誓 \\
-%   \end{flushleft}
-%   \vspace{0.5cm}
-%   \begin{flushright}
-%     阮籍\ 詠懷第五十八\footnotemark
-%   \end{flushright}
-% \end{center}
-% \footnotetext{\href{https://www.degruyter.com/document/doi/10.1515/9781501503870-004/pdf}{My towering cap touches the drifting clouds, my long sword sticks forth beyond the heavens.  Minor issues are not worth concern, passing on high, I stride across the whole age. Feizi is my carriage driver, free and easy, I roam at the wilderness’s edge. Looking back, I take leave of the Queen Mother, from this point on I will go off. How can I join the gentlemen in a thatched house, plucking a zither and reciting mutual pledges?} (Singing My Cares LVIII)}
-
-% \vfill  
-% \hspace{0pt}
-
-% \pagebreak
-
-% \begin{abstract}
+\begin{abstract}
   
-%   This paper talks about an implementation of rule-based phonology in a high-level programming language. To illustrate the competence of the system, the system is used to implement major sound changes in the historical evolution of Latin to Modern Spanish. To a lesser extent, morphophonological changes from Latin to Spanish are also experimented. \\
-%   In the first couple chapters of this paper, we establish notations that represent the phonology and morphology of Latin and its Romance descendants following the tradition and convention of modern rule-based phonology that started to develop in the 1960s. After that we describe the major phonological and morphological changes the predecessors of Spanish had undergone, in the following historical periods: Proto-Romance, Western Romance, Central Iberian Romance, Old Spanish, Early Modern Spanish, and eventually we would be able to derive Modern Spanish. \\
-%   After settling the chronology and defining historical changes of Spanish language, in the last part of this project we explore the details of the implementation of a rewriting system that is able to substantiate and automate much of the aforementioned language changes.
+\end{abstract}
 
-% \end{abstract}
+\pagebreak
+
+\hspace{0pt}
+\vfill
+
+\begin{center}
+  \begin{flushleft}
+    Lazre clamando secosse mi garganta \\
+    canssaron mios oios \\
+    sospirando contra mio dios \\
+  \end{flushleft}
+  \vspace{0.5cm}
+  \begin{flushright}
+    Salmos LXVIII$\bullet$IV\footnotemark
+  \end{flushright}
+\end{center}
+
+\footnotetext{\href{https://www.bibliacatolica.com.br/la-biblia-de-jerusalen/salmos/69/}{Estoy exhausto de gritar, arden mis fauces, mis ojos se consumen de esperar a mi Dios.}\begin{flushright} \emph{La Biblia de Jerusalén} Salmos 69:4 \end{flushright} OSp. \emph{Biblia romanceada E8} \cite{osp_tanakh}}
+
+\begin{center}
+  \begin{flushleft}
+    危冠切浮雲\ 長劍出天外 \\
+    細故何足慮\ 高度跨一世 \\
+    非子爲我馭\ 逍遙遊荒裔 \\
+    顧謝西王母\ 吾將從此逝 \\
+    豈與蓬戶士\ 彈琴誦言誓 \\
+  \end{flushleft}
+  \vspace{0.5cm}
+  \begin{flushright}
+    阮籍\ 詠懷第五十八\footnotemark
+  \end{flushright}
+\end{center}
+\footnotetext{\href{https://www.degruyter.com/document/doi/10.1515/9781501503870-004/pdf}{My towering cap touches the drifting clouds, my long sword sticks forth beyond the heavens.  Minor issues are not worth concern, passing on high, I stride across the whole age. Feizi is my carriage driver, free and easy, I roam at the wilderness’s edge. Looking back, I take leave of the Queen Mother, from this point on I will go off. How can I join the gentlemen in a thatched house, plucking a zither and reciting mutual pledges?} Singing My Cares LVIII}
+
+\vfill  
+\hspace{0pt}
+
+\pagebreak
 
 \tableofcontents
 
 \pagebreak
 
-% \chapter*{Introduction}
-% \addcontentsline{toc}{chapter}{Introduction}
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
 
-% \epigraph{枯れた技術の水平思考\footnotemark}{横井軍平}
-% \footnotetext{\href{https://en.wikipedia.org/wiki/Gunpei_Yokoi\#Lateral_Thinking_with_Withered_Technology}{``Lateral Thinking of Withered Technology.''}}
+\epigraph{枯れた技術の水平思考\footnotemark}{横井軍平}
+\footnotetext{\href{https://en.wikipedia.org/wiki/Gunpei_Yokoi\#Lateral_Thinking_with_Withered_Technology}{``Lateral Thinking of Withered Technology.''}}
 
-% \section*{Withered Techniques}
+\section*{Seasoned Techniques}
 
-% \subsection*{Rule-based Phonology}
+This paper mainly uses \emph{seasoned} techniques in various fields -- meaning that the fundamental works this project builds on have been around for quite some time. \\ The most fundamental technique used here, rule-based phonology, in itself a term coined by its aftecomers, has been around as its \emph{modern} form since at least late \texttt{'}\kern-1pt 60s. \\
+The subject of study of this paper, Spanish, whose history belongs to the greater field of Romance historical linguistics; and this is one of the most ripened fruit of European historical linguistics since its birth. Countless literature are still being produced in this field. With all of the excellent works done by our predecessors in this past, a couple of comprehensive monographs on the history of the Spanish language had been produced in English since the later half of the 20\textsuperscript{th} century e.g. \cite{penny_spanish} and \cite{lloyd_spanish}, among many others. This work is not possible without their scholarship. \\
+The last piece of the \emph{puzle} [ˈpuθ.le] is \emph{typed programming languages}. Before we touch on anything of that sort, let us talk a little more about (rule-based or not) phonology. At the beginning of the 20\textsuperscript{th} century, phonology, and historical linguisitcs, started to be formalized. After many years of formalization, around and after the publication of \emph{SPE}, the practice of phonology had long acquired a formal language, as we can see from the theoretic elegance and explanatory power of the phonology that was pioneered in \emph{SPE}. Later on in the tradition of \emph{Optimality Theory} \cite{prince_smol_ot} one may say that the formalism within phonology had culminated. \\
+So much about phonology again, what does it have to do with typed programming languages? Well, the answer to this question is one of the two themes of this paper, other than giving a concise account of the phonological history of the Spanish language; I want to show that, phonology, which is a formal system, can be simulated by a computer. And this system can be quite naturally implemented in a so-called \emph{high-level programming language}.
 
-% \subsection*{Romance Historical Linguistics}
+\subsection*{Rule-based Phonology}
 
-% \subsection*{Typed Programming Languages}
+\subsection*{Romance Historical Linguistics}
 
-% \chapter{Representation of Segments}
+\subsection*{Typed Programming Languages}
 
-% \epigraph{En el principio era el Verbo, y el Verbo era con Dios, y el Verbo era Dios.}{Juan 1:1}
+\section*{Implementation of Phonology}
 
-% \section{Vocalic}
+\chapter*{Notational Conventions}
+\addcontentsline{toc}{chapter}{Notational Conventions}
 
-% \begin{lstlisting}[basicstyle=\ttfamily, mathescape, escapeinside={(:}{:)}]
-%   vowel ::= height (:$\times$:) centrality (:$\times$:) duration
+Let us briefly talk about the phonological notations and \emph{pseudocode} conventions used in this paper. The notations used in this paper are not to obfuscate but to illuminate our thoughts; this is the standard that we hold ourselves to.
 
-%   height ::= low | low-mid | mid | high-mid | high
+\section*{Phonological Notations that Diverge from \emph{SPE}}
 
-%   centrality ::= front | central | back
+\subsection*{\textsc{seg} $\vdash$ feat}
 
-%   duration ::= short | long
-% \end{lstlisting}
+For example,
+\begin{align*}
+  \text{\textipa{T}}\ & \vdash \text{non-sibilant fricative} \\
+                     & \vdash \text{dental} \\
+                     & \vdash \text{voiceless} 
+\end{align*}
+The $\vdash$ or $\dashv$ symbol can just be read as ``is'' or ``exhibits the feature \dots''; this is in line with the \emph{SPE} style \cite{spe} notation $\textbf{C}_{\text{[+\ feat]}}$.
 
-% \begin{minted}[autogobble]{hs}
-%   data Vowel = Vowel
-%   { height :: Height
-%     , centrality :: Centrality
-%     , dure :: Duration
-%   }
+\subsection*{[feat$_1$ $\rightarrow$ feat$_2$] \textsc{seg}}
 
-%   data Height
-%   = Low
-%   | LoMid
-%   | Mid
-%   | HiMid
-%   | High
+This notation has its roots in the denotation of $\lambda-$calculi and other formal languages, this particular form is adopted from \cite{tpl}. The semantics of this notation is simple: rewrite \textbf{feat}$_1$ to \textbf{feat}$_2$ within \textsc{seg}.
+\[ [\text{voiceless} \rightarrow \text{voiced}]\ \text{s} = \text{z} \]
 
-%   data Centrality
-%   = Front
-%   | Cent
-%   | Back
+\subsection*{Contexts}
 
-%   data Duration
-%   = Short
-%   | Long
-% \end{minted}
+\section*{Pseudocode and Programming Language Misc.}
 
-% \section{Consonantal}
+The pseudocode used in this paper is a \emph{functional} vernacular, which is quite close to the syntax and semantics of real world programming language Haskell \cite{haskell2010} and Standard ML \cite{def_sml}. \\
+In any regards, computation is not the focus of this paper, whenever formalism becomes a burden in the clarification of our ideas, we take the liberty to explain them in a natural language.
 
-% \begin{lstlisting}[basicstyle=\ttfamily, mathescape, escapeinside={(:}{:)}]
-%   consonant ::= manner (:$\times$:) place (:$\times$:) voice
+\subsection*{Functions}
 
-%   manner ::= nasal
-%            | stop
-%            | fricative
-%            | non-siblant fricative
-%            | affricate
-%            | approximant
-%            | tap
-%            | trill
-%            | lateral
+Functions are defined as such.
+\begin{align*}
+  \text{\textcolor{magenta}{raise}} &\ :\ \texttt{Vowel} \rightarrow \texttt{Vowel} \\
+  \text{a} & \Rightarrow \text{e}
+\end{align*}
+Not so surprisingly, giving \textcolor{magenta}{raise} an [a] would yield an [e].
+\[ \text{\textcolor{magenta}{raise}}\ (\text{a} : \texttt{Vowel}) \Rightarrow \text{e} : \texttt{Vowel} \]
 
-%   place ::= bilabial
-%           | labiodental
-%           | dental
-%           | alveolar
-%           | palatal
-%           | velar | labialvelar
-%           | glottal
+\subsection*{Pattern Matching}
 
-%   place ::= voiced | voiceless
-% \end{lstlisting}
+Consider this sound change for some hypothetical language that has \{s z n m \textipa{\r*n} \textipa{\r*m}\}.
+\begin{align*}
+  \text{\textcolor{magenta}{obstruentize}} &\ :\ \texttt{Consonant} \rightarrow \texttt{Consonant} \\
+  \textbf{C} \vdash \text{fricative} & \Rightarrow [\text{fricative} \rightarrow \text{stop}]\ \textbf{C} \\
+  \textbf{C} \vdash \text{nasal} & \Rightarrow \textbf{match}\ \text{\textcolor{magenta}{voice}}\ \textbf{C}
+                                   \begin{cases}
+                                     \text{voiced} & \Rightarrow [\text{nasal} \rightarrow \text{stop}]\ \textbf{C} \\
+                                     \text{voiceless} & \Rightarrow [\text{nasal} \rightarrow \text{stop};\ \text{unaspirated} \rightarrow \text{aspirated}]\ \textbf{C} \\
+                                   \end{cases}
+\end{align*}
 
-% \chapter{Representation of Syllables}
+\begin{align*}
+  \text{\textcolor{magenta}{obstruentize}}\ \text{s} & \Rightarrow \text{t} \\
+  \text{\textcolor{magenta}{obstruentize}}\ \text{z} & \Rightarrow \text{d} \\
+  \text{\textcolor{magenta}{obstruentize}}\ \text{n} & \Rightarrow \text{d} \\
+  \text{\textcolor{magenta}{obstruentize}}\ \text{m} & \Rightarrow \text{b} \\
+  \text{\textcolor{magenta}{obstruentize}}\ \text{\textipa{\r*n}} & \Rightarrow \text{\textipa{t\super h}} \\
+  \text{\textcolor{magenta}{obstruentize}}\ \text{\textipa{\r*m}} & \Rightarrow \text{p\super h} \\
+\end{align*}
 
-% \section{Syllabic Structure}
+\begin{align*}
+  \lambda &\ :\ \tau \rightarrow \tau \\
+  \text{pattern}_0 & \Rightarrow \text{exp}_0 \\
+  \vdots & \\
+  \text{pattern}_\omega & \Rightarrow \text{exp}_\omega \\
+\end{align*}
 
-% \section{Syllable Weight and Stress}
+\begin{align*}
+  \textbf{match}\ \text{exp} & \begin{cases}
+                                 \text{pattern}_0 & \Rightarrow \text{exp}_0 \\
+                                                  & \vdots \\
+                                 \text{pattern}_\omega & \Rightarrow \text{exp}_\omega \\
+                               \end{cases}\\
+\end{align*}
 
-% \chapter{Representation of Morphophonology}
+\subsection*{Arity and Currying}
 
-% \section{Nominal}
+\subsection*{Higher-Order Functions}
 
-% \section{Verbal}
+\subsection*{Polymorphism}
 
-% \chapter{Representation of Phonotactics and Sound Changes}
+\part*{Automated Phonology}
+\addcontentsline{toc}{part}{Automated Phonology}
 
-% \epigraph{星翳燈幻露泡夢電雲\footnotemark}{金剛經 \S32}
-% \footnotetext{\href{https://www2.hf.uio.no/polyglotta/index.php?page=record\&vid=1176\&mid=1993243}{A shooting star, a clouding of the sight, a lamp, an illusion, a drop of dew, a bubble, a dream, a lightning’s flash, a thunder cloud.}}
+\chapter{Statics: Segments, Syllables, and Lexemes}
 
-% \section{Sound Changes}
+\epigraph{En el principio existía la Palabra y la Palabra estaba con Dios, y la Palabra era Dios.}{Juan 1:1}
 
-% \section{Phonotactics}
+\section{Representation of Segments}
 
-\part{A Brief Phonological History of Spanish}
+\subsection{Vocalic}
+
+\begin{lstlisting}[basicstyle=\ttfamily, mathescape, escapeinside={(:}{:)}]
+  vowel ::= height (:$\times$:) centrality (:$\times$:) duration
+
+  height ::= low | low-mid | mid | high-mid | high
+
+  centrality ::= front | central | back
+
+  duration ::= short | long
+\end{lstlisting}
+
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  & Front & Central & Back \\
+  \hline
+  High & i & & u \\
+  \hline
+  High-Mid & \textipa{I} & & \textipa{U} \\
+  \hline
+  Mid & e & & o \\
+  \hline
+  Low-Mid & \textipa{E} & & \textipa{O} \\
+  \hline
+  Low & & a & \\
+  \hline
+\end{tabular}
+
+\subsection{Consonantal}
+
+\begin{lstlisting}[basicstyle=\ttfamily, mathescape, escapeinside={(:}{:)}]
+  consonant ::= manner (:$\times$:) place (:$\times$:) voice
+
+  manner ::= nasal
+           | stop
+           | fricative
+           | non-siblant fricative
+           | affricate
+           | approximant
+           | tap
+           | trill
+           | lateral
+
+  place ::= bilabial
+          | labiodental
+          | dental
+          | alveolar
+          | palatal
+          | velar | labiovelar
+          | glottal
+
+  place ::= voiced | voiceless
+\end{lstlisting}
+
+\section{Representation of Syllables and Lexemes}
+
+\subsection{Syllabic Structure}
+
+\begin{lstlisting}[basicstyle=\ttfamily, mathescape, escapeinside={(:}{:)}]
+  syllable ::= onset rhyme
+
+  onset ::= zero-onset
+          | monoonset consonant
+          | dionset consonant(:$_1$:) consonant(:$_2$:)
+          | trionset consonant(:$_1$:) consonant(:$_2$:) consonant(:$_3$:)
+          
+  rhyme ::= nucleus coda
+
+  nucleus ::= monophthong vowel | diphthong vowel(:$_1$:) vowel(:$_2$:)
+
+  coda ::= zero-coda
+         | monocoda consonant
+         | dicoda consonant(:$_1$:) consonant(:$_2$:)
+\end{lstlisting}
+
+\Tree [.$\sigma$ [.$\Omega$ [.π ] [.$\omega$ ] [.$\mu$ ] ] [.$\rho$ [\qroof{μν. | δφ.}.$\nu$ ] [.K [.$\kappa$ ] [.$\kappa'$ ] ] ] ]
+
+\begin{tabular}{c|c}
+  $\omega$ & $\mu$ \\
+  \hline
+  \begin{tabular}{c}
+    p \textipa{B} t d k$^{\text{(w)}}$ g$^{\text{(w)}}$ \\
+    f \textipa{T} s x \\
+    \textipa{J} \\
+    \textipa{\textteshlig} \\
+    m n \textipa{\textltailn} \\
+    l \textipa{L} \textipa{R} \\
+  \end{tabular} & $\varnothing$ \\
+  \hline
+  \begin{tabular}{c}p b t k g \\ f\end{tabular} & \textipa{R} \\
+  \hline
+  \begin{tabular}{c}p b t d k g \\ f\end{tabular} & l \\
+  \hline
+\end{tabular}
+
+\begin{tabular}{c|c}
+  $\kappa$ & $\kappa'$ \\
+  \hline
+  \begin{tabular}{c}
+    p t d k \\
+    f \textipa{T} s \\
+    j \\
+    n m \\
+    l \textipa{R} \\
+  \end{tabular}& $\varnothing$ \\
+  \hline
+  \begin{tabular}{c}
+    p t k \\
+    f \\
+    n \\
+    l \textipa{R} \\
+  \end{tabular} & s \\
+  \hline
+  n & \textipa{T} \\
+  \hline
+\end{tabular}
+
+\subsection{Syllable Weight and Stress}
+
+Before we can discuss the stress pattern in Latin, it is necessary that we define a function to decide the weight of a syllable in Latin.
+\begin{align*}
+  \text{\textcolor{magenta}{weight}}\ & :\ \texttt{Syllable} \rightarrow \texttt{Weight} \\
+  \sigma\ \vdash \Tree [.\text{$\rho$} [.\text{$\nu$} [.\textbf{V} ] ] [.K [.\text{$\varnothing$} ] ] ] & \Rightarrow \text{light} \\
+  \sigma\ \vdash \Tree [.\text{$\rho$} [\qroof{\textbf{V:}\ | δφ.}.\text{$\nu$} ] [.K [.\text{$\varnothing$} ] ] ] & \Rightarrow \text{heavy} \\
+  \sigma\ \vdash \Tree [.\text{$\rho$} [.\text{$\nu$} [.\textbf{V} ] ] [.K [.\text{$\kappa$} ] ] ] & \Rightarrow \text{heavy} \\
+  \sigma\ \vdash \Tree [.\text{$\rho$} [.\text{$\nu$} [.\textbf{V} ]] [.K [.\text{$\kappa$} ] [.\text{$\kappa'$} ] ] ] & \Rightarrow \text{heavy} \\
+\end{align*}
+To have a concrete idea, see the following examples.
+\begin{align*}
+  \text{\textcolor{magenta}{weight}}\ \textsc{s\={o}}_{\dashv\ \textsc{pers\={o}na}} & \Rightarrow \text{heavy} \\
+  \text{\textcolor{magenta}{weight}}\ \textsc{men}_{\dashv\ \textsc{fund\={a}mentum}} & \Rightarrow \text{heavy} \\
+  \text{\textcolor{magenta}{weight}}\ \textsc{dok}_{\dashv\ \textsc{paradoxus}} & \Rightarrow \text{heavy} \\
+  \text{\textcolor{magenta}{weight}}\ \textsc{mi}_{\dashv\ \textsc{similis}} & \Rightarrow \text{light}
+\end{align*}
+After we are able to decide syllable weight, defining the Latin \textsc{penultimate} stress rule becomes natural.
+\begin{align*}
+  \text{\textcolor{magenta}{assign stress}}\ & :\ \texttt{List Syllable} \rightarrow \texttt{Lexeme} \\
+  [\sigma] & \Rightarrow \begin{aligned}
+                                                            & \textbf{let}\ \sigma' = [\text{unstressed} \rightarrow \text{stressed}] \ \sigma \\
+                                                            & \textbf{in}\ \text{\textcolor{magenta}{mkLexeme}}\ [\sigma'] \\
+                                                          \end{aligned} \\
+  [\sigma_1 \dblcolon \sigma_2] & \Rightarrow \begin{aligned}
+                                                            & \textbf{let}\ \sigma' = [\text{unstressed} \rightarrow \text{stressed}] \ \sigma_1 \\
+                                                            & \textbf{in}\ \text{\textcolor{magenta}{mkLexeme}}\ [\sigma' \dblcolon \sigma_2] \\
+                                                          \end{aligned} \\
+  [\sigma^{*}]\ \texttt{++}\ [\sigma_1 \dblcolon \sigma_2 \dblcolon \sigma_3] & \Rightarrow \textbf{match}\ \text{\textcolor{magenta}{weight}}\ \sigma_2
+                                                      \begin{cases}
+                                                        \text{heavy} & \Rightarrow \begin{aligned}
+                                                                                     & \textbf{let}\ \sigma' = [\text{unstressed} \rightarrow \text{stressed}]\ \sigma_2 \\
+                                                                                     & \textbf{in}\ \text{\textcolor{magenta}{mkLexeme}}\ [\sigma^{*}]\ \texttt{++}\ [\sigma_1 \dblcolon \sigma' \dblcolon \sigma_3] \\
+                                                                                   \end{aligned} \\
+                                                        \text{light} & \Rightarrow \begin{aligned}
+                                                                                     & \textbf{let}\ \sigma' = [\text{unstressed} \rightarrow \text{stressed}]\ \sigma_1 \\
+                                                                                     & \textbf{in}\ \text{\textcolor{magenta}{mkLexeme}}\ [\sigma^{*}]\ \texttt{++}\ [\sigma' \dblcolon \sigma_2 \dblcolon \sigma_3] \\
+                                                                                   \end{aligned} \\
+                                                      \end{cases}
+\end{align*}
+
+\subsection{Syllabification}
+
+\chapter{Dynamics: Sound Changes}
+
+\epigraph{星翳燈幻露泡夢電雲\footnotemark}{金剛經 \S32}
+\footnotetext{\href{https://www2.hf.uio.no/polyglotta/index.php?page=record\&vid=1176\&mid=1993243}{A shooting star, a clouding of the sight, a lamp, an illusion, a drop of dew, a bubble, a dream, a lightning’s flash, a thunder cloud.} Diamond Sutra \S32}
+
+\section{Representation of Sound Changes}
+
+\section{Rule Ordering}
+
+\section{Representation of Phonotactics}
+
+\part*{A Phonological History of Spanish}
+\addcontentsline{toc}{part}{A Phonological History of Spanish}
+
+\chapter*{Misc. Remarks and Comments}
+\addcontentsline{toc}{chapter}{Misc. Remarks and Comments}
+
+\subsection*{Sources for Lat.-Rom.-Es. Gloss.}
+
+\pagebreak
+
+\includegraphics[scale=0.5]{augustine.jpg}
+
+\thispagestyle{empty}
+
+\pagebreak
 
 \chapter{Proto-Romance}
 
-% \epigraph{\textsc{finis origine pendent}}{\textsc{marcvs manilivs}}
+\epigraph{\textsc{finis origine pendent}}{\textsc{marcvs manilivs}}
 
 \section{Phonemic Inventory}
 
@@ -259,15 +455,13 @@
     \hline
     Nasal & m & & \multicolumn{2}{c|}{n} & \textipa{\textltailn} & & \\
     \hline
-    Stop & p \quad b & & t \quad d & & c \quad \textipa{\textbardotlessj} & k \quad g & \textipa{k\super w} \quad \textipa{g\super w} \\
+    Stop & p \quad b & & t \quad d & & & k \quad g & \textipa{k\super w} \quad \textipa{g\super w} \\
     \hline
     Fricative & \textipa{B} & f & & & \textipa{J} & & \\
     \hline
     \textquotedbl & & & & s \quad z & & & \\
     \hline
-    Affricate & & & \textipa{\texttslig} \quad \textipa{\textdzlig} & & & & \\
-    \hline
-    Approximant & & & & & j & & \\
+    Affricate & & & \textipa{\texttslig} \quad \textipa{\textdzlig} & & \textipa{\textteshlig} \quad \textipa{\textdyoghlig} & & \\
     \hline
     Trill & & & \multicolumn{2}{c|}{r} & & & \\
     \hline
@@ -394,6 +588,11 @@
   \textsc{s\textcolor{red}{ae}ta} & s\textcolor{magenta}{e}da \\
 \end{tabular}
 
+There were other diphthongs (\textsc{ei} and \textsc{ov}) that had been merged with long vowels in the Old Latin period \cite[p.~18]{companion_to_latin}:
+\begin{quote}
+  [F]rom the mid-second century \textsc{bce} the digraphs \textsc{ei} and \textsc{ov}, which earlier spelled inherited diphthongs, spelled the long vowels /iː/ and /uː/ respectively, regardless of their etymological source, e.g. \textsc{[v]eivam} /wiːwam/ ``living'' (\emph{CIL} I\textsuperscript{2}.1837), \textsc{covravervnt} /kuːraːweːrʊnt/ ``oversaw'' (\emph{CIL} I\textsuperscript{2}.1806).
+\end{quote}
+
 \begin{tcolorbox}[title=Loss of Hiatus]
 
 \end{tcolorbox}
@@ -415,6 +614,10 @@
   \textsc{oc\textcolor{red}{u}lu} & \textsc{oclu} \\
   \textsc{auric\textcolor{red}{u}la} & \textsc{oricla} \\
   \textsc{cal\textcolor{red}{i}du} & \textsc{caldu} \\
+  \textsc{ang\textcolor{red}{u}lus} & \textsc{anglus} \\
+  \textsc{spec\textcolor{red}{u}lum} & \textsc{speclum} \\
+  \textsc{vet\textcolor{red}{u}lus} & \textsc{veclus} \\
+  \textsc{vir\textcolor{red}{i}dis} & \textsc{virdis} \\
 \end{tabular}
 
 \begin{tabular}{c c}
@@ -459,6 +662,11 @@ parab\textcolor{red}{o}la v. parabla \\
 
 \end{tcolorbox}
 
+This phenomenon is attested in the Visigothic documents \cite[p.~159]{latin_paleography}:
+\begin{quote}
+  [T]he addition of \emph{i} at the beginning of a word that starts with an \emph{s} followed by another consonant (\emph{iscriptura}), or its suppression by hypercorrection (\emph{sta} for \emph{ista}).
+\end{quote}
+
 \begin{tabular}{c c}
   \textsc{lat.} & Es. \\
   \hline
@@ -489,6 +697,8 @@ parab\textcolor{red}{o}la v. parabla \\
 
 \end{tcolorbox}
 
+Visigothic spelling exhibits the ``[c]onfusion of \emph{u} and \emph{b} (\emph{haueo} for \emph{habeo}) or vice versa (\emph{pabor} for \emph{pauor})'' \cite[p.~159]{latin_paleography}.
+
 \begin{tcolorbox}[title=Initial Yod Fortition]
 
 \end{tcolorbox}
@@ -517,6 +727,8 @@ parab\textcolor{red}{o}la v. parabla \\
   \textsc{\textcolor{red}{i}am} & \textcolor{magenta}{y}a \\
 \end{tabular}
 
+Visigothic document witnesses ``[t]he use of \emph{g} instead of \emph{j} [\dots] (\emph{magor}) or \emph{i} instead of \emph{g} (\emph{inenitor})'', cf. \textsc{maior}, \textsc{genitor} \cite[p.~159]{latin_paleography}.
+
 \begin{tcolorbox}[title=Fortition of /w/ in Germanic Loanwords]
   
 \end{tcolorbox}
@@ -534,9 +746,20 @@ parab\textcolor{red}{o}la v. parabla \\
   
 \end{tcolorbox}
 
+We have evidence that initial /h/ already weakens in Latin: ``[i]n metrical texts final vowels are elided before words beginning with /h\textbf{V}/, exactly as before initial /\textbf{V}/.'' \cite[p.~87]{companion_to_latin} \\
+An orthographic evidence for this sound change was the fact that the letter <h> sometime was used to indicate hiatus between vowels in inscriptions \cite[p.~18]{companion_to_latin}: \textsc{ahenvm}\footnote{cf. \textsc{a\={e}num}} [aeːnʊm] (\emph{CIL} I\textsuperscript{2}.581), \textsc{ahena}\footnote{cf. \textsc{a\={e}na}} (\emph{CIL} I\textsuperscript{2}.2093).
+
+\begin{tabular}{c c}
+  \textsc{lat.} & Es. \\
+  \hline
+  \textsc{hispalis} & Sevilla
+\end{tabular}
+
 \begin{tcolorbox}[title=Nasal Spirant Law]
 
 \end{tcolorbox}
+
+Old Latin inscriptions reflect this change \cite[p.~17]{companion_to_latin}: \textsc{cosol} v. Class. Lat. \textsc{consul}, \textsc{cesor} v. Class. Lat. \textsc{censor} (\emph{CIL} I\textsuperscript{2}.8).
 
 \begin{tcolorbox}[title=Elision of Intervocalic /g/]
 
@@ -550,11 +773,24 @@ parab\textcolor{red}{o}la v. parabla \\
   \textsc{ma\textcolor{red}{g}istru} & maestro \\
   \textsc{sa\textcolor{red}{g}itta} & saeta \\
   \textsc{pa\textcolor{red}{g}ense} & país \\
+  \textsc{c\={o}\textcolor{red}{g}it\={a}re} & cuidar \\
 \end{tabular}
 
 \begin{tcolorbox}[title=Elision of Coda /m/]
   
 \end{tcolorbox}
+
+The traces of this sound change go back to Old Latin (\emph{CIL} I\textsuperscript{2}.9) \cite[p.~17]{companion_to_latin}: \\
+\begin{tabular}{c c}
+  Old Lat. & Class. Lat. \\
+  \hline
+  \textsc{oino} & \textsc{unum} \\
+  \textsc{dvonoro} & \textsc{bonorum} \\
+  \textsc{optumo} & \textsc{optimum} \\
+  \textsc{viro} & \textsc{uirorum} \\
+  \textsc{scipione} & \textsc{scipionem} \\
+\end{tabular} \\
+Also, ``[i]n metrical texts, where the the final syllables of words ending in /\textbf{V}/ $+$ <\textsc{m}> are treated in the same way as those in final /\textbf{V}/, being elided before a following initial /\textbf{V}/.'' \cite[p.~87]{companion_to_latin}
 
 \begin{tcolorbox}[title=Palatalization and Affrication of Dentals]
 
@@ -569,7 +805,7 @@ parab\textcolor{red}{o}la v. parabla \\
   \textsc{ra\textcolor{red}{di}u} & ra\textcolor{magenta}{y}o [j] \\
 \end{tabular}
 
-\begin{tcolorbox}[title=Palatalization of Velars]
+\begin{tcolorbox}[title=Palatalization and Affrication of Velars]
 
 \end{tcolorbox}
 
@@ -600,60 +836,17 @@ parab\textcolor{red}{o}la v. parabla \\
   \textsc{ia\textcolor{red}{c}ere} &                                   ya\textcolor{magenta}{c}er [\textipa{T}] \\
 \end{tabular}
 
-% \section{Morphophonology}
+\pagebreak
 
-% \subsection{Nominal}
+\includegraphics[scale=5.0]{isidorus.jpeg}
 
-% \subsubsection{Dissolution of Declension IV \& V}
+\thispagestyle{empty}
 
-% \subsubsection{Reduction of the Case System}
-
-% \begin{tabular}{c c}
-%   \begin{tabular}{|c|c|c|}
-%     \hline
-%     \textsc{latina} & \textsc{sg} & \textsc{pl} \\
-%     \hline
-%     \textsc{nom} & \cellcolor{gray} \textsc{capra} & \cellcolor{yellow} \textsc{caprae} \\
-%     \hline
-%     \textsc{gen} & \textsc{caprae} & \textsc{capr\={a}rum} \\
-%     \hline
-%     \textsc{dat} & \textsc{caprae} & \textsc{capr\={i}s} \\
-%     \hline
-%     \textsc{acc} & \cellcolor{cyan} \textsc{capram} & \cellcolor{red} \textsc{capr\={a}s} \\
-%     \hline
-%     \textsc{abl} & \textsc{capr\={a}} & \textsc{capr\={i}s} \\
-%     \hline
-%     \textsc{voc} & \textsc{capra} & \textsc{caprae} \\
-%     \hline
-%   \end{tabular} \quad $\Rightarrow$ &
-%                                       \begin{tabular}{|c|c|c|}
-%                                         \hline
-%                                         Pop. Lat. & \textsc{sg} & \textsc{pl} \\
-%                                         \hline
-%                                         \textsc{nom} & \cellcolor{gray} \textsc{capra} & \cellcolor{yellow} \textsc{capre} \\
-%                                         \hline
-%                                         \textsc{obl} & \cellcolor{cyan} \textsc{capra} & \cellcolor{red} \textsc{capras} \\
-%                                         \hline
-%                                         \multicolumn{3}{c}{} \\
-%                                         \multicolumn{3}{c}{$\Downarrow$}
-%                                       \end{tabular} \\
-%   &
-%   \begin{tabular}{|c|c|c|}
-%     \hline
-%     Español & \textsc{sg} & \textsc{pl} \\
-%     \hline
-%     & \cellcolor{cyan} cabra & \cellcolor{red} cabras \\
-%     \hline
-%   \end{tabular} \\
-% \end{tabular}
-
-% \subsubsection{Reorganization of Genders}
-
-% \subsection{Verbal}
+\pagebreak
 
 \chapter{Western Romance}
 
-% \epigraph{\textsc{venite igitvr descendamvs et confvndamvs ibi lingvam eorvm vt non avdiat vnvsqvisqve vocem proximi svi}}{\textsc{genesis} \textsc{xi}$\bullet$\textsc{vii}}
+\epigraph{\textsc{venite igitvr descendamvs et confvndamvs ibi lingvam eorvm vt non avdiat vnvsqvisqve vocem proximi svi}}{\textsc{genesis} \textsc{xi}$\bullet$\textsc{vii}}
 
 \section{Phonemic Inventory}
 
@@ -701,7 +894,7 @@ parab\textcolor{red}{o}la v. parabla \\
 
 \subsection{Vocalism}
 
-\begin{tcolorbox}[title=Diphthongization]
+\begin{tcolorbox}[title=Diphthongization I]
   
 \end{tcolorbox}
 
@@ -750,6 +943,21 @@ parab\textcolor{red}{o}la v. parabla \\
   \textsc{fo\textcolor{red}{c}u} & fue\textcolor{magenta}{g}o [\textipa{G}] \\
 \end{tabular}
 
+\begin{tabular}{c c}
+  \textsc{lat} & Es. \\
+  \hline
+  \textsc{ca\textcolor{red}{b}allu} & ca\textcolor{magenta}{b}allo [\textipa{B}] \\
+  \textsc{de\textcolor{red}{b}ere} & de\textcolor{magenta}{b}er [\textipa{B}] \\
+  \textsc{ha\textcolor{red}{b}ere} & ha\textcolor{magenta}{b}er [\textipa{B}] \\
+               & \\
+  \textsc{cru\textcolor{red}{d}u} & cru\textcolor{magenta}{d}o [\textipa{D}] \\
+  \textsc{pe\textcolor{red}{d}e} & pie \\
+               & \\
+  \textsc{au\textcolor{red}{g}ustu} & a\textcolor{magenta}{g}osto [\textipa{G}] \\
+  \textsc{li\textcolor{red}{g}are} & li\textcolor{magenta}{g}ar [\textipa{G}] \\
+  \textsc{pa\textcolor{red}{g}anu} & pa\textcolor{magenta}{g}ano [\textipa{G}] \\
+\end{tabular}
+
 \begin{tabular}{c c}  
   \textsc{lat.} & Es. \\
   \hline
@@ -776,106 +984,18 @@ parab\textcolor{red}{o}la v. parabla \\
   \textsc{fal\textcolor{red}{c}one} & hal\textcolor{magenta}{c}ón \\
 \end{tabular}
 
-\begin{tcolorbox}[title=Affrication of Palatal Stops]
+The orthography of Visigothic texts shows the signs of lenition \cite[p.~159]{latin_paleography}:
+\begin{quote}
+  The use of \emph{b} instead of \emph{p} (\emph{abtum}) or \emph{p} for \emph{b} (\emph{puplicum}), \emph{g} for \emph{c} (\emph{eglesia}\footnote{cf. Es. \emph{iglesia}}) or the reverse (\emph{intecritate}), \emph{k} for \emph{c} (\emph{kaput}), \emph{t} for \emph{d} (\emph{aput}) or \emph{d} for \emph{t} (\emph{sustinead}).
+\end{quote}
 
-\end{tcolorbox}
+\pagebreak
 
-% \section{Morphophonology}
+\includegraphics[scale=0.45]{alfonso_x.jpg}
 
-% \subsection{Nominal}
+\thispagestyle{empty}
 
-% \subsection{Verbal}
-
-\chapter{Central Iberian Romance}
-
-% \epigraph{Yo te aseguro que hoy estarás conmigo en el paraíso.}{Lucas 23:43}
-
-\section{Phonemic Inventory}
-
-\subsection{Vocalic}
-
-\subsection{Consonantal}
-
-\section{Sound Changes}
-
-\subsection{Vocalism}
-
-\begin{tcolorbox}[title=Diphthongization]
-  
-\end{tcolorbox}
-
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \textsc{hib\textcolor{red}{e}rnu} & inv\textcolor{magenta}{ie}rno \\
-  \textsc{ap\textcolor{red}{e}rta} & ab\textcolor{magenta}{ie}rta \\
-  \textsc{s\textcolor{red}{e}pte} & s\textcolor{magenta}{ie}te \\
-  \textsc{c\textcolor{red}{e}rvu} & c\textcolor{magenta}{ie}rvo \\
-  \textsc{f\textcolor{red}{e}rru} & h\textcolor{magenta}{ie}rro \\
-  \textsc{f\textcolor{red}{o}rte} & f\textcolor{magenta}{ue}rte \\
-  \textsc{p\textcolor{red}{o}rta} & p\textcolor{magenta}{ue}rta \\
-  \textsc{m\textcolor{red}{o}rdit} & m\textcolor{magenta}{ue}rde \\
-  \textsc{m\textcolor{red}{o}rit} & m\textcolor{magenta}{ue}re \\
-  \textsc{m\textcolor{red}{o}vet} & m\textcolor{magenta}{ue}ve \\
-  \textsc{p\textcolor{red}{o}tet} & p\textcolor{magenta}{ue}de \\
-\end{tabular}
-
-\begin{tcolorbox}[title=Raising]
-  
-\end{tcolorbox}
-
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{m\textcolor{red}{u}ltu} & m\textcolor{magenta}{u}cho \\
-  \textsc{ausc\textcolor{red}{u}ltat} & esc\textcolor{magenta}{u}cha \\
-  \textsc{l\textcolor{red}{a}cte} & l\textcolor{magenta}{u}cha \\
-  \textsc{l\textcolor{red}{a}cte} & l\textcolor{magenta}{e}che \\
-  \textsc{f\textcolor{red}{a}ctu} & h\textcolor{magenta}{e}cho \\
-  \textsc{b\textcolor{red}{a}siu} & b\textcolor{magenta}{e}so \\
-  \textsc{c\textcolor{red}{a}seu} & q\textcolor{magenta}{ue}so \\
-\end{tabular}
-
-\subsection{Consonantism}
-
-\begin{tcolorbox}[title=Lenition II]
-
-\end{tcolorbox}
-
-\begin{tabular}{c c}
-  \textsc{lat} & Es. \\
-  \hline
-  \textsc{ca\textcolor{red}{b}allu} & ca\textcolor{magenta}{b}allo [\textipa{B}] \\
-  \textsc{de\textcolor{red}{b}ere} & de\textcolor{magenta}{b}er [\textipa{B}] \\
-  \textsc{ha\textcolor{red}{b}ere} & ha\textcolor{magenta}{b}er [\textipa{B}] \\
-               & \\
-  \textsc{cru\textcolor{red}{d}u} & cru\textcolor{magenta}{d}o [\textipa{D}] \\
-  \textsc{pe\textcolor{red}{d}e} & pie \\
-               & \\
-  \textsc{au\textcolor{red}{g}ustu} & a\textcolor{magenta}{g}osto [\textipa{G}] \\
-  \textsc{li\textcolor{red}{g}are} & li\textcolor{magenta}{g}ar [\textipa{G}] liar \\
-  \textsc{pa\textcolor{red}{g}anu} & pa\textcolor{magenta}{g}ano [\textipa{G}] \\
-\end{tabular}
-
-\begin{tcolorbox}[title=Palatalization of cluster /kt/]
-
-\end{tcolorbox}
-
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{di\textcolor{red}{ct}u} & di\textcolor{magenta}{ch}o [\textipa{\textteshlig}] \\
-  \textsc{stri\textcolor{red}{ct}u} & estre\textcolor{magenta}{ch}o [\textipa{\textteshlig}] \\
-  \textsc{pe\textcolor{red}{ct}u} & pe\textcolor{magenta}{ch}o [\textipa{\textteshlig}] \\
-  \textsc{te\textcolor{red}{ct}u} & te\textcolor{magenta}{ch}o [\textipa{\textteshlig}] \\
-  \textsc{no\textcolor{red}{ct}e} & no\textcolor{magenta}{ch}e [\textipa{\textteshlig}] \\
-  \textsc{o\textcolor{red}{ct}o} & o\textcolor{magenta}{ch}o [\textipa{\textteshlig}] \\
-\end{tabular}
-
-% \section{Morphophonology}
-
-% \subsection{Nominal}
-
-% \subsection{Verbal}
+\pagebreak
 
 \chapter{Old Spanish}
 
@@ -929,7 +1049,104 @@ parab\textcolor{red}{o}la v. parabla \\
 
 \subsection{Vocalism}
 
+\begin{tcolorbox}[title=Diphthongization II]
+  
+\end{tcolorbox}
+
+\begin{tabular}{c c}
+  \textsc{lat.} & Es. \\
+  \textsc{hib\textcolor{red}{e}rnu} & inv\textcolor{magenta}{ie}rno \\
+  \textsc{ap\textcolor{red}{e}rta} & ab\textcolor{magenta}{ie}rta \\
+  \textsc{s\textcolor{red}{e}pte} & s\textcolor{magenta}{ie}te \\
+  \textsc{c\textcolor{red}{e}rvu} & c\textcolor{magenta}{ie}rvo \\
+  \textsc{f\textcolor{red}{e}rru} & h\textcolor{magenta}{ie}rro \\
+  \textsc{f\textcolor{red}{o}rte} & f\textcolor{magenta}{ue}rte \\
+  \textsc{p\textcolor{red}{o}rta} & p\textcolor{magenta}{ue}rta \\
+  \textsc{m\textcolor{red}{o}rdit} & m\textcolor{magenta}{ue}rde \\
+  \textsc{m\textcolor{red}{o}rit} & m\textcolor{magenta}{ue}re \\
+  \textsc{m\textcolor{red}{o}vet} & m\textcolor{magenta}{ue}ve \\
+  \textsc{p\textcolor{red}{o}tet} & p\textcolor{magenta}{ue}de \\
+\end{tabular}
+
+\begin{tcolorbox}[title=Metaphony]
+  
+\end{tcolorbox}
+
+\begin{tabular}{c c}
+  \textsc{lat.} & Es. \\
+  \hline
+  \textsc{m\textcolor{red}{u}ltu} & m\textcolor{magenta}{u}cho \\
+  \textsc{ausc\textcolor{red}{u}ltat} & esc\textcolor{magenta}{u}cha \\
+  \textsc{l\textcolor{red}{a}cte} & l\textcolor{magenta}{u}cha \\
+  \textsc{l\textcolor{red}{a}cte} & l\textcolor{magenta}{e}che \\
+  \textsc{f\textcolor{red}{a}ctu} & h\textcolor{magenta}{e}cho \\
+  \textsc{b\textcolor{red}{a}siu} & b\textcolor{magenta}{e}so \\
+  \textsc{c\textcolor{red}{a}seu} & q\textcolor{magenta}{ue}so \\
+  \textsc{r\textcolor{red}{e}ni\={o}ne} & r\textcolor{magenta}{i}ñón \\
+  \textsc{g\textcolor{red}{e}nesta} & h\textcolor{magenta}{i}niesta \\
+  \textsc{c\textcolor{red}{ae}mentum} & c\textcolor{magenta}{i}miento \\
+  \textsc{t\textcolor{red}{e}nebras} & t\textcolor{magenta}{i}nieblas \\
+  \textsc{c\textcolor{red}{o}chle\={a}re} & c\textcolor{magenta}{u}chara \\
+  \textsc{c\textcolor{red}{o}gn\={a}tu} & c\textcolor{magenta}{u}ñado \\
+  \textsc{m\textcolor{red}{u}liere} & m\textcolor{magenta}ujer \\
+\end{tabular}
+
+\begin{tcolorbox}[title=Reduction of Final Vowels]
+
+\end{tcolorbox}
+
+\begin{tabular}{c c}
+  \textsc{lat.} & Es. \\
+  \hline
+  \textsc{v\={e}n\={i}} & vine \\  
+\end{tabular}
+
+\begin{tabular}{c c}
+  OSp. & Es. \\
+  \hline
+  m\textcolor{red}{ía} & (*m\textcolor{red}{íe} $\rightarrow$) m\textcolor{magenta}{i} \\
+  du\textcolor{red}{a}s & du\textcolor{magenta}{e}s \\
+  primer\textcolor{red}{o} & primer \\
+  tercer\textcolor{red}{o} & tercer \\
+  sant\textcolor{red}{o} & san \\
+  segund\textcolor{red}{o} & según \\
+\end{tabular}
+
+\begin{tabular}{c c}
+  \textsc{lat.} & Es. \\
+  \hline
+  \textsc{pariet\textcolor{red}{e}} & pared \\
+  \textsc{merced\textcolor{red}{e}} & merced \\
+  \textsc{p\={a}n\textcolor{red}{e}} & pan \\
+  \textsc{mar\textcolor{red}{e}} & mar \\
+  \textsc{fid\={e}l\textcolor{red}{e}} & fiel \\
+  \textsc{p\={a}c\textcolor{red}{e}} & paz \\
+  \textsc{calc\textcolor{red}{e}} & coz \\
+  \textsc{falc\textcolor{red}{e}} & hoz \\
+  \textsc{fasc\textcolor{red}{e}} & haz \\
+  \textsc{pisc\textcolor{red}{e}} & pez \\
+\end{tabular}
+
 \subsection{Consonantism}
+
+\begin{tcolorbox}[title=Palatalization of Clusters]
+
+\end{tcolorbox}
+
+\begin{tabular}{c c}
+  \textsc{lat.} & Es. \\
+  \hline
+  \textsc{di\textcolor{red}{ct}u} & di\textcolor{magenta}{ch}o [\textipa{\textteshlig}] \\
+  \textsc{stri\textcolor{red}{ct}u} & estre\textcolor{magenta}{ch}o [\textipa{\textteshlig}] \\
+  \textsc{pe\textcolor{red}{ct}u} & pe\textcolor{magenta}{ch}o [\textipa{\textteshlig}] \\
+  \textsc{te\textcolor{red}{ct}u} & te\textcolor{magenta}{ch}o [\textipa{\textteshlig}] \\
+  \textsc{no\textcolor{red}{ct}e} & no\textcolor{magenta}{ch}e [\textipa{\textteshlig}] \\
+  \textsc{o\textcolor{red}{ct}o} & o\textcolor{magenta}{ch}o [\textipa{\textteshlig}] \\
+\end{tabular}
+
+\begin{tcolorbox}[title=Metathesis]
+
+\end{tcolorbox}
 
 \begin{tcolorbox}[title=Debuccalization of /f/]
   
@@ -951,480 +1168,60 @@ parab\textcolor{red}{o}la v. parabla \\
   \textsc{\textcolor{red}{f}laccu} & \textcolor{magenta}{f}laco \\
 \end{tabular}
 
+\pagebreak
+
+\includegraphics[scale=0.75]{marquez.jpg}
+
+\thispagestyle{empty}
+
+\pagebreak
+
+\chapter{Modern Spanish}
+
+\epigraph{Todo está cumplido.}{Juan 19:30}
+
+\section{Phonemic Inventory}
+
+\subsection{Vocalic}
+
+\subsection{Consonantal}
+
+\section{Sound Changes}
+
+\subsection{Vocalism}
+
+\subsection{Consonantism}
+
+\begin{tcolorbox}[title=Lenition II]
+
+\end{tcolorbox}
+
 \begin{tcolorbox}[title=Betacism II]
 
 \end{tcolorbox}
 
-% \section{Morphophonology}
+\begin{tcolorbox}[title=Simplication of Clusters]
+  
+\end{tcolorbox}
 
-% \subsection{Nominal}
+\begin{tcolorbox}[title=Deaffrication]
 
-% \subsection{Verbal}
+\end{tcolorbox}
 
-% \chapter{Early Modern Spanish}
+\begin{tcolorbox}[title=Devoicing of Fricatives]
+  
+\end{tcolorbox}
 
-% \epigraph{El que sirve una revolución ara en el mar.}{Simón Bolívar}
+\subsubsection{The Fate of Dental Affricates}
 
-% \section{Phonemic Inventory}
+\begin{tcolorbox}[title=Retraction of Palatal Fricative]
+  
+\end{tcolorbox}
 
-% \subsection{Vocalic}
+\chapter*{Epilogue: Mein liebster Jugendtraum}
+\addcontentsline{toc}{chapter}{Epilogue: \emph{Mein liebester Jugendtraum}}
 
-% \subsection{Consonantal}
-
-% \section{Sound Changes}
-
-% \subsection{Vocalism}
-
-% \subsection{Consonantism}
-
-% \section{Morphophonology}
-
-% \subsection{Nominal}
-
-% \subsection{Verbal}
-
-% \chapter{Modern Spanish}
-
-% \epigraph{Todo está cumplido.}{Juan 19:30}
-
-% \section{Phonemic Inventory}
-
-% \subsection{Vocalic}
-
-% \subsection{Consonantal}
-
-% \section{Sound Changes}
-
-% \subsection{Vocalism}
-
-% \subsection{Consonantism}
-
-% \section{Morphophonology}
-
-% \subsection{Nominal}
-
-% \subsection{Verbal}
-
-% \chapter{Anthology of Sound Changes}
-
-% % \epigraph{How many years must a mountain exist \\ Before it is washed to the sea?}{Bob Dylan}
-
-% \section{Vocalism}
-
-% \begin{tcolorbox}[hbox, title=Latin]
-%   \begin{tabular}{|c|c|c|c|}
-%     \hline
-%     & Front & Central & Back \\
-%     \hline
-%     High & \textsc{\u{i} \={i}} & & \textsc{\u{u} \={u}} \\
-%     \hline
-%     Mid & \textsc{\u{e} \={e}} & & \textsc{\u{o} \={o}} \\
-%     \hline
-%     Low & & \textsc{\u{a} \={a}} & \\
-%     \hline
-%   \end{tabular}
-% \end{tcolorbox} 
-
-% \begin{tcolorbox}[hbox, title=Proto-Romance]
-%   \begin{tabular}{|c|c|c|c|}
-%     \hline
-%     & Front & Central & Back \\
-%     \hline
-%     High & i & & u \\
-%     \hline
-%     High-Mid & \cellcolor{gray} \textipa{I} & & \cellcolor{gray} \textipa{U} \\
-%     \hline
-%     Mid & e & & o \\
-%     \hline
-%     Low-Mid & \textipa{E} & & \textipa{O} \\
-%     \hline
-%     Low & & a & \\
-%     \hline
-%   \end{tabular}
-% \end{tcolorbox}
-
-% \begin{tcolorbox}[hbox, title=Proto-Romance after the Great Merger]
-%   \begin{tabular}{|c|c|c|c|}
-%     \hline
-%     & Front & Central & Back \\
-%     \hline
-%     High & i & & u \\
-%     \hline
-%     Mid & e & & o \\
-%     \hline
-%     Low-Mid & \cellcolor{gray} \textipa{E} & & \cellcolor{gray} \textipa{O} \\
-%     \hline
-%     Low & & a & \\
-%     \hline
-%   \end{tabular}
-% \end{tcolorbox}
-
-% \subsection{Monophthongs}
-
-% \begin{tcolorbox}[title=Proto-Romance Loss of Quantity]  
-%   \begin{equation}\tag{Loss of Quantity}\label{eq:loss_of_quantity}
-%     \textbf{V}
-%     \begin{cases}
-%       \vdash \text{long} : \textsc{duration} & \Rightarrow [\text{long} \rightarrow \text{short}]\ \textbf{V} \\
-%       \vdash \text{short} : \textsc{duration} & \Rightarrow
-%                                                 \begin{cases}
-%                                                   \textsc{a} & \Rightarrow \textbf{V} \\
-%                                                   \texttt{else} & \Rightarrow \begin{cases}
-%                                                                               \vdash \text{high} : \textsc{height} & \Rightarrow [\text{high} \rightarrow \text{high-mid}]\ \textbf{V} \\
-%                                                                               \vdash \text{mid} : \textsc{height} & \Rightarrow [\text{mid} \rightarrow \text{low-mid}]\ \textbf{V} \\
-%                                                                             \end{cases} \\
-%                                                 \end{cases} \\
-%     \end{cases}
-%   \end{equation}  
-% \end{tcolorbox}
-
-% \begin{tcolorbox}[title=Pan-Romance Great Merger]
-%   \begin{equation}\tag{Great Merger}\label{eq:great_merger}
-%     \textbf{V}_{\vdash \text{high-mid}} \Rightarrow [\text{high-mid} \rightarrow \text{mid}]\ \textbf{V}
-%   \end{equation}
-% \end{tcolorbox}
-
-% \begin{tcolorbox}[title=Monophthongization]
-%   \begin{align*}\tag{Monophthongization}\label{eq:monophthongization}
-%     \textsc{oe} & \Rightarrow \text{e} \\
-%     \textsc{au} & \Rightarrow \text{o} \\
-%     \textsc{ae} & \Rightarrow \text{\textipa{E}}\ |\ \text{e}
-%   \end{align*}
-% \end{tcolorbox}
-
-% \begin{tcolorbox}[title=Diphthongization]
-%   \begin{align*}\tag{Diphthongization}\label{eq:diphthongization}
-%       \text{\textipa{E}} \in \mathbb{S}_{\vdash \text{stressed}} & \Rightarrow \text{ie} \\
-%       \text{\textipa{O}} \in \mathbb{S}_{\vdash \text{stressed}} & \Rightarrow \text{we}
-%   \end{align*}
-% \end{tcolorbox}
-
-% \subsection{Diphthongs}
-
-% \begin{tcolorbox}[title=Loss of Hiatus]
-%   \begin{equation}\tag{Loss of Hiatus}\label{eq:loss_of_hiatus}
-%     \textbf{V.V} \Rightarrow \textbf{VV}
-%   \end{equation}
-% \end{tcolorbox}
-
-% \subsection{Metaphony}
-
-% \section{Consonantism}
-
-% \subsection{Monolithic Consonants}
-
-% \subsection{Consonant Clusters}
-
-% \paragraph{Prothesis in /sC/}
-
-% \begin{equation}
-%   \#\ \text{s}\textbf{C} \Rightarrow \text{es}.\textbf{C}
-% \end{equation}
-
-% \paragraph{Syncope}
-
-% \begin{equation}
-%   \textbf{CV.C} \Rightarrow \textbf{CC}
-% \end{equation}
-
-% \paragraph{Betacism}
-
-% \begin{align}
-% \text{w} & \Rightarrow \text{\textipa{B}} \\
-% \text{b} & \Rightarrow \text{\textipa{B}}
-% \end{align}
-
-% \paragraph{Diphthongs from Betacism}
-
-% \begin{equation}
-% \textbf{V}\text{\textipa{B}} \Rightarrow \textbf{V}\text{w}
-% \end{equation}
-
-% \paragraph{Deaspiration in Popular Latin}
-
-% \begin{equation}
-%   \text{h} \Rightarrow \varnothing
-% \end{equation}
-
-% \paragraph{Cluster Reduction in /ns/}
-
-% \begin{equation}
-%   \text{ns} \Rightarrow \text{s}
-% \end{equation}
-
-% \paragraph{Elision of intervocalic /g/}
-
-% \begin{equation}
-%   \textbf{V}.\text{g}\textbf{V} \Rightarrow \textbf{VV}
-% \end{equation}
-
-% \paragraph{Elision of coda /m/}
-
-% \begin{equation}
-%   \text{m}\ \# \Rightarrow \varnothing
-% \end{equation}
-
-% \paragraph{Degemination}
-
-% \begin{equation}
-%   \textbf{CC} \Rightarrow \textbf{C}
-% \end{equation}
-
-% \paragraph{Intervocalic Lenition}
-
-% \begin{align}
-%   \textbf{V.C}_{[-\text{voice}]}\textbf{V} & \Rightarrow \textbf{V.C}_{[+\text{voice}]}\textbf{V} \\
-%   \textbf{V.C}\substack{[+\text{voice}] \\ [+\text{stop}]}\textbf{V} & \Rightarrow \textbf{V.C}\substack{[+\text{voice}] \\ [+\text{fricative}]}\textbf{V}
-% \end{align}
-
-% \paragraph{Debuccalization of onset /f/}
-
-% \begin{equation}
-%   \#\ \text{f} \Rightarrow \text{h}
-% \end{equation}
-
-% \paragraph{Fortition of onset /j/}
-
-% \begin{equation}
-%   \#\ \text{j} \Rightarrow \text{\textipa{\textdyoghlig}}
-% \end{equation}
-
-% \paragraph{Palatalization of Consonant Clusters}
-
-% \begin{align}
-%   \text{kt} & \Rightarrow \text{it} \\
-%   \text{kl} & \Rightarrow \text{\textipa{L}} \\
-%   \text{n:} & \Rightarrow \text{\textipa{\textltailn}} \\
-%   \text{l:} & \Rightarrow \text{\textipa{L}} \\
-%   \text{di} & \Rightarrow \text{\textipa{\textdyoghlig}} \\
-%   \text{gi} & \Rightarrow \text{\textipa{\textdyoghlig}}
-% \end{align}
-
-% \paragraph{Palatalization of Velars}
-
-% \begin{equation}
-%   \textbf{C}_{[+\text{velar}]}\textbf{V}_{[+\text{front}]} \Rightarrow \textbf{C}_{[+\text{palatal}]}\textbf{V}_{[+\text{front}]}
-% \end{equation}
-
-
-% \paragraph{Palatalization of Dentals}
-
-% \begin{equation}
-%   \textbf{C}\substack{[+\text{dental}] \\ [+\text{stop}]}\text{i} \Rightarrow \textbf{C}\substack{[+\text{dental}] \\ [+\text{affricate}]}
-% \end{equation}
-
-% \paragraph{Palatalization of /n/ and /j/}
-
-% \begin{align}
-%   \text{nj} & \Rightarrow \text{\textipa{\textltailn}} \\
-%   \text{lj} & \Rightarrow \text{\textipa{L}}
-% \end{align}
-
-% \paragraph{Palatalization of /Cl/ Clusters}
-
-% \begin{align}
-%   \#\ \textbf{C}\text{l} & \Rightarrow \text{\textipa{L}} \\
-%   \text{-}\textbf{C}\text{l-} & \Rightarrow \begin{cases}
-%                                               \text{\textipa{\textteshlig}} \\
-%                                               \text{\textipa{\textdyoghlig}} \\
-%                                               \text{\textipa{\textltailn}} \\
-%                                               \text{\textipa{L}}
-%                                             \end{cases}
-% \end{align}
-
-% \paragraph{Evolution of /skl/, /sl/, and /tl/}
-
-% \begin{align}
-%   \text{skl} & \Rightarrow \begin{cases}
-%                              \text{\textipa{\texttslig}kl} \\
-%                              \text{\textipa{\textteshlig}}
-%                            \end{cases}\\
-%   \text{sl} & \Rightarrow \text{skl} \\
-%   \text{tl} & \Rightarrow \text{kl}
-% \end{align}
-
-% \chapter{Anthology of Morphophonological Changes}
-
-% \section{Nominal}
-
-% \subsection{Dissolution of Declension IV \& V}
-
-% \subsection{Reduction of the Case System}
-
-% \section{Verbal}
-
-% \chapter{Glossarium Latinocastellanum}
-
-% \section{Nominal}
-
-% \subsection{Declension I \& V}
-
-% \begin{tabular}{|c|c|}
-%   \hline
-%   \textsc{latina} & Español \\
-%   \hline
-%   \textsc{capra} & cabra \\
-%   \hline
-% \end{tabular}
-
-% \begin{tabular}{c c}
-%   \begin{tabular}{|c|c|c|}
-%     \hline
-%     & \textsc{sg} & \textsc{pl} \\
-%     \hline
-%     \textsc{nom} & \textsc{capra }& \textsc{caprae} \\
-%     \hline
-%     \textsc{gen} & \textsc{caprae} & \textsc{capr\={a}rum} \\
-%     \hline
-%     \textsc{dat} & \textsc{caprae} & \textsc{capr\={i}s} \\
-%     \hline
-%     \textsc{acc} & \cellcolor{gray} \textsc{capram} & \cellcolor{magenta} \textsc{capr\={a}s} \\
-%     \hline
-%     \textsc{abl} & \textsc{capr\={a}} & \textsc{capr\={i}s} \\
-%     \hline
-%     \textsc{voc} & \textsc{capra} & \textsc{caprae} \\
-%     \hline
-%   \end{tabular} \quad $\Rightarrow$ &
-
-%   \begin{tabular}{|c|c|c|}
-%     \hline
-%     & \textsc{sg} & \textsc{pl} \\
-%     \hline
-%     & \cellcolor{gray} cabra & \cellcolor{magenta} cabras \\
-%     \hline
-%   \end{tabular} \\
-% \end{tabular}
-
-% \begin{tabular}{|c|c|}
-%   \hline
-%   \textsc{latina} & Español \\
-%   \hline
-%   \textsc{dies} & día \\
-%   \hline
-% \end{tabular}
-
-% \subsection{Declension II \& IV}
-
-% \begin{tabular}{|c|c|}
-%   \hline
-%   \textsc{latina} & Español \\
-%   \hline
-%   \textsc{murus} & muro \\
-%   \hline
-% \end{tabular}
-
-% \begin{tabular}{|c|c|}
-%   \hline
-%   \textsc{latina} & Español \\
-%   \hline
-%   \textsc{fructus} & fruto\footnote{Old Spanish \emph{frucho}} \\
-%   \hline
-% \end{tabular}
-
-% \subsection{Declension III}
-
-% \begin{tabular}{|c|c|}
-%   \hline
-%   \textsc{latina} & Español \\
-%   \hline
-%   \textsc{panis} & pan \\
-%   \hline
-% \end{tabular}
-
-% \section{Pronoun}
-
-% \begin{tabular}{|c|c|}
-%   \hline
-%   \textsc{latina} & Español \\
-%   \hline
-%   \textsc{ego} & yo \\
-%   \hline
-%   \textsc{tv} & tú \\
-%   \hline
-%   \textsc{nos} & nosotros\footnote{Old Spanish \emph{nos}} \\
-%   \hline
-%   \textsc{vos} & vosotros\footnote{Old Spanish \emph{vos}} \\
-%   \hline
-%   \textsc{ille} & él \\
-%   \hline
-%   \textsc{illi} & ellos \\
-%   \hline
-% \end{tabular}
-
-% \section{Numeral}
-
-% \begin{tabular}{|c|c|}
-%   \hline
-%   \textsc{latina} & Español \\
-%   \hline
-%   \textsc{vnvs} & uno \\
-%   \hline
-%   \textsc{dvo} & dos \\
-%   \hline
-%   \textsc{tres} & tres \\
-%   \hline
-%   \textsc{qvattvor} & cuatro \\
-%   \hline
-%   \textsc{qvinqve} & cinco \\
-%   \hline
-%   \textsc{sex} & seis \\
-%   \hline
-%   \textsc{septem} & siete \\
-%   \hline
-%   \textsc{octo} & ocho \\
-%   \hline
-%   \textsc{novem} & nueve \\
-%   \hline
-%   \textsc{decem} & diez \\
-%   \hline
-% \end{tabular}
-
-% \section{Verbal}
-
-% \subsection{Conjugation I}
-
-% \begin{tabular}{|c|c|}
-%   \hline
-%   \textsc{latina} & Español \\
-%   \hline
-%   \textsc{pensare} & pensar \\
-%   \hline
-% \end{tabular}
-
-% \subsection{Conjugation II}
-
-% \begin{tabular}{|c|c|}
-%   \hline
-%   \textsc{latina} & Español \\
-%   \hline
-%   \textsc{habere} & haber \\
-%   \hline
-% \end{tabular}
-
-% \subsection{Conjugation III}
-
-% \begin{tabular}{|c|c|}
-%   \hline
-%   \textsc{latina} & Español \\
-%   \hline
-%   \textsc{perdere} & perder \\
-%   \hline
-% \end{tabular}
-
-% \subsection{Conjugation IV}
-
-% \begin{tabular}{|c|c|}
-%   \hline
-%   \textsc{latina} & Español \\
-%   \hline
-%   \textsc{partire} & partir \\
-%   \hline
-% \end{tabular}
-
-% \chapter*{Epilogue: \emph{Mein liebster Jugendtraum}}
-% \addcontentsline{toc}{chapter}{Epilogue: \emph{Mein liebester Jugendtraum}}
-
-% \epigraph{En adelanto van estos lugares: \\ ya tienen su diosa coronada.}{Leandro Díaz}
+\epigraph{En adelanto van estos lugares: \\ ya tienen su diosa coronada.}{Leandro Díaz}
 
 \nocite{*}
 
@@ -1435,6 +1232,8 @@ parab\textcolor{red}{o}la v. parabla \\
 
 \printbibliography[heading=subbibintoc, keyword=romance, title={Romance Linguistics}]
 
-\printbibliography[heading=subbibintoc, keyword=tcs, title={Computer Science}]
+\printbibliography[heading=subbibintoc, keyword=tcs, title={Computation}]
+
+\printbibliography[heading=subbibintoc, keyword=misc, title={Misc.}]
 
 \end{document}
