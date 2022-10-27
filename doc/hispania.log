@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2022.10.26)  26 OCT 2022 23:31
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2022.10.26)  27 OCT 2022 00:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1447,38 +1447,9 @@ Overfull \hbox (21.68178pt too wide) in paragraph at lines 56--56
 \tf@toc=\write7
 \openout7 = `hispania.toc'.
 
- [3]
-Missing character: There is no 枯 in font Libertinus Serif Regular/OT:script=lat
-n;language=dflt;mapping=tex-text;!
-Missing character: There is no れ in font Libertinus Serif Regular/OT:script=lat
-n;language=dflt;mapping=tex-text;!
-Missing character: There is no た in font Libertinus Serif Regular/OT:script=lat
-n;language=dflt;mapping=tex-text;!
-Missing character: There is no 技 in font Libertinus Serif Regular/OT:script=lat
-n;language=dflt;mapping=tex-text;!
-Missing character: There is no 術 in font Libertinus Serif Regular/OT:script=lat
-n;language=dflt;mapping=tex-text;!
-Missing character: There is no の in font Libertinus Serif Regular/OT:script=lat
-n;language=dflt;mapping=tex-text;!
-Missing character: There is no 水 in font Libertinus Serif Regular/OT:script=lat
-n;language=dflt;mapping=tex-text;!
-Missing character: There is no 平 in font Libertinus Serif Regular/OT:script=lat
-n;language=dflt;mapping=tex-text;!
-Missing character: There is no 思 in font Libertinus Serif Regular/OT:script=lat
-n;language=dflt;mapping=tex-text;!
-Missing character: There is no 考 in font Libertinus Serif Regular/OT:script=lat
-n;language=dflt;mapping=tex-text;!
-Missing character: There is no 横 in font Libertinus Serif Regular/OT:script=lat
-n;language=dflt;mapping=tex-text;!
-Missing character: There is no 井 in font Libertinus Serif Regular/OT:script=lat
-n;language=dflt;mapping=tex-text;!
-Missing character: There is no 軍 in font Libertinus Serif Regular/OT:script=lat
-n;language=dflt;mapping=tex-text;!
-Missing character: There is no 平 in font Libertinus Serif Regular/OT:script=lat
-n;language=dflt;mapping=tex-text;!
- [4
+ [3] [4
 
-] [5]
+]
 LaTeX Font Info:    Trying to load font information for T3+LibertinusSerif(0) o
 n input line 150.
 LaTeX Font Info:    No file T3LibertinusSerif(0).fd. on input line 150.
@@ -1487,91 +1458,91 @@ LaTeX Font Info:    No file T3LibertinusSerif(0).fd. on input line 150.
 LaTeX Font Warning: Font shape `T3/LibertinusSerif(0)/m/n' undefined
 (Font)              using `T3/cmr/m/n' instead on input line 150.
 
-[6
+[5
 
-] [7] [8] [9
+] [6] [7] [8
 
 ]
 Chapter 1.
-[10
+[9
 
-] [11] [12] [13] [14]
+] [10] [11] [12] [13]
 Chapter 2.
-[15
+[14
+
+] [15
 
 ] [16
-
-] [17
 
 ]
 File: ../pics//augustine.jpg Graphic file (type bmp)
 <../pics//augustine.jpg>
- [18]
+ [17]
 Chapter 3.
-[19
+[18
 
-] [20] [21]
-Underfull \hbox (badness 10000) in paragraph at lines 620--621
+] [19] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 626--627
 
  []
 
 
-Overfull \hbox (29.71326pt too wide) in paragraph at lines 648--648
+Overfull \hbox (29.71326pt too wide) in paragraph at lines 654--654
 [] 
  []
 
-[22] [23] [24] [25]
+[21] [22] [23] [24]
 File: ../pics//isidorus.jpeg Graphic file (type bmp)
 <../pics//isidorus.jpeg>
 
-Overfull \hbox (51.79408pt too wide) in paragraph at lines 830--831
+Overfull \hbox (51.79408pt too wide) in paragraph at lines 836--837
 [][] 
  []
 
-[26]
+[25]
 Chapter 4.
-[27
+[26
 
-] [28] [29]
+] [27] [28]
 File: ../pics//alfonso_x.jpg Graphic file (type bmp)
 <../pics//alfonso_x.jpg>
 
 Overfull \vbox (93.94745pt too high) has occurred while \output is active []
 
 
-[30]
+[29]
 Chapter 5.
 
-Overfull \hbox (10.79326pt too wide) in paragraph at lines 1035--1035
+Overfull \hbox (10.79326pt too wide) in paragraph at lines 1041--1041
 [] 
  []
 
-[31
+[30
 
-] [32] [33] [34]
+] [31] [32] [33]
 File: ../pics//marquez.jpg Graphic file (type bmp)
 <../pics//marquez.jpg>
 
-Overfull \hbox (21.68176pt too wide) in paragraph at lines 1162--1163
+Overfull \hbox (21.68176pt too wide) in paragraph at lines 1168--1169
 [][] 
  []
 
-[35]
+[34]
 Chapter 6.
-[36
+[35
 
-] [37] [38
+] [36] [37
 
-] [39
+] [38
 
 ]
-Overfull \hbox (22.4562pt too wide) in paragraph at lines 1222--1222
+Overfull \hbox (22.4562pt too wide) in paragraph at lines 1228--1228
 \TU/LibertinusSerif(0)/m/n/10 Spanish Biblical Texts. Digital Library of Old Sp
 anish Texts. \TU/LibertinusSerif(0)/m/sc/10 url\TU/LibertinusSerif(0)/m/n/10 : 
 [][]$[][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][][] []
  []
 
-[40] [41] (./hispania.aux)
+[39] [40] (./hispania.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1582,10 +1553,10 @@ Package logreq Info: Writing requests to 'hispania.run.xml'.
 Here is how much of TeX's memory you used:
  36344 strings out of 477220
  724909 string characters out of 5832721
- 1515014 words of memory out of 5000000
+ 1518036 words of memory out of 5000000
  55439 multiletter control sequences out of 15000+600000
  414821 words of font info for 114 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  116i,33n,116p,780b,4751s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on hispania.pdf (44 pages).
+Output written on hispania.pdf (43 pages).

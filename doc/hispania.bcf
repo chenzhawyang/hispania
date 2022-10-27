@@ -2352,16 +2352,19 @@
     <bcf:citekey order="6">tpl</bcf:citekey>
     <bcf:citekey order="7">haskell2010</bcf:citekey>
     <bcf:citekey order="8">def_sml</bcf:citekey>
-    <bcf:citekey order="9">companion_to_latin</bcf:citekey>
-    <bcf:citekey order="10">latin_paleography</bcf:citekey>
-    <bcf:citekey order="11">latin_paleography</bcf:citekey>
-    <bcf:citekey order="12">latin_paleography</bcf:citekey>
-    <bcf:citekey order="13">companion_to_latin</bcf:citekey>
-    <bcf:citekey order="14">companion_to_latin</bcf:citekey>
-    <bcf:citekey order="15">companion_to_latin</bcf:citekey>
+    <bcf:citekey order="9">romance_his</bcf:citekey>
+    <bcf:citekey order="10">lloyd_spanish</bcf:citekey>
+    <bcf:citekey order="11">penny_spanish</bcf:citekey>
+    <bcf:citekey order="12">companion_to_latin</bcf:citekey>
+    <bcf:citekey order="13">latin_paleography</bcf:citekey>
+    <bcf:citekey order="14">latin_paleography</bcf:citekey>
+    <bcf:citekey order="15">latin_paleography</bcf:citekey>
     <bcf:citekey order="16">companion_to_latin</bcf:citekey>
     <bcf:citekey order="17">companion_to_latin</bcf:citekey>
-    <bcf:citekey order="18">latin_paleography</bcf:citekey>
+    <bcf:citekey order="18">companion_to_latin</bcf:citekey>
+    <bcf:citekey order="19">companion_to_latin</bcf:citekey>
+    <bcf:citekey order="20">companion_to_latin</bcf:citekey>
+    <bcf:citekey order="21">latin_paleography</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
