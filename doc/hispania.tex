@@ -4,17 +4,13 @@
 \usepackage{appendix}[toc]
 \usepackage{inputenc}[uft8]
 \usepackage{fontenc}[T1]
-\usepackage{xeCJK}
-\setCJKmainfont{Source Han Serif}
 \usepackage{fontspec}
 \setmainfont{Libertinus Serif}
-\usepackage{minted}
 \usepackage{bussproofs}
 \usepackage{qtree}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
-\usepackage{alphabeta}
 \usepackage{tikz-cd}
 \usepackage{tipa}
 \usepackage{listings}
@@ -40,19 +36,12 @@
 }
 \usepackage{graphicx}
 \graphicspath{{../pics/}}
-\usepackage{unicode-math}
-\setmathfont{Libertinus Math}
 
 \setlength\parindent{0pt}
 \setlength\footnotemargin{0pt}
 
-\newtheorem{definition}{Definition}
-\newtheorem{theorem}{Theorem}
-\newtheorem{lemma}{Lemma}
-\newtheorem{remark}{Remark}
-
 \title{El sueño de mi juventud: \\ Fonología automatizada}
-\author{陳朝陽 \\ Chen Zhaoyang \\ \texttt{zc23@illinois.edu}}
+\author{Chen Zhaoyang \\ \texttt{zc23@illinois.edu}}
 
 \begin{document}
 
@@ -99,20 +88,20 @@
 
 \footnotetext{\href{https://www.bibliacatolica.com.br/la-biblia-de-jerusalen/salmos/69/}{Estoy exhausto de gritar, arden mis fauces, mis ojos se consumen de esperar a mi Dios.}\begin{flushright} \emph{La Biblia de Jerusalén} Salmos 69:4 \end{flushright} OSp. \emph{Biblia romanceada E8} \cite{osp_tanakh}}
 
-\begin{center}
-  \begin{flushleft}
-    危冠切浮雲\ 長劍出天外 \\
-    細故何足慮\ 高度跨一世 \\
-    非子爲我馭\ 逍遙遊荒裔 \\
-    顧謝西王母\ 吾將從此逝 \\
-    豈與蓬戶士\ 彈琴誦言誓 \\
-  \end{flushleft}
-  \vspace{0.5cm}
-  \begin{flushright}
-    阮籍\ 詠懷第五十八\footnotemark
-  \end{flushright}
-\end{center}
-\footnotetext{\href{https://www.degruyter.com/document/doi/10.1515/9781501503870-004/pdf}{My towering cap touches the drifting clouds, my long sword sticks forth beyond the heavens.  Minor issues are not worth concern, passing on high, I stride across the whole age. Feizi is my carriage driver, free and easy, I roam at the wilderness’s edge. Looking back, I take leave of the Queen Mother, from this point on I will go off. How can I join the gentlemen in a thatched house, plucking a zither and reciting mutual pledges?} Singing My Cares LVIII}
+%% \begin{center}
+%%   \begin{flushleft}
+%%     危冠切浮雲\ 長劍出天外 \\
+%%     細故何足慮\ 高度跨一世 \\
+%%     非子爲我馭\ 逍遙遊荒裔 \\
+%%     顧謝西王母\ 吾將從此逝 \\
+%%     豈與蓬戶士\ 彈琴誦言誓 \\
+%%   \end{flushleft}
+%%   \vspace{0.5cm}
+%%   \begin{flushright}
+%%     阮籍\ 詠懷第五十八\footnotemark
+%%   \end{flushright}
+%% \end{center}
+%% \footnotetext{\href{https://www.degruyter.com/document/doi/10.1515/9781501503870-004/pdf}{My towering cap touches the drifting clouds, my long sword sticks forth beyond the heavens.  Minor issues are not worth concern, passing on high, I stride across the whole age. Feizi is my carriage driver, free and easy, I roam at the wilderness’s edge. Looking back, I take leave of the Queen Mother, from this point on I will go off. How can I join the gentlemen in a thatched house, plucking a zither and reciting mutual pledges?} Singing My Cares LVIII}
 
 \vfill  
 \hspace{0pt}
@@ -397,8 +386,8 @@ After we are able to decide syllable weight, defining the Latin \textsc{penultim
 
 \chapter{Dynamics: Sound Changes}
 
-\epigraph{星翳燈幻露泡夢電雲\footnotemark}{金剛經 \S32}
-\footnotetext{\href{https://www2.hf.uio.no/polyglotta/index.php?page=record\&vid=1176\&mid=1993243}{A shooting star, a clouding of the sight, a lamp, an illusion, a drop of dew, a bubble, a dream, a lightning’s flash, a thunder cloud.} Diamond Sutra \S32}
+%% \epigraph{星翳燈幻露泡夢電雲\footnotemark}{金剛經 \S32}
+%% \footnotetext{\href{https://www2.hf.uio.no/polyglotta/index.php?page=record\&vid=1176\&mid=1993243}{A shooting star, a clouding of the sight, a lamp, an illusion, a drop of dew, a bubble, a dream, a lightning’s flash, a thunder cloud.} Diamond Sutra \S32}
 
 \section{Representation of Sound Changes}
 

@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.1 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -35,7 +35,7 @@
       \strng{authorfullhash}{bc2a6a5a36b1dcbb866b18fa763b962b}
       \field{labelalpha}{Spi52}
       \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Old Judaeo-Spanish Evidence of Old Spanish Pronunciation}
@@ -61,7 +61,7 @@
       \strng{authorfullhash}{edae192e06f05f387f479edcbd69cda3}
       \field{labelalpha}{Bac+60}
       \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Communications of the ACM}
@@ -97,7 +97,7 @@
       \strng{authorfullhash}{3fc5fd22f19eed0aef7058cba0e98e58}
       \field{labelalpha}{CH68}
       \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The Sound Pattern of English}
@@ -121,7 +121,7 @@
       \field{extraname}{1}
       \field{labelalpha}{Har74}
       \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Research on Language \& Social Interaction}
@@ -156,7 +156,7 @@
       \strng{authorfullhash}{0e86678d5678ee2e7657d4ff90c6b710}
       \field{labelalpha}{Llo87}
       \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{From Latin to Spanish}
@@ -197,7 +197,7 @@
       \strng{authorfullhash}{c0230d5776cc607619068f924d0a5b57}
       \field{labelalpha}{Mil+97}
       \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{Revised}
@@ -232,7 +232,7 @@
       \strng{authorfullhash}{95b2022c771ceac89aaf4097b62da4fd}
       \field{labelalpha}{KK00}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Ladino-English English-Ladino Concise Encyclopedic Dictionary (Judeo-Spanish)}
@@ -259,7 +259,7 @@
       \strng{authorfullhash}{9bb87a8bc723655f90b49e7d4484e394}
       \field{labelalpha}{Agu01}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Biblia de Jerusalén ilustrada}
@@ -283,7 +283,7 @@
       \strng{authorfullhash}{5a3814d5f991bd83c1ca02f901fe6112}
       \field{labelalpha}{Kon02}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Algorithms for Language Reconstruction}
@@ -320,7 +320,7 @@
       \strng{authorfullhash}{15b0543703c2c576b06fcf2882c171ab}
       \field{labelalpha}{Pen02}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{A History of the Spanish Language}
@@ -346,7 +346,7 @@
       \strng{authorfullhash}{7365a4e827c2dfa2c5af0c0ec4c18c27}
       \field{labelalpha}{Pie02}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Types and Programming Languages}
@@ -370,7 +370,7 @@
       \field{extraname}{2}
       \field{labelalpha}{Har03}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{extraalpha}{1}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -406,7 +406,7 @@
       \field{extraname}{3}
       \field{labelalpha}{Har03}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{extraalpha}{2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -449,7 +449,7 @@
       \strng{authorfullhash}{93e91002061b3987fec7eb7629f89432}
       \field{labelalpha}{PS04}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Optimality Theory: Constraint Interaction in Generative Grammar}
@@ -476,7 +476,7 @@
       \field{extraname}{1}
       \field{labelalpha}{Hua05}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The Sounds of Spanish}
@@ -501,7 +501,7 @@
       \field{extraname}{1}
       \field{labelalpha}{Qui05}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Classical World}
@@ -545,7 +545,7 @@
       \strng{authorfullhash}{19d90db94ea9fd1e82524e7d36922d00}
       \field{labelalpha}{Bou+07}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{A Probabilistic Approach to Diachronic Phonology}
@@ -574,7 +574,7 @@
       \strng{authorfullhash}{3833d6c57385f126ffcafcd0ad17aa5f}
       \field{labelalpha}{CH07}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phonology}
@@ -613,7 +613,7 @@
       \strng{authorfullhash}{87b9f726a1867cb358083126eb6b14f1}
       \field{labelalpha}{VT08}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Manual of Judeo-Spanish: Language and Culture}
@@ -645,7 +645,7 @@
       \strng{authorfullhash}{0ba1723e381350a0852dc000c89c2e9e}
       \field{labelalpha}{AR10}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Romance Languages: A Historical Introduction}
@@ -673,7 +673,7 @@
       \field{extraname}{2}
       \field{labelalpha}{Hua10}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Ibero-Romance II: Astur-Leonese, Spanish, Navarro-Aragonese}
@@ -697,7 +697,7 @@
       \strng{editorfullhash}{dff0947b507b881bf43b333bdea82006}
       \field{labelalpha}{Mar10}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
       \field{title}{Haskell 2010 Language Report}
@@ -723,7 +723,7 @@
       \strng{editorfullhash}{d1faf3e60bbd8c2b8715c97a30019478}
       \field{labelalpha}{Cla11}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
       \field{series}{Blackwell Companions to the Ancient World}
@@ -760,7 +760,7 @@
       \strng{editorfullhash}{6639f03d5c9eb940400da23468275ccd}
       \field{labelalpha}{MSL11}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
       \field{title}{The Cambridge History of The Romance Languages: Structures}
@@ -785,7 +785,7 @@
       \strng{authorfullhash}{dc61b909bda1bcdc5ead510892a89cbe}
       \field{labelalpha}{Ber13}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The Spanish lexicon stores stems with theme vowels, not roots with inflectional class features}
@@ -812,7 +812,7 @@
       \strng{authorfullhash}{73259fe928ce8add0f265e234f8de3a6}
       \field{labelalpha}{Har16}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{2}
@@ -845,7 +845,7 @@
       \strng{editorfullhash}{4680c38de14a224cf519bd166e543fd6}
       \field{labelalpha}{BV17}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
       \field{title}{Orthographies in Early Modern Europe}
@@ -869,7 +869,7 @@
       \strng{authorfullhash}{d8717af9fd5bb40392e04ae728cdd5da}
       \field{labelalpha}{Mar17}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Towards a computational model of long-term diachronic change: simulating the development of Classical Latin to Modern French}
@@ -901,7 +901,7 @@
       \strng{authorfullhash}{e2f98f05f2512ed12e0bee215cfc68a7}
       \field{labelalpha}{OS17}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{series}{Library of Chinese Humanities}
@@ -930,7 +930,7 @@
       \field{extraname}{2}
       \field{labelalpha}{Qui17}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Philologus}
@@ -965,7 +965,7 @@
       \strng{authorfullhash}{59b37fa9beeef3022581fb9bbaac1420}
       \field{labelalpha}{Dwo18}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{A Guide to Old Spanish}
@@ -989,7 +989,7 @@
       \strng{authorfullhash}{0a045e8c6ead2ba701819be169f52db4}
       \field{labelalpha}{Sim18}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Transactions of the Philological Society}
@@ -1026,7 +1026,7 @@
       \strng{editorfullhash}{654d58eba8e21395f51bca7643059271}
       \field{labelalpha}{CB20}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
       \field{title}{The Oxford Handbook of Latin Paleography}
@@ -1067,7 +1067,7 @@
       \strng{editorfullhash}{d5214b09070be8ba4dd4b092d74a6a64}
       \field{labelalpha}{GS21}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{series}{Synthesis Lectures on Human Language Technologies}
@@ -1095,7 +1095,7 @@
       \strng{authorfullhash}{8adc0c9005355a81b629e6b8be43ad2b}
       \field{labelalpha}{Mac22}
       \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Languages}
@@ -1133,7 +1133,7 @@
       \field{extraname}{1}
       \field{labelalpha}{JAM}
       \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
       \field{extraalpha}{1}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
@@ -1179,7 +1179,7 @@
       \field{extraname}{2}
       \field{labelalpha}{JAM}
       \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
       \field{extraalpha}{2}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
@@ -1220,7 +1220,7 @@
       \strng{authorfullhash}{9a2e190f58b9904cba80122329eaa0a2}
       \field{labelalpha}{KK}
       \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Regular Models of Phonological Rule Systems}
