@@ -33,7 +33,7 @@
 \usepackage{hyperref}[pdfencoding=auto, psdextra]
 \hypersetup{
   colorlinks=true,
-  linkcolor=cyan,
+  linkcolor=violet,
   filecolor=magenta,
   citecolor=violet,
 }
@@ -42,10 +42,11 @@
 \usepackage{unicode-math}
 \setmathfont{Libertinus Math}
 \usepackage{langsci-gb4e}
+\usepackage{nameref}
 
 \setlength\parindent{0pt}
 \setlength\footnotemargin{0pt}
-\setcounter{secnumdepth}{3}
+% \setcounter{secnumdepth}{3}
 
 \title{El sueño de mi juventud: \\ Fonología automatizada}
 \author{陳朝陽 \\ Chen Zhaoyang \\ \texttt{zc23@illinois.edu}}
@@ -106,8 +107,7 @@
 
 \pagebreak
 
-\chapter*{Acknowledgements}
-\addcontentsline{toc}{chapter}{Acknowledgements}
+\chapter{Acknowledgements}
 
 \epigraph{En adelanto van estos lugares: \\ ya tienen su diosa coronada.}{Leandro Díaz}
 
@@ -119,42 +119,48 @@ Cambridge, England \\
 C.Z.Y
 \end{flushright}
 
-\chapter*{Introduction}
-\addcontentsline{toc}{chapter}{Introduction}
+\chapter{Introduction}
 
 \epigraph{枯れた技術の水平思考\footnotemark}{横井軍平}
 \footnotetext{\href{https://en.wikipedia.org/wiki/Gunpei_Yokoi\#Lateral_Thinking_with_Withered_Technology}{``Lateral Thinking of Withered Technology.''}}
 
-\section*{Seasoned Techniques}
+\section{Seasoned Techniques}
 
 This paper mainly uses \emph{seasoned} techniques in various fields -- meaning that the fundamental works this project builds on have been around for quite some time. 
 
-\subsection*{Rule-based Phonology}
+\subsection{Rule-based Phonology}
 
 The most fundamental technique used here, rule-based phonology, in itself a term coined by its aftecomers, has been around as its \emph{modern} form since at least late \texttt{'}\kern-1pt 60s. \\
 At the beginning of the 20\textsuperscript{th} century, phonology, and historical linguisitcs, started to be formalized. After many years of formalization, around and after the publication of \emph{SPE}, the practice of phonology had long acquired a formal language, as we can see from the theoretic elegance and explanatory power of the phonology that \emph{SPE} pioneered.
 
-\subsection*{Romance Historical Linguistics}
+\subsection{Romance Historical Linguistics}
 
 The subject of study of this paper, Spanish, whose history belongs to the greater field of Romance historical linguistics, is one of the most ripened fruit of European historical linguistics since its birth. Countless literature are still being produced in this field. A couple of comprehensive monographs on the history of the Spanish language had been produced in English since the later half of the 20\textsuperscript{th} century e.g. \cite{penny_spanish} and \cite{lloyd_spanish}, among many others. This work is not possible without their scholarship.
 
-\subsection*{Typed Programming Languages}
+\subsection{Typed Programming Languages}
 
 The last piece of the \emph{puzle} [\texttt{'}puθ.le] is a \emph{typed programming language}. What does it have to do with typed programming languages? Well, the answer to this question is one of the two themes of this paper, other than giving a concise account of the phonological history of the Spanish language; I want to show that, phonology, which is a formal system, can be simulated by a computer. And this system can be quite naturally implemented in a so-called \emph{high-level programming language}.
 
-\section*{The Implementation of a Phonology}
+\section{The Implementation of a Phonology}
 
 In this paper we implement a kind of rule-based phonology that is capable of carrying out most of the historical sound changes from Latin to Modern Spanish. The underlying system and \emph{Phonology} (with a capital ``P'') is not language-specific. \\
 We have observed that rule-based phonology primarily has two components: the \emph{statics}, in which rules are defined for constructing members of the surface representations in the phonology; and the \emph{dynamics}, in which rules are set for defining the transformations between the aforementioned surface representations. In the lingo of computation, phonology, just like computation, revolves around \emph{data} (segments, syllables etc.) and \emph{computation} (sound changes).
 
-\part*{Automated Phonology}
+\part{Automated Phonology}
 \addcontentsline{toc}{part}{Automated Phonology}
 
 \chapter{The Little \emph{Metaphoner}}
 
-Let us talk about the phonological notations and \emph{pseudocode} conventions used in this paper. The notations used in this paper are not to obfuscate but to illuminate our thoughts; this is the standard that we hold ourselves to. The pseudocode used in this paper (dubbed \emph{Metaphono} in homage to the work of \cite{hartman_phono}) is a \emph{functional} vernacular (inspired by the spirit, less the essence, of Bird-Meertens formalism\footcite{bird_moor, squiggol}), which is quite close to the syntax and semantics of real world programming languages like Haskell \parencite{haskell2010} and Standard ML \parencite{def_sml}. \\
+Let us talk about the phonological notations and \emph{pseudocode} conventions used in this paper. The notations used in this paper are not to obfuscate but to illuminate our thoughts; this is the standard that we hold ourselves to. Though one may still ask: why invent yet another notation/language for phonology? I would answer by quoting \cite{abstracto} through \cite[p.~14]{squiggol}:
+\begin{quote}
+  Suppose a textbook has to be written for an advanced course in algorithmics [or phonology]. Which vehicle should be chosen to express the algorithms [or sound changes]? Clearly, one has the freedom to construct a new language, not only without the restaint of efficiency considerations, but without any considerations of implementability whatsoever.
+\end{quote}
+The pseudocode used in this paper (dubbed \emph{Metaphono} in homage to the work of \cite{hartman_phono}) is a \emph{functional} vernacular (inspired by the spirit, less the essence, of Bird-Meertens formalism\footcite{bird_moor, squiggol, bird_meertens_book}), which is quite close to the syntax and semantics of real world programming languages like Haskell \parencite{haskell2010} and Standard ML \parencite{def_sml}. Here I would quote \cite[p.~57]{abstracto} again to illustrate my understanding of \emph{Metaphono}:
+\begin{quote}
+  This pidgin ALGOL [in our case, the ML-Haskell creole\footnote{Maybe I should just call this language \emph{Vulgar ML}.}] is a language. It is not really a programming, nor a natural language, but it has characteristics from both. It is not steady, but evolving. How it will evolve we cannot know.
+\end{quote}
 In any regards, programming language theory is not the focus of this paper, whenever formalism becomes a burden in the clarification of our ideas, we take the liberty to explain them in a natural language. \\
-The socratic style used in this chapter is inspired by the book \emph{The Little LISPer} by \cite{lisper}.
+The socratic style used in this chapter follows that of the book \emph{The Little LISPer} by \cite{lisper}.
 
 \section{\emph{The Sound Patterns}}
 
@@ -190,11 +196,19 @@ The socratic style used in this chapter is inspired by the book \emph{The Little
 
 This notation has its roots in $\lambda-$calculi and other formal languages alike, this particular form is adopted from \cite{tpl}. The semantics of this notation is simple: rewrite \textbf{feat}$_1$ to \textbf{feat}$_2$ within \textsc{seg}.
 
-\section{Typed \texorpdfstring{$\lambda$}--calculus}
+\section{The Vernacular}
 
-\subsection*{Types and \emph{Algebraic Data Types}}
+\subsection*{val : $\tau$}
 
-\subsection*{Functions}
+\begin{tcolorbox}
+  \textcolor{violet}{What is [\textipa{S}]?} \quad [\textipa{S}] is a consonant. \\
+  \textcolor{violet}{Is [\textipa{S}] a vowel?} \quad No, it is not. \\
+  \textcolor{violet}{\textipa{S} : Consonant} \quad What does this mean? \\
+  \textcolor{violet}{It means that [\textipa{S}] is a consonant.} \quad What is a [a]? \\
+  \textcolor{violet}{a : Vowel} \quad So [a] is a vowel. \\
+\end{tcolorbox}
+
+\subsection*{$\lambda$ : $\tau$ $\rightarrow$ $\tau$}
 
 Functions are defined as such.
 \begin{align*}
@@ -204,7 +218,7 @@ Functions are defined as such.
 Not so surprisingly, giving \textcolor{magenta}{raise} an [a] would yield an [e].
 \[ \text{\textcolor{magenta}{raise}}\ (\text{a} : \text{Vowel}) \Rightarrow \text{e} : \text{Vowel} \]
 
-\subsection*{Pattern Matching}
+\subsection*{$\lambda\ x \Rightarrow x$}
 
 Consider this sound change for some hypothetical language that has \{s z n m \textipa{\r*n} \textipa{\r*m}\}.
 \begin{align*}
@@ -241,11 +255,17 @@ Consider this sound change for some hypothetical language that has \{s z n m \te
                                \end{cases}\\
 \end{align*}
 
-\subsection*{Arity and Currying}
+\subsection*{$\lambda : \tau \rightarrow \tau \rightarrow \tau$}
 
-\subsection*{Higher-Order Functions}
+\subsection*{$(\lambda : (\tau \rightarrow \tau) \rightarrow \tau \rightarrow \tau)\ (\lambda' : \tau \rightarrow \tau)$}
 
-\subsection*{Polymorphism}
+\subsection*{Production Rules}
+
+\subsection*{Common Types}
+
+\subsection*{Hoare Logic}
+
+\subsection*{Functor}
 
 \chapter{In the Beginning was the \emph{Word}: \\ Segments, Syllables, and Lexemes}
 
@@ -330,6 +350,8 @@ Consider this sound change for some hypothetical language that has \{s z n m \te
 
 \Tree [.$\sigma$ [.$\Omega$ [.π ] [.$\omega$ ] [.$\mu$ ] ] [.$\rho$ [\qroof{μν. | δφ.}.$\nu$ ] [.K [.$\kappa$ ] [.$\kappa'$ ] ] ] ]
 
+Under this schema, the utterance-initial onset clusters would like this in Modern Spanish\footcite[p.~74]{hualde_sp}:
+\begin{center}
 \begin{tabular}{c|c}
   $\omega$ & $\mu$ \\
   \hline
@@ -342,12 +364,14 @@ Consider this sound change for some hypothetical language that has \{s z n m \te
     l \textipa{L} \textipa{R} \\
   \end{tabular} & $\varnothing$ \\
   \hline
-  \begin{tabular}{c}p b t k g \\ f\end{tabular} & \textipa{R} \\
+  \begin{tabular}{c}p b t d k g \\ f\end{tabular} & \textipa{R} \\
   \hline
-  \begin{tabular}{c}p b t d k g \\ f\end{tabular} & l \\
+  \begin{tabular}{c}p b (t) k g \\ f\end{tabular} & l \\
   \hline
 \end{tabular}
-
+\end{center}
+And the utterance-final coda clusters\footcite[p.~75]{hualde_sp}:
+\begin{center}
 \begin{tabular}{c|c}
   $\kappa$ & $\kappa'$ \\
   \hline
@@ -366,9 +390,10 @@ Consider this sound change for some hypothetical language that has \{s z n m \te
     l \textipa{R} \\
   \end{tabular} & s \\
   \hline
-  n & \textipa{T} \\
+  (n) & (\textipa{T}) \\
   \hline
 \end{tabular}
+\end{center}
 
 \subsection{Syllable Weight and Stress}
 
@@ -434,11 +459,9 @@ Recall that the natural numbers look like this: $\mathbb{N} \coloneq 0 \sqsubset
 
 \section{Representation of Phonotactics}
 
-\part*{A Phonological History of Spanish}
-\addcontentsline{toc}{part}{A Phonological History of Spanish}
+\part{A Phonological History of Spanish}
 
-\chapter*{Misc. Remarks and Comments}
-\addcontentsline{toc}{chapter}{Misc. Remarks and Comments}
+\chapter{Misc. Remarks and Comments}
 
 \subsection*{Sources for Lat.-Rom.-Es. Gloss.}
 
@@ -641,7 +664,7 @@ Later on, the vowel system of Romance languages continues to evolve, reducing th
   \textsc{v\textcolor{red}{\u{i}}ce} & [\textipa{I}] & v\textcolor{magenta}{e}z \\
 \end{tabular}
 \end{center}
-For the low-mid vowels [\textipa{E}] and [\textipa{O}], both of them diphthongizes in either open or closed syllables in Spanish \parencite[p.~15-16]{romance_his}, later on in \ref{sec:diphthongization_1} and \ref{sec:diphthongization_2} we show the diphthongization of these vowels in details.
+For the low-mid vowels [\textipa{E}] and [\textipa{O}], both of them diphthongizes in either open or closed syllables in Spanish \parencite[p.~15-16]{romance_his}, later on in \nameref{sec:diphthongization_1} and \nameref{sec:diphthongization_2} we show the diphthongization of these vowels in details.
 
 \subsubsection{Merger in Atonic Vowels}\label{sec:atonic_vowels}
 
@@ -681,7 +704,7 @@ For the low-mid vowels [\textipa{E}] and [\textipa{O}], both of them diphthongiz
 \end{tcolorbox}
 \footnotetext{This function applies after \ref{eq:loss_of_quantity} and \ref{eq:great_merger}; but this is not \textbf{rule ordering}. The \emph{order of evaluation} is only important in this case because these vowel mergers are implemented in this particular way in for \emph{convenience} our system.}
 
-So far in both \ref{sec:loss_of_quantity} and \ref{sec:great_merger} we mainly discussed the outcomes of \textbf{stressed} (\emph{tonic}) Latin-Romance vowels. The atonic vowels showed greater degrees of reduction than their tonic counterparts \parencite[p.~113]{lloyd_spanish}:
+So far in both \nameref{sec:loss_of_quantity} and \nameref{sec:great_merger} we mainly discussed the outcomes of \textbf{stressed} (\emph{tonic}) Latin-Romance vowels. The atonic vowels showed greater degrees of reduction than their tonic counterparts \parencite[p.~113]{lloyd_spanish}:
 \begin{quote}
   The result [of the vowel system reduction in atonic vowels] was the coalescence of these [high and mid] vowels into two phonemes only: /i, e:, e/ > /e/, and /u, o:, o/ > /o/. Thus for vowels in these [unstressed] syllables a five vowel system was established[.] 
 \end{quote}
@@ -782,15 +805,8 @@ And \textsc{au} gives a long vowel [o:]\footcite[p.~24]{romance_his}:
 \subsubsection{Syncope}
 
 \begin{tcolorbox}
-  \begin{align*}
-    \textbf{C}\textbf{V}.\textbf{C} \Rightarrow \textbf{C}\textbf{C} 
-  \end{align*}
-  \tcblower
-  \begin{align*}
-    \text{\textcolor{magenta}{syncope}}\footnotemark &\ :\ \text{Lexeme} \rightarrow \text{Lexeme} \\
-  \end{align*}
+   \[ \textbf{C}\textbf{V}.\textbf{C} \Rightarrow \textbf{C}\textbf{C} \]
 \end{tcolorbox}
-\footnotetext{Syncope is one of the sound changes that is harder to implement, hence the details are omitted for now, leaving just the \emph{types} of this function.}
 
 ``There was extensive syncope of atonic vowels in words having four or more syllables in prehistoric Latin, and this process continued throughout the historical period'' \parencite[p.~113]{lloyd_spanish}. \\
 Here are some examples of syncope that were attested in Popular Latin\footcites[p.~28-29]{romance_his}[p.~114]{lloyd_spanish}:
@@ -867,7 +883,7 @@ Occationally the syncopated and unsyncopated forms coexist in Spanish, usually t
 \subsubsection{Prothesis}
 
 \begin{tcolorbox}
-
+  \[ \#\ \text{s} \Rightarrow \#\ \text{is} \]
 \end{tcolorbox}
 
 This phenomenon is attested in the Visigothic documents \parencite[p.~159]{latin_palaeography}:
@@ -885,30 +901,39 @@ This phenomenon is attested in the Visigothic documents \parencite[p.~159]{latin
   \textsc{\textcolor{red}{sc}utu} & \textcolor{magenta}{esc}udo \\
 \end{tabular}
 
-\subsubsection*{Nasal Liquid Cluster from Syncope}
-
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{te\textcolor{red}{ner}u} & tie\textcolor{magenta}{rn}o \\
-  \textsc{ge\textcolor{red}{ner}u} & ye\textcolor{magenta}{rn}o \\
-  \textsc{tre\textcolor{red}{mul}at} & tie\textcolor{magenta}{mbl}a \\
-\end{tabular}
-
-\subsubsection*{Nasal Nasal Cluster from Syncope}
-
 \subsubsection*{Betacism I}
 
 \begin{tcolorbox}
-
+  \begin{align*}
+    \text{w} & \Rightarrow \text{\textipa{B}} \\
+    \text{b} & \Rightarrow \text{\textipa{B}} \\
+  \end{align*}
 \end{tcolorbox}
 
 Visigothic spelling exhibits the ``[c]onfusion of \emph{u} and \emph{b} (\emph{haueo} for \emph{habeo}) or vice versa (\emph{pabor} for \emph{pauor})'' \parencite[p.~159]{latin_palaeography}.
 
-\subsubsection*{Initial Yod Fortition}
+\paragraph{Forition of [w] in Germanic Loanwords}
+
+\begin{center}
+\begin{tabular}{c c}
+  Gm. & Es. \\  
+  \hline
+  \textcolor{red}{w}isa & \textcolor{magenta}{gu}isa \\
+  \textcolor{red}{w}erra & \textcolor{magenta}{gu}erra \\
+  \textcolor{red}{w}arten & \textcolor{magenta}{gu}ardar \\
+  \textcolor{red}{w}ant & \textcolor{magenta}{gu}ante \\  
+\end{tabular}
+\end{center}
+
+(PrBsq. *euscala $\rightarrow$) \textsc{lat.} \textsc{vasconem} $\rightarrow$ Es. Gasc\'{o}n
+
+\subsubsection*{Yod Fortition}
 
 \begin{tcolorbox}
-
+  \begin{align*}
+    \text{j-} \Rightarrow \text{\textipa{\textbardotlessj}} & \Rightarrow \text{\textipa{\textdyoghlig}} \\
+    \text{-j-} \Rightarrow \text{\textipa{J}} & \Rightarrow \text{\textipa{\textipa{\textdyoghlig}}} \\
+  \end{align*}
 \end{tcolorbox}
 
 \begin{tabular}{c c}
@@ -937,21 +962,10 @@ Visigothic spelling exhibits the ``[c]onfusion of \emph{u} and \emph{b} (\emph{h
 
 Visigothic document witnesses ``[t]he use of \emph{g} instead of \emph{j} [\dots] (\emph{magor}) or \emph{i} instead of \emph{g} (\emph{ienitor})'', cf. \textsc{maior}, \textsc{genitor} \parencite[p.~159]{latin_palaeography}.
 
-\subsubsection*{Forition of /w/ in Germanic Loanwords}
-
-\begin{tabular}{c c}
-  Gm. & Es. \\  
-  \hline
-  \textcolor{red}{w}isa & \textcolor{magenta}{gu}isa \\
-  \textcolor{red}{w}erra & \textcolor{magenta}{gu}erra \\
-  \textcolor{red}{w}arten & \textcolor{magenta}{gu}ardar \\
-  \textcolor{red}{w}ant & \textcolor{magenta}{gu}ante \\
-\end{tabular}
-
 \subsubsection*{Deaspiration}
 
 \begin{tcolorbox}
-  
+  \[ \text{h} \Rightarrow \varnothing \]
 \end{tcolorbox}
 
 We have evidence that initial /h/ already weakens in Latin: ``[i]n metrical texts final vowels are elided before words beginning with /h\textbf{V}/, exactly as before initial /\textbf{V}/.'' \parencite[p.~87]{companion_to_latin} \\
@@ -963,18 +977,10 @@ An orthographic evidence for this sound change was the fact that the letter <h> 
   \textsc{hispalis} & Sevilla
 \end{tabular}
 
-\subsubsection*{Nasal Spirant Law}
+\subsubsection*{Elision of Intervocalic [g]}
 
 \begin{tcolorbox}
-
-\end{tcolorbox}
-
-Old Latin inscriptions reflect this change \parencite[p.~17]{companion_to_latin}: \textsc{cosol} v. Class. Lat. \textsc{consul}, \textsc{cesor} v. Class. Lat. \textsc{censor} (\emph{CIL} I\textsuperscript{2}.8).
-
-\subsubsection*{Elision of Intervocalic /g/}
-
-\begin{tcolorbox}
-
+  \[ \textbf{V}.\text{g}\textbf{V} \Rightarrow \textbf{V}\textbf{V} \]
 \end{tcolorbox}
 
 \begin{tabular}{c c}
@@ -988,10 +994,10 @@ Old Latin inscriptions reflect this change \parencite[p.~17]{companion_to_latin}
   \textsc{c\={o}\textcolor{red}{g}it\={a}re} & cuidar \\
 \end{tabular}
 
-\subsubsection*{Elision of Coda /m/}
+\subsubsection*{Elision of Coda [m]}
 
 \begin{tcolorbox}
-  
+  \[ \text{m}\ \# \Rightarrow \varnothing\ \# \]
 \end{tcolorbox}
 
 The traces of this sound change go back to Old Latin (\emph{CIL} I\textsuperscript{2}.9) \parencite[p.~17]{companion_to_latin}: \\
@@ -1006,10 +1012,37 @@ The traces of this sound change go back to Old Latin (\emph{CIL} I\textsuperscri
 \end{tabular} \\
 Also, ``[i]n metrical texts, where the the final syllables of words ending in /\textbf{V}/ $+$ <\textsc{m}> are treated in the same way as those in final /\textbf{V}/, being elided before a following initial /\textbf{V}/.'' \parencite[p.~87]{companion_to_latin}
 
+\subsubsection*{Nasal Spirant Law}
+
+\begin{tcolorbox}
+  \[ \text{n.s} \Rightarrow \text{s} \]
+\end{tcolorbox}
+
+Old Latin inscriptions reflect this change \parencite[p.~17]{companion_to_latin}: \textsc{cosol} v. Class. Lat. \textsc{consul}, \textsc{cesor} v. Class. Lat. \textsc{censor} (\emph{CIL} I\textsuperscript{2}.8).
+
+\subsubsection*{New Clusters from Syncope}
+
+\paragraph*{Nasal Liquid Cluster from Syncope}
+
+\begin{center}
+\begin{tabular}{c c}
+  \textsc{lat.} & Es. \\
+  \hline
+  \textsc{te\textcolor{red}{ner}u} & tie\textcolor{magenta}{rn}o \\
+  \textsc{ge\textcolor{red}{ner}u} & ye\textcolor{magenta}{rn}o \\
+  \textsc{tre\textcolor{red}{mul}at} & tie\textcolor{magenta}{mbl}a \\
+\end{tabular}
+\end{center}
+
+\paragraph*{Nasal Nasal Cluster from Syncope}
+
 \subsubsection*{Palatalization and Affrication of Dentals}
 
 \begin{tcolorbox}
-
+  \begin{align*}
+    \text{ti} & \Rightarrow \text{\textipa{\texttslig}} \\
+    \text{di} & \Rightarrow \text{\textipa{\textdyoghlig}} \\
+  \end{align*}
 \end{tcolorbox}
 
 \begin{tabular}{c c}
@@ -1024,7 +1057,10 @@ Also, ``[i]n metrical texts, where the the final syllables of words ending in /\
 \subsubsection*{Palatalization and Affrication of Velars}
 
 \begin{tcolorbox}
-
+  \begin{align*}
+    \text{ki} & \Rightarrow \text{\textipa{\textteshlig}} \\
+    \text{gi} & \Rightarrow \text{\textipa{\textdyoghlig}} \\
+  \end{align*}
 \end{tcolorbox}
 
 \begin{tabular}{c c}
@@ -1131,7 +1167,7 @@ Spanish have reflexes of some Latin words contains [\textbf{C}r-] in the ultimat
 \subsubsection{Diphthongization I}\label{sec:diphthongization_1}
 
 \begin{tcolorbox}
-  
+
 \end{tcolorbox}
 
 \begin{tabular}{c c c}
@@ -1488,6 +1524,14 @@ The orthography of Visigothic texts shows signs of lenition and the confusion wa
 
 \chapter{Anthology of Sound Changes}
 
+\section{\emph{Zen} and Sound Changes}
+
+\subsection{Syllabificaiton and Serialization}
+
+\subsection{Phonotactics and Repairment}
+
+\subsection{Phonological Word: Maybe not So Flat of a Structure}
+
 \chapter{Sunday School with the Wug}
 
 The linguistic history part of this paper is over; but Spanish and her predecessors are so rich in morpho-syntax. It would be a shame to write a paper on Spanish without having a single paper dedicated to its morpho-syntactic aspect, hence we compensate by having a small chapter dedicated to a couple verses in the \emph{Gospel of John} and a couple \emph{sayings on the cross}, comparing the scripture in Latin, Old Spanish, and Modern Spanish. \\
@@ -1583,22 +1627,32 @@ The Latin verses are from \textsc{Nova Vulgata}, the Old Spanish verses from \em
 
 \subsection{\emph{It is finished.}}
 
-\chapter*{Epilogue: Mein liebster Jugendtraum}
-\addcontentsline{toc}{chapter}{Epilogue: \emph{Mein liebester Jugendtraum}}
+\chapter{Epilogue: Mein liebster Jugendtraum}
 
-\section*{Old Chinese to Middle Chinese}
+\epigraph{I have fought the good fight; \\ I have finished the race; \\ I have kept the faith.}{2 Timothy 4:7}
 
-\subsection*{Phonemic Inventory}
+Other than the historical phonology of Latin and Spanish, there is yet another \emph{Jugendtraum} of mine: that is the historical phonology of the Sinitic languages.
 
-\subsection*{Syllabic Structure}
+\section{Die Rekonstruktion der Altchinesische}
 
-\subsection*{Sound Changes}
+\subsection{Phonemic Inventory}
 
-\subsubsection*{Vocalism}
+\subsection{Syllabic Structure}
 
-\subsubsection*{Consonantism}
+\subsection{Sound Changes to Middle Chinese}
 
-\subsubsection*{Tonogenesis}
+\subsubsection{Vocalism}
+
+\subsubsection{Consonantism}
+
+\subsubsection{Tonogenesis}
+
+\section{\emph{THE BOOK} of Sound Laws}
+
+\epigraph{Prove and conjecture and keep the SF's score low.\footnotemark}{Erd\H{o}s P\'{a}l}
+\footnotetext{\href{https://www.youtube.com/watch?v=AW97QTNf5ig}{The Purpose of Life.}}
+
+Erd\H{o}s P\'{a}l talks about ``The Book, in which God maintains the perfect proofs for mathematical theorems, following the dictum of G. H. Hardy that there is no permanent place for ugly mathematics'' \parencite[p.~5]{proofs_from_the_book}. I, too, think that there exists a \emph{Book} of sound laws that can be formalized computationally in a beautiful computer language (it has to be \emph{beautiful}, in the same spirit of Hardy's words, very little place is reserved for ugly linguistics). And this, dare I say, \emph{program} is what I want dedicate the next few years of my life to. \\
 
 \nocite{*}
 

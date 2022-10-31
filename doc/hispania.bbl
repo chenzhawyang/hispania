@@ -145,6 +145,82 @@
       \endverb
       \keyw{romance}
     \endentry
+    \entry{abstracto}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=60ed0526e6e1f39e7f868db554eb0a86}{%
+           family={Geurts},
+           familyi={G\bibinitperiod},
+           given={Leto},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=99296fc4a8b02f546d5ecf5dfcc629bb}{%
+           family={Meertens},
+           familyi={M\bibinitperiod},
+           given={Lambert},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7a01bd94fc6286f671dcd610ee575e34}
+      \strng{fullhash}{7a01bd94fc6286f671dcd610ee575e34}
+      \strng{bibnamehash}{7a01bd94fc6286f671dcd610ee575e34}
+      \strng{authorbibnamehash}{7a01bd94fc6286f671dcd610ee575e34}
+      \strng{authornamehash}{7a01bd94fc6286f671dcd610ee575e34}
+      \strng{authorfullhash}{7a01bd94fc6286f671dcd610ee575e34}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ALGOL Bull.}
+      \field{title}{Remarks on Abstracto}
+      \field{volume}{42}
+      \field{year}{1978}
+      \field{pages}{56\bibrangedash 63}
+      \range{pages}{8}
+      \verb{doi}
+      \verb https://dl.acm.org/doi/10.5555/1061701.1061714
+      \endverb
+      \keyw{tcs}
+    \endentry
+    \entry{bird_meertens_book}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=57acb69262d12979bd89de878b3f9760}{%
+           family={Bird},
+           familyi={B\bibinitperiod},
+           given={Richard\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=99296fc4a8b02f546d5ecf5dfcc629bb}{%
+           family={Meertens},
+           familyi={M\bibinitperiod},
+           given={Lambert},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ea486de62d7962c38cac98c2725a3427}
+      \strng{fullhash}{ea486de62d7962c38cac98c2725a3427}
+      \strng{bibnamehash}{ea486de62d7962c38cac98c2725a3427}
+      \strng{authorbibnamehash}{ea486de62d7962c38cac98c2725a3427}
+      \strng{authornamehash}{ea486de62d7962c38cac98c2725a3427}
+      \strng{authorfullhash}{ea486de62d7962c38cac98c2725a3427}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The IFIP TC2/WG 2.1 Working Conference on Program specification and transformation}
+      \field{month}{6}
+      \field{title}{Two Exercises Found in a Book on Algorithmics}
+      \field{year}{1987}
+      \field{pages}{451\bibrangedash 457}
+      \range{pages}{7}
+      \verb{doi}
+      \verb https://dl.acm.org/doi/10.5555/28195.28216
+      \endverb
+      \keyw{tcs}
+    \endentry
     \entry{lloyd_spanish}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=0e86678d5678ee2e7657d4ff90c6b710}{%
@@ -247,11 +323,11 @@
     \endentry
     \entry{bird_moor}{book}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=403b4907baa5497770e9637cf90b66a5}{%
+        {{un=0,uniquepart=base,hash=57acb69262d12979bd89de878b3f9760}{%
            family={Bird},
            familyi={B\bibinitperiod},
-           given={Richard},
-           giveni={R\bibinitperiod},
+           given={Richard\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=775d2bba69321780e9bbbaa86729733e}{%
            family={Moor},
@@ -273,12 +349,12 @@
       \list{publisher}{1}{%
         {Prentice Hall Europe}%
       }
-      \strng{namehash}{e39d38e011b338453c521c95ccd66b1f}
-      \strng{fullhash}{e39d38e011b338453c521c95ccd66b1f}
-      \strng{bibnamehash}{e39d38e011b338453c521c95ccd66b1f}
-      \strng{authorbibnamehash}{e39d38e011b338453c521c95ccd66b1f}
-      \strng{authornamehash}{e39d38e011b338453c521c95ccd66b1f}
-      \strng{authorfullhash}{e39d38e011b338453c521c95ccd66b1f}
+      \strng{namehash}{f5d4c742649d311e035c953b584ab9f4}
+      \strng{fullhash}{f5d4c742649d311e035c953b584ab9f4}
+      \strng{bibnamehash}{f5d4c742649d311e035c953b584ab9f4}
+      \strng{authorbibnamehash}{f5d4c742649d311e035c953b584ab9f4}
+      \strng{authornamehash}{f5d4c742649d311e035c953b584ab9f4}
+      \strng{authorfullhash}{f5d4c742649d311e035c953b584ab9f4}
       \strng{editorbibnamehash}{d6facc8397f631d3ef01dd70be993640}
       \strng{editornamehash}{d6facc8397f631d3ef01dd70be993640}
       \strng{editorfullhash}{d6facc8397f631d3ef01dd70be993640}
@@ -607,7 +683,6 @@
       \field{labeltitlesource}{title}
       \field{title}{The Sounds of Spanish}
       \field{year}{2005}
-      \true{nocite}
       \keyw{romance}
     \endentry
     \entry{quirk_probi}{article}{}
@@ -759,6 +834,41 @@
       \field{year}{2008}
       \true{nocite}
       \keyw{romance}
+    \endentry
+    \entry{proofs_from_the_book}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ef95611aaa6551f2a39bf2efea6ee471}{%
+           family={Aigner},
+           familyi={A\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f78d48d2643d689692036d03a7958e8c}{%
+           family={Ziegler},
+           familyi={Z\bibinitperiod},
+           given={Günter\bibnamedelima M.},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{e85522bb3f12ff521893aa717ed9e8a9}
+      \strng{fullhash}{e85522bb3f12ff521893aa717ed9e8a9}
+      \strng{bibnamehash}{e85522bb3f12ff521893aa717ed9e8a9}
+      \strng{authorbibnamehash}{e85522bb3f12ff521893aa717ed9e8a9}
+      \strng{authornamehash}{e85522bb3f12ff521893aa717ed9e8a9}
+      \strng{authorfullhash}{e85522bb3f12ff521893aa717ed9e8a9}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4}
+      \field{title}{Proofs from THE BOOK}
+      \field{year}{2010}
+      \keyw{misc}
     \endentry
     \entry{romance_his}{book}{}
       \name{author}{2}{}{%
