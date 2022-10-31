@@ -21,11 +21,12 @@
   \datalist[entry]{ynt/global//global/global}
     \entry{spiegl_jsp}{misc}{}
       \name{author}{1}{}{%
-        {{hash=bc2a6a5a36b1dcbb866b18fa763b962b}{%
+        {{un=0,uniquepart=base,hash=bc2a6a5a36b1dcbb866b18fa763b962b}{%
            family={Spiegel},
            familyi={S\bibinitperiod},
            given={Irving},
-           giveni={I\bibinitperiod}}}%
+           giveni={I\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{bc2a6a5a36b1dcbb866b18fa763b962b}
       \strng{fullhash}{bc2a6a5a36b1dcbb866b18fa763b962b}
@@ -33,9 +34,10 @@
       \strng{authorbibnamehash}{bc2a6a5a36b1dcbb866b18fa763b962b}
       \strng{authornamehash}{bc2a6a5a36b1dcbb866b18fa763b962b}
       \strng{authorfullhash}{bc2a6a5a36b1dcbb866b18fa763b962b}
-      \field{labelalpha}{Spi52}
       \field{sortinit}{1}
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Old Judaeo-Spanish Evidence of Old Spanish Pronunciation}
@@ -47,11 +49,12 @@
       \true{moreauthor}
       \true{morelabelname}
       \name{author}{1}{}{%
-        {{hash=1bf54207722cdf4a45d1ec8ad60704c8}{%
+        {{un=0,uniquepart=base,hash=1bf54207722cdf4a45d1ec8ad60704c8}{%
            family={Backus},
            familyi={B\bibinitperiod},
            given={J.\bibnamedelimi W.},
-           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{edae192e06f05f387f479edcbd69cda3}
       \strng{fullhash}{edae192e06f05f387f479edcbd69cda3}
@@ -59,13 +62,13 @@
       \strng{authorbibnamehash}{edae192e06f05f387f479edcbd69cda3}
       \strng{authornamehash}{edae192e06f05f387f479edcbd69cda3}
       \strng{authorfullhash}{edae192e06f05f387f479edcbd69cda3}
-      \field{labelalpha}{Bac+60}
       \field{sortinit}{1}
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Communications of the ACM}
-      \field{month}{5}
       \field{number}{5}
       \field{title}{Report on the Algorithmic Language ALGOL 60}
       \field{volume}{3}
@@ -75,16 +78,18 @@
     \endentry
     \entry{spe}{book}{}
       \name{author}{2}{}{%
-        {{hash=28167c0b3800bc5cfb686676277005b0}{%
+        {{un=0,uniquepart=base,hash=28167c0b3800bc5cfb686676277005b0}{%
            family={Chomsky},
            familyi={C\bibinitperiod},
            given={Noam},
-           giveni={N\bibinitperiod}}}%
-        {{hash=e007e429bc116829027747f46559a134}{%
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e007e429bc116829027747f46559a134}{%
            family={Halle},
            familyi={H\bibinitperiod},
            given={Morris},
-           giveni={M\bibinitperiod}}}%
+           giveni={M\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Harper \& Row}%
@@ -95,9 +100,10 @@
       \strng{authorbibnamehash}{3fc5fd22f19eed0aef7058cba0e98e58}
       \strng{authornamehash}{3fc5fd22f19eed0aef7058cba0e98e58}
       \strng{authorfullhash}{3fc5fd22f19eed0aef7058cba0e98e58}
-      \field{labelalpha}{CH68}
       \field{sortinit}{1}
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The Sound Pattern of English}
@@ -106,11 +112,12 @@
     \endentry
     \entry{hartman_outline_of_sp}{article}{}
       \name{author}{1}{}{%
-        {{hash=31e179d815c5101a6e2b00e8b8f804d7}{%
+        {{un=0,uniquepart=base,hash=31e179d815c5101a6e2b00e8b8f804d7}{%
            family={Hartman},
            familyi={H\bibinitperiod},
            given={Steven\bibnamedelima Lee},
-           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{31e179d815c5101a6e2b00e8b8f804d7}
       \strng{fullhash}{31e179d815c5101a6e2b00e8b8f804d7}
@@ -119,9 +126,10 @@
       \strng{authornamehash}{31e179d815c5101a6e2b00e8b8f804d7}
       \strng{authorfullhash}{31e179d815c5101a6e2b00e8b8f804d7}
       \field{extraname}{1}
-      \field{labelalpha}{Har74}
       \field{sortinit}{1}
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Research on Language \& Social Interaction}
@@ -139,11 +147,12 @@
     \endentry
     \entry{lloyd_spanish}{book}{}
       \name{author}{1}{}{%
-        {{hash=0e86678d5678ee2e7657d4ff90c6b710}{%
+        {{un=0,uniquepart=base,hash=0e86678d5678ee2e7657d4ff90c6b710}{%
            family={Lloyd},
            familyi={L\bibinitperiod},
            given={Paul\bibnamedelima M.},
-           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {American Philosophical Society}%
@@ -154,37 +163,162 @@
       \strng{authorbibnamehash}{0e86678d5678ee2e7657d4ff90c6b710}
       \strng{authornamehash}{0e86678d5678ee2e7657d4ff90c6b710}
       \strng{authorfullhash}{0e86678d5678ee2e7657d4ff90c6b710}
-      \field{labelalpha}{Llo87}
       \field{sortinit}{1}
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{From Latin to Spanish}
       \field{year}{1987}
       \keyw{romance}
     \endentry
+    \entry{lisper}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a316084fc16687a1af2ab447ad0ef978}{%
+           family={Friedman},
+           familyi={F\bibinitperiod},
+           given={Daniel\bibnamedelima P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f2dd06499ca403079167fe9967155025}{%
+           family={Felleisen},
+           familyi={F\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The MIT Press}%
+      }
+      \strng{namehash}{462a5fa553b4e966e8cb1cdd2f51100a}
+      \strng{fullhash}{462a5fa553b4e966e8cb1cdd2f51100a}
+      \strng{bibnamehash}{462a5fa553b4e966e8cb1cdd2f51100a}
+      \strng{authorbibnamehash}{462a5fa553b4e966e8cb1cdd2f51100a}
+      \strng{authornamehash}{462a5fa553b4e966e8cb1cdd2f51100a}
+      \strng{authorfullhash}{462a5fa553b4e966e8cb1cdd2f51100a}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{title}{The Little LISPer}
+      \field{year}{1989}
+      \keyw{tcs}
+    \endentry
+    \entry{regular_phonology}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d7ae6f3469260f8967c2f815c5453bb2}{%
+           family={Kaplan},
+           familyi={K\bibinitperiod},
+           given={Ronald\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b349d826f68c44eb48ab85477f743e90}{%
+           family={Kay},
+           familyi={K\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9a2e190f58b9904cba80122329eaa0a2}
+      \strng{fullhash}{9a2e190f58b9904cba80122329eaa0a2}
+      \strng{bibnamehash}{9a2e190f58b9904cba80122329eaa0a2}
+      \strng{authorbibnamehash}{9a2e190f58b9904cba80122329eaa0a2}
+      \strng{authornamehash}{9a2e190f58b9904cba80122329eaa0a2}
+      \strng{authorfullhash}{9a2e190f58b9904cba80122329eaa0a2}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computational Linguistics}
+      \field{number}{3}
+      \field{title}{Regular Models of Phonological Rule Systems}
+      \field{volume}{20}
+      \field{year}{1994}
+      \true{nocite}
+      \field{pages}{331\bibrangedash 378}
+      \range{pages}{48}
+      \keyw{phone}
+    \endentry
+    \entry{bird_moor}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=403b4907baa5497770e9637cf90b66a5}{%
+           family={Bird},
+           familyi={B\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=775d2bba69321780e9bbbaa86729733e}{%
+           family={Moor},
+           familyi={M\bibinitperiod},
+           given={Oege},
+           giveni={O\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=d6facc8397f631d3ef01dd70be993640}{%
+           family={Hoare},
+           familyi={H\bibinitperiod},
+           given={C.\bibnamedelimi A.\bibnamedelimi R.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall Europe}%
+      }
+      \strng{namehash}{e39d38e011b338453c521c95ccd66b1f}
+      \strng{fullhash}{e39d38e011b338453c521c95ccd66b1f}
+      \strng{bibnamehash}{e39d38e011b338453c521c95ccd66b1f}
+      \strng{authorbibnamehash}{e39d38e011b338453c521c95ccd66b1f}
+      \strng{authornamehash}{e39d38e011b338453c521c95ccd66b1f}
+      \strng{authorfullhash}{e39d38e011b338453c521c95ccd66b1f}
+      \strng{editorbibnamehash}{d6facc8397f631d3ef01dd70be993640}
+      \strng{editornamehash}{d6facc8397f631d3ef01dd70be993640}
+      \strng{editorfullhash}{d6facc8397f631d3ef01dd70be993640}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Prentice Hall International Series in Computer Science}
+      \field{title}{Algebra of Programming}
+      \field{year}{1997}
+      \keyw{tcs}
+    \endentry
     \entry{def_sml}{book}{}
       \name{author}{4}{}{%
-        {{hash=b2f5936dc874ec167c9911352b5cae01}{%
+        {{un=0,uniquepart=base,hash=b2f5936dc874ec167c9911352b5cae01}{%
            family={Milner},
            familyi={M\bibinitperiod},
            given={Robin},
-           giveni={R\bibinitperiod}}}%
-        {{hash=73259fe928ce8add0f265e234f8de3a6}{%
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73259fe928ce8add0f265e234f8de3a6}{%
            family={Harper},
            familyi={H\bibinitperiod},
            given={Robert},
-           giveni={R\bibinitperiod}}}%
-        {{hash=58566aa2e90cecf8724664c479be467f}{%
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=58566aa2e90cecf8724664c479be467f}{%
            family={MacQueen},
            familyi={M\bibinitperiod},
            given={David},
-           giveni={D\bibinitperiod}}}%
-        {{hash=5780065392a3c6c91ee5a3b8c079ca35}{%
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5780065392a3c6c91ee5a3b8c079ca35}{%
            family={Tofte},
            familyi={T\bibinitperiod},
            given={Mads},
-           giveni={M\bibinitperiod}}}%
+           giveni={M\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {The MIT Press}%
@@ -195,9 +329,10 @@
       \strng{authorbibnamehash}{0162709b639bc814c20aa1fc5b8e3a99}
       \strng{authornamehash}{0162709b639bc814c20aa1fc5b8e3a99}
       \strng{authorfullhash}{c0230d5776cc607619068f924d0a5b57}
-      \field{labelalpha}{Mil+97}
       \field{sortinit}{1}
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{Revised}
@@ -210,16 +345,18 @@
     \endentry
     \entry{jsp_dict}{book}{}
       \name{author}{2}{}{%
-        {{hash=38453ca78669cd2bb0665f6b1e1cdbcc}{%
+        {{un=0,uniquepart=base,hash=38453ca78669cd2bb0665f6b1e1cdbcc}{%
            family={Kohen},
            familyi={K\bibinitperiod},
            given={Elli},
-           giveni={E\bibinitperiod}}}%
-        {{hash=6481bcab494a3d039d1805a5bfb39a98}{%
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6481bcab494a3d039d1805a5bfb39a98}{%
            family={Kohen-Gordon},
            familyi={K\bibinithyphendelim G\bibinitperiod},
            given={Dahlia},
-           giveni={D\bibinitperiod}}}%
+           giveni={D\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Hippocrene Books}%
@@ -230,9 +367,10 @@
       \strng{authorbibnamehash}{95b2022c771ceac89aaf4097b62da4fd}
       \strng{authornamehash}{95b2022c771ceac89aaf4097b62da4fd}
       \strng{authorfullhash}{95b2022c771ceac89aaf4097b62da4fd}
-      \field{labelalpha}{KK00}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Ladino-English English-Ladino Concise Encyclopedic Dictionary (Judeo-Spanish)}
@@ -240,40 +378,14 @@
       \true{nocite}
       \keyw{romance}
     \endentry
-    \entry{biblia_jerusalen}{book}{}
-      \name{author}{1}{}{%
-        {{hash=9bb87a8bc723655f90b49e7d4484e394}{%
-           family={Aguirre},
-           familyi={A\bibinitperiod},
-           given={Luis},
-           giveni={L\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Desclée de Brouwer}%
-      }
-      \strng{namehash}{9bb87a8bc723655f90b49e7d4484e394}
-      \strng{fullhash}{9bb87a8bc723655f90b49e7d4484e394}
-      \strng{bibnamehash}{9bb87a8bc723655f90b49e7d4484e394}
-      \strng{authorbibnamehash}{9bb87a8bc723655f90b49e7d4484e394}
-      \strng{authornamehash}{9bb87a8bc723655f90b49e7d4484e394}
-      \strng{authorfullhash}{9bb87a8bc723655f90b49e7d4484e394}
-      \field{labelalpha}{Agu01}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Biblia de Jerusalén ilustrada}
-      \field{year}{2001}
-      \true{nocite}
-      \keyw{misc}
-    \endentry
     \entry{kondrak_thesis}{online}{}
       \name{author}{1}{}{%
-        {{hash=5a3814d5f991bd83c1ca02f901fe6112}{%
+        {{un=0,uniquepart=base,hash=5a3814d5f991bd83c1ca02f901fe6112}{%
            family={Kondrak},
            familyi={K\bibinitperiod},
            given={Grzegorz},
-           giveni={G\bibinitperiod}}}%
+           giveni={G\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{5a3814d5f991bd83c1ca02f901fe6112}
       \strng{fullhash}{5a3814d5f991bd83c1ca02f901fe6112}
@@ -281,9 +393,10 @@
       \strng{authorbibnamehash}{5a3814d5f991bd83c1ca02f901fe6112}
       \strng{authornamehash}{5a3814d5f991bd83c1ca02f901fe6112}
       \strng{authorfullhash}{5a3814d5f991bd83c1ca02f901fe6112}
-      \field{labelalpha}{Kon02}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Algorithms for Language Reconstruction}
@@ -303,11 +416,12 @@
     \endentry
     \entry{penny_spanish}{book}{}
       \name{author}{1}{}{%
-        {{hash=15b0543703c2c576b06fcf2882c171ab}{%
+        {{un=0,uniquepart=base,hash=15b0543703c2c576b06fcf2882c171ab}{%
            family={Penny},
            familyi={P\bibinitperiod},
            given={Ralph},
-           giveni={R\bibinitperiod}}}%
+           giveni={R\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Cambridge University Press}%
@@ -318,9 +432,10 @@
       \strng{authorbibnamehash}{15b0543703c2c576b06fcf2882c171ab}
       \strng{authornamehash}{15b0543703c2c576b06fcf2882c171ab}
       \strng{authorfullhash}{15b0543703c2c576b06fcf2882c171ab}
-      \field{labelalpha}{Pen02}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{A History of the Spanish Language}
@@ -329,11 +444,12 @@
     \endentry
     \entry{tpl}{book}{}
       \name{author}{1}{}{%
-        {{hash=7365a4e827c2dfa2c5af0c0ec4c18c27}{%
+        {{un=0,uniquepart=base,hash=7365a4e827c2dfa2c5af0c0ec4c18c27}{%
            family={Pierce},
            familyi={P\bibinitperiod},
            given={Benjamin\bibnamedelima C.},
-           giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+           giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {The MIT Press}%
@@ -344,9 +460,10 @@
       \strng{authorbibnamehash}{7365a4e827c2dfa2c5af0c0ec4c18c27}
       \strng{authornamehash}{7365a4e827c2dfa2c5af0c0ec4c18c27}
       \strng{authorfullhash}{7365a4e827c2dfa2c5af0c0ec4c18c27}
-      \field{labelalpha}{Pie02}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Types and Programming Languages}
@@ -355,11 +472,12 @@
     \endentry
     \entry{hartman_modling_phono}{online}{}
       \name{author}{1}{}{%
-        {{hash=31e179d815c5101a6e2b00e8b8f804d7}{%
+        {{un=0,uniquepart=base,hash=31e179d815c5101a6e2b00e8b8f804d7}{%
            family={Hartman},
            familyi={H\bibinitperiod},
            given={Steven\bibnamedelima Lee},
-           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{31e179d815c5101a6e2b00e8b8f804d7}
       \strng{fullhash}{31e179d815c5101a6e2b00e8b8f804d7}
@@ -368,10 +486,11 @@
       \strng{authornamehash}{31e179d815c5101a6e2b00e8b8f804d7}
       \strng{authorfullhash}{31e179d815c5101a6e2b00e8b8f804d7}
       \field{extraname}{2}
-      \field{labelalpha}{Har03}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{extraalpha}{1}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Modeling Phonological Change}
@@ -391,11 +510,12 @@
     \endentry
     \entry{hartman_phono}{misc}{}
       \name{author}{1}{}{%
-        {{hash=31e179d815c5101a6e2b00e8b8f804d7}{%
+        {{un=0,uniquepart=base,hash=31e179d815c5101a6e2b00e8b8f804d7}{%
            family={Hartman},
            familyi={H\bibinitperiod},
            given={Steven\bibnamedelima Lee},
-           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{31e179d815c5101a6e2b00e8b8f804d7}
       \strng{fullhash}{31e179d815c5101a6e2b00e8b8f804d7}
@@ -404,10 +524,11 @@
       \strng{authornamehash}{31e179d815c5101a6e2b00e8b8f804d7}
       \strng{authorfullhash}{31e179d815c5101a6e2b00e8b8f804d7}
       \field{extraname}{3}
-      \field{labelalpha}{Har03}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{extraalpha}{2}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Phono (Version 4.0): Software for Modeling Regular Historical Sound Change}
@@ -416,7 +537,6 @@
       \field{urlyear}{2022}
       \field{year}{2003}
       \field{urldateera}{ce}
-      \true{nocite}
       \verb{urlraw}
       \verb https://langnhist.weebly.com/files/theme/ver40.pdf
       \endverb
@@ -427,16 +547,18 @@
     \endentry
     \entry{prince_smol_ot}{book}{}
       \name{author}{2}{}{%
-        {{hash=41892ea80451bcc3a67aa8d258a4bff3}{%
+        {{un=0,uniquepart=base,hash=41892ea80451bcc3a67aa8d258a4bff3}{%
            family={Prince},
            familyi={P\bibinitperiod},
            given={Alan},
-           giveni={A\bibinitperiod}}}%
-        {{hash=74a4f6a7c1bedcd46b510fca0106e4f3}{%
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=74a4f6a7c1bedcd46b510fca0106e4f3}{%
            family={Smolensky},
            familyi={S\bibinitperiod},
            given={Paul},
-           giveni={P\bibinitperiod}}}%
+           giveni={P\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Blackwell Publishing}%
@@ -447,22 +569,25 @@
       \strng{authorbibnamehash}{93e91002061b3987fec7eb7629f89432}
       \strng{authornamehash}{93e91002061b3987fec7eb7629f89432}
       \strng{authorfullhash}{93e91002061b3987fec7eb7629f89432}
-      \field{labelalpha}{PS04}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Optimality Theory: Constraint Interaction in Generative Grammar}
       \field{year}{2004}
+      \true{nocite}
       \keyw{phone}
     \endentry
     \entry{hualde_sp}{book}{}
       \name{author}{1}{}{%
-        {{hash=f0c1cbd395983c006f76fa31c882acbc}{%
+        {{un=0,uniquepart=base,hash=f0c1cbd395983c006f76fa31c882acbc}{%
            family={Hualde},
            familyi={H\bibinitperiod},
            given={José\bibnamedelima Ignacio},
-           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Cambridge University Press}%
@@ -474,9 +599,10 @@
       \strng{authornamehash}{f0c1cbd395983c006f76fa31c882acbc}
       \strng{authorfullhash}{f0c1cbd395983c006f76fa31c882acbc}
       \field{extraname}{1}
-      \field{labelalpha}{Hua05}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The Sounds of Spanish}
@@ -486,11 +612,12 @@
     \endentry
     \entry{quirk_probi}{article}{}
       \name{author}{1}{}{%
-        {{hash=fac58b5e9c34340b982a693c519a3989}{%
+        {{un=0,uniquepart=base,hash=fac58b5e9c34340b982a693c519a3989}{%
            family={Quirk},
            familyi={Q\bibinitperiod},
            given={Ronald\bibnamedelima J.},
-           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{fac58b5e9c34340b982a693c519a3989}
       \strng{fullhash}{fac58b5e9c34340b982a693c519a3989}
@@ -499,9 +626,10 @@
       \strng{authornamehash}{fac58b5e9c34340b982a693c519a3989}
       \strng{authorfullhash}{fac58b5e9c34340b982a693c519a3989}
       \field{extraname}{1}
-      \field{labelalpha}{Qui05}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Classical World}
@@ -516,26 +644,30 @@
     \endentry
     \entry{prob_diachrony}{misc}{}
       \name{author}{4}{}{%
-        {{hash=1ea2556d7107c1b6519cdba1c09088d1}{%
+        {{un=0,uniquepart=base,hash=1ea2556d7107c1b6519cdba1c09088d1}{%
            family={Bouchar-Côté},
            familyi={B\bibinithyphendelim C\bibinitperiod},
            given={Alexandre},
-           giveni={A\bibinitperiod}}}%
-        {{hash=86c032bbc45c3b616f0a1170befc0e82}{%
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=86c032bbc45c3b616f0a1170befc0e82}{%
            family={Liang},
            familyi={L\bibinitperiod},
            given={Percy},
-           giveni={P\bibinitperiod}}}%
-        {{hash=15f19cfb916ba0b8afb494f250ea80a2}{%
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=15f19cfb916ba0b8afb494f250ea80a2}{%
            family={Griffiths},
            familyi={G\bibinitperiod},
            given={Thomas\bibnamedelima L.},
-           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=9fb237891a1517d36109c68767dd6fae}{%
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9fb237891a1517d36109c68767dd6fae}{%
            family={Klein},
            familyi={K\bibinitperiod},
            given={Dan},
-           giveni={D\bibinitperiod}}}%
+           giveni={D\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{b73a54fd0a5e2f07b57df506ae44aa20}
       \strng{fullhash}{19d90db94ea9fd1e82524e7d36922d00}
@@ -543,9 +675,10 @@
       \strng{authorbibnamehash}{b73a54fd0a5e2f07b57df506ae44aa20}
       \strng{authornamehash}{b73a54fd0a5e2f07b57df506ae44aa20}
       \strng{authorfullhash}{19d90db94ea9fd1e82524e7d36922d00}
-      \field{labelalpha}{Bou+07}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{A Probabilistic Approach to Diachronic Phonology}
@@ -555,16 +688,18 @@
     \endentry
     \entry{hiatus_diph}{article}{}
       \name{author}{2}{}{%
-        {{hash=d1fe9a1a834d144994f9aa16ab8334bc}{%
+        {{un=0,uniquepart=base,hash=d1fe9a1a834d144994f9aa16ab8334bc}{%
            family={Chitoran},
            familyi={C\bibinitperiod},
            given={Ioana},
-           giveni={I\bibinitperiod}}}%
-        {{hash=f0c1cbd395983c006f76fa31c882acbc}{%
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f0c1cbd395983c006f76fa31c882acbc}{%
            family={Hualde},
            familyi={H\bibinitperiod},
            given={José\bibnamedelima Ignacio},
-           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{3833d6c57385f126ffcafcd0ad17aa5f}
       \strng{fullhash}{3833d6c57385f126ffcafcd0ad17aa5f}
@@ -572,9 +707,10 @@
       \strng{authorbibnamehash}{3833d6c57385f126ffcafcd0ad17aa5f}
       \strng{authornamehash}{3833d6c57385f126ffcafcd0ad17aa5f}
       \strng{authorfullhash}{3833d6c57385f126ffcafcd0ad17aa5f}
-      \field{labelalpha}{CH07}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phonology}
@@ -591,16 +727,18 @@
     \endentry
     \entry{manual_jsp}{book}{}
       \name{author}{2}{}{%
-        {{hash=168cab802e52e0bfc269c3a03ac87875}{%
+        {{un=0,uniquepart=base,hash=168cab802e52e0bfc269c3a03ac87875}{%
            family={Varol},
            familyi={V\bibinitperiod},
            given={Marie-Christine},
-           giveni={M\bibinithyphendelim C\bibinitperiod}}}%
-        {{hash=4304817d5afa73dba0844a993d68b4da}{%
+           giveni={M\bibinithyphendelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4304817d5afa73dba0844a993d68b4da}{%
            family={Tarica},
            familyi={T\bibinitperiod},
            given={Ralph},
-           giveni={R\bibinitperiod}}}%
+           giveni={R\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {University Press of Maryland}%
@@ -611,9 +749,10 @@
       \strng{authorbibnamehash}{87b9f726a1867cb358083126eb6b14f1}
       \strng{authornamehash}{87b9f726a1867cb358083126eb6b14f1}
       \strng{authorfullhash}{87b9f726a1867cb358083126eb6b14f1}
-      \field{labelalpha}{VT08}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Manual of Judeo-Spanish: Language and Culture}
@@ -623,16 +762,18 @@
     \endentry
     \entry{romance_his}{book}{}
       \name{author}{2}{}{%
-        {{hash=2d79f5bf13f48cda3a07ab22f5ae8aa6}{%
+        {{un=0,uniquepart=base,hash=2d79f5bf13f48cda3a07ab22f5ae8aa6}{%
            family={Alkire},
            familyi={A\bibinitperiod},
            given={Ti},
-           giveni={T\bibinitperiod}}}%
-        {{hash=1bd14f69cb230b5be76c437b8a28dffd}{%
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1bd14f69cb230b5be76c437b8a28dffd}{%
            family={Rosen},
            familyi={R\bibinitperiod},
            given={Carol},
-           giveni={C\bibinitperiod}}}%
+           giveni={C\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Cambridge University Press}%
@@ -643,9 +784,10 @@
       \strng{authorbibnamehash}{0ba1723e381350a0852dc000c89c2e9e}
       \strng{authornamehash}{0ba1723e381350a0852dc000c89c2e9e}
       \strng{authorfullhash}{0ba1723e381350a0852dc000c89c2e9e}
-      \field{labelalpha}{AR10}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Romance Languages: A Historical Introduction}
@@ -654,11 +796,12 @@
     \endentry
     \entry{hualde_iberian}{misc}{}
       \name{author}{1}{}{%
-        {{hash=f0c1cbd395983c006f76fa31c882acbc}{%
+        {{un=0,uniquepart=base,hash=f0c1cbd395983c006f76fa31c882acbc}{%
            family={Hualde},
            familyi={H\bibinitperiod},
            given={José\bibnamedelima Ignacio},
-           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Oxford University Press}%
@@ -670,9 +813,10 @@
       \strng{authornamehash}{f0c1cbd395983c006f76fa31c882acbc}
       \strng{authorfullhash}{f0c1cbd395983c006f76fa31c882acbc}
       \field{extraname}{2}
-      \field{labelalpha}{Hua10}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Ibero-Romance II: Astur-Leonese, Spanish, Navarro-Aragonese}
@@ -682,11 +826,12 @@
     \endentry
     \entry{haskell2010}{misc}{}
       \name{editor}{1}{}{%
-        {{hash=dff0947b507b881bf43b333bdea82006}{%
+        {{un=0,uniquepart=base,hash=dff0947b507b881bf43b333bdea82006}{%
            family={Marlow},
            familyi={M\bibinitperiod},
            given={Simon},
-           giveni={S\bibinitperiod}}}%
+           giveni={S\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{dff0947b507b881bf43b333bdea82006}
       \strng{fullhash}{dff0947b507b881bf43b333bdea82006}
@@ -694,9 +839,10 @@
       \strng{editorbibnamehash}{dff0947b507b881bf43b333bdea82006}
       \strng{editornamehash}{dff0947b507b881bf43b333bdea82006}
       \strng{editorfullhash}{dff0947b507b881bf43b333bdea82006}
-      \field{labelalpha}{Mar10}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
       \field{title}{Haskell 2010 Language Report}
@@ -705,11 +851,12 @@
     \endentry
     \entry{companion_to_latin}{book}{}
       \name{editor}{1}{}{%
-        {{hash=d1faf3e60bbd8c2b8715c97a30019478}{%
+        {{un=0,uniquepart=base,hash=d1faf3e60bbd8c2b8715c97a30019478}{%
            family={Clackson},
            familyi={C\bibinitperiod},
            given={James},
-           giveni={J\bibinitperiod}}}%
+           giveni={J\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Wiley-Blackwell}%
@@ -720,9 +867,10 @@
       \strng{editorbibnamehash}{d1faf3e60bbd8c2b8715c97a30019478}
       \strng{editornamehash}{d1faf3e60bbd8c2b8715c97a30019478}
       \strng{editorfullhash}{d1faf3e60bbd8c2b8715c97a30019478}
-      \field{labelalpha}{Cla11}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
       \field{series}{Blackwell Companions to the Ancient World}
@@ -732,21 +880,24 @@
     \endentry
     \entry{cam_romance}{book}{}
       \name{editor}{3}{}{%
-        {{hash=302f9bcac13f700f83b2f5c6723dd8d7}{%
+        {{un=0,uniquepart=base,hash=302f9bcac13f700f83b2f5c6723dd8d7}{%
            family={Maiden},
            familyi={M\bibinitperiod},
            given={Martin},
-           giveni={M\bibinitperiod}}}%
-        {{hash=b0d20a3444f3136262560d1b33af59a9}{%
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b0d20a3444f3136262560d1b33af59a9}{%
            family={Smith},
            familyi={S\bibinitperiod},
            given={John\bibnamedelima Charles},
-           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-        {{hash=d97ead38e28a5065d5a3aca99b35f1ce}{%
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d97ead38e28a5065d5a3aca99b35f1ce}{%
            family={Ledgeway},
            familyi={L\bibinitperiod},
            given={Adam},
-           giveni={A\bibinitperiod}}}%
+           giveni={A\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Cambridge University Press}%
@@ -757,9 +908,10 @@
       \strng{editorbibnamehash}{6639f03d5c9eb940400da23468275ccd}
       \strng{editornamehash}{6639f03d5c9eb940400da23468275ccd}
       \strng{editorfullhash}{6639f03d5c9eb940400da23468275ccd}
-      \field{labelalpha}{MSL11}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
       \field{title}{The Cambridge History of The Romance Languages: Structures}
@@ -770,11 +922,12 @@
     \endentry
     \entry{otero_spanish_lexicon}{misc}{}
       \name{author}{1}{}{%
-        {{hash=dc61b909bda1bcdc5ead510892a89cbe}{%
+        {{un=0,uniquepart=base,hash=dc61b909bda1bcdc5ead510892a89cbe}{%
            family={Bermúdez-Otero},
            familyi={B\bibinithyphendelim O\bibinitperiod},
            given={Ricardo},
-           giveni={R\bibinitperiod}}}%
+           giveni={R\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{dc61b909bda1bcdc5ead510892a89cbe}
       \strng{fullhash}{dc61b909bda1bcdc5ead510892a89cbe}
@@ -782,9 +935,10 @@
       \strng{authorbibnamehash}{dc61b909bda1bcdc5ead510892a89cbe}
       \strng{authornamehash}{dc61b909bda1bcdc5ead510892a89cbe}
       \strng{authorfullhash}{dc61b909bda1bcdc5ead510892a89cbe}
-      \field{labelalpha}{Ber13}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The Spanish lexicon stores stems with theme vowels, not roots with inflectional class features}
@@ -794,11 +948,12 @@
     \endentry
     \entry{harper_pfpl}{book}{}
       \name{author}{1}{}{%
-        {{hash=73259fe928ce8add0f265e234f8de3a6}{%
+        {{un=0,uniquepart=base,hash=73259fe928ce8add0f265e234f8de3a6}{%
            family={Harper},
            familyi={H\bibinitperiod},
            given={Robert},
-           giveni={R\bibinitperiod}}}%
+           giveni={R\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Cambridge University Press}%
@@ -809,9 +964,10 @@
       \strng{authorbibnamehash}{73259fe928ce8add0f265e234f8de3a6}
       \strng{authornamehash}{73259fe928ce8add0f265e234f8de3a6}
       \strng{authorfullhash}{73259fe928ce8add0f265e234f8de3a6}
-      \field{labelalpha}{Har16}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{2}
@@ -822,16 +978,18 @@
     \endentry
     \entry{ortho_europe}{book}{}
       \name{editor}{2}{}{%
-        {{hash=33dda3f624953045f5cbfe43f99ab894}{%
+        {{un=0,uniquepart=base,hash=33dda3f624953045f5cbfe43f99ab894}{%
            family={Baddeley},
            familyi={B\bibinitperiod},
            given={Susan},
-           giveni={S\bibinitperiod}}}%
-        {{hash=b1bfd67a277a5ab0e47da55d733558d1}{%
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b1bfd67a277a5ab0e47da55d733558d1}{%
            family={Voeste},
            familyi={V\bibinitperiod},
            given={Anja},
-           giveni={A\bibinitperiod}}}%
+           giveni={A\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {De Gruyter Mouton}%
@@ -842,9 +1000,10 @@
       \strng{editorbibnamehash}{4680c38de14a224cf519bd166e543fd6}
       \strng{editornamehash}{4680c38de14a224cf519bd166e543fd6}
       \strng{editorfullhash}{4680c38de14a224cf519bd166e543fd6}
-      \field{labelalpha}{BV17}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
       \field{title}{Orthographies in Early Modern Europe}
@@ -854,11 +1013,12 @@
     \endentry
     \entry{marr_fr}{misc}{}
       \name{author}{1}{}{%
-        {{hash=d8717af9fd5bb40392e04ae728cdd5da}{%
+        {{un=0,uniquepart=base,hash=d8717af9fd5bb40392e04ae728cdd5da}{%
            family={Marr},
            familyi={M\bibinitperiod},
            given={Clayton},
-           giveni={C\bibinitperiod}}}%
+           giveni={C\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{d8717af9fd5bb40392e04ae728cdd5da}
       \strng{fullhash}{d8717af9fd5bb40392e04ae728cdd5da}
@@ -866,9 +1026,10 @@
       \strng{authorbibnamehash}{d8717af9fd5bb40392e04ae728cdd5da}
       \strng{authornamehash}{d8717af9fd5bb40392e04ae728cdd5da}
       \strng{authorfullhash}{d8717af9fd5bb40392e04ae728cdd5da}
-      \field{labelalpha}{Mar17}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Towards a computational model of long-term diachronic change: simulating the development of Classical Latin to Modern French}
@@ -876,49 +1037,14 @@
       \true{nocite}
       \keyw{romance}
     \endentry
-    \entry{owen_ruan_ji}{book}{}
-      \name{author}{2}{}{%
-        {{hash=00398b61745418246df8cf9395608580}{%
-           family={Owen},
-           familyi={O\bibinitperiod},
-           given={Stephen},
-           giveni={S\bibinitperiod}}}%
-        {{hash=4c50b97c6a38af72a299c0469f504d36}{%
-           family={Swartz},
-           familyi={S\bibinitperiod},
-           given={Wendy},
-           giveni={W\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {De Gruyter Mounton}%
-      }
-      \strng{namehash}{e2f98f05f2512ed12e0bee215cfc68a7}
-      \strng{fullhash}{e2f98f05f2512ed12e0bee215cfc68a7}
-      \strng{bibnamehash}{e2f98f05f2512ed12e0bee215cfc68a7}
-      \strng{authorbibnamehash}{e2f98f05f2512ed12e0bee215cfc68a7}
-      \strng{authornamehash}{e2f98f05f2512ed12e0bee215cfc68a7}
-      \strng{authorfullhash}{e2f98f05f2512ed12e0bee215cfc68a7}
-      \field{labelalpha}{OS17}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{series}{Library of Chinese Humanities}
-      \field{title}{The Poetry of Ruan Ji and Xi Kang}
-      \field{year}{2017}
-      \true{nocite}
-      \verb{doi}
-      \verb https://doi.org/10.1515/9781501503870
-      \endverb
-      \keyw{misc}
-    \endentry
     \entry{quirk_2017}{article}{}
       \name{author}{1}{}{%
-        {{hash=fac58b5e9c34340b982a693c519a3989}{%
+        {{un=0,uniquepart=base,hash=fac58b5e9c34340b982a693c519a3989}{%
            family={Quirk},
            familyi={Q\bibinitperiod},
            given={Ronald\bibnamedelima J.},
-           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{fac58b5e9c34340b982a693c519a3989}
       \strng{fullhash}{fac58b5e9c34340b982a693c519a3989}
@@ -927,9 +1053,10 @@
       \strng{authornamehash}{fac58b5e9c34340b982a693c519a3989}
       \strng{authorfullhash}{fac58b5e9c34340b982a693c519a3989}
       \field{extraname}{2}
-      \field{labelalpha}{Qui17}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Philologus}
@@ -945,13 +1072,61 @@
       \endverb
       \keyw{romance}
     \endentry
+    \entry{oab}{book}{}
+      \name{editor}{4}{}{%
+        {{un=0,uniquepart=base,hash=1d826f73917b03d4820ae3e23d1f946b}{%
+           family={Coogan},
+           familyi={C\bibinitperiod},
+           given={Michael\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e4522e11eaa4b729c58bcd76ca201c31}{%
+           family={Brettler},
+           familyi={B\bibinitperiod},
+           given={Marc\bibnamedelima Z.},
+           giveni={M\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f15930809bb0a163529d0f6bd7b61308}{%
+           family={Newsom},
+           familyi={N\bibinitperiod},
+           given={Carlo\bibnamedelima A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aa30e951deaaa0ea3d7c620b824eebb8}{%
+           family={Perkins},
+           familyi={P\bibinitperiod},
+           given={Pheme},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{5c811918ac12b1c9fa6d37c481de81d1}
+      \strng{fullhash}{94df851ee00b1b010269794d041b0c92}
+      \strng{bibnamehash}{5c811918ac12b1c9fa6d37c481de81d1}
+      \strng{editorbibnamehash}{5c811918ac12b1c9fa6d37c481de81d1}
+      \strng{editornamehash}{5c811918ac12b1c9fa6d37c481de81d1}
+      \strng{editorfullhash}{94df851ee00b1b010269794d041b0c92}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{edition}{5}
+      \field{title}{The New Oxford Annotated Bible: New Revised Standard Edition}
+      \field{year}{2018}
+      \keyw{misc}
+    \endentry
     \entry{dworkin_osp}{book}{}
       \name{author}{1}{}{%
-        {{hash=59b37fa9beeef3022581fb9bbaac1420}{%
+        {{un=0,uniquepart=base,hash=59b37fa9beeef3022581fb9bbaac1420}{%
            family={Dworkin},
            familyi={D\bibinitperiod},
            given={Steven\bibnamedelima N.},
-           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Oxford University Press}%
@@ -962,9 +1137,10 @@
       \strng{authorbibnamehash}{59b37fa9beeef3022581fb9bbaac1420}
       \strng{authornamehash}{59b37fa9beeef3022581fb9bbaac1420}
       \strng{authorfullhash}{59b37fa9beeef3022581fb9bbaac1420}
-      \field{labelalpha}{Dwo18}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{A Guide to Old Spanish}
@@ -974,11 +1150,12 @@
     \endentry
     \entry{williams_mechanise_phone}{article}{}
       \name{author}{1}{}{%
-        {{hash=0a045e8c6ead2ba701819be169f52db4}{%
+        {{un=0,uniquepart=base,hash=0a045e8c6ead2ba701819be169f52db4}{%
            family={Sims-Williams},
            familyi={S\bibinithyphendelim W\bibinitperiod},
            given={Patrick},
-           giveni={P\bibinitperiod}}}%
+           giveni={P\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{0a045e8c6ead2ba701819be169f52db4}
       \strng{fullhash}{0a045e8c6ead2ba701819be169f52db4}
@@ -986,9 +1163,10 @@
       \strng{authorbibnamehash}{0a045e8c6ead2ba701819be169f52db4}
       \strng{authornamehash}{0a045e8c6ead2ba701819be169f52db4}
       \strng{authorfullhash}{0a045e8c6ead2ba701819be169f52db4}
-      \field{labelalpha}{Sim18}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Transactions of the Philological Society}
@@ -1001,18 +1179,52 @@
       \range{pages}{19}
       \keyw{phone}
     \endentry
-    \entry{latin_paleography}{book}{}
+    \entry{clio}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=07f6a565e17a0b5f7341422b6f9101cc}{%
+           family={Underflow},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{07f6a565e17a0b5f7341422b6f9101cc}
+      \strng{fullhash}{07f6a565e17a0b5f7341422b6f9101cc}
+      \strng{bibnamehash}{07f6a565e17a0b5f7341422b6f9101cc}
+      \strng{authorbibnamehash}{07f6a565e17a0b5f7341422b6f9101cc}
+      \strng{authornamehash}{07f6a565e17a0b5f7341422b6f9101cc}
+      \strng{authorfullhash}{07f6a565e17a0b5f7341422b6f9101cc}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{To Clio}
+      \field{urlday}{28}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://greekpagan.com/2018/09/07/to-clio/
+      \endverb
+      \verb{url}
+      \verb https://greekpagan.com/2018/09/07/to-clio/
+      \endverb
+      \keyw{misc}
+    \endentry
+    \entry{latin_palaeography}{book}{}
       \name{editor}{2}{}{%
-        {{hash=84c6a28bb4747f718b7ac3f55731a915}{%
+        {{un=0,uniquepart=base,hash=84c6a28bb4747f718b7ac3f55731a915}{%
            family={Coulson},
            familyi={C\bibinitperiod},
            given={Frank\bibnamedelima T.},
-           giveni={F\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-        {{hash=96036bb80f40ff10928cdb2a1d07ccc1}{%
+           giveni={F\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=96036bb80f40ff10928cdb2a1d07ccc1}{%
            family={Babcock},
            familyi={B\bibinitperiod},
            given={Robert\bibnamedelima G.},
-           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Oxford University Press}%
@@ -1023,27 +1235,65 @@
       \strng{editorbibnamehash}{654d58eba8e21395f51bca7643059271}
       \strng{editornamehash}{654d58eba8e21395f51bca7643059271}
       \strng{editorfullhash}{654d58eba8e21395f51bca7643059271}
-      \field{labelalpha}{CB20}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
-      \field{title}{The Oxford Handbook of Latin Paleography}
+      \field{title}{The Oxford Handbook of Latin Palaeography}
       \field{year}{2020}
       \keyw{romance}
     \endentry
+    \entry{squiggol}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d7effacc4950f11aea627dc1bac84255}{%
+           family={Gibbons},
+           familyi={G\bibinitperiod},
+           given={Jeremy},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d7effacc4950f11aea627dc1bac84255}
+      \strng{fullhash}{d7effacc4950f11aea627dc1bac84255}
+      \strng{bibnamehash}{d7effacc4950f11aea627dc1bac84255}
+      \strng{authorbibnamehash}{d7effacc4950f11aea627dc1bac84255}
+      \strng{authornamehash}{d7effacc4950f11aea627dc1bac84255}
+      \strng{authorfullhash}{d7effacc4950f11aea627dc1bac84255}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The School of Squiggol}
+      \field{urlday}{28}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.cs.ox.ac.uk/people/jeremy.gibbons/publications/squiggol-history.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.cs.ox.ac.uk/people/jeremy.gibbons/publications/squiggol-history.pdf
+      \endverb
+      \keyw{tcs}
+    \endentry
     \entry{fst_text}{book}{}
       \name{author}{2}{}{%
-        {{hash=0f46b782a9c4717a7bd161c47f4e57a4}{%
+        {{un=0,uniquepart=base,hash=0f46b782a9c4717a7bd161c47f4e57a4}{%
            family={Gorman},
            familyi={G\bibinitperiod},
            given={Kyle},
-           giveni={K\bibinitperiod}}}%
-        {{hash=36e382e4bd95d1f268cfbf79f3940a08}{%
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=36e382e4bd95d1f268cfbf79f3940a08}{%
            family={Sproat},
            familyi={S\bibinitperiod},
            given={Richard},
-           giveni={R\bibinitperiod}}}%
+           giveni={R\bibinitperiod},
+           givenun=0}}%
       }
       \name{editor}{1}{}{%
         {{hash=d5214b09070be8ba4dd4b092d74a6a64}{%
@@ -1064,9 +1314,10 @@
       \strng{editorbibnamehash}{d5214b09070be8ba4dd4b092d74a6a64}
       \strng{editornamehash}{d5214b09070be8ba4dd4b092d74a6a64}
       \strng{editorfullhash}{d5214b09070be8ba4dd4b092d74a6a64}
-      \field{labelalpha}{GS21}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{series}{Synthesis Lectures on Human Language Technologies}
@@ -1080,11 +1331,12 @@
     \endentry
     \entry{mackensize_sp_th}{article}{}
       \name{author}{1}{}{%
-        {{hash=8adc0c9005355a81b629e6b8be43ad2b}{%
+        {{un=0,uniquepart=base,hash=8adc0c9005355a81b629e6b8be43ad2b}{%
            family={Mackenzie},
            familyi={M\bibinitperiod},
            given={Ian},
-           giveni={I\bibinitperiod}}}%
+           giveni={I\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{8adc0c9005355a81b629e6b8be43ad2b}
       \strng{fullhash}{8adc0c9005355a81b629e6b8be43ad2b}
@@ -1092,9 +1344,10 @@
       \strng{authorbibnamehash}{8adc0c9005355a81b629e6b8be43ad2b}
       \strng{authornamehash}{8adc0c9005355a81b629e6b8be43ad2b}
       \strng{authorfullhash}{8adc0c9005355a81b629e6b8be43ad2b}
-      \field{labelalpha}{Mac22}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Languages}
@@ -1107,21 +1360,24 @@
     \endentry
     \entry{osp_tanakh}{book}{}
       \name{editor}{3}{}{%
-        {{hash=5fa6e66f5e70a1b8ba7e4d5948b3e22a}{%
+        {{un=0,uniquepart=base,hash=5fa6e66f5e70a1b8ba7e4d5948b3e22a}{%
            family={Jover},
            familyi={J\bibinitperiod},
            given={Francisco\bibnamedelima Gago},
-           giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-        {{hash=c554bb47bbbd8347a974207b41932e59}{%
+           giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c554bb47bbbd8347a974207b41932e59}{%
            family={Arias},
            familyi={A\bibinitperiod},
            given={Andrés\bibnamedelima Enrique},
-           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-        {{hash=445c929a1ce34f90b896db002a1a6d1c}{%
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=445c929a1ce34f90b896db002a1a6d1c}{%
            family={Mena},
            familyi={M\bibinitperiod},
            given={Javier\bibnamedelima Pueyo},
-           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{bce250e3cf020351e33a9e8fafdee7b5}
       \strng{fullhash}{bce250e3cf020351e33a9e8fafdee7b5}
@@ -1130,10 +1386,11 @@
       \strng{editornamehash}{bce250e3cf020351e33a9e8fafdee7b5}
       \strng{editorfullhash}{bce250e3cf020351e33a9e8fafdee7b5}
       \field{extraname}{1}
-      \field{labelalpha}{JAM}
       \field{sortinit}{9}
       \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
-      \field{extraalpha}{1}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
       \field{note}{Digital Library of Old Spanish Texts}
@@ -1143,6 +1400,7 @@
       \field{urlmonth}{10}
       \field{urlyear}{2022}
       \field{urldateera}{ce}
+      \true{nocite}
       \verb{urlraw}
       \verb http://www.hispanicseminary.org/t&c/bib/e8/framconc.htm
       \endverb
@@ -1153,21 +1411,24 @@
     \endentry
     \entry{osp_nt}{book}{}
       \name{editor}{3}{}{%
-        {{hash=5fa6e66f5e70a1b8ba7e4d5948b3e22a}{%
+        {{un=0,uniquepart=base,hash=5fa6e66f5e70a1b8ba7e4d5948b3e22a}{%
            family={Jover},
            familyi={J\bibinitperiod},
            given={Francisco\bibnamedelima Gago},
-           giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-        {{hash=c554bb47bbbd8347a974207b41932e59}{%
+           giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c554bb47bbbd8347a974207b41932e59}{%
            family={Arias},
            familyi={A\bibinitperiod},
            given={Andrés\bibnamedelima Enrique},
-           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-        {{hash=445c929a1ce34f90b896db002a1a6d1c}{%
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=445c929a1ce34f90b896db002a1a6d1c}{%
            family={Mena},
            familyi={M\bibinitperiod},
            given={Javier\bibnamedelima Pueyo},
-           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{bce250e3cf020351e33a9e8fafdee7b5}
       \strng{fullhash}{bce250e3cf020351e33a9e8fafdee7b5}
@@ -1176,10 +1437,11 @@
       \strng{editornamehash}{bce250e3cf020351e33a9e8fafdee7b5}
       \strng{editorfullhash}{bce250e3cf020351e33a9e8fafdee7b5}
       \field{extraname}{2}
-      \field{labelalpha}{JAM}
       \field{sortinit}{9}
       \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
-      \field{extraalpha}{2}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
       \field{note}{Digital Library of Old Spanish Texts}
@@ -1189,7 +1451,6 @@
       \field{urlmonth}{10}
       \field{urlyear}{2022}
       \field{urldateera}{ce}
-      \true{nocite}
       \verb{urlraw}
       \verb http://www.hispanicseminary.org/t&c/bib/lucena/framconc.htm
       \endverb
@@ -1197,34 +1458,6 @@
       \verb http://www.hispanicseminary.org/t&c/bib/lucena/framconc.htm
       \endverb
       \keyw{romance}
-    \endentry
-    \entry{regular_phonology}{misc}{}
-      \name{author}{2}{}{%
-        {{hash=d7ae6f3469260f8967c2f815c5453bb2}{%
-           family={Kaplan},
-           familyi={K\bibinitperiod},
-           given={Ronald\bibnamedelima M.},
-           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=b349d826f68c44eb48ab85477f743e90}{%
-           family={Kay},
-           familyi={K\bibinitperiod},
-           given={Martin},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{9a2e190f58b9904cba80122329eaa0a2}
-      \strng{fullhash}{9a2e190f58b9904cba80122329eaa0a2}
-      \strng{bibnamehash}{9a2e190f58b9904cba80122329eaa0a2}
-      \strng{authorbibnamehash}{9a2e190f58b9904cba80122329eaa0a2}
-      \strng{authornamehash}{9a2e190f58b9904cba80122329eaa0a2}
-      \strng{authorfullhash}{9a2e190f58b9904cba80122329eaa0a2}
-      \field{labelalpha}{KK}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Regular Models of Phonological Rule Systems}
-      \true{nocite}
-      \keyw{phone}
     \endentry
   \enddatalist
 \endrefsection
