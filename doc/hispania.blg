@@ -1,15 +1,15 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'hispania.blg'
-[55] biber:340> INFO - === Mon Oct 31, 2022, 17:29:23
-[65] Biber.pm:415> INFO - Reading 'hispania.bcf'
-[118] Biber.pm:949> INFO - Using all citekeys in bib section 0
-[128] Biber.pm:4340> INFO - Processing section 0
-[135] Biber.pm:4531> INFO - Looking for bibtex format file 'hispania.bib' for section 0
-[136] bibtex.pm:1689> INFO - LaTeX decoding ...
-[165] bibtex.pm:1494> INFO - Found BibTeX data source 'hispania.bib'
-[358] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[358] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[358] Biber.pm:4168> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-US'
-[358] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[388] bbl.pm:654> INFO - Writing 'hispania.bbl' with encoding 'UTF-8'
-[405] bbl.pm:757> INFO - Output to hispania.bbl
+[53] biber:340> INFO - === Wed Nov  2, 2022, 09:50:25
+[63] Biber.pm:415> INFO - Reading 'hispania.bcf'
+[115] Biber.pm:949> INFO - Using all citekeys in bib section 0
+[125] Biber.pm:4340> INFO - Processing section 0
+[132] Biber.pm:4531> INFO - Looking for bibtex format file 'hispania.bib' for section 0
+[134] bibtex.pm:1689> INFO - LaTeX decoding ...
+[166] bibtex.pm:1494> INFO - Found BibTeX data source 'hispania.bib'
+[371] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[371] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[371] Biber.pm:4168> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-US'
+[371] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[404] bbl.pm:654> INFO - Writing 'hispania.bbl' with encoding 'UTF-8'
+[423] bbl.pm:757> INFO - Output to hispania.bbl

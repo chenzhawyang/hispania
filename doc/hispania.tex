@@ -48,6 +48,8 @@
 \setlength\footnotemargin{0pt}
 % \setcounter{secnumdepth}{3}
 
+\renewcommand*{\postnotedelim}{\addcolon\ }
+
 \title{El sueño de mi juventud: \\ Fonología automatizada}
 \author{陳朝陽 \\ Chen Zhaoyang \\ \texttt{zc23@illinois.edu}}
 
@@ -147,7 +149,6 @@ In this paper we implement a kind of rule-based phonology that is capable of car
 We have observed that rule-based phonology primarily has two components: the \emph{statics}, in which rules are defined for constructing members of the surface representations in the phonology; and the \emph{dynamics}, in which rules are set for defining the transformations between the aforementioned surface representations. In the lingo of computation, phonology, just like computation, revolves around \emph{data} (segments, syllables etc.) and \emph{computation} (sound changes).
 
 \part{Automated Phonology}
-\addcontentsline{toc}{part}{Automated Phonology}
 
 \chapter{The Little \emph{Metaphoner}}
 
@@ -198,17 +199,17 @@ This notation has its roots in $\lambda-$calculi and other formal languages alik
 
 \section{The Vernacular}
 
-\subsection*{val : $\tau$}
+\subsection*{Types \\ val : $\tau$}
 
 \begin{tcolorbox}
   \textcolor{violet}{What is [\textipa{S}]?} \quad [\textipa{S}] is a consonant. \\
   \textcolor{violet}{Is [\textipa{S}] a vowel?} \quad No, it is not. \\
   \textcolor{violet}{\textipa{S} : Consonant} \quad What does this mean? \\
-  \textcolor{violet}{It means that [\textipa{S}] is a consonant.} \quad What is a [a]? \\
+  \textcolor{violet}{It means that [\textipa{S}] is a consonant.} \quad What is an [a]? \\
   \textcolor{violet}{a : Vowel} \quad So [a] is a vowel. \\
 \end{tcolorbox}
 
-\subsection*{$\lambda$ : $\tau$ $\rightarrow$ $\tau$}
+\subsection*{Functions \\ $\lambda$ : $\tau$ $\rightarrow$ $\tau$}
 
 Functions are defined as such.
 \begin{align*}
@@ -218,7 +219,7 @@ Functions are defined as such.
 Not so surprisingly, giving \textcolor{magenta}{raise} an [a] would yield an [e].
 \[ \text{\textcolor{magenta}{raise}}\ (\text{a} : \text{Vowel}) \Rightarrow \text{e} : \text{Vowel} \]
 
-\subsection*{$\lambda\ x \Rightarrow x$}
+\subsection*{Pattern Matching \\ $\lambda\ x \Rightarrow x$}
 
 Consider this sound change for some hypothetical language that has \{s z n m \textipa{\r*n} \textipa{\r*m}\}.
 \begin{align*}
@@ -255,15 +256,13 @@ Consider this sound change for some hypothetical language that has \{s z n m \te
                                \end{cases}\\
 \end{align*}
 
-\subsection*{$\lambda : \tau \rightarrow \tau \rightarrow \tau$}
+\subsection*{Valence \\ $\lambda : \tau \rightarrow \tau \rightarrow \tau$}
 
-\subsection*{$(\lambda : (\tau \rightarrow \tau) \rightarrow \tau \rightarrow \tau)\ (\lambda' : \tau \rightarrow \tau)$}
+\subsection*{Higher-Order Functions \\ $(\lambda : (\tau \rightarrow \tau) \rightarrow \tau \rightarrow \tau)\ (\lambda' : \tau \rightarrow \tau)$}
 
 \subsection*{Production Rules}
 
 \subsection*{Common Types}
-
-\subsection*{Hoare Logic}
 
 \subsection*{Functor}
 
@@ -414,7 +413,7 @@ To have a concrete idea, see the following examples.
 \end{align*}
 After we are able to decide syllable weight, defining the Latin \textsc{penultimate} stress rule becomes natural.
 \begin{align*}
-  \text{\textcolor{magenta}{assign stress}} & :\ \text{List Syllable} \rightarrow \text{Lexeme} \\
+  \text{\textcolor{magenta}{assign stress}} & :\ [\text{Syllable}] \rightarrow \text{Lexeme} \\
   [\sigma] & \Rightarrow \begin{aligned}
                                                             & \textbf{let}\ \sigma' = [\text{unstressed} \rightarrow \text{stressed}] \ \sigma \\
                                                             & \textbf{in}\ \text{\textcolor{magenta}{mkLexeme}}\ [\sigma'] \\
@@ -450,6 +449,12 @@ After we are able to decide syllable weight, defining the Latin \textsc{penultim
 \footnotetext{\href{https://www2.hf.uio.no/polyglotta/index.php?page=record\&vid=1176\&mid=1993243}{A shooting star, a clouding of the sight, a lamp, an illusion, a drop of dew, a bubble, a dream, a lightning's flash, a thunder cloud.} Diamond Sutra \S32}
 
 \section{Representation of Sound Changes}
+
+\subsection{The Feature and Segmental Level Language}
+
+\subsection{The Syllabic Level Language}
+
+\subsection{The Metrical Level Language}
 
 \section{Rule Ordering}
 
@@ -702,9 +707,9 @@ For the low-mid vowels [\textipa{E}] and [\textipa{O}], both of them diphthongiz
     \text{\textipa{O}} & \Rightarrow \text{o} \\
   \end{align*}
 \end{tcolorbox}
-\footnotetext{This function applies after \ref{eq:loss_of_quantity} and \ref{eq:great_merger}; but this is not \textbf{rule ordering}. The \emph{order of evaluation} is only important in this case because these vowel mergers are implemented in this particular way in for \emph{convenience} our system.}
+\footnotetext{This function applies after \ref{eq:loss_of_quantity} and \ref{eq:great_merger}; but this is not \textbf{rule ordering}. The \emph{order of evaluation} is only important in this case because these vowel mergers are implemented in this particular way for \emph{convenience} in our system.}
 
-So far in both \nameref{sec:loss_of_quantity} and \nameref{sec:great_merger} we mainly discussed the outcomes of \textbf{stressed} (\emph{tonic}) Latin-Romance vowels. The atonic vowels showed greater degrees of reduction than their tonic counterparts \parencite[p.~113]{lloyd_spanish}:
+So far in both \nameref{sec:loss_of_quantity} and \nameref{sec:great_merger} we mainly discussed the outcomes of \textbf{stressed} (\emph{tonic}) Latino-Romance vowels. The atonic vowels showed greater degrees of reduction than their tonic counterparts \parencite[p.~113]{lloyd_spanish}:
 \begin{quote}
   The result [of the vowel system reduction in atonic vowels] was the coalescence of these [high and mid] vowels into two phonemes only: /i, e:, e/ > /e/, and /u, o:, o/ > /o/. Thus for vowels in these [unstressed] syllables a five vowel system was established[.] 
 \end{quote}
@@ -719,7 +724,7 @@ Some examples for the outcomes of atonic vowels\footcite[p.~113]{lloyd_spanish}:
   \end{tabular}
 \end{center}
 
-\subsubsection{Monophthongization}
+\subsubsection{Monophthongization}\label{sec:monophthongization}
 
 \begin{tcolorbox}
   \begin{align*}
@@ -792,15 +797,44 @@ And \textsc{au} gives a long vowel [o:]\footcite[p.~24]{romance_his}:
 \subsubsection{Loss of Hiatus}
 
 \begin{tcolorbox}
-
+  \[ \textbf{V}.\textbf{V} \Rightarrow \textbf{VV} \]
 \end{tcolorbox}
 
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{qu\textcolor{red}{i\={e}}tu} & qu\textcolor{magenta}{e}do \\
-  \textsc{par\textcolor{red}{i\u{e}}te} & par\textcolor{magenta}{e}d \\
-\end{tabular}
+In Latin, other than the 3 diphthongs (\textsc{ae}, \textsc{oe}, and \textsc{au}) mentioned above in \nameref{sec:monophthongization}, other sequences of vowels are heterosyllabic \parencite[p.~57]{romance_his}, while in Romance ``[v]owels which had been in contact but had maintained their individual character by being pronounced in separate syllables began to be fused into a single syllable with the following vowel. The first result of this fusion was simply the pronunciation of /i/ in hiatus as a palatal semiconsonant [j] (a `yod'). The next step was the change of /e/ in hiatus to a yod. This change may have occured fairly early. An inscription dated 125 \textsc{b.c.} has \textsc{pariat} for \textsc{pareat} (CIL 2, 592/10). Inscriptions from Pompeii also illustrate this same change: \textsc{valia} for \textsc{valeat}, \textsc{abiat} for \textsc{habeat}'' \parencite[p.~132]{lloyd_spanish}. The resulting yods would palatalize the consonants through coarticulation, see the following examples\footcite[p.~58]{romance_his}:
+\begin{center}
+  \begin{tabular}{c c}
+    \textsc{lat.} & Es. \\
+    \hline
+    \textsc{pretiu} & precio \\
+    \textsc{facia} & faz \\
+    \textsc{hodie} & hoy \\
+    \textsc{fageu} & haya \\
+    \textsc{palea} & paja \\
+    \textsc{senior} & se\~{n}or \\
+  \end{tabular}
+\end{center}
+Other than giving rise to a yod [j], dehiaticization may result in synizesis\footcite[p.~57]{romance_his}: 
+\begin{center}
+  \begin{tabular}{c c}
+    \textsc{lat.} & Es. \\
+    \hline
+    \textsc{qu\textcolor{red}{i\={e}}tu} & qu\textcolor{magenta}{e}do \\
+    \textsc{batt\textcolor{red}{ui}t} & bat\textcolor{magenta}{e} \\
+    \textsc{fut\textcolor{red}{ui}t} & jod\textcolor{magenta}{e} \\
+    \textsc{par\textcolor{red}{i\u{e}}te} & par\textcolor{magenta}{e}d \\
+  \end{tabular}
+\end{center}
+or epenthesis\footcite[p.~57-58]{romance_his}:
+\begin{center}
+  \begin{tabular}{c c}
+    \textsc{lat.} & Es. \\
+    \hline
+    \textsc{genua} & Genova \\
+    \textsc{ruina} & ruina \\
+    \textsc{iohannes} & Juan \\
+  \end{tabular}
+\end{center}
+These yods from dehiaticization were one of the primary sources for palatalization (cf. \nameref{sec:dental_palatalization} and \nameref{sec:velar_palatalization}).
 
 \subsubsection{Syncope}
 
@@ -886,7 +920,7 @@ Occationally the syncopated and unsyncopated forms coexist in Spanish, usually t
   \[ \#\ \text{s} \Rightarrow \#\ \text{is} \]
 \end{tcolorbox}
 
-This phenomenon is attested in the Visigothic documents \parencite[p.~159]{latin_palaeography}:
+This phenomenon is attested in the Visigothic documents\footcite[p.~159]{latin_palaeography}:
 \begin{quote}
   [T]he addition of \emph{i} at the beginning of a word that starts with an \emph{s} followed by another consonant (\emph{iscriptura}), or its suppression by hypercorrection (\emph{sta} for \emph{ista}).
 \end{quote}
@@ -904,15 +938,44 @@ This phenomenon is attested in the Visigothic documents \parencite[p.~159]{latin
 \subsubsection*{Betacism I}
 
 \begin{tcolorbox}
-  \begin{align*}
-    \text{w} & \Rightarrow \text{\textipa{B}} \\
-    \text{b} & \Rightarrow \text{\textipa{B}} \\
-  \end{align*}
+  \[ \text{w} \Rightarrow \text{\textipa{B}} \]
 \end{tcolorbox}
 
-Visigothic spelling exhibits the ``[c]onfusion of \emph{u} and \emph{b} (\emph{haueo} for \emph{habeo}) or vice versa (\emph{pabor} for \emph{pauor})'' \parencite[p.~159]{latin_palaeography}.
+The articulation of Latin [w] was strengthened to [\textipa{B}] in Proto-Romance\footcite[p.~132]{lloyd_spanish}:
+\begin{quote}
+  [F]rom the first century \textsc{a.d.} onward, we find confusion of the letters \textsc{v} and \textsc{b} in many written documents, e.g., \textsc{iuvente} for \textsc{iubente} (first century), \textsc{iubentutis} for \textsc{iuventutis} (155 \textsc{a.d.}), \textsc{livertus} for \textsc{libertus} (207 \textsc{a.d.}), etc[.]
+\end{quote}
+In Italian and French, the Latin [w] is realized as a labiodental [v], while in Spanish it collides with [b]\footcite[p.~32-33]{romance_his} (for more details on Spanish \emph{betacismo}, cf. \nameref{sec:betacism_2} and \nameref{sec:lenition_2}):
+\begin{center}
+  \begin{tabular}{c c c c}
+    \textsc{lat}. & Es. & Fr. & It. \\
+    \hline
+    \textsc{vacca} & vaca [b] & vache & vacca \\
+    \textsc{vinu} & vino [b] & vin & vino \\
+  \end{tabular}
+\end{center}
+This sound change later on would make the original intervocalic [w] from Latin collide with the intervocalic [b], due to lenition (cf. \nameref{sec:lenition_1}):
+\begin{equation*}
+  -\text{b}- \Rightarrow \text{\textipa{B}}
+\end{equation*}
+The merger of intervocalic [w] and [b] is attested in Spanish, French, and Italian\footcite[p.~33]{romance_his}:
+\begin{center}
+  \begin{tabular}{c c c c}
+    \textsc{lat.} & Es. & Fr. & It. \\
+    \hline
+    \textsc{caballu} & ca\textcolor{magenta}{b}allo [\textipa{B}] & cheval & cavallo \\
+    \textsc{bibat} & be\textcolor{magenta}{b}a [\textipa{B}] & boive & beva \\
+    \textsc{debere} & de\textcolor{magenta}{b}er [\textipa{B}] & devoir & devere \\
+    \textsc{caverna} & ca\textcolor{magenta}{v}erna [\textipa{B}] & caverne & caverna \\
+    \textsc{lavare} & la\textcolor{magenta}{v}ar [\textipa{B}] & laver & lavare \\
+    \textsc{vivunt} & vi\textcolor{magenta}{v}en [\textipa{B}] & vivent & vivono \\
+  \end{tabular}
+\end{center}
+Likewise, in Visigothic documents, the spelling exhibits the ``[c]onfusion of \emph{u} and \emph{b} (\emph{haueo} for \emph{habeo}) or vice versa (\emph{pabor} for \emph{pauor})''\footcite[p.~159]{latin_palaeography}.
 
-\paragraph{Forition of [w] in Germanic Loanwords}
+\paragraph{Diphthongs from [w]}
+
+\paragraph{Strengthening of [w] in Germanic Loanwords}
 
 \begin{center}
 \begin{tabular}{c c}
@@ -931,8 +994,8 @@ Visigothic spelling exhibits the ``[c]onfusion of \emph{u} and \emph{b} (\emph{h
 
 \begin{tcolorbox}
   \begin{align*}
-    \text{j-} \Rightarrow \text{\textipa{\textbardotlessj}} & \Rightarrow \text{\textipa{\textdyoghlig}} \\
-    \text{-j-} \Rightarrow \text{\textipa{J}} & \Rightarrow \text{\textipa{\textipa{\textdyoghlig}}} \\
+    \text{j-} &\ (\Rightarrow \text{\textipa{J}}- \Rightarrow \text{\textipa{\textbardotlessj}}-) \Rightarrow \text{\textipa{\textdyoghlig}}- \\
+    \text{-j-} &\ (\Rightarrow -\text{\textipa{J}}- \Rightarrow -\text{\textipa{\textbardotlessj}}-) \Rightarrow -\text{\textipa{\textipa{\textdyoghlig}}}- \\
   \end{align*}
 \end{tcolorbox}
 
@@ -1020,7 +1083,7 @@ Also, ``[i]n metrical texts, where the the final syllables of words ending in /\
 
 Old Latin inscriptions reflect this change \parencite[p.~17]{companion_to_latin}: \textsc{cosol} v. Class. Lat. \textsc{consul}, \textsc{cesor} v. Class. Lat. \textsc{censor} (\emph{CIL} I\textsuperscript{2}.8).
 
-\subsubsection*{New Clusters from Syncope}
+\subsubsection*{New Clusters from Syncope and Their Resolution}
 
 \paragraph*{Nasal Liquid Cluster from Syncope}
 
@@ -1036,7 +1099,7 @@ Old Latin inscriptions reflect this change \parencite[p.~17]{companion_to_latin}
 
 \paragraph*{Nasal Nasal Cluster from Syncope}
 
-\subsubsection*{Palatalization and Affrication of Dentals}
+\subsubsection*{Palatalization and Affrication of Dentals}\label{sec:dental_palatalization}
 
 \begin{tcolorbox}
   \begin{align*}
@@ -1045,16 +1108,21 @@ Old Latin inscriptions reflect this change \parencite[p.~17]{companion_to_latin}
   \end{align*}
 \end{tcolorbox}
 
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{\textcolor{red}{di}urnata} & \textcolor{magenta}{j}ornada [x] \\
-                & \\
-  \textsc{ho\textcolor{red}{di}e} & ho\textcolor{magenta}{y} [j] \\
-  \textsc{ra\textcolor{red}{di}u} & ra\textcolor{magenta}{y}o [j] \\
-\end{tabular}
+The voiceless dental [t] followed by a yod started to show signs of palatalization and affrication ``[i]n the second century \textsc{a.d.} inscriptions begin to reveal this pronunciation: \textsc{crescentsianus} for \textsc{crescentianus} (\textsc{a.d.} 140), \textsc{vincentza} for \textsc{vincentia}, \textsc{laurentzio} for \textsc{laurentio}, \textsc{marsalis} for \textsc{martialis} (4th cent.)''\footcite[p.~133]{lloyd_spanish}. There are also hints that for some speakers of Latino-Romance at that time \textsc{ti-} and \textsc{ci-} sounded quite close, as these two are sometimes confused in inscriptions: ``\textsc{mundiciei} for \textsc{munditiei} (\textsc{a.d.} 136), \textsc{terciae} for \textsc{tertiae} (\textsc{a.d. 179}), \textsc{fatio} for \textsc{facio}, \textsc{nunciare} for \textsc{nuntiare}, \textsc{definicia} for \textsc{definitio} (\textsc{a.d.} 222-35)''\footcite[p.~133]{lloyd_spanish}. \\
+As for the voiced dental [d] plus the yod, it collides with the palatalized voiced velar \textsc{gi-} $\rightarrow$ [\textipa{\textdyoghlig}]\footcite[p.~60]{romance_his} (cf. \nameref{sec:velar_palatalization}) i.e. \textsc{lat.} \textsc{\textcolor{red}{di}urnata} $\rightarrow$ Es. \textcolor{magenta}{j}ornada [x]. ``Inscriptional evidence for the merger is found from the first century onward: \textsc{aiutor} for \textsc{adiutor}, \textsc{aiutoris} for \textsc{adiutrix}, \textsc{iosimus} for \textsc{zosimus} (Gr.  Ζώσιμος), \textsc{ziomedis} for \textsc{diomedis}, \textsc{zebus} for \textsc{diebus}, \textsc{zonisius} for \textsc{dionisius} (beginning of third century), \textsc{madia} for \textsc{maias} (\textsc{a.d.} 364), \textsc{zabulus} for \textsc{diabolus}\footcite[p.~133]{lloyd_spanish}''. \\
+Sound changes of this sort is less regular in Castilian and other Western Romance languages than in Italian; there are many cases in which the reflex in Spanish is [j] instead of the expected [x] ($\leftarrow$ *\textipa{Z}), compare these Spanish words from Latin \textsc{di-} and \textsc{gi-} with their outcomes in Portugese and Italian\footcite[p.~60]{romance_his}:
+\begin{center}
+  \begin{tabular}{c c c c}
+    \textsc{lat.} & Es. & Port. & It. \\
+    \hline
+    \textsc{ho\textcolor{red}{di}e} & ho\textcolor{magenta}{y} [j] & ho\textcolor{magenta}{j}e [\textipa{Z}] & og\textcolor{magenta}{g}i [\textipa{\textdyoghlig}] \\
+    \textsc{ra\textcolor{red}{di}u}\footnotemark & ra\textcolor{magenta}{y}o [j] & ra\textcolor{magenta}{i}o [j] & rag\textcolor{magenta}{gi}o [\textipa{\textdyoghlig}] \\
+    \textsc{exa\textcolor{magenta}{gi}u} & ensa\textcolor{magenta}{y}o [j] & ensa\textcolor{magenta}{i}o [j] & sag\textcolor{magenta}{gi}o [\textipa{\textdyoghlig}] \\
+  \end{tabular}
+\end{center}
+\footnotetext{cf. Cat. \emph{raig} [ra\textipa{\textteshlig}], Fr. \emph{rai}, It. \emph{raggio}; the reflex [j] seems to be quite widespread within Rom\`{a}nia.}
 
-\subsubsection*{Palatalization and Affrication of Velars}
+\subsubsection*{Palatalization and Affrication of Velars}\label{sec:velar_palatalization}
 
 \begin{tcolorbox}
   \begin{align*}
@@ -1066,7 +1134,7 @@ Old Latin inscriptions reflect this change \parencite[p.~17]{companion_to_latin}
 \begin{tabular}{c c}
   \textsc{lat.} & Es. \\
   \hline
-  \textsc{\textcolor{red}{ge}ogeu} & \textcolor{magenta}{J}orge [x] \\
+  \textsc{\textcolor{red}{ge}orgiu} & \textcolor{magenta}{J}orge [x] \\
   \textsc{\textcolor{red}{g}eniu} & \textcolor{magenta}{g}enio [x] \\
                 & \\
   \textsc{\textcolor{red}{g}emma} & \textcolor{magenta}{y}ema [j] \\
@@ -1089,6 +1157,12 @@ Old Latin inscriptions reflect this change \parencite[p.~17]{companion_to_latin}
                                    ve\textcolor{magenta}{c}ina [\textipa{T}]\footnote{cf. Judeo-Spanish \emph{vi\textcolor{magenta}{z}ina} [z]} \\
   \textsc{ia\textcolor{red}{c}ere} &                                   ya\textcolor{magenta}{c}er [\textipa{T}] \\
 \end{tabular}
+
+\subsubsection*{Palatalization of Sonorants}
+
+\begin{tcolorbox}
+
+\end{tcolorbox}
 
 \subsubsection{Syllabification of the [Cr] Cluster}
 
@@ -1167,17 +1241,26 @@ Spanish have reflexes of some Latin words contains [\textbf{C}r-] in the ultimat
 \subsubsection{Diphthongization I}\label{sec:diphthongization_1}
 
 \begin{tcolorbox}
-
+  \[ \text{\textipa{E}} \Rightarrow \text{ie} \]
+  \tcblower    
+  \begin{align*}
+    \text{\textcolor{magenta}{diphthongization$_1$}} &\ :\ \text{Vowel} \rightarrow \text{Vowel} \\
+    \text{\textipa{E}} & \Rightarrow \text{ie} \\
+  \end{align*}
 \end{tcolorbox}
 
-\begin{tabular}{c c c}
-  \textsc{lat.} & Es. & Fr. \\
+The \textbf{stressed} low-mid vowel [\textipa{E}] (for the origin of this vowel cf. \nameref{sec:loss_of_quantity} and \nameref{sec:great_merger}) in open syllables underwent diphthongization in Western Romance (and Italian)\footcite[p.~15-16]{romance_his}:
+\begin{center}
+\begin{tabular}{c c c c}
+  \textsc{lat.} & Es. & Fr. & It. \\
   \hline
-  \textsc{p\textcolor{red}{e}tra} & p\textcolor{magenta}{ie}dra & p\textcolor{magenta}{ie}rre \\
-  \textsc{f\textcolor{red}{e}le} & h\textcolor{magenta}{ie}l & f\textcolor{magenta}{ie}l \\
-  \textsc{v\textcolor{red}{e}nit} & v\textcolor{magenta}{ie}ne & v\textcolor{magenta}{ie}nt \\
-  \textsc{h\textcolor{red}{e}ri} & a\textcolor{magenta}{ye}r & h\textcolor{magenta}{ie}r \\
+  \textsc{p\textcolor{red}{e}tra} & p\textcolor{magenta}{ie}dra & p\textcolor{magenta}{ie}rre & p\textcolor{magenta}{ie}tra \\
+  \textsc{f\textcolor{red}{e}le} & h\textcolor{magenta}{ie}l & f\textcolor{magenta}{ie}l & f\textcolor{magenta}{ie}le \\
+  \textsc{v\textcolor{red}{e}nit} & v\textcolor{magenta}{ie}ne & v\textcolor{magenta}{ie}nt & v\textcolor{magenta}{ie}ne \\
+  \textsc{h\textcolor{red}{e}ri} & a\textcolor{magenta}{ye}r & h\textcolor{magenta}{ie}r & \textcolor{magenta}{ie}ri \\
 \end{tabular}
+\end{center}
+In Spanish [\textipa{E}] also diphthongizes in closed syllables (\nameref{sec:diphthongization_2}).
 
 \subsection{Consonantism}
 
@@ -1197,7 +1280,7 @@ Spanish have reflexes of some Latin words contains [\textbf{C}r-] in the ultimat
   \textsc{si\textcolor{red}{cc}u} & se\textcolor{magenta}{c}o \\
 \end{tabular}
 
-\subsubsection*{Lenition I}
+\subsubsection*{Lenition I}\label{sec:lenition_1}
 
 \begin{tcolorbox}
   
@@ -1328,9 +1411,20 @@ The orthography of Visigothic texts shows signs of lenition and the confusion wa
 \subsubsection{Diphthongization II}\label{sec:diphthongization_2}
 
 \begin{tcolorbox}
-  
+  \begin{align*}  
+    \text{\textipa{E}} & \Rightarrow \text{ie} \\
+    \text{\textipa{O}} & \Rightarrow \text{we} \\
+  \end{align*}
+  \tcblower  
+  \begin{align*}
+    \text{\textcolor{magenta}{diphthongization$_2$}} &\ :\ \text{Vowel} \rightarrow \text{Vowel} \\
+    \text{\textipa{E}} & \Rightarrow \text{ie} \\
+    \text{\textipa{O}} & \Rightarrow \text{we} \\
+  \end{align*}
 \end{tcolorbox}
 
+Spanish is unique among other Western Romance languages in that the diphthongization for the front low-mid vowel [\textipa{E}] happens in both open and closed syllables, and Spanish diphthongizes also the back low-mid vowel [\textipa{O}] in open and closed syllables\footcites[p.~122]{lloyd_spanish}[p.~15-16]{romance_his}:
+\begin{center}
 \begin{tabular}{c c}
   \textsc{lat.} & Es. \\
   \textsc{hib\textcolor{red}{e}rnu} & inv\textcolor{magenta}{ie}rno \\
@@ -1338,6 +1432,7 @@ The orthography of Visigothic texts shows signs of lenition and the confusion wa
   \textsc{s\textcolor{red}{e}pte} & s\textcolor{magenta}{ie}te \\
   \textsc{c\textcolor{red}{e}rvu} & c\textcolor{magenta}{ie}rvo \\
   \textsc{f\textcolor{red}{e}rru} & h\textcolor{magenta}{ie}rro \\
+  & \\
   \textsc{f\textcolor{red}{o}rte} & f\textcolor{magenta}{ue}rte \\
   \textsc{p\textcolor{red}{o}rta} & p\textcolor{magenta}{ue}rta \\
   \textsc{m\textcolor{red}{o}rdit} & m\textcolor{magenta}{ue}rde \\
@@ -1345,6 +1440,17 @@ The orthography of Visigothic texts shows signs of lenition and the confusion wa
   \textsc{m\textcolor{red}{o}vet} & m\textcolor{magenta}{ue}ve \\
   \textsc{p\textcolor{red}{o}tet} & p\textcolor{magenta}{ue}de \\
 \end{tabular}
+\end{center}
+The two unique phonological processes of Spanish, (a) expanding the context of the diphthongization of [\textipa{E}] to both open and closed syllables and (b) including [\textipa{O}] as the target of diphthongization (also in open and closed syllables), separate it from Western and Eastern Iberian Romance languages; cf. the reflexes of these two Latin words in other Iberian Romance languages to Castilian\footcite[p.~3]{hualde_iberian}:
+\begin{center}
+  \begin{tabular}{c c c}    
+    \textsc{lat.} & Cast. & Port. \& Cat. \\
+    \hline
+    \textsc{terra} & tierra & terra \\
+    \textsc{porta(m)} & puerta & porta \\
+  \end{tabular}
+\end{center}
+The diphthongization of [\textipa{E}] (cf. \nameref{sec:diphthongization_1}) and [\textipa{O}] had shown its traces very early in Latin inscriptions: \textsc{niepos} for \textsc{nepos} ca. \textsc{a.d.} 120, \textsc{puosuit} for \textsc{posuit} ca. \textsc{a.d.} 157\footcite[p.~129-130]{lloyd_spanish}. Diphthongization continued to be attested in the era of the Visigoths: \textsc{[v]alientem} for \textsc{valentem}, \textsc{curriente} for \textsc{currente}, and \textsc{parientibus} for \textsc{parentibus}\footcite[p.~130]{lloyd_spanish}.
 
 \subsubsection*{Metaphony}
 
@@ -1357,7 +1463,7 @@ The orthography of Visigothic texts shows signs of lenition and the confusion wa
   \hline
   \textsc{m\textcolor{red}{u}ltu} & m\textcolor{magenta}{u}cho \\
   \textsc{ausc\textcolor{red}{u}ltat} & esc\textcolor{magenta}{u}cha \\
-  \textsc{l\textcolor{red}{a}cte} & l\textcolor{magenta}{u}cha \\
+  \textsc{l\textcolor{red}{u}cta} & l\textcolor{magenta}{u}cha \\
   \textsc{l\textcolor{red}{a}cte} & l\textcolor{magenta}{e}che \\
   \textsc{f\textcolor{red}{a}ctu} & h\textcolor{magenta}{e}cho \\
   \textsc{b\textcolor{red}{a}siu} & b\textcolor{magenta}{e}so \\
@@ -1480,13 +1586,13 @@ The orthography of Visigothic texts shows signs of lenition and the confusion wa
 
 \subsection{Consonantism}
 
-\subsubsection*{Lenition II}
+\subsubsection*{Lenition II}\label{sec:lenition_2}
 
 \begin{tcolorbox}
 
 \end{tcolorbox}
 
-\subsubsection*{Betacism II}
+\subsubsection*{Betacism II}\label{sec:betacism_2}
 
 \begin{tcolorbox}
 
@@ -1519,140 +1625,130 @@ The orthography of Visigothic texts shows signs of lenition and the confusion wa
 \subsubsection*{Retraction of Palatal Fricative}
 
 \begin{tcolorbox}
-  
+  \[ \text{\textipa{S}} \Rightarrow x \]  
 \end{tcolorbox}
 
-\chapter{Anthology of Sound Changes}
+% \chapter{Sunday School with the Wug}
 
-\section{\emph{Zen} and Sound Changes}
+% The linguistic history part of this paper is over; but Spanish and her predecessors are so rich in morpho-syntax. It would be a shame to write a paper on Spanish without having a single paper dedicated to its morpho-syntactic aspect, hence we compensate by having a small chapter dedicated to a couple verses in the \emph{Gospel of John} and a couple \emph{sayings on the cross}, comparing the scripture in Latin, Old Spanish, and Modern Spanish. \\
+% The Latin verses are from \textsc{Nova Vulgata}, the Old Spanish verses from \emph{Evangelios y Epístolas paulinas de Mart\'{i}n de Lucena} \footcite{osp_nt} (the text presented here is normalized by me), and Modern Spanish ones from \emph{La Biblia de Jerusal\'{e}n}. The English glosses and exegetic notes are taken from the beloved \emph{Oxford Annotated Bible}\footcite{oab}, based on the \emph{New Revised Standard Version} translation. Since we are dealing with the Bible in many languages, the abbreviation of the Gospels will be in Latin, \textsc{e.g.} \textsc{Ioannes}, instead of \emph{Juan} or \emph{John}.
 
-\subsection{Syllabificaiton and Serialization}
+% \section{Ioannes 1:1--5}
 
-\subsection{Phonotactics and Repairment}
+% \begin{tcolorbox}[title=\textsc{Nova Vulgata}]
+% \textsc{$^1$ in principio erat verbum et verbum era tapud deum et deus erat verbum} \\
+% \textsc{$^2$ hoc erat in principio apud deum} \\
+% \textsc{$^3$ omnia per ipsum facta sunt et sine ipso factum est nihil quod factum est} \\
+% \textsc{$^4$ in ipso vita erat et vita erat lux hominum} \\
+% \textsc{$^5$ et lux in tenebris lucet et tenebrae eam non comprehenderunt} \\
+% \end{tcolorbox}
 
-\subsection{Phonological Word: Maybe not So Flat of a Structure}
+% \begin{tcolorbox}[title=Evangelios y Epístolas paulinas de Mart\'{i}n de Lucena]
+% $^1$ Enel comien\c{c}o era palabra e la palabra era \c{c}erca de dios e dios era palabra \\
+% $^2$ aquesto era en prin\c{c}ipio \c{c}erca de dios \\
+% $^3$ todas las cosas por el son fechas e syn el non es fecha alguna cosa lo que fue fecho \\
+% $^4$ enel vida era e la vida era luz delos ombres \\
+% $^5$ e la luz enlas tiniebras luze e las tiniebras non la comprehendieron \\
+% \end{tcolorbox}
 
-\chapter{Sunday School with the Wug}
+% \begin{tcolorbox}[title=La Biblia de Jerusal\'{e}n]
+% $^1$ En el principio exist\'{i}a la Palabra y la Palabra estaba con Dios, y la Palabra era Dios. \\
+% $^2$ Ella estaba en el principio con Dios. \\
+% $^3$ Todo se hizo por ella y sin ella no se hizo nada de cuanto existe. \\
+% $^4$ En ella estaba la vida y la vida ear la luz de los hombres, \\
+% $^5$ y la luz brilla en las tinieblas, y las tinieblas no la vencieron. \\
+% \end{tcolorbox}
 
-The linguistic history part of this paper is over; but Spanish and her predecessors are so rich in morpho-syntax. It would be a shame to write a paper on Spanish without having a single paper dedicated to its morpho-syntactic aspect, hence we compensate by having a small chapter dedicated to a couple verses in the \emph{Gospel of John} and a couple \emph{sayings on the cross}, comparing the scripture in Latin, Old Spanish, and Modern Spanish. \\
-The Latin verses are from \textsc{Nova Vulgata}, the Old Spanish verses from \emph{Evangelios y Epístolas paulinas de Mart\'{i}n de Lucena} \footcite{osp_nt} (the text presented here is normalized by me), and Modern Spanish ones from \emph{La Biblia de Jerusal\'{e}n}. The English glosses and exegetic notes are taken from the beloved \emph{Oxford Annotated Bible}\footcite{oab}, based on the \emph{New Revised Standard Version} translation. Since we are dealing with the Bible in many languages, the abbreviation of the Gospels will be in Latin, \textsc{e.g.} \textsc{Ioannes}, instead of \emph{Juan} or \emph{John}.
+% \subsection{Ioannes 1:1}
 
-\section{Ioannes 1:1--5}
+% \begin{exe}
+% \sn
+% \glll 
+% \textsc{in} \textsc{principio} \textsc{erat} \textsc{verbum} \\
+% enel comien\c{c}o era palabra \\
+% {En el} principio exist\'{i}a {la Palabra} \\
+% \glt 
+% ``In the beginning was the Word[.]''
+% \end{exe}
 
-\begin{tcolorbox}[title=\textsc{Nova Vulgata}]
-  \textsc{$^1$ in principio erat verbum et verbum era tapud deum et deus erat verbum} \\
-  \textsc{$^2$ hoc erat in principio apud deum} \\
-  \textsc{$^3$ omnia per ipsum facta sunt et sine ipso factum est nihil quod factum est} \\
-  \textsc{$^4$ in ipso vita erat et vita erat lux hominum} \\
-  \textsc{$^5$ et lux in tenebris lucet et tenebrae eam non comprehenderunt} \\
-\end{tcolorbox}
+% \begin{exe}
+% \sn
+% \glll
+% \textsc{et} \textsc{verbum} \textsc{erat} \textsc{apud} \textsc{deum} \\
+% e {la palabra} era {\c{c}erca de} dios \\
+% y {la Palabra} estaba con Dios \\
+% \glt
+% ``[A]nd the Word was with God[.]''
+% \end{exe}
 
-\begin{tcolorbox}[title=Evangelios y Epístolas paulinas de Mart\'{i}n de Lucena]
-  $^1$ Enel comien\c{c}o era palabra e la palabra era \c{c}erca de dios e dios era palabra \\
-  $^2$ aquesto era en prin\c{c}ipio \c{c}erca de dios \\
-  $^3$ todas las cosas por el son fechas e syn el non es fecha alguna cosa lo que fue fecho \\
-  $^4$ enel vida era e la vida era luz delos ombres \\
-  $^5$ e la luz enlas tiniebras luze e las tiniebras non la comprehendieron \\
-\end{tcolorbox}
+% \begin{exe}
+% \sn
+% \gll
+% \textsc{et} \textsc{deus} \textsc{erat} \textsc{verbum}\\
+% e dios era palabra \\
+% \glt
+% ``[A]nd the Word was God.''
+% \end{exe}
 
-\begin{tcolorbox}[title=La Biblia de Jerusal\'{e}n]
-  $^1$ En el principio exist\'{i}a la Palabra y la Palabra estaba con Dios, y la Palabra era Dios. \\
-  $^2$ Ella estaba en el principio con Dios. \\
-  $^3$ Todo se hizo por ella y sin ella no se hizo nada de cuanto existe. \\
-  $^4$ En ella estaba la vida y la vida ear la luz de los hombres, \\
-  $^5$ y la luz brilla en las tinieblas, y las tinieblas no la vencieron. \\
-\end{tcolorbox}
+% \begin{exe}
+% \sn
+% \gll
+% y la Palabra era Dios. \\
+% and the Word was God. \\
+% \end{exe}
 
-\subsection{Ioannes 1:1}
+% \subsection{Ioannes 1:2}
 
-\begin{exe}
-  \sn
-  \glll 
-  \textsc{in} \textsc{principio} \textsc{erat} \textsc{verbum} \\
-  enel comien\c{c}o era palabra \\
-  {En el} principio exist\'{i}a {la Palabra} \\
-  \glt 
-  ``In the beginning was the Word[.]''
-\end{exe}
+% \begin{exe}
+% \sn
+% \glll
+% \textsc{hoc} \textsc{erat} \textsc{in} \textsc{principio} \textsc{apud} \textsc{deum} \\
+% aquesto era en prin\c{c}ipio {\c{c}erca de} dios \\
+% Ella estaba {en el} principio con Dios \\
+% \glt
+% ``He was in the beginning with God.''
+% \end{exe}
 
-\begin{exe}
-  \sn
-  \glll
-  \textsc{et} \textsc{verbum} \textsc{erat} \textsc{apud} \textsc{deum} \\
-  e {la palabra} era {\c{c}erca de} dios \\
-  y {la Palabra} estaba con Dios \\
-  \glt
-  ``[A]nd the Word was with God[.]''
-\end{exe}
+% \subsection{Ioannes 1:3}
 
-\begin{exe}
-  \sn
-  \gll
-  \textsc{et} \textsc{deus} \textsc{erat} \textsc{verbum}\\
-  e dios era palabra \\
-  \glt
-  ``[A]nd the Word was God.''
-\end{exe}
+% \subsection{Ioannes 1:4}
 
-\begin{exe}
-  \sn
-  \gll
-  y la Palabra era Dios. \\
-  and the Word was God. \\
-\end{exe}
+% \subsection{Ioannes 1:5}
 
-\subsection{Ioannes 1:2}
+% \section{\emph{Saysing on the Cross}}
 
-\begin{exe}
-  \sn
-  \glll
-  \textsc{hoc} \textsc{erat} \textsc{in} \textsc{principio} \textsc{apud} \textsc{deum} \\
-  aquesto era en prin\c{c}ipio {\c{c}erca de} dios \\
-  Ella estaba {en el} principio con Dios \\
-  \glt
-  ``He was in the beginning with God.''
-\end{exe}
+% \subsection{\emph{Today shalt thou be with me in paradise.}}
 
-\subsection{Ioannes 1:3}
+% \subsection{\emph{My God, my God, why hast thou forsaken me?}}
 
-\subsection{Ioannes 1:4}
+% \subsection{\emph{It is finished.}}
 
-\subsection{Ioannes 1:5}
+% \chapter{Epilogue: Mein liebster Jugendtraum}
 
-\section{\emph{Saysing on the Cross}}
+% \epigraph{I have fought the good fight; \\ I have finished the race; \\ I have kept the faith.}{2 Timothy 4:7}
 
-\subsection{\emph{Today shalt thou be with me in paradise.}}
+% Other than the historical phonology of Latin and Spanish, there is yet another \emph{Jugendtraum} of mine: that is the historical phonology of the Sinitic languages.
 
-\subsection{\emph{My God, my God, why hast thou forsaken me?}}
+% \section{Die Rekonstruktion der Altchinesische}
 
-\subsection{\emph{It is finished.}}
+% \subsection{Phonemic Inventory}
 
-\chapter{Epilogue: Mein liebster Jugendtraum}
+% \subsection{Syllabic Structure}
 
-\epigraph{I have fought the good fight; \\ I have finished the race; \\ I have kept the faith.}{2 Timothy 4:7}
+% \subsection{Sound Changes to Middle Chinese}
 
-Other than the historical phonology of Latin and Spanish, there is yet another \emph{Jugendtraum} of mine: that is the historical phonology of the Sinitic languages.
+% \subsubsection{Vocalism}
 
-\section{Die Rekonstruktion der Altchinesische}
+% \subsubsection{Consonantism}
 
-\subsection{Phonemic Inventory}
+% \subsubsection{Tonogenesis}
 
-\subsection{Syllabic Structure}
+% \section{\emph{THE BOOK} of Sound Laws}
 
-\subsection{Sound Changes to Middle Chinese}
+% \epigraph{Prove and conjecture and keep the SF's score low.\footnotemark}{Erd\H{o}s P\'{a}l}
+% \footnotetext{\href{https://www.youtube.com/watch?v=AW97QTNf5ig}{The Purpose of Life.}}
 
-\subsubsection{Vocalism}
-
-\subsubsection{Consonantism}
-
-\subsubsection{Tonogenesis}
-
-\section{\emph{THE BOOK} of Sound Laws}
-
-\epigraph{Prove and conjecture and keep the SF's score low.\footnotemark}{Erd\H{o}s P\'{a}l}
-\footnotetext{\href{https://www.youtube.com/watch?v=AW97QTNf5ig}{The Purpose of Life.}}
-
-Erd\H{o}s P\'{a}l talks about ``The Book, in which God maintains the perfect proofs for mathematical theorems, following the dictum of G. H. Hardy that there is no permanent place for ugly mathematics'' \parencite[p.~5]{proofs_from_the_book}. I, too, think that there exists a \emph{Book} of sound laws that can be formalized computationally in a beautiful computer language (it has to be \emph{beautiful}, in the same spirit of Hardy's words, very little place is reserved for ugly linguistics). And this, dare I say, \emph{program} is what I want dedicate the next few years of my life to. \\
+% Erd\H{o}s P\'{a}l talks about ``The Book, in which God maintains the perfect proofs for mathematical theorems, following the dictum of G. H. Hardy that there is no permanent place for ugly mathematics'' \parencite[p.~5]{proofs_from_the_book}. I, too, think that there exists a \emph{Book} of sound laws that can be formalized computationally in a beautiful computer language (it has to be \emph{beautiful}, in the same spirit of Hardy's words, very little place is reserved for ugly linguistics). And this, dare I say, \emph{program} is what I want dedicate the next few years of my life to. \\
 
 \nocite{*}
 
@@ -1661,7 +1757,7 @@ Erd\H{o}s P\'{a}l talks about ``The Book, in which God maintains the perfect pro
 
 \printbibliography[heading=subbibintoc, keyword=phone, title={Phonology}]
 
-\printbibliography[heading=subbibintoc, keyword=romance, title={Romance Linguistics}]
+\printbibliography[heading=subbibintoc, keyword=romance, title={Romance and Historical Linguistics}]
 
 \printbibliography[heading=subbibintoc, keyword=tcs, title={Computation}]
 

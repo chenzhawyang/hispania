@@ -1,92 +1,98 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Acknowledgements}{6}{chapter.1}%
+\contentsline {chapter}{\numberline {1}Acknowledgements}{5}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Introduction}{7}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Introduction}{6}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Seasoned Techniques}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Seasoned Techniques}{6}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Rule-based Phonology}{7}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.1}Rule-based Phonology}{6}{subsection.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Romance Historical Linguistics}{7}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.2}Romance Historical Linguistics}{6}{subsection.2.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.3}Typed Programming Languages}{8}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.3}Typed Programming Languages}{7}{subsection.2.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}The Implementation of a Phonology}{8}{section.2.2}%
+\contentsline {section}{\numberline {2.2}The Implementation of a Phonology}{7}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{I\hspace {1em}Automated Phonology}{9}{part.1}%
+\contentsline {part}{I\hspace {1em}Automated Phonology}{8}{part.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{Automated Phonology}{10}{part.1}%
+\contentsline {chapter}{\numberline {3}The Little \emph {Metaphoner}}{9}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}The Little \emph {Metaphoner}}{10}{chapter.3}%
+\contentsline {section}{\numberline {3.1}\emph {The Sound Patterns}}{10}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}\emph {The Sound Patterns}}{11}{section.3.1}%
+\contentsline {section}{\numberline {3.2}The Vernacular}{11}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}The Vernacular}{12}{section.3.2}%
+\contentsline {chapter}{\numberline {4}In the Beginning was the \emph {Word}: \\ Segments, Syllables, and Lexemes}{13}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}In the Beginning was the \emph {Word}: \\ Segments, Syllables, and Lexemes}{14}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Representation of Segments}{13}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Representation of Segments}{14}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Vocalic}{13}{subsection.4.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Vocalic}{14}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Consonantal}{13}{subsection.4.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Consonantal}{14}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Representation of Syllables and Lexemes}{14}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Representation of Syllables and Lexemes}{15}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Syllabic Structure}{14}{subsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Syllabic Structure}{15}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Syllable Weight and Stress}{16}{subsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Syllable Weight and Stress}{17}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Syllabification}{17}{subsection.4.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Syllabification}{18}{subsection.4.2.3}%
+\contentsline {chapter}{\numberline {5}Tilting against Windmills: \\ Sound Changes and Phonotactics}{18}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Tilting against Windmills: \\ Sound Changes and Phonotactics}{19}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Representation of Sound Changes}{18}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Representation of Sound Changes}{19}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}The Feature and Segmental Level Language}{18}{subsection.5.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Rule Ordering}{19}{section.5.2}%
+\contentsline {subsection}{\numberline {5.1.2}The Syllabic Level Language}{18}{subsection.5.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Representation of Phonotactics}{19}{section.5.3}%
+\contentsline {subsection}{\numberline {5.1.3}The Metrical Level Language}{18}{subsection.5.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{II\hspace {1em}A Phonological History of Spanish}{20}{part.2}%
+\contentsline {section}{\numberline {5.2}Rule Ordering}{18}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Misc. Remarks and Comments}{21}{chapter.6}%
+\contentsline {section}{\numberline {5.3}Representation of Phonotactics}{18}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Proto-Romance}{23}{chapter.7}%
+\contentsline {part}{II\hspace {1em}A Phonological History of Spanish}{19}{part.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Phonemic Inventory}{23}{section.7.1}%
+\contentsline {chapter}{\numberline {6}Misc. Remarks and Comments}{20}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.1}Vocalic}{23}{subsection.7.1.1}%
+\contentsline {chapter}{\numberline {7}Proto-Romance}{22}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.2}Consonantal}{24}{subsection.7.1.2}%
+\contentsline {section}{\numberline {7.1}Phonemic Inventory}{22}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Sound Changes}{24}{section.7.2}%
+\contentsline {subsection}{\numberline {7.1.1}Vocalic}{22}{subsection.7.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.1}Vocalism}{24}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.1.2}Consonantal}{23}{subsection.7.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Loss of Vowel Quantity}{24}{section*.14}%
+\contentsline {section}{\numberline {7.2}Sound Changes}{23}{section.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Great Merger}{26}{section*.17}%
+\contentsline {subsection}{\numberline {7.2.1}Vocalism}{23}{subsection.7.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Merger in Atonic Vowels}{27}{section*.20}%
+\contentsline {subsubsection}{Loss of Vowel Quantity}{23}{section*.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Monophthongization}{28}{section*.23}%
+\contentsline {subsubsection}{Great Merger}{25}{section*.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Loss of Hiatus}{29}{section*.26}%
+\contentsline {subsubsection}{Merger in Atonic Vowels}{26}{section*.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Syncope}{29}{section*.27}%
+\contentsline {subsubsection}{Monophthongization}{27}{section*.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Apocope}{30}{section*.28}%
+\contentsline {subsubsection}{Loss of Hiatus}{28}{section*.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Metaphony}{30}{section*.29}%
+\contentsline {subsubsection}{Syncope}{29}{section*.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.2}Consonantism}{31}{subsection.7.2.2}%
+\contentsline {subsubsection}{Apocope}{30}{section*.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Prothesis}{31}{section*.30}%
+\contentsline {subsubsection}{Metaphony}{30}{section*.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Forition of [w] in Germanic Loanwords}{31}{section*.32}%
+\contentsline {subsection}{\numberline {7.2.2}Consonantism}{30}{subsection.7.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Syllabification of the [Cr] Cluster}{35}{section*.43}%
+\contentsline {subsubsection}{Prothesis}{30}{section*.29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Diphthongs from [w]}{31}{section*.31}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Strengthening of [w] in Germanic Loanwords}{32}{section*.32}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Syllabification of the [Cr] Cluster}{35}{section*.44}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {8}Western Romance}{37}{chapter.8}%
 \defcounter {refsection}{0}\relax 
@@ -100,96 +106,46 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.2.1}Vocalism}{38}{subsection.8.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Diphthongization I}{38}{section*.44}%
+\contentsline {subsubsection}{Diphthongization I}{38}{section*.45}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.2.2}Consonantism}{38}{subsection.8.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Old Spanish}{41}{chapter.9}%
+\contentsline {chapter}{\numberline {9}Old Spanish}{42}{chapter.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.1}Phonemic Inventory}{41}{section.9.1}%
+\contentsline {section}{\numberline {9.1}Phonemic Inventory}{42}{section.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.1}Vocalic}{41}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.1}Vocalic}{42}{subsection.9.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.2}Consonantal}{42}{subsection.9.1.2}%
+\contentsline {subsection}{\numberline {9.1.2}Consonantal}{43}{subsection.9.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.2}Sound Changes}{42}{section.9.2}%
+\contentsline {section}{\numberline {9.2}Sound Changes}{43}{section.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2.1}Vocalism}{42}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.1}Vocalism}{43}{subsection.9.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Diphthongization II}{42}{section*.47}%
+\contentsline {subsubsection}{Diphthongization II}{43}{section*.48}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2.2}Consonantism}{43}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.2}Consonantism}{45}{subsection.9.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Modern Spanish}{46}{chapter.10}%
+\contentsline {chapter}{\numberline {10}Modern Spanish}{48}{chapter.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.1}Phonemic Inventory}{46}{section.10.1}%
+\contentsline {section}{\numberline {10.1}Phonemic Inventory}{48}{section.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1.1}Vocalic}{46}{subsection.10.1.1}%
+\contentsline {subsection}{\numberline {10.1.1}Vocalic}{48}{subsection.10.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1.2}Consonantal}{46}{subsection.10.1.2}%
+\contentsline {subsection}{\numberline {10.1.2}Consonantal}{48}{subsection.10.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.2}Sound Changes}{46}{section.10.2}%
+\contentsline {section}{\numberline {10.2}Sound Changes}{48}{section.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2.1}Vocalism}{46}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.2.1}Vocalism}{48}{subsection.10.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2.2}Consonantism}{46}{subsection.10.2.2}%
+\contentsline {subsection}{\numberline {10.2.2}Consonantism}{48}{subsection.10.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {11}Anthology of Sound Changes}{48}{chapter.11}%
+\contentsline {chapter}{Biblipgraphy}{50}{chapter*.61}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.1}\emph {Zen} and Sound Changes}{48}{section.11.1}%
+\contentsline {section}{Phonology}{50}{section*.62}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.1.1}Syllabificaiton and Serialization}{48}{subsection.11.1.1}%
+\contentsline {section}{Romance and Historical Linguistics}{50}{section*.63}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.1.2}Phonotactics and Repairment}{48}{subsection.11.1.2}%
+\contentsline {section}{Computation}{51}{section*.64}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.1.3}Phonological Word: Maybe not So Flat of a Structure}{48}{subsection.11.1.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {12}Sunday School with the Wug}{49}{chapter.12}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.1}Ioannes 1:1--5}{49}{section.12.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.1.1}Ioannes 1:1}{50}{subsection.12.1.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.1.2}Ioannes 1:2}{50}{subsection.12.1.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.1.3}Ioannes 1:3}{51}{subsection.12.1.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.1.4}Ioannes 1:4}{51}{subsection.12.1.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.1.5}Ioannes 1:5}{51}{subsection.12.1.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.2}\emph {Saysing on the Cross}}{51}{section.12.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.2.1}\emph {Today shalt thou be with me in paradise.}}{51}{subsection.12.2.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.2.2}\emph {My God, my God, why hast thou forsaken me?}}{51}{subsection.12.2.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.2.3}\emph {It is finished.}}{51}{subsection.12.2.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {13}Epilogue: Mein liebster Jugendtraum}{52}{chapter.13}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13.1}Die Rekonstruktion der Altchinesische}{52}{section.13.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.1.1}Phonemic Inventory}{52}{subsection.13.1.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.1.2}Syllabic Structure}{52}{subsection.13.1.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.1.3}Sound Changes to Middle Chinese}{52}{subsection.13.1.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Vocalism}{52}{section*.60}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Consonantism}{52}{section*.61}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Tonogenesis}{52}{section*.62}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13.2}\emph {THE BOOK} of Sound Laws}{52}{section.13.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Biblipgraphy}{54}{chapter*.63}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{Phonology}{54}{section*.64}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{Romance Linguistics}{54}{section*.65}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{Computation}{55}{section*.66}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{Misc.}{56}{section*.67}%
+\contentsline {section}{Misc.}{52}{section*.65}%
