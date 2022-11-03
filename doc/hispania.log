@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2022.10.26)  2 NOV 2022 09:50
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2022.10.26)  3 NOV 2022 06:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1805,131 +1805,131 @@ Overfull \hbox (1.66666pt too wide) in paragraph at lines 81--100
 
 [2] (./hispania.toc [3
 
-])
+] [4])
 \tf@toc=\write7
 \openout7 = `hispania.toc'.
 
- [4]
+ [5]
 Chapter 1.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
-(Font)              scaled to size 9.00096pt on input line 114.
+(Font)              scaled to size 9.00096pt on input line 126.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
-(Font)              scaled to size 8.99904pt on input line 114.
-[5
-
-]
-Chapter 2.
+(Font)              scaled to size 8.99904pt on input line 126.
 [6
 
 ] [7] [8
 
 ]
-Chapter 3.
+Chapter 2.
 LaTeX Font Info:    Trying to load font information for T3+LibertinusSerif(0) o
-n input line 171.
-LaTeX Font Info:    No file T3LibertinusSerif(0).fd. on input line 171.
+n input line 173.
+LaTeX Font Info:    No file T3LibertinusSerif(0).fd. on input line 173.
 
 LaTeX Font Warning: Font shape `T3/LibertinusSerif(0)/m/n' undefined
-(Font)              using `T3/cmr/m/n' instead on input line 171.
+(Font)              using `T3/cmr/m/n' instead on input line 173.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--187
+Underfull \hbox (badness 10000) in paragraph at lines 186--189
 
  []
 
 [9
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 192--196
+Underfull \hbox (badness 10000) in paragraph at lines 194--198
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--210
+Underfull \hbox (badness 10000) in paragraph at lines 207--212
 
  []
 
 [10] [11] [12]
-Chapter 4.
+Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 269.
+(hyperref)                removing `\\' on input line 271.
 
 [13
 
 ] [14] [15] [16] [17]
-Chapter 5.
+Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 446.
+(hyperref)                removing `\\' on input line 448.
 
 [18
 
-] [19
+] [19] [20
 
 ]
-Chapter 6.
-[20
+Chapter 5.
+[21
 
 ]
 File: ../pics//augustine.jpg Graphic file (type bmp)
 <../pics//augustine.jpg>
- [21]
-Chapter 7.
-[22
+ [22]
+Chapter 6.
+[23
 
-] [23] [24] [25] [26] [27] [28] [29]
-Underfull \hbox (badness 10000) in paragraph at lines 879--880
-
- []
-
-
-Overfull \hbox (29.71326pt too wide) in paragraph at lines 915--915
+] [24] [25] [26] [27]
+Overfull \hbox (29.71326pt too wide) in paragraph at lines 832--832
 [] 
  []
 
-[30] [31] [32] [33] [34] [35]
+[28] [29] [30] [31] [32] [33]
+Underfull \hbox (badness 10000) in paragraph at lines 1092--1093
+
+ []
+
+[34] [35] [36]
 File: ../pics//isidorus.jpeg Graphic file (type bmp)
 <../pics//isidorus.jpeg>
 
-Overfull \hbox (51.79408pt too wide) in paragraph at lines 1185--1186
+Overfull \hbox (51.79408pt too wide) in paragraph at lines 1225--1226
 [][] 
  []
 
-[36]
-Chapter 8.
-[37
+[37]
+Chapter 7.
+[38
 
-] [38] [39] [40]
+] [39] [40] [41]
 File: ../pics//alfonso_x.jpg Graphic file (type bmp)
 <../pics//alfonso_x.jpg>
 
 Overfull \vbox (93.94745pt too high) has occurred while \output is active []
 
 
-[41]
-Chapter 9.
+[42]
+Chapter 8.
 
-Overfull \hbox (10.79326pt too wide) in paragraph at lines 1405--1405
+Overfull \hbox (10.79326pt too wide) in paragraph at lines 1449--1449
 [] 
  []
 
-[42
+[43
 
-] [43] [44] [45] [46]
+] [44] [45] [46] [47]
 File: ../pics//marquez.jpg Graphic file (type bmp)
 <../pics//marquez.jpg>
 
-Overfull \hbox (21.68176pt too wide) in paragraph at lines 1567--1568
+Overfull \hbox (21.68176pt too wide) in paragraph at lines 1619--1620
 [][] 
  []
 
-[47]
-Chapter 10.
-[48
+[48]
+Chapter 9.
+[49
 
-] [49]
-Overfull \hbox (3.91498pt too wide) in paragraph at lines 1758--1758
+] [50]
+Chapter 10.
+[51
+
+]
+Overfull \hbox (3.91498pt too wide) in paragraph at lines 1819--1819
 [][]\TU/LibertinusSerif(0)/m/n/10 Kondrak, Grzegorz (2002). \TU/LibertinusSerif
 (0)/m/it/10 Algorithms for Language Reconstruction\TU/LibertinusSerif(0)/m/n/10
  . \TU/LibertinusSerif(0)/m/sc/10 url\TU/LibertinusSerif(0)/m/n/10 : [][]$[][][
@@ -1937,7 +1937,7 @@ Overfull \hbox (3.91498pt too wide) in paragraph at lines 1758--1758
  []
 
 
-Overfull \hbox (94.97496pt too wide) in paragraph at lines 1758--1758
+Overfull \hbox (94.97496pt too wide) in paragraph at lines 1819--1819
 [][]\TU/LibertinusSerif(0)/m/n/10 Hartman, Steven Lee (2003a). \TU/LibertinusSe
 rif(0)/m/it/10 Modeling Phonological Change\TU/LibertinusSerif(0)/m/n/10 . \TU/
 LibertinusSerif(0)/m/sc/10 url\TU/LibertinusSerif(0)/m/n/10 : [][]$[][][][][] [
@@ -1946,30 +1946,37 @@ LibertinusSerif(0)/m/sc/10 url\TU/LibertinusSerif(0)/m/n/10 : [][]$[][][][][] [
  []
 
 
-Overfull \hbox (21.64708pt too wide) in paragraph at lines 1760--1760
+Overfull \hbox (21.64708pt too wide) in paragraph at lines 1821--1821
 \TU/LibertinusSerif(0)/m/n/10 quences in Romance”. In: \TU/LibertinusSerif(0)/m
 /it/10 Phonology \TU/LibertinusSerif(0)/m/n/10 24, pp. 37–75. \TU/LibertinusSer
 if(0)/m/sc/10 doi\TU/LibertinusSerif(0)/m/n/10 : [][]$[][][][][] [] [] [] [][][
 ] [] [][][] [] [][] [] [][][][] [] [][][][][][][][][][][][][][][][][]$[][]. 
  []
 
-[50
+[52
 
-] [51] [52] (./hispania.aux)
+] [53] [54] (./hispania.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
 
 Package logreq Info: Writing requests to 'hispania.run.xml'.
 \openout1 = `hispania.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41983 strings out of 477220
- 829760 string characters out of 5832721
- 1733072 words of memory out of 5000000
- 61003 multiletter control sequences out of 15000+600000
+ 42000 strings out of 477220
+ 830018 string characters out of 5832721
+ 1733148 words of memory out of 5000000
+ 61020 multiletter control sequences out of 15000+600000
  412572 words of font info for 128 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  116i,33n,116p,1101b,5362s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on hispania.pdf (53 pages).
+Output written on hispania.pdf (55 pages).

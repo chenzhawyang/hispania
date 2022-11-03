@@ -621,6 +621,59 @@
       \endverb
       \keyw{phone}
     \endentry
+    \entry{hualde_quasi-phonemic}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f0c1cbd395983c006f76fa31c882acbc}{%
+           family={Hualde},
+           familyi={H\bibinitperiod},
+           given={José\bibnamedelima Ignacio},
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=34ee52b4282dcea48682f1d7f164edeb}{%
+           family={Schmeiser},
+           familyi={S\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=0f322dc05d34da830fbe45de207a7d00}{%
+           family={Chand},
+           familyi={C\bibinitperiod},
+           given={Vineeta},
+           giveni={V\bibinitperiod}}}%
+        {{hash=2460fdc3cc7d1eef7c8148d6c918ff10}{%
+           family={Kelleher},
+           familyi={K\bibinitperiod},
+           given={Ann},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ef1a7cc4c9cc9e0f8e62c0045d9b8067}{%
+           family={Rodriguez},
+           familyi={R\bibinitperiod},
+           given={Angelo},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f0c1cbd395983c006f76fa31c882acbc}
+      \strng{fullhash}{f0c1cbd395983c006f76fa31c882acbc}
+      \strng{bibnamehash}{f0c1cbd395983c006f76fa31c882acbc}
+      \strng{authorbibnamehash}{f0c1cbd395983c006f76fa31c882acbc}
+      \strng{authornamehash}{f0c1cbd395983c006f76fa31c882acbc}
+      \strng{authorfullhash}{f0c1cbd395983c006f76fa31c882acbc}
+      \strng{editorbibnamehash}{6320f084f144aee346c2379646bc1a5b}
+      \strng{editornamehash}{6320f084f144aee346c2379646bc1a5b}
+      \strng{editorfullhash}{76d643c10eb470094240bc021443ce0b}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{WCCFL 23 Proceedings}
+      \field{title}{Quasi-Phonemic Contrasts in Spanish}
+      \field{year}{2004}
+      \true{nocite}
+      \keyw{romance}
+    \endentry
     \entry{prince_smol_ot}{book}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=41892ea80451bcc3a67aa8d258a4bff3}{%
@@ -674,7 +727,7 @@
       \strng{authorbibnamehash}{f0c1cbd395983c006f76fa31c882acbc}
       \strng{authornamehash}{f0c1cbd395983c006f76fa31c882acbc}
       \strng{authorfullhash}{f0c1cbd395983c006f76fa31c882acbc}
-      \field{extraname}{1}
+      \field{extraname}{2}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{extradatescope}{labelyear}
@@ -923,7 +976,7 @@
       \strng{authorbibnamehash}{f0c1cbd395983c006f76fa31c882acbc}
       \strng{authornamehash}{f0c1cbd395983c006f76fa31c882acbc}
       \strng{authorfullhash}{f0c1cbd395983c006f76fa31c882acbc}
-      \field{extraname}{2}
+      \field{extraname}{3}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{extradatescope}{labelyear}
@@ -1477,7 +1530,7 @@
       \endverb
       \keyw{tcs}
     \endentry
-    \entry{hualde_manterola_bsq}{article}{}
+    \entry{manterola_hualde}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=ffed896eb45d9a2f677599c8349a31e3}{%
            family={Manterola},
@@ -1509,7 +1562,6 @@
       \field{title}{Old Basque had */\textipa{X}/, not /h/}
       \field{volume}{11}
       \field{year}{2021}
-      \true{nocite}
       \field{pages}{421\bibrangedash 456}
       \range{pages}{36}
       \keyw{romance}
