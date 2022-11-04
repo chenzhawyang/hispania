@@ -1,6 +1,6 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Introduction}{6}{chapter.1}%
+\contentsline {chapter}{\numberline {1}\emph {Espa\~{n}a en el coraz\'{o}n}: \\ Introduction}{6}{chapter.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Seasoned Techniques}{6}{section.1.1}%
 \defcounter {refsection}{0}\relax 
@@ -12,7 +12,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}The Implementation of a Phonology}{7}{section.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{I\hspace {1em}Automated Phonology}{8}{part.1}%
+\contentsline {part}{I\hspace {1em}\emph {Fonolog\'{i}a automatizada}}{8}{part.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}The Little \emph {Metaphoner}}{9}{chapter.2}%
 \defcounter {refsection}{0}\relax 
@@ -50,7 +50,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Representation of Phonotactics}{19}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{II\hspace {1em}A Phonological History of Spanish}{20}{part.2}%
+\contentsline {part}{II\hspace {1em}\emph {Los elementos de Fonolog\'{i}a hist\'{o}rica espa\~{n}ola}}{20}{part.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Misc. Remarks and Comments}{21}{chapter.5}%
 \defcounter {refsection}{0}\relax 
@@ -58,7 +58,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.2}Organization of Each Chapter}{21}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Proto-Romance}{23}{chapter.6}%
+\contentsline {chapter}{\numberline {6}\textsc {Civitas Dei}: \\ Proto-Romance}{23}{chapter.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.1}Segmental Inventory}{23}{section.6.1}%
 \defcounter {refsection}{0}\relax 
@@ -122,13 +122,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Simplification of Clusters}{36}{section*.45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Western Romance}{38}{chapter.7}%
+\contentsline {chapter}{\numberline {7}\textsc {Etymologiae}: \\ Western Romance}{38}{chapter.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.1}Segmental Inventory}{38}{section.7.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.1.1}Vocalic}{38}{subsection.7.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.2}Consonantal}{38}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.2}Consonantal}{39}{subsection.7.1.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.2}Sound Changes}{39}{section.7.2}%
 \defcounter {refsection}{0}\relax 
@@ -136,15 +136,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Diphthongization I}{39}{section*.46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.2}Consonantism}{39}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.2}Consonantism}{40}{subsection.7.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.3}Structural Changes}{39}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.3}Structural Changes}{40}{subsection.7.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Degemination}{39}{section*.47}%
+\contentsline {subsubsection}{Degemination}{40}{section*.47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Lenition I}{39}{section*.48}%
+\contentsline {subsubsection}{Lenition I}{40}{section*.48}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Old Spanish}{43}{chapter.8}%
+\contentsline {chapter}{\numberline {8}\emph {El rey sabio}: \\ Old Spanish}{43}{chapter.8}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.1}Segmental Inventory}{43}{section.8.1}%
 \defcounter {refsection}{0}\relax 
@@ -172,7 +172,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Metathesis}{47}{section*.54}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Modern Spanish}{49}{chapter.9}%
+\contentsline {chapter}{\numberline {9}\emph {Cien a\~{n}os de soledad}: \\ Modern Spanish}{49}{chapter.9}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {9.1}Segmental Inventory}{49}{section.9.1}%
 \defcounter {refsection}{0}\relax 
@@ -188,7 +188,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Betacism II}{49}{section*.55}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Deaffrication}{49}{section*.56}%
+\contentsline {subsubsection}{Deaffrication of Palatal Affricates}{49}{section*.56}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Devoicing of Fricatives}{50}{section*.57}%
 \defcounter {refsection}{0}\relax 

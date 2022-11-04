@@ -121,18 +121,20 @@
 % C.Z.Y
 % \end{flushright}
 
-\chapter{Introduction}
+\chapter{\emph{Espa\~{n}a en el coraz\'{o}n}: \\ Introduction}
+
+\epigraph{Eternal vigilance is the price of knowledge.}{George Santayana}
+
+\section{Seasoned Techniques}
 
 \epigraph{枯れた技術の水平思考\footnotemark}{横井軍平}
 \footnotetext{\href{https://en.wikipedia.org/wiki/Gunpei_Yokoi\#Lateral_Thinking_with_Withered_Technology}{``Lateral Thinking of Withered Technology.''}}
-
-\section{Seasoned Techniques}
 
 This paper mainly uses \emph{seasoned} techniques in various fields -- meaning that the fundamental works this project builds on have been around for quite some time. 
 
 \subsection{Rule-based Phonology}
 
-The most fundamental technique used here, rule-based phonology, in itself a term coined by its aftecomers, has been around as its \emph{modern} form since at least late \texttt{'}\kern-1pt 60s. \\
+The most fundamental technique used here, rule-based phonology, itself a term coined by its aftecomers, has been around as its \emph{modern} form since at least late \texttt{'}\kern-1pt 60s. \\
 At the beginning of the 20\textsuperscript{th} century, phonology, and historical linguisitcs, started to be formalized. After many years of formalization, around and after the publication of \emph{SPE}, the practice of phonology had long acquired a formal language, as we can see from the theoretic elegance and explanatory power of the phonology that \emph{SPE} pioneered.
 
 \subsection{Romance Historical Linguistics}
@@ -148,7 +150,7 @@ The last piece of the \emph{puzle} [\texttt{'}puθ.le] is a \emph{typed programm
 In this paper we implement a kind of rule-based phonology that is capable of carrying out most of the historical sound changes from Latin to Modern Spanish. The underlying system and \emph{Phonology} (with a capital ``P'') is not language-specific. \\
 We have observed that rule-based phonology primarily has two components: the \emph{statics}, in which rules are defined for constructing members of the surface representations in the phonology; and the \emph{dynamics}, in which rules are set for defining the transformations between the aforementioned surface representations. In the lingo of computation, phonology, just like computation, revolves around \emph{data} (segments, syllables etc.) and \emph{computation} (sound changes).
 
-\part{Automated Phonology}
+\part{\emph{Fonolog\'{i}a automatizada}}
 
 \chapter{The Little \emph{Metaphoner}}
 
@@ -468,7 +470,7 @@ Recall that the natural numbers look like this: $\mathbb{N} \coloneq 0 \sqsubset
 
 \section{Representation of Phonotactics}
 
-\part{A Phonological History of Spanish}
+\part{\emph{Los elementos de Fonolog\'{i}a hist\'{o}rica espa\~{n}ola}}
 
 \chapter{Misc. Remarks and Comments}
 
@@ -485,7 +487,7 @@ The majority of the words in examples in this paper comes from \cite{romance_his
 
 \pagebreak
 
-\chapter{Proto-Romance}
+\chapter{\textsc{Civitas Dei}: \\ Proto-Romance}
 
 \epigraph{\textsc{finis origine pendent}}{\textsc{marcvs manilivs}}
 
@@ -1228,7 +1230,7 @@ Spanish have reflexes of some Latin words contains [\textbf{C}r-] in the ultimat
 
 \pagebreak
 
-\chapter{Western Romance}\label{cap:western_romance}
+\chapter{\textsc{Etymologiae}: \\ Western Romance}\label{cap:western_romance}
 
 \epigraph{\textsc{venite igitvr descendamvs et confvndamvs ibi lingvam eorvm vt non avdiat vnvsqvisqve vocem proximi svi}}{\textsc{genesis} \textsc{xi}$\bullet$\textsc{vii}}
 
@@ -1400,9 +1402,9 @@ The orthography of Visigothic texts shows signs of lenition and the confusion wa
 
 \pagebreak
 
-\chapter{Old Spanish}
+\chapter{\emph{El rey sabio}: \\ Old Spanish}
 
-\epigraph{Ya lo vedes, que partirnos emos en vida, yo iré e vós fincaredes remanida.}{Cantar de Mio Cid}
+\epigraph{Ya lo vedes, que partirnos emos en vida, yo iré e vós fincaredes remanida.}{Cantar de mio Cid}
 
 \section{Segmental Inventory}
 
@@ -1425,25 +1427,25 @@ The orthography of Visigothic texts shows signs of lenition and the confusion wa
 \subsection{Consonantal}
 
 \begin{tcolorbox}[title=Old Spanish Consonants, hbox]
-  \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+  \begin{tabular}{|c|c|c|c|c|c|c|c|}
     \hline
-    & Bilabial & Labiodental & Dental & Alveolar & Palatal & Velar & Labiovelar & Glottal \\
+    & Bilabial & Dental & Alveolar & Palatal & Velar & Labiovelar & Glottal \\
     \hline
-    Nasal & m & & \multicolumn{2}{c|}{n} & \textipa{\textltailn} & & & \\
+    Nasal & m & \multicolumn{2}{c|}{n} & \textipa{\textltailn} & & & \\
     \hline
-    Stop & p \quad b & & t \quad d & & & k \quad g & \textipa{k\super w} \quad \textipa{g\super w} & \\
+    Stop & p \quad b & t \quad d & & & k \quad g & \textipa{k\super w} \quad \textipa{g\super w} & \\
     \hline
-    Fricative & \textipa{F} \quad \textipa{B} & f & \textipa{D} & & \textipa{J} & \textipa{G} & & h \\
+    Fricative & \textipa{F} \quad \textipa{B} & \textipa{D} & & \textipa{J} & \textipa{G} & & h \\
     \hline
-    \textquotedbl & & & & s \quad z & \textipa{S} \quad \textipa{Z} & & & \\
+    \textquotedbl & & & s \quad z & \textipa{S} \quad \textipa{Z} & & & \\
     \hline
-    Affricate & & & \textipa{\texttslig} \quad \textipa{\textdzlig} & & \textipa{\textteshlig} \quad \textipa{\textdyoghlig} & & & \\
+    Affricate & & \textipa{\texttslig} \quad \textipa{\textdzlig} & & \textipa{\textteshlig} \quad \textipa{\textdyoghlig} & & & \\
     \hline
-    Trill & & & \multicolumn{2}{c|}{r} & & & & \\
+    Trill & & \multicolumn{2}{c|}{r} & & & & \\
     \hline
-    Tap & & & \multicolumn{2}{c|}{\textipa{R}} & & & & \\
+    Tap & & \multicolumn{2}{c|}{\textipa{R}} & & & & \\
     \hline
-    Lateral & & & \multicolumn{2}{c|}{l} & \textipa{L} & & & \\
+    Lateral & & \multicolumn{2}{c|}{l} & \textipa{L} & & & \\
     \hline
   \end{tabular}
 \end{tcolorbox}
@@ -1622,7 +1624,7 @@ Sometimes this sound change is attributed to the Romance-Basque bilingualism in 
 
 \pagebreak
 
-\chapter{Modern Spanish}
+\chapter{\emph{Cien a\~{n}os de soledad}: \\ Modern Spanish}
 
 \epigraph{Todo está cumplido.}{Juan 19:30}
 
@@ -1641,10 +1643,10 @@ Sometimes this sound change is attributed to the Romance-Basque bilingualism in 
 \subsubsection{Betacism II}\label{sec:betacism_2}
 
 \begin{tcolorbox}
-
+  \[ \#\ \text{\textipa{B}} \Rightarrow \#\ \text{b} \]
 \end{tcolorbox}
 
-\subsubsection{Deaffrication}
+\subsubsection{Deaffrication of Palatal Affricates}
 
 \begin{tcolorbox}
 
