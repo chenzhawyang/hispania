@@ -10,6 +10,7 @@
 \setmainfont{Libertinus Serif}
 \usepackage{bussproofs}
 \usepackage{qtree}
+\usepackage{forest}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
@@ -48,7 +49,9 @@
 \setlength\footnotemargin{0pt}
 % \setcounter{secnumdepth}{3}
 
-\renewcommand*{\postnotedelim}{\addcolon\ }
+\renewcommand*{\postnotedelim}{\addcolon\ } % add colon to authoryear citations
+
+\renewcommand{\thempfootnote}{\arabic{mpfootnote}}
 
 \title{El sueño de mi juventud: \\ Fonología automatizada}
 \author{陳朝陽 \\ Chen Zhaoyang \\ \texttt{zc23@illinois.edu}}
@@ -109,19 +112,7 @@
 
 \pagebreak
 
-% \chapter{Acknowledgements}
-
-% \epigraph{En adelanto van estos lugares: \\ ya tienen su diosa coronada.}{Leandro Díaz}
-
-% Finally, special thanks to Professor \textsc{Iosephus Ignatius Hualdus}, for his invaluable helps and advices in the writing of this paper. 
-
-% \begin{flushright}
-% Champaign, Illinois \\
-% Cambridge, England \\
-% C.Z.Y
-% \end{flushright}
-
-\chapter{\emph{Espa\~{n}a en el coraz\'{o}n}: \\ Introduction}
+\chapter{\emph{España en el corazón}: \\ Introduction}
 
 \epigraph{Eternal vigilance is the price of knowledge.}{George Santayana}
 
@@ -150,9 +141,9 @@ The last piece of the \emph{puzle} [\texttt{'}puθ.le] is a \emph{typed programm
 In this paper we implement a kind of rule-based phonology that is capable of carrying out most of the historical sound changes from Latin to Modern Spanish. The underlying system and \emph{Phonology} (with a capital ``P'') is not language-specific. \\
 We have observed that rule-based phonology primarily has two components: the \emph{statics}, in which rules are defined for constructing members of the surface representations in the phonology; and the \emph{dynamics}, in which rules are set for defining the transformations between the aforementioned surface representations. In the lingo of computation, phonology, just like computation, revolves around \emph{data} (segments, syllables etc.) and \emph{computation} (sound changes).
 
-\part{\emph{Fonolog\'{i}a automatizada}}
+\part{\emph{Fonología automatizada}}
 
-\chapter{The Little \emph{Metaphoner}}
+\chapter{The Little \emph{Metaphoner}}\label{cap:metaphoner}
 
 \epigraph{\textsc{et cognoscetis veritatem \\ et veritas liberabit vos}}{\textsc{ioannes viii}$\bullet$\textsc{xxxii}}
 
@@ -167,7 +158,7 @@ The pseudocode used in this paper (dubbed \emph{Metaphono} in homage to the work
 In any regards, programming language theory is not the focus of this paper, whenever formalism becomes a burden in the clarification of our ideas, we take the liberty to explain them in a natural language. \\
 The socratic style used in this chapter follows that of the book \emph{The Little LISPer} by \cite{lisper}.
 
-\section{\emph{The Sound Patterns}}
+\section{\emph{The Sound Patterns}}\label{sec:sound_patterns}
 
 \subsection*{\textsc{seg} $\vdash$ feat}
 
@@ -180,9 +171,9 @@ The socratic style used in this chapter follows that of the book \emph{The Littl
   \textcolor{violet}{Yes:}
   \begin{tcolorbox}
     \begin{align*}
-    \text{\textipa{T}}\ & \vdash \text{non-sibilant fricative} \\
-                      & \vdash \text{dental} \\
-                      & \vdash \text{voiceless} 
+      \text{\textipa{T}}\ & \vdash \text{non-sibilant fricative} \\
+                          & \vdash \text{dental} \\
+                          & \vdash \text{voiceless} 
     \end{align*}
   \end{tcolorbox}
   I feel like I have seen things of this sort before. \\
@@ -201,7 +192,7 @@ The socratic style used in this chapter follows that of the book \emph{The Littl
 
 This notation has its roots in $\lambda-$calculi and other formal languages alike, this particular form is adopted from \cite{tpl}. The semantics of this notation is simple: rewrite \textbf{feat}$_1$ to \textbf{feat}$_2$ within \textsc{seg}.
 
-\section{The Vernacular}
+\section{The Vernacular}\label{sec:vernacular}
 
 \subsection*{Types \\ val : $\tau$}
 
@@ -217,8 +208,8 @@ This notation has its roots in $\lambda-$calculi and other formal languages alik
 
 Functions are defined as such.
 \begin{align*}
-\text{\textcolor{magenta}{raise}} &\ :\ \text{Vowel} \rightarrow \text{Vowel} \\
-\text{a} & \Rightarrow \text{e} \\
+  \text{\textcolor{magenta}{raise}} &\ :\ \text{Vowel} \rightarrow \text{Vowel} \\
+  \text{a} & \Rightarrow \text{e} \\
 \end{align*}
 Not so surprisingly, giving \textcolor{magenta}{raise} an [a] would yield an [e].
 \[ \text{\textcolor{magenta}{raise}}\ (\text{a} : \text{Vowel}) \Rightarrow \text{e} : \text{Vowel} \]
@@ -254,9 +245,9 @@ Consider this sound change for some hypothetical language that has \{s z n m \te
 
 \begin{align*}
   \textbf{match}\ \text{exp} & \begin{cases}
-                                 \text{pattern}_0 & \Rightarrow \text{exp}_0 \\
+                                 \text{pattern}_0 & \Rightarrow \text{exp}'_0 \\
                                                   & \vdots \\
-                                 \text{pattern}_\omega & \Rightarrow \text{exp}_\omega \\
+                                 \text{pattern}_\omega & \Rightarrow \text{exp}'_\omega \\
                                \end{cases}\\
 \end{align*}
 
@@ -310,92 +301,92 @@ Consider this sound change for some hypothetical language that has \{s z n m \te
   consonant ::= manner (:$\times$:) place (:$\times$:) voice
 
   manner ::= nasal
-           | stop
-           | fricative
-           | non-siblant fricative
-           | affricate
-           | approximant
-           | tap
-           | trill
-           | lateral
+  | stop
+  | fricative
+  | non-siblant fricative
+  | affricate
+  | approximant
+  | tap
+  | trill
+  | lateral
 
   place ::= bilabial
-          | labiodental
-          | dental
-          | alveolar
-          | palatal
-          | velar | labiovelar
-          | glottal
+  | labiodental
+  | dental
+  | alveolar
+  | palatal
+  | velar | labiovelar
+  | glottal
 
   place ::= voiced | voiceless
 \end{lstlisting}
 
 \section{Representation of Syllables and Lexemes}
 
-\subsection{Syllabic Structure}
+\subsection{Syllabic Structure}\label{sec:syllabic_struct}
 
 \begin{lstlisting}[basicstyle=\ttfamily, mathescape, escapeinside={(:}{:)}]
   syllable ::= onset rhyme
 
   onset ::= zero-onset
-          | monoonset consonant
-          | dionset consonant(:$_1$:) consonant(:$_2$:)
-          | trionset consonant(:$_1$:) consonant(:$_2$:) consonant(:$_3$:)
-          
+  | monoonset consonant
+  | dionset consonant(:$_1$:) consonant(:$_2$:)
+  | trionset consonant(:$_1$:) consonant(:$_2$:) consonant(:$_3$:)
+  
   rhyme ::= nucleus coda
 
   nucleus ::= zero-nucleus | monophthong vowel | diphthong vowel(:$_1$:) vowel(:$_2$:)
 
   coda ::= zero-coda
-         | monocoda consonant
-         | dicoda consonant(:$_1$:) consonant(:$_2$:)
+  | monocoda consonant
+  | dicoda consonant(:$_1$:) consonant(:$_2$:)
 \end{lstlisting}
 
 \Tree [.$\sigma$ [.$\Omega$ [.π ] [.$\omega$ ] [.$\mu$ ] ] [.$\rho$ [\qroof{μν. | δφ.}.$\nu$ ] [.K [.$\kappa$ ] [.$\kappa'$ ] ] ] ]
 
 Under this schema, the utterance-initial onset clusters would like this in Modern Spanish\footcite[p.~74]{hualde_sp}:
 \begin{center}
-\begin{tabular}{c|c}
-  $\omega$ & $\mu$ \\
-  \hline
-  \begin{tabular}{c}
-    p \textipa{B} t d k$^{\text{(w)}}$ g$^{\text{(w)}}$ \\
-    f \textipa{T} s x \\
-    \textipa{J} \\
-    \textipa{\textteshlig} \\
-    m n \textipa{\textltailn} \\
-    l \textipa{L} \textipa{R} \\
-  \end{tabular} & $\varnothing$ \\
-  \hline
-  \begin{tabular}{c}p b t d k g \\ f\end{tabular} & \textipa{R} \\
-  \hline
-  \begin{tabular}{c}p b (t) k g \\ f\end{tabular} & l \\
-  \hline
-\end{tabular}
+  \begin{tabular}{c|c}
+    $\omega$ & $\mu$ \\
+    \hline
+    \begin{tabular}{c}
+      p \textipa{B} t d k$^{\text{(w)}}$ g$^{\text{(w)}}$ \\
+      f \textipa{T} s x \\
+      \textipa{J} \\
+      \textipa{\textteshlig} \\
+      m n \textipa{\textltailn} \\
+      l \textipa{L} \textipa{R} \\
+    \end{tabular} & $\varnothing$ \\
+    \hline
+    \begin{tabular}{c}p b t d k g \\ f\end{tabular} & \textipa{R} \\
+    \hline
+    \begin{tabular}{c}p b (t) k g \\ f\end{tabular} & l \\
+    \hline
+  \end{tabular}
 \end{center}
 And the utterance-final coda clusters\footcite[p.~75]{hualde_sp}:
 \begin{center}
-\begin{tabular}{c|c}
-  $\kappa$ & $\kappa'$ \\
-  \hline
-  \begin{tabular}{c}
-    p t d k \\
-    f \textipa{T} s \\
-    j \\
-    n m \\
-    l \textipa{R} \\
-  \end{tabular}& $\varnothing$ \\
-  \hline
-  \begin{tabular}{c}
-    p t k \\
-    f \\
-    n \\
-    l \textipa{R} \\
-  \end{tabular} & s \\
-  \hline
-  (n) & (\textipa{T}) \\
-  \hline
-\end{tabular}
+  \begin{tabular}{c|c}
+    $\kappa$ & $\kappa'$ \\
+    \hline
+    \begin{tabular}{c}
+      p t d k \\
+      f \textipa{T} s \\
+      j \\
+      n m \\
+      l \textipa{R} \\
+    \end{tabular}& $\varnothing$ \\
+    \hline
+    \begin{tabular}{c}
+      p t k \\
+      f \\
+      n \\
+      l \textipa{R} \\
+    \end{tabular} & s \\
+    \hline
+    (n) & (\textipa{T}) \\
+    \hline
+  \end{tabular}
 \end{center}
 
 \subsection{Syllable Weight and Stress}
@@ -419,24 +410,24 @@ After we are able to decide syllable weight, defining the Latin \textsc{penultim
 \begin{align*}
   \text{\textcolor{magenta}{assign stress}} & :\ [\text{Syllable}] \rightarrow \text{Lexeme} \\
   [\sigma] & \Rightarrow \begin{aligned}
-                                                            & \textbf{let}\ \sigma' = [\text{unstressed} \rightarrow \text{stressed}] \ \sigma \\
-                                                            & \textbf{in}\ \text{\textcolor{magenta}{mkLexeme}}\ [\sigma'] \\
-                                                          \end{aligned} \\
+                           & \textbf{let}\ \sigma' = [\text{unstressed} \rightarrow \text{stressed}] \ \sigma \\
+                           & \textbf{in}\ [\sigma'] \\
+                         \end{aligned} \\
   [\sigma_1 \dblcolon \sigma_2] & \Rightarrow \begin{aligned}
-                                                            & \textbf{let}\ \sigma' = [\text{unstressed} \rightarrow \text{stressed}] \ \sigma_1 \\
-                                                            & \textbf{in}\ \text{\textcolor{magenta}{mkLexeme}}\ [\sigma' \dblcolon \sigma_2] \\
-                                                          \end{aligned} \\
+                                                & \textbf{let}\ \sigma' = [\text{unstressed} \rightarrow \text{stressed}] \ \sigma_1 \\
+                                                & \textbf{in}\ [\sigma' \dblcolon \sigma_2] \\
+                                              \end{aligned} \\
   [\sigma^{*}]\ \texttt{++}\ [\sigma_1 \dblcolon \sigma_2 \dblcolon \sigma_3] & \Rightarrow \textbf{match}\ \text{\textcolor{magenta}{weight}}\ \sigma_2
-                                                      \begin{cases}
-                                                        \text{heavy} & \Rightarrow \begin{aligned}
-                                                                                     & \textbf{let}\ \sigma' = [\text{unstressed} \rightarrow \text{stressed}]\ \sigma_2 \\
-                                                                                     & \textbf{in}\ \text{\textcolor{magenta}{mkLexeme}}\ [\sigma^{*}]\ \texttt{++}\ [\sigma_1 \dblcolon \sigma' \dblcolon \sigma_3] \\
-                                                                                   \end{aligned} \\
-                                                        \text{light} & \Rightarrow \begin{aligned}
-                                                                                     & \textbf{let}\ \sigma' = [\text{unstressed} \rightarrow \text{stressed}]\ \sigma_1 \\
-                                                                                     & \textbf{in}\ \text{\textcolor{magenta}{mkLexeme}}\ [\sigma^{*}]\ \texttt{++}\ [\sigma' \dblcolon \sigma_2 \dblcolon \sigma_3] \\
-                                                                                   \end{aligned} \\
-                                                      \end{cases}
+                                                                                \begin{cases}
+                                                                                  \text{heavy} & \Rightarrow \begin{aligned}
+                                                                                                               & \textbf{let}\ \sigma' = [\text{unstressed} \rightarrow \text{stressed}]\ \sigma_2 \\
+                                                                                                               & \textbf{in}\ [\sigma^{*}]\ \texttt{++}\ [\sigma_1 \dblcolon \sigma' \dblcolon \sigma_3] \\
+                                                                                                             \end{aligned} \\
+                                                                                  \text{light} & \Rightarrow \begin{aligned}
+                                                                                                               & \textbf{let}\ \sigma' = [\text{unstressed} \rightarrow \text{stressed}]\ \sigma_1 \\
+                                                                                                               & \textbf{in}\ [\sigma^{*}]\ \texttt{++}\ [\sigma' \dblcolon \sigma_2 \dblcolon \sigma_3] \\
+                                                                                                             \end{aligned} \\
+                                                                                \end{cases}
 \end{align*}
 
 \subsection{Syllabification}
@@ -452,25 +443,179 @@ After we are able to decide syllable weight, defining the Latin \textsc{penultim
 \epigraph{星翳燈幻露泡夢電雲\footnotemark}{金剛經 \S32}
 \footnotetext{\href{https://www2.hf.uio.no/polyglotta/index.php?page=record\&vid=1176\&mid=1993243}{A shooting star, a clouding of the sight, a lamp, an illusion, a drop of dew, a bubble, a dream, a lightning's flash, a thunder cloud.} Diamond Sutra \S32}
 
-\section{Representation of Sound Changes}
+\section{Strata of Sound Change}
 
 \epigraph{Wir m\"{u}ssen wissen. \\ Wir werden wissen.}{David Hilbert}
 
-\subsection{The Feature and Segmental Level Language}
+\subsection{Feature and Segmental Level}
 
-\subsection{The Syllabic Level Language}
+In sections \nameref{sec:sound_patterns} and \nameref{sec:vernacular} we introduced some notations that rewrites features of a segment:
+\[ [\text{voiceless} \rightarrow \text{voiced}]\ \text{s} \Rightarrow \text{z} \]
+and segments themselves:
+\begin{align*}
+  \text{\textcolor{magenta}{devoicing}} &\ :\ \text{Consonant} \rightarrow \text{Consonant} \\
+  \text{s} & \Rightarrow \text{z} \\
+                                        & \\
+  \text{\textcolor{magenta}{raise}} &\ :\ \text{Vowel} \rightarrow \text{Vowel} \\
+  \text{a} & \Rightarrow \text{e} \\
+  \text{o} & \Rightarrow \text{u} \\
+\end{align*}
+These two schema constitutes the \textbf{feature} and \textbf{segmental} level of our language that defines sound changes. These two kinds of formulations by and large overlapps with each other. This expression
+\[ [\text{voiceless} \rightarrow \text{voiced}]\ \text{s} \Rightarrow \text{z} \]
+is equivalent to the \textcolor{magenta}{devoicing} function defined above. Thus we would use these two notations interchangeably depending on what our emphasis is in the respective sound changes. But in cases where a consonant is changed to a vowel and vice versa, one has to rewrite the segments directly:
+\begin{align*}
+  \text{\textcolor{magenta}{vocalization}} &\ :\ \text{Consonant} \rightarrow \text{Vowel} \\
+  \text{ɫ} & \Rightarrow \text{u} \\
+           & \\
+  \text{\textcolor{magenta}{fortition}} &\ :\ \text{Vowel} \rightarrow \text{Consonant} \\
+  \text{u} & \Rightarrow \text{ʋ} 
+\end{align*}
 
-\subsection{The Metrical Level Language}
+\subsection{Syllabic Level}
 
-\section{Rule Ordering}
+Elision is among the most common sound changes found in languages. But to formulate it can be slightly tricky:
+\begin{align*}
+  \text{elision} &\ :\ \text{Consonant} \rightarrow \text{?} \\
+  \text{m} & \Rightarrow \varnothing
+\end{align*}
+We find ourselves unable to type this function: $\varnothing$ is not a consonant, it is not even a \textbf{segment}. Same difficulty is found when we try to define epenthesis:
+\begin{align*}
+  \text{epenthesis} &\ :\ \text{?} \rightarrow \text{Vowel} \\
+  \varnothing & \Rightarrow \text{ə} 
+\end{align*}
+This time we have to even accept a $\varnothing$ as an input -- only that there is no segmental $\varnothing$ in an utterance. Sound changes of this sort clearly operates in a different level than the ones we talked above. \\
+An implementation of the elison of [m] in the coda position  would look like this on the syllabic level:
+\begin{align*}
+  \text{\textcolor{magenta}{elision}} &\ :\ \text{Syllable} \rightarrow \text{Syllable} \\
+  \text{σ} \quad \vdash \Tree [.\text{ρ} [.\text{ν} ] [.K [.\text{κ} [.m ] ] ] ] & \Rightarrow
+                                                                                   \begin{aligned}
+                                                                                     & \textbf{let}\ \text{ρ}' = [\text{m} \rightarrow \varnothing\footnotemark]\ \text{ρ} \\
+                                                                                     & \textbf{in}\ [\text{ρ} \rightarrow \text{ρ}']\ \text{σ}
+                                                                                   \end{aligned}
+\end{align*}
+Here is how it would be applied to a Latin word such as \textsc{lucem}:
+\footnotetext{This $\varnothing$ is \texttt{zero-coda}, cf. \nameref{sec:syllabic_struct}.}
+\begin{align*}
+  \textcolor{magenta}{λ} &\ :\ \text{Lexeme} \rightarrow \text{Lexeme} \\
+  [σ \dblcolon σ'] & \Rightarrow [σ \dblcolon \text{\textcolor{magenta}{elision}}\ σ'] \\
+                   & \\
+  \textcolor{magenta}{λ}\ \textsc{lucem} & \Rightarrow \textsc{luce} 
+\end{align*}
 
-\epigraph{Die ganzen Zahlen hat der liebe Gott gemachet, alles andere ist Menschenwerk}{Leopold Kronecker}
+\subsection{Metrical Level}
 
-Recall that the natural numbers look like this: $\mathbb{N} \coloneq 0 \sqsubset 1 \sqsubset 2 \sqsubset 3 \sqsubset \dots \sqsubset \omega$.
+\section{Representation of Sound Changes}
+
+\subsection{Contexts of Sound Change}
+
+\subsection{Common Sound Change Patterns}
+
+\subsubsection{Elision}\label{sec:elision_lam}
+
+Elision of some word-final consonant is a common sound change that shows up again and again in historical linguistics. \\
+To see a couple examples, we construct the elision of a syllable final [m] as such:
+\begin{align*}
+  \text{\textcolor{magenta}{elision$_\text{m}$}} &\ :\ \text{Syllable} \rightarrow \text{Syllable} \\
+  \text{σ} \quad \vdash \Tree [.\text{ρ} [.\text{ν} ] [.K [.\text{κ} [.m ] ] ] ] & \Rightarrow
+                                                                                   \begin{aligned}
+                                                                                     & \textbf{let}\ \text{ρ}' = [\text{m} \rightarrow \varnothing]\ \text{ρ} \\
+                                                                                     & \textbf{in}\ [\text{ρ} \rightarrow \text{ρ}']\ \text{σ}
+                                                                                   \end{aligned} \\
+\end{align*}
+similarly, the elision of syllable final [s]:
+\begin{align*}
+  \text{\textcolor{magenta}{elision$_\text{s}$}} &\ :\ \text{Syllable} \rightarrow \text{Syllable} \\
+  \text{σ} \quad \vdash \Tree [.\text{ρ} [.\text{ν} ] [.K [.\text{κ} [.s ] ] ] ] & \Rightarrow
+                                                                                   \begin{aligned}
+                                                                                     & \textbf{let}\ \text{ρ}' = [\text{s} \rightarrow \varnothing]\ \text{ρ} \\
+                                                                                     & \textbf{in}\ [\text{ρ} \rightarrow \text{ρ}']\ \text{σ}
+                                                                                   \end{aligned} \\  
+\end{align*}
+One may observe that these two sound changes differ only by the what kind of consonant they elide.
+\begin{align*}
+    \text{elision}_\text{\textbf{C}} &\ :\ \text{Syllable} \rightarrow \text{Syllable} \\
+  \text{σ} \quad \vdash \Tree [.\text{ρ} [.\text{ν} ] [.K [.\text{κ} [.\textbf{C} ] ] ] ] & \Rightarrow
+                                                                                   \begin{aligned}
+                                                                                     & \textbf{let}\ \text{ρ}' = [\text{\textbf{C}} \rightarrow \varnothing]\ \text{ρ} \\
+                                                                                     & \textbf{in}\ [\text{ρ} \rightarrow \text{ρ}']\ \text{σ}
+                                                                                   \end{aligned} \\  
+\end{align*}
+
+\begin{align*}
+  \text{\textcolor{magenta}{elide$_\text{cons}$}} &\ : \ \text{Consonant} \rightarrow \text{Syllable} \rightarrow \text{Syllable} \\
+  \begin{aligned}\begin{tabular}{|c|c|}
+                   \hline
+                   \text{\textcolor{violet}{cons}} & σ \\
+                   \hline
+                 \end{tabular}\end{aligned} & \Rightarrow \textbf{match}\ σ\ \|\ σ \vdash [_ρ\ \ ν\ \ [_Κ\ [_κ\ \text{\textcolor{violet}{cons}}\ ]\ ]\ ]\footnotemark \Rightarrow
+                                              \begin{aligned}
+                                                & \textbf{let}\ \text{ρ}' = [\text{\textcolor{violet}{cons}} \rightarrow \varnothing]\ \text{ρ} \\
+                                                & \textbf{in}\ [\text{ρ} \rightarrow \text{ρ}']\ \text{σ}
+                                              \end{aligned} \\  
+\\
+                                                  & \\
+  \text{\textcolor{magenta}{elide$_σ$}} &\ :\ (\text{Syllable} \rightarrow \text{Syllable}) \rightarrow \text{Lexeme} \rightarrow \text{Lexeme} \\
+  \begin{tabular}{|c|c|}
+    \hline
+    $\textcolor{magenta}{f}$ & $[σ^{*}]\ \texttt{++}\ [σ']$ \\
+    \hline
+  \end{tabular} & \Rightarrow [σ^{*}]\ \texttt{++}\ [\textcolor{magenta}{f}\ σ'] \\
+                                                  & \\
+  \text{\textcolor{magenta}{elide$_λ$}} &\ :\ \text{Consonant} \rightarrow (\text{Lexeme} \rightarrow \text{Lexeme}) \\
+  \text{cons} & \Rightarrow \begin{aligned}
+                              & \textbf{let}\ \textcolor{magenta}{f}\footnotemark = \text{\textcolor{magenta}{elide$_{\text{cons}}$}}\ \text{cons} \\
+                              & \textbf{in}\ \text{\textcolor{magenta}{elide$_{σ}$}}\ \textcolor{magenta}{f} \\
+                            \end{aligned}
+\end{align*}
+\addtocounter{footnote}{-2}
+\stepcounter{footnote}\footnotetext{
+  This tree would look like this in full expansion: \\
+  \begin{forest}
+    [ρ [ν] [Κ [κ[\textcolor{violet}{cons}]]]]
+  \end{forest}}
+\stepcounter{footnote}\footnotetext{\textcolor{magenta}{$f$} : Syallble $\rightarrow$ Syllable.}
+
+\begin{equation*}
+  \llbracket\ \textbf{let}\ \text{exp} = \text{exp}'\ \textbf{in}\ \text{exp}\ \rrbracket \coloneq [\text{exp} \rightarrow \text{exp}']\ \text{exp} \Rightarrow \text{exp}'
+\end{equation*}
+
+\begin{align*}
+  \text{\textcolor{magenta}{elide$_λ$}} & \coloneq [\text{\textcolor{magenta}{f}} \rightarrow \text{\textcolor{magenta}{elide$_{\text{cons}}$}}\ \text{cons}]\ \text{\textcolor{magenta}{elide$_{σ}$}}\ \textcolor{magenta}{f} \\
+                                        & \\
+  \text{\textcolor{magenta}{elide$_λ$}}\ \text{cons} & \Rightarrow \text{\textcolor{magenta}{elide$_σ$}} (\text{\textcolor{magenta}{elide$_\text{cons}$}} \text{cons}) 
+\end{align*}
+
+\begin{align*}
+  \text{\textcolor{magenta}{elide$_{λ}$}}\ \text{t}\ \textsc{bibit}\footnotemark & \Rightarrow \textsc{bibi} \\
+\end{align*}
+\addtocounter{footnote}{-1}
+\stepcounter{footnote}\footnotetext{Internally looks like $[\textsc{bi}\ \dblcolon\ \textsc{bit}]$.}
+
+\begin{prooftree}
+  \AxiomC{\textcolor{magenta}{elide$_σ$} : (Syllable $\rightarrow$ Syllable) $\rightarrow$ Lexeme $\rightarrow$ Lexeme}
+  \AxiomC{\textcolor{magenta}{elide$_\text{cons}$} : Consonant $\rightarrow$ Syllable $\rightarrow$ Syllable}
+  \AxiomC{t : Consonant}
+  \BinaryInfC{\textcolor{magenta}{elide$_\text{cons}$} t : Syllable $\rightarrow$ Syllable}
+  \BinaryInfC{\textcolor{magenta}{elide$_σ$} (\textcolor{magenta}{elide$_\text{cons}$} \text{t}) : Lexeme $\rightarrow$ Lexeme}
+\end{prooftree}
+
+\begin{prooftree}
+  \AxiomC{\textcolor{magenta}{elide$_λ$} : Consonant $\rightarrow$ Lexeme $\rightarrow$ Lexeme}
+  \AxiomC{t : Consonant}
+  \BinaryInfC{\textcolor{magenta}{elide$_λ$} t : Lexeme $\rightarrow$ Lexeme}
+  \AxiomC{\textsc{bibit} : Lexeme}
+  \BinaryInfC{(\textcolor{magenta}{elide$_λ$} t) \textsc{bibit} : Lexeme}
+\end{prooftree}
 
 \section{Representation of Phonotactics}
 
-\part{\emph{Los elementos de Fonolog\'{i}a hist\'{o}rica espa\~{n}ola}}
+\section{Rule Ordering}
+
+\epigraph{Die ganzen Zahlen hat der liebe Gott gemachet, alles andere ist Menschenwerk.}{Leopold Kronecker}
+
+Recall that the natural numbers look like this: $\mathbb{N} \coloneq 0 \sqsubset 1 \sqsubset 2 \sqsubset 3 \sqsubset \dots \sqsubset \omega$.
+
+\part{\emph{Los elementos de Fonología histórica española}}
 
 \chapter{Misc. Remarks and Comments}
 
@@ -593,20 +738,20 @@ The distinction in vocalic quantity eventually collapsed \parencite[p.~112]{lloy
 \end{quote}
 The long vowels [i:], [u:], [e:], and [o:] did not change in quality, as it can be reflected in these Spanish reflexes\footcite[p.~12]{romance_his}:
 \begin{center}
-\begin{tabular}{c c}
-  \textsc{latina} & Español \\
-  \hline
-  \textsc{v\textcolor{red}{\={i}}ta} & v\textcolor{magenta}{i}da \\
-  \textsc{vic\textcolor{red}{\={i}}na} & vec\textcolor{magenta}{i}na \\
-  \textsc{far\textcolor{red}{\={i}}na} & har\textcolor{magenta}{i}na \\
-  \textsc{l\textcolor{red}{\={u}}na} & l\textcolor{magenta}{u}na \\
-  \textsc{d\textcolor{red}{\={u}}ra} & d\textcolor{magenta}{u}ra \\
-  \textsc{m\textcolor{red}{\={u}}ru} & m\textcolor{magenta}{u}ro \\
-  \textsc{h\textcolor{red}{\={o}}ra} & h\textcolor{magenta}{o}ra \\
-  \textsc{c\textcolor{red}{\={o}}rte} & c\textcolor{magenta}{o}rte \\
-  \textsc{d\textcolor{red}{\={e}}bet} & d\textcolor{magenta}{e}be \\
-  \textsc{t\textcolor{red}{\={e}}rnu} & t\textcolor{magenta}{e}rno \\
-\end{tabular}
+  \begin{tabular}{c c}
+    \textsc{latina} & Español \\
+    \hline
+    \textsc{v\textcolor{red}{\={i}}ta} & v\textcolor{magenta}{i}da \\
+    \textsc{vic\textcolor{red}{\={i}}na} & vec\textcolor{magenta}{i}na \\
+    \textsc{far\textcolor{red}{\={i}}na} & har\textcolor{magenta}{i}na \\
+    \textsc{l\textcolor{red}{\={u}}na} & l\textcolor{magenta}{u}na \\
+    \textsc{d\textcolor{red}{\={u}}ra} & d\textcolor{magenta}{u}ra \\
+    \textsc{m\textcolor{red}{\={u}}ru} & m\textcolor{magenta}{u}ro \\
+    \textsc{h\textcolor{red}{\={o}}ra} & h\textcolor{magenta}{o}ra \\
+    \textsc{c\textcolor{red}{\={o}}rte} & c\textcolor{magenta}{o}rte \\
+    \textsc{d\textcolor{red}{\={e}}bet} & d\textcolor{magenta}{e}be \\
+    \textsc{t\textcolor{red}{\={e}}rnu} & t\textcolor{magenta}{e}rno \\
+  \end{tabular}
 \end{center}
 The long [a:] merges with the short [a]; while the short vowels [i], [u], [e] and [o] would experience lowering \parencite[p.~13]{romance_his}. As an interesting sidenote: in Sardinian, long and short vowels merge without changes in quality,yielding a five-vowel system \parencite[p.~112]{lloyd_spanish}.
 
@@ -615,11 +760,11 @@ The long [a:] merges with the short [a]; while the short vowels [i], [u], [e] an
     \text{\textcolor{magenta}{loss of quantity}} &\ :\ \text{Vowel} \rightarrow \text{Vowel} \\
     \textbf{V} \vdash \text{long} & \Rightarrow [\text{long} \rightarrow \text{short}]\ \textbf{V} \\
     \textbf{V} \vdash \text{short} & \Rightarrow 
-    \textbf{match}\ \textbf{V} \begin{cases}
-                                \textbf{V} \vdash \text{low} & \Rightarrow \textbf{V} \\
-                                \textbf{V} \vdash \text{mid} & \Rightarrow [\text{mid} \rightarrow \text{low-mid}]\ \textbf{V} \\
-                                \textbf{V} \vdash \text{high} & \Rightarrow [\text{high} \rightarrow \text{high-mid}]\ \textbf{V} \\
-                              \end{cases} \\
+                                     \textbf{match}\ \textbf{V} \begin{cases}
+                                                                  \textbf{V} \vdash \text{low} & \Rightarrow \textbf{V} \\
+                                                                  \textbf{V} \vdash \text{mid} & \Rightarrow [\text{mid} \rightarrow \text{low-mid}]\ \textbf{V} \\
+                                                                  \textbf{V} \vdash \text{high} & \Rightarrow [\text{high} \rightarrow \text{high-mid}]\ \textbf{V} \\
+                                                                \end{cases} \\
   \end{align*}
 \end{tcolorbox}
 
@@ -661,16 +806,16 @@ The long [a:] merges with the short [a]; while the short vowels [i], [u], [e] an
 
 Later on, the vowel system of Romance languages continues to evolve, reducing the 9 vowel system shown above to a 7 vowel system \parencite[p.~13]{romance_his}: the high-mid vowels [\textipa{I}] and [\textipa{U}] would merge with their mid counterparts [e] and [u]\footcite[p.~14]{romance_his}:
 \begin{center}
-\begin{tabular}{c c c}
-  \textsc{latina} & PrRom & Español \\
-  \hline
-  \textsc{g\textcolor{red}{u}la} & [\textipa{U}] & g\textcolor{magenta}{o}la \\
-  \textsc{c\textcolor{red}{u}rrit} & [\textipa{U}] & c\textcolor{magenta}{o}rre \\
-  \textsc{m\textcolor{red}{\u{u}}sca} & [\textipa{U}] & m\textcolor{magenta}{o}sca \\
-  \textsc{b\textcolor{red}{i}b\textcolor{red}{i}t} & [\textipa{I}] & b\textcolor{magenta}{e}b\textcolor{magenta}{e} \\
-  \textsc{l\textcolor{red}{i}ttera} & [\textipa{I}] & l\textcolor{magenta}{e}tra \\
-  \textsc{v\textcolor{red}{\u{i}}ce} & [\textipa{I}] & v\textcolor{magenta}{e}z \\
-\end{tabular}
+  \begin{tabular}{c c c}
+    \textsc{latina} & PrRom & Español \\
+    \hline
+    \textsc{g\textcolor{red}{u}la} & [\textipa{U}] & g\textcolor{magenta}{o}la \\
+    \textsc{c\textcolor{red}{u}rrit} & [\textipa{U}] & c\textcolor{magenta}{o}rre \\
+    \textsc{m\textcolor{red}{\u{u}}sca} & [\textipa{U}] & m\textcolor{magenta}{o}sca \\
+    \textsc{b\textcolor{red}{i}b\textcolor{red}{i}t} & [\textipa{I}] & b\textcolor{magenta}{e}b\textcolor{magenta}{e} \\
+    \textsc{l\textcolor{red}{i}ttera} & [\textipa{I}] & l\textcolor{magenta}{e}tra \\
+    \textsc{v\textcolor{red}{\u{i}}ce} & [\textipa{I}] & v\textcolor{magenta}{e}z \\
+  \end{tabular}
 \end{center}
 For the low-mid vowels [\textipa{E}] and [\textipa{O}], both of them diphthongizes in either open or closed syllables in Spanish \parencite[p.~15-16]{romance_his}, later on in \nameref{sec:diphthongization_1} and \nameref{sec:diphthongization_2} we show the diphthongization of these vowels in details.
 
@@ -699,17 +844,17 @@ For the low-mid vowels [\textipa{E}] and [\textipa{O}], both of them diphthongiz
       Low & & a & \\
       \hline
     \end{tabular} \quad $\Rightarrow$ & 
-    \begin{tabular}{|c|c|c|c|}
-      \hline
-      & Front & Central & Back \\
-      \hline
-      High & i & & u \\
-      \hline
-      Mid & \cellcolor{magenta} e & & \cellcolor{magenta} o \\
-      \hline
-      Low & & a & \\
-      \hline
-    \end{tabular} \\
+                                        \begin{tabular}{|c|c|c|c|}
+                                          \hline
+                                          & Front & Central & Back \\
+                                          \hline
+                                          High & i & & u \\
+                                          \hline
+                                          Mid & \cellcolor{magenta} e & & \cellcolor{magenta} o \\
+                                          \hline
+                                          Low & & a & \\
+                                          \hline
+                                        \end{tabular} \\
   \end{tabular} 
 \end{tcolorbox}
 
@@ -741,9 +886,9 @@ Some examples for the outcomes of atonic vowels\footcite[p.~113]{lloyd_spanish}:
 
 \begin{tcolorbox}
   \begin{align*}
-  \textsc{oe} & \Rightarrow \text{e} \\
-  \textsc{au} & \Rightarrow \text{o}\ |\ \text{a} \\
-  \textsc{ae} & \Rightarrow \text{\textipa{E}}\ |\ \text{e} \\
+    \textsc{oe} & \Rightarrow \text{e} \\
+    \textsc{au} & \Rightarrow \text{o}\ |\ \text{a} \\
+    \textsc{ae} & \Rightarrow \text{\textipa{E}}\ |\ \text{e} \\
   \end{align*}
 \end{tcolorbox}
 
@@ -754,28 +899,28 @@ There were 3 diphthongs in Classical Latin that underwent monophthongization in 
 Here we focus on the 3 diphthongs that survived into Classical Latin. \\
 The diphthong \textsc{ae} mainly reflects a short [\textipa{E}] \footcite[p.~105]{lloyd_spanish}:
 \begin{center}
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{caecu} & ciego \\
-  \textsc{caelu} & cielo \\
-  \textsc{quaero} & quiero \\
-\end{tabular}
+  \begin{tabular}{c c}
+    \textsc{lat.} & Es. \\
+    \hline
+    \textsc{caecu} & ciego \\
+    \textsc{caelu} & cielo \\
+    \textsc{quaero} & quiero \\
+  \end{tabular}
 \end{center}
 In some cases it would give a long [e:]\footcite[p.~105]{lloyd_spanish}:
 \begin{center}
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{caespite} & c\'{e}sped \\
-  \textsc{faece} & hez \\
-  \textsc{faenu} & heno \\
-  \textsc{praeda} & prea \\
-  \textsc{saepe} & sebe \\
-  \textsc{saeptu} & seto \\
-  \textsc{saeta} & seda \\
-  \textsc{taeda} & tea \\
-\end{tabular}
+  \begin{tabular}{c c}
+    \textsc{lat.} & Es. \\
+    \hline
+    \textsc{caespite} & c\'{e}sped \\
+    \textsc{faece} & hez \\
+    \textsc{faenu} & heno \\
+    \textsc{praeda} & prea \\
+    \textsc{saepe} & sebe \\
+    \textsc{saeptu} & seto \\
+    \textsc{saeta} & seda \\
+    \textsc{taeda} & tea \\
+  \end{tabular}
 \end{center}
 The diphthong \textsc{oe} would evolve into a long [e:]\footcite[p.~106]{lloyd_spanish} e.g. \textsc{foedus} $\rightarrow$ Es. feo\footcite[p.~23]{romance_his}:
 \begin{center}
@@ -787,14 +932,14 @@ The diphthong \textsc{oe} would evolve into a long [e:]\footcite[p.~106]{lloyd_s
 \end{center}
 And \textsc{au} gives a long vowel [o:]\footcite[p.~24]{romance_his}:
 \begin{center}
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{\textcolor{red}{au}ru} & \textcolor{magenta}{o}ro \\
-  \textsc{thes\textcolor{red}{au}ru} & tes\textcolor{magenta}{o}ro \\
-  \textsc{p\textcolor{red}{au}peru} & p\textcolor{magenta}{o}bre \\
-  \textsc{p\textcolor{red}{au}cu} & p\textcolor{magenta}{o}co \\
-\end{tabular}
+  \begin{tabular}{c c}
+    \textsc{lat.} & Es. \\
+    \hline
+    \textsc{\textcolor{red}{au}ru} & \textcolor{magenta}{o}ro \\
+    \textsc{thes\textcolor{red}{au}ru} & tes\textcolor{magenta}{o}ro \\
+    \textsc{p\textcolor{red}{au}peru} & p\textcolor{magenta}{o}bre \\
+    \textsc{p\textcolor{red}{au}cu} & p\textcolor{magenta}{o}co \\
+  \end{tabular}
 \end{center}
 
 \begin{tcolorbox}
@@ -876,14 +1021,14 @@ Likewise, in Visigothic documents, the spelling exhibits the ``[c]onfusion of \e
 \paragraph{Strengthening of [w] in Germanic Loanwords}
 
 \begin{center}
-\begin{tabular}{c c}
-  Gm. & Es. \\  
-  \hline
-  \textcolor{red}{w}isa & \textcolor{magenta}{gu}isa \\
-  \textcolor{red}{w}erra & \textcolor{magenta}{gu}erra \\
-  \textcolor{red}{w}arten & \textcolor{magenta}{gu}ardar \\
-  \textcolor{red}{w}ant & \textcolor{magenta}{gu}ante \\  
-\end{tabular}
+  \begin{tabular}{c c}
+    Gm. & Es. \\  
+    \hline
+    \textcolor{red}{w}isa & \textcolor{magenta}{gu}isa \\
+    \textcolor{red}{w}erra & \textcolor{magenta}{gu}erra \\
+    \textcolor{red}{w}arten & \textcolor{magenta}{gu}ardar \\
+    \textcolor{red}{w}ant & \textcolor{magenta}{gu}ante \\  
+  \end{tabular}
 \end{center}
 
 (PrBsq. *euscala $\rightarrow$) \textsc{lat.} \textsc{vasconem} $\rightarrow$ Es. Gasc\'{o}n
@@ -957,34 +1102,34 @@ Sound changes of this sort is less regular in Castilian and other Western Romanc
 
 The voiceless velar [k] palatalizes before front vowels:
 \begin{center}
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{\textcolor{red}{c}ivitate} & \textcolor{magenta}{c}iudad [\textipa{T}] \\
-  \textsc{\textcolor{red}{c}inque} & \textcolor{magenta}{c}inco [\textipa{T}] \\
-  \textsc{\textcolor{red}{c}entu} & \textcolor{magenta}{c}iento [\textipa{T}] \\
-  \textsc{vi\textcolor{red}{c}ina} &
-                                   ve\textcolor{magenta}{c}ina [\textipa{T}]\footnote{cf. Judeo-Spanish \emph{vi\textcolor{magenta}{z}ina} [z]} \\
-  \textsc{ia\textcolor{red}{c}ere} &                                   ya\textcolor{magenta}{c}er [\textipa{T}] \\
-\end{tabular}
+  \begin{tabular}{c c}
+    \textsc{lat.} & Es. \\
+    \hline
+    \textsc{\textcolor{red}{c}ivitate} & \textcolor{magenta}{c}iudad [\textipa{T}] \\
+    \textsc{\textcolor{red}{c}inque} & \textcolor{magenta}{c}inco [\textipa{T}] \\
+    \textsc{\textcolor{red}{c}entu} & \textcolor{magenta}{c}iento [\textipa{T}] \\
+    \textsc{vi\textcolor{red}{c}ina} &
+                                       ve\textcolor{magenta}{c}ina [\textipa{T}]\footnote{cf. Judeo-Spanish \emph{vi\textcolor{magenta}{z}ina} [z]} \\
+    \textsc{ia\textcolor{red}{c}ere} &                                   ya\textcolor{magenta}{c}er [\textipa{T}] \\
+  \end{tabular}
 \end{center}
 The voiced velar [g] palatalized in the same context as [k]:
 \begin{center}
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{\textcolor{red}{ge}orgiu} & \textcolor{magenta}{J}orge [x] \\
-  \textsc{\textcolor{red}{g}eniu} & \textcolor{magenta}{g}enio [x] \\
-                & \\
-  \textsc{\textcolor{red}{g}emma} & \textcolor{magenta}{y}ema [j] \\
-  \textsc{\textcolor{red}{g}eneru} & \textcolor{magenta}{y}erno [j] \\
-                & \\
-  \textsc{\textcolor{red}{g}ingiva} & encía \\
-  \textsc{\textcolor{red}{g}elare} & helar \\
-                & \\
-  \textsc{le\textcolor{red}{g}e} & le\textcolor{magenta}{y} [j] \\
-  \textsc{fu\textcolor{red}{g}it} & hu\textcolor{magenta}{y}e [j] \\
-\end{tabular}
+  \begin{tabular}{c c}
+    \textsc{lat.} & Es. \\
+    \hline
+    \textsc{\textcolor{red}{ge}orgiu} & \textcolor{magenta}{J}orge [x] \\
+    \textsc{\textcolor{red}{g}eniu} & \textcolor{magenta}{g}enio [x] \\
+                  & \\
+    \textsc{\textcolor{red}{g}emma} & \textcolor{magenta}{y}ema [j] \\
+    \textsc{\textcolor{red}{g}eneru} & \textcolor{magenta}{y}erno [j] \\
+                  & \\
+    \textsc{\textcolor{red}{g}ingiva} & encía \\
+    \textsc{\textcolor{red}{g}elare} & helar \\
+                  & \\
+    \textsc{le\textcolor{red}{g}e} & le\textcolor{magenta}{y} [j] \\
+    \textsc{fu\textcolor{red}{g}it} & hu\textcolor{magenta}{y}e [j] \\
+  \end{tabular}
 \end{center}
 
 \subsubsection{Palatalization of Sonorants}
@@ -1054,41 +1199,41 @@ These yods from dehiaticization were one of the primary sources for palatalizati
 \subsubsection{Syncope}
 
 \begin{tcolorbox}
-   \[ \textbf{C}\textbf{V}.\textbf{C} \Rightarrow \textbf{C}\textbf{C} \]
+  \[ \textbf{C}\textbf{V}.\textbf{C} \Rightarrow \textbf{C}\textbf{C} \]
 \end{tcolorbox}
 
 ``There was extensive syncope of atonic vowels in words having four or more syllables in prehistoric Latin, and this process continued throughout the historical period'' \parencite[p.~113]{lloyd_spanish}. \\
 Here are some examples of syncope that were attested in Popular Latin\footcites[p.~28-29]{romance_his}[p.~114]{lloyd_spanish}:
 \begin{center}
-\begin{tabular}{c c}
-  \textsc{lat.} & Pop. Lat. \\
-  \hline
-  \textsc{oc\textcolor{red}{u}lu} & \textsc{oclu} \\
-  \textsc{auric\textcolor{red}{u}la} & \textsc{oricla} \\
-  \textsc{cal\textcolor{red}{i}du} & \textsc{caldu} \\
-  \textsc{ang\textcolor{red}{u}lus} & \textsc{anglus} \\
-  \textsc{spec\textcolor{red}{u}lum} & \textsc{speclum} \\
-  \textsc{vet\textcolor{red}{u}lus} & \textsc{veclus}\footnote{This is one of the words in which \textsc{-tl-} $\rightarrow$ \textsc{-cl-} \parencite[p.~68]{romance_his}.} \\
-  \textsc{vir\textcolor{red}{i}dis} & \textsc{virdis} \\
-\end{tabular}
+  \begin{tabular}{c c}
+    \textsc{lat.} & Pop. Lat. \\
+    \hline
+    \textsc{oc\textcolor{red}{u}lu} & \textsc{oclu} \\
+    \textsc{auric\textcolor{red}{u}la} & \textsc{oricla} \\
+    \textsc{cal\textcolor{red}{i}du} & \textsc{caldu} \\
+    \textsc{ang\textcolor{red}{u}lus} & \textsc{anglus} \\
+    \textsc{spec\textcolor{red}{u}lum} & \textsc{speclum} \\
+    \textsc{vet\textcolor{red}{u}lus} & \textsc{veclus}\footnote{This is one of the words in which \textsc{-tl-} $\rightarrow$ \textsc{-cl-} \parencite[p.~68]{romance_his}.} \\
+    \textsc{vir\textcolor{red}{i}dis} & \textsc{virdis} \\
+  \end{tabular}
 \end{center}
 And some that are reflected in Spanish\footcite[p.~29]{romance_his}:
 \begin{center}
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{lep\textcolor{red}{o}re} & liebre \\
-  \textsc{i(n)s\textcolor{red}{u}la} & isla \\
-  \textsc{vir\textcolor{red}{i}de} & verde \\
-\end{tabular}
+  \begin{tabular}{c c}
+    \textsc{lat.} & Es. \\
+    \hline
+    \textsc{lep\textcolor{red}{o}re} & liebre \\
+    \textsc{i(n)s\textcolor{red}{u}la} & isla \\
+    \textsc{vir\textcolor{red}{i}de} & verde \\
+  \end{tabular}
 \end{center}
 ``The factor that seems to have had the greatest importance [in the application of syncope] was whether the consonants which came into contact after syncope formed normally occurring [consonant] groups in Latin'' \parencite[p.~114]{lloyd_spanish}. Here are more examples of syncopes and their contexts\footcite[p.~114]{lloyd_spanish}:
 \begin{enumerate}
-  \item \textbf{posttonic} \\
+\item \textbf{posttonic} \\
   \textsc{positus} $\rightarrow$ \textsc{postus} $\rightarrow$ Es. \emph{puesto} \\
   \textsc{suspendere} $\rightarrow$ \textsc{suspendre} \\
   \textsc{tabula} $\rightarrow$ \textsc{tabla}
-  \item \textbf{pretonic} \\
+\item \textbf{pretonic} \\
   \textsc{maled\={i}x\={i}} $\rightarrow$ \textsc{maldixi} $\rightarrow$ Es. \emph{maldije}
 \end{enumerate}
 Occationally the syncopated and unsyncopated forms coexist in Spanish, usually the unsyncopated form being a \emph{cultismo} e.g. parab\textcolor{red}{o}la v. parabla. \\
@@ -1189,13 +1334,13 @@ Old Latin inscriptions reflect this change \parencite[p.~17]{companion_to_latin}
 \paragraph*{Nasal Liquid Cluster from Syncope}
 
 \begin{center}
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{te\textcolor{red}{ner}u} & tie\textcolor{magenta}{rn}o \\
-  \textsc{ge\textcolor{red}{ner}u} & ye\textcolor{magenta}{rn}o \\
-  \textsc{tre\textcolor{red}{mul}at} & tie\textcolor{magenta}{mbl}a \\
-\end{tabular}
+  \begin{tabular}{c c}
+    \textsc{lat.} & Es. \\
+    \hline
+    \textsc{te\textcolor{red}{ner}u} & tie\textcolor{magenta}{rn}o \\
+    \textsc{ge\textcolor{red}{ner}u} & ye\textcolor{magenta}{rn}o \\
+    \textsc{tre\textcolor{red}{mul}at} & tie\textcolor{magenta}{mbl}a \\
+  \end{tabular}
 \end{center}
 
 \paragraph*{Nasal Nasal Cluster from Syncope}
@@ -1205,14 +1350,14 @@ Old Latin inscriptions reflect this change \parencite[p.~17]{companion_to_latin}
 Spanish have reflexes of some Latin words contains [\textbf{C}r-] in the ultimate syllable which should have resulted in a stressed antepenultimate while the Spanish reflexes rather show a stressed penultimate\footcite[p.~115]{lloyd_spanish}:
 \begin{center}
   \begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{\'{a}lacre} $\rightarrow$ \textsc{al\'{a}cre} & alegre \\
-  \textsc{c\'{a}thedra} $\rightarrow$ \textsc{cath\'{e}dra} & cadera \\
-  \textsc{\'{i}ntegru} $\rightarrow$ \textsc{int\'{e}gru} & entero \\
-  \textsc{t\'{e}nebra} $\rightarrow$ \textsc{ten\'{e}bra} & tinieblas \\
-  \textsc{c\'{o}lubra} $\rightarrow$ \textsc{col\'{u}bra} & culuebra \\
-  \textsc{t\'{o}nitru} $\rightarrow$ \textsc{ton\'{i}tru} & tronido \\
+    \textsc{lat.} & Es. \\
+    \hline
+    \textsc{\'{a}lacre} $\rightarrow$ \textsc{al\'{a}cre} & alegre \\
+    \textsc{c\'{a}thedra} $\rightarrow$ \textsc{cath\'{e}dra} & cadera \\
+    \textsc{\'{i}ntegru} $\rightarrow$ \textsc{int\'{e}gru} & entero \\
+    \textsc{t\'{e}nebra} $\rightarrow$ \textsc{ten\'{e}bra} & tinieblas \\
+    \textsc{c\'{o}lubra} $\rightarrow$ \textsc{col\'{u}bra} & culuebra \\
+    \textsc{t\'{o}nitru} $\rightarrow$ \textsc{ton\'{i}tru} & tronido \\
   \end{tabular}
 \end{center}
 
@@ -1288,14 +1433,14 @@ Spanish have reflexes of some Latin words contains [\textbf{C}r-] in the ultimat
 
 The \textbf{stressed} low-mid vowel [\textipa{E}] (for the origin of this vowel cf. \nameref{sec:loss_of_quantity} and \nameref{sec:great_merger}) in open syllables underwent diphthongization in Western Romance (and Italian)\footcite[p.~15-16]{romance_his}:
 \begin{center}
-\begin{tabular}{c c c c}
-  \textsc{lat.} & Es. & Fr. & It. \\
-  \hline
-  \textsc{p\textcolor{red}{e}tra} & p\textcolor{magenta}{ie}dra & p\textcolor{magenta}{ie}rre & p\textcolor{magenta}{ie}tra \\
-  \textsc{f\textcolor{red}{e}le} & h\textcolor{magenta}{ie}l & f\textcolor{magenta}{ie}l & f\textcolor{magenta}{ie}le \\
-  \textsc{v\textcolor{red}{e}nit} & v\textcolor{magenta}{ie}ne & v\textcolor{magenta}{ie}nt & v\textcolor{magenta}{ie}ne \\
-  \textsc{h\textcolor{red}{e}ri} & a\textcolor{magenta}{ye}r & h\textcolor{magenta}{ie}r & \textcolor{magenta}{ie}ri \\
-\end{tabular}
+  \begin{tabular}{c c c c}
+    \textsc{lat.} & Es. & Fr. & It. \\
+    \hline
+    \textsc{p\textcolor{red}{e}tra} & p\textcolor{magenta}{ie}dra & p\textcolor{magenta}{ie}rre & p\textcolor{magenta}{ie}tra \\
+    \textsc{f\textcolor{red}{e}le} & h\textcolor{magenta}{ie}l & f\textcolor{magenta}{ie}l & f\textcolor{magenta}{ie}le \\
+    \textsc{v\textcolor{red}{e}nit} & v\textcolor{magenta}{ie}ne & v\textcolor{magenta}{ie}nt & v\textcolor{magenta}{ie}ne \\
+    \textsc{h\textcolor{red}{e}ri} & a\textcolor{magenta}{ye}r & h\textcolor{magenta}{ie}r & \textcolor{magenta}{ie}ri \\
+  \end{tabular}
 \end{center}
 In Spanish [\textipa{E}] also diphthongizes in closed syllables (\nameref{sec:diphthongization_2}).
 
@@ -1465,26 +1610,26 @@ The orthography of Visigothic texts shows signs of lenition and the confusion wa
 
 Spanish is unique among other Western Romance languages in that the diphthongization for the front low-mid vowel [\textipa{E}] happens in both open and closed syllables, and Spanish diphthongizes also the back low-mid vowel [\textipa{O}] in open and closed syllables\footcites[p.~122]{lloyd_spanish}[p.~15-16]{romance_his}:
 \begin{center}
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \textsc{hib\textcolor{red}{e}rnu} & inv\textcolor{magenta}{ie}rno \\
-  \textsc{ap\textcolor{red}{e}rta} & ab\textcolor{magenta}{ie}rta \\
-  \textsc{s\textcolor{red}{e}pte} & s\textcolor{magenta}{ie}te \\
-  \textsc{c\textcolor{red}{e}rvu} & c\textcolor{magenta}{ie}rvo \\
-  \textsc{f\textcolor{red}{e}rru} & h\textcolor{magenta}{ie}rro \\
-  & \\
-  \textsc{f\textcolor{red}{o}rte} & f\textcolor{magenta}{ue}rte \\
-  \textsc{p\textcolor{red}{o}rta} & p\textcolor{magenta}{ue}rta \\
-  \textsc{m\textcolor{red}{o}rdit} & m\textcolor{magenta}{ue}rde \\
-  \textsc{m\textcolor{red}{o}rit} & m\textcolor{magenta}{ue}re \\
-  \textsc{m\textcolor{red}{o}vet} & m\textcolor{magenta}{ue}ve \\
-  \textsc{p\textcolor{red}{o}tet} & p\textcolor{magenta}{ue}de \\
-\end{tabular}
+  \begin{tabular}{c c}
+    \textsc{lat.} & Es. \\
+    \textsc{hib\textcolor{red}{e}rnu} & inv\textcolor{magenta}{ie}rno \\
+    \textsc{ap\textcolor{red}{e}rta} & ab\textcolor{magenta}{ie}rta \\
+    \textsc{s\textcolor{red}{e}pte} & s\textcolor{magenta}{ie}te \\
+    \textsc{c\textcolor{red}{e}rvu} & c\textcolor{magenta}{ie}rvo \\
+    \textsc{f\textcolor{red}{e}rru} & h\textcolor{magenta}{ie}rro \\
+                  & \\
+    \textsc{f\textcolor{red}{o}rte} & f\textcolor{magenta}{ue}rte \\
+    \textsc{p\textcolor{red}{o}rta} & p\textcolor{magenta}{ue}rta \\
+    \textsc{m\textcolor{red}{o}rdit} & m\textcolor{magenta}{ue}rde \\
+    \textsc{m\textcolor{red}{o}rit} & m\textcolor{magenta}{ue}re \\
+    \textsc{m\textcolor{red}{o}vet} & m\textcolor{magenta}{ue}ve \\
+    \textsc{p\textcolor{red}{o}tet} & p\textcolor{magenta}{ue}de \\
+  \end{tabular}
 \end{center}
-The two unique phonological processes of Spanish, (a) expanding the context of the diphthongization of [\textipa{E}] to both open and closed syllables and (b) including [\textipa{O}] as the target of diphthongization (also in open and closed syllables), separate it from Western and Eastern Iberian Romance languages; cf. the reflexes of these two Latin words in other Iberian Romance languages to Castilian\footcite[p.~3]{hualde_iberian}:
+The two unique phonological processes of Spanish, (a) expanding the context of the diphthongization of [\textipa{E}] to both open and closed syllables and (b) including [\textipa{O}] as the target of diphthongization (also in open and closed syllables), separate it from Western and Eastern Iberian Romance languages; cf. the reflexes of these two Latin words in Portugese to Castilian\footcite[p.~3]{hualde_iberian}:
 \begin{center}
   \begin{tabular}{c c c}    
-    \textsc{lat.} & Cast. & Port. \& Cat. \\
+    \textsc{lat.} & Cast. & Port. \\
     \hline
     \textsc{terra} & tierra & terra \\
     \textsc{porta(m)} & puerta & porta \\
@@ -1510,21 +1655,21 @@ The diphthongization of [\textipa{E}] (cf. \nameref{sec:diphthongization_1}) and
 
 Many Latin words with word-initial singleton onset \textsc{f}- now have zero onset in Modern Spanish (once was [h] and written as such <h> in Old Spanish), while in clusters [f] is preserved\footcite[p.~50]{romance_his}:
 \begin{center}
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{\textcolor{red}{f}ilu} & \textcolor{magenta}{h}ilo \\
-  \textsc{\textcolor{red}{f}erire} & \textcolor{magenta}{h}erir \\
-  \textsc{\textcolor{red}{f}erro} & \textcolor{magenta}{h}ierro \\
-  \textsc{\textcolor{red}{f}alcone} & \textcolor{magenta}{h}alcón \\
-                & \\
-  \textsc{\textcolor{red}{f}ocu} & \textcolor{magenta}{f}uego \\
-  \textsc{\textcolor{red}{f}ora} & \textcolor{magenta}{f}uera \\
-  \textsc{\textcolor{red}{f}onte} & \textcolor{magenta}{f}uente \\
-  \textsc{\textcolor{red}{f}ronte} & \textcolor{magenta}{f}rente \\
-  \textsc{\textcolor{red}{f}lore} & \textcolor{magenta}{f}lor \\
-  \textsc{\textcolor{red}{f}laccu} & \textcolor{magenta}{f}laco \\
-\end{tabular}
+  \begin{tabular}{c c}
+    \textsc{lat.} & Es. \\
+    \hline
+    \textsc{\textcolor{red}{f}ilu} & \textcolor{magenta}{h}ilo \\
+    \textsc{\textcolor{red}{f}erire} & \textcolor{magenta}{h}erir \\
+    \textsc{\textcolor{red}{f}erro} & \textcolor{magenta}{h}ierro \\
+    \textsc{\textcolor{red}{f}alcone} & \textcolor{magenta}{h}alcón \\
+                  & \\
+    \textsc{\textcolor{red}{f}ocu} & \textcolor{magenta}{f}uego \\
+    \textsc{\textcolor{red}{f}ora} & \textcolor{magenta}{f}uera \\
+    \textsc{\textcolor{red}{f}onte} & \textcolor{magenta}{f}uente \\
+    \textsc{\textcolor{red}{f}ronte} & \textcolor{magenta}{f}rente \\
+    \textsc{\textcolor{red}{f}lore} & \textcolor{magenta}{f}lor \\
+    \textsc{\textcolor{red}{f}laccu} & \textcolor{magenta}{f}laco \\
+  \end{tabular}
 \end{center}
 Sometimes this sound change is attributed to the Romance-Basque bilingualism in the areas where Old Castilian was developed; recent discovery in Basque historical phonology has challenged this view \parencite{manterola_hualde}.
 
@@ -1656,9 +1801,9 @@ Sometimes this sound change is attributed to the Romance-Basque bilingualism in 
 
 \begin{tcolorbox}
   \begin{align*}
-  \textbf{V}.\text{\textipa{\textsubbridge{z}}}\textbf{V} & \Rightarrow \text{\textipa{\textsubbridge{s}}} \\
-  \textbf{V}.\text{\textipa{\textinvsubbridge{z}}}\textbf{V} & \Rightarrow \text{\textipa{\textinvsubbridge{s}}} \\
-  \textbf{V}.\text{\textipa{Z}}\textbf{V} & \Rightarrow \text{\textipa{S}} \\
+    \textbf{V}.\text{\textipa{\textsubbridge{z}}}\textbf{V} & \Rightarrow \text{\textipa{\textsubbridge{s}}} \\
+    \textbf{V}.\text{\textipa{\textinvsubbridge{z}}}\textbf{V} & \Rightarrow \text{\textipa{\textinvsubbridge{s}}} \\
+    \textbf{V}.\text{\textipa{Z}}\textbf{V} & \Rightarrow \text{\textipa{S}} \\
   \end{align*}
 \end{tcolorbox}
 
@@ -1699,77 +1844,77 @@ Sometimes this sound change is attributed to the Romance-Basque bilingualism in 
 % \section{Ioannes 1:1--5}
 
 % \begin{tcolorbox}[title=\textsc{Nova Vulgata}]
-% \textsc{$^1$ in principio erat verbum et verbum era tapud deum et deus erat verbum} \\
-% \textsc{$^2$ hoc erat in principio apud deum} \\
-% \textsc{$^3$ omnia per ipsum facta sunt et sine ipso factum est nihil quod factum est} \\
-% \textsc{$^4$ in ipso vita erat et vita erat lux hominum} \\
-% \textsc{$^5$ et lux in tenebris lucet et tenebrae eam non comprehenderunt} \\
+%   \textsc{$^1$ in principio erat verbum et verbum era tapud deum et deus erat verbum} \\
+%   \textsc{$^2$ hoc erat in principio apud deum} \\
+%   \textsc{$^3$ omnia per ipsum facta sunt et sine ipso factum est nihil quod factum est} \\
+%   \textsc{$^4$ in ipso vita erat et vita erat lux hominum} \\
+%   \textsc{$^5$ et lux in tenebris lucet et tenebrae eam non comprehenderunt} \\
 % \end{tcolorbox}
 
 % \begin{tcolorbox}[title=Evangelios y Epístolas paulinas de Mart\'{i}n de Lucena]
-% $^1$ Enel comien\c{c}o era palabra e la palabra era \c{c}erca de dios e dios era palabra \\
-% $^2$ aquesto era en prin\c{c}ipio \c{c}erca de dios \\
-% $^3$ todas las cosas por el son fechas e syn el non es fecha alguna cosa lo que fue fecho \\
-% $^4$ enel vida era e la vida era luz delos ombres \\
-% $^5$ e la luz enlas tiniebras luze e las tiniebras non la comprehendieron \\
+%   $^1$ Enel comien\c{c}o era palabra e la palabra era \c{c}erca de dios e dios era palabra \\
+%   $^2$ aquesto era en prin\c{c}ipio \c{c}erca de dios \\
+%   $^3$ todas las cosas por el son fechas e syn el non es fecha alguna cosa lo que fue fecho \\
+%   $^4$ enel vida era e la vida era luz delos ombres \\
+%   $^5$ e la luz enlas tiniebras luze e las tiniebras non la comprehendieron \\
 % \end{tcolorbox}
 
 % \begin{tcolorbox}[title=La Biblia de Jerusal\'{e}n]
-% $^1$ En el principio exist\'{i}a la Palabra y la Palabra estaba con Dios, y la Palabra era Dios. \\
-% $^2$ Ella estaba en el principio con Dios. \\
-% $^3$ Todo se hizo por ella y sin ella no se hizo nada de cuanto existe. \\
-% $^4$ En ella estaba la vida y la vida ear la luz de los hombres, \\
-% $^5$ y la luz brilla en las tinieblas, y las tinieblas no la vencieron. \\
+%   $^1$ En el principio exist\'{i}a la Palabra y la Palabra estaba con Dios, y la Palabra era Dios. \\
+%   $^2$ Ella estaba en el principio con Dios. \\
+%   $^3$ Todo se hizo por ella y sin ella no se hizo nada de cuanto existe. \\
+%   $^4$ En ella estaba la vida y la vida ear la luz de los hombres, \\
+%   $^5$ y la luz brilla en las tinieblas, y las tinieblas no la vencieron. \\
 % \end{tcolorbox}
 
 % \subsection{Ioannes 1:1}
 
 % \begin{exe}
-% \sn
-% \glll 
-% \textsc{in} \textsc{principio} \textsc{erat} \textsc{verbum} \\
-% enel comien\c{c}o era palabra \\
-% {En el} principio exist\'{i}a {la Palabra} \\
-% \glt 
-% ``In the beginning was the Word[.]''
+%   \sn
+%   \glll 
+%   \textsc{in} \textsc{principio} \textsc{erat} \textsc{verbum} \\
+%   enel comien\c{c}o era palabra \\
+%   {En el} principio exist\'{i}a {la Palabra} \\
+%   \glt 
+%   ``In the beginning was the Word[.]''
 % \end{exe}
 
 % \begin{exe}
-% \sn
-% \glll
-% \textsc{et} \textsc{verbum} \textsc{erat} \textsc{apud} \textsc{deum} \\
-% e {la palabra} era {\c{c}erca de} dios \\
-% y {la Palabra} estaba con Dios \\
-% \glt
-% ``[A]nd the Word was with God[.]''
+%   \sn
+%   \glll
+%   \textsc{et} \textsc{verbum} \textsc{erat} \textsc{apud} \textsc{deum} \\
+%   e {la palabra} era {\c{c}erca de} dios \\
+%   y {la Palabra} estaba con Dios \\
+%   \glt
+%   ``[A]nd the Word was with God[.]''
 % \end{exe}
 
 % \begin{exe}
-% \sn
-% \gll
-% \textsc{et} \textsc{deus} \textsc{erat} \textsc{verbum}\\
-% e dios era palabra \\
-% \glt
-% ``[A]nd the Word was God.''
+%   \sn
+%   \gll
+%   \textsc{et} \textsc{deus} \textsc{erat} \textsc{verbum}\\
+%   e dios era palabra \\
+%   \glt
+%   ``[A]nd the Word was God.''
 % \end{exe}
 
 % \begin{exe}
-% \sn
-% \gll
-% y la Palabra era Dios. \\
-% and the Word was God. \\
+%   \sn
+%   \gll
+%   y la Palabra era Dios. \\
+%   and the Word was God. \\
 % \end{exe}
 
 % \subsection{Ioannes 1:2}
 
 % \begin{exe}
-% \sn
-% \glll
-% \textsc{hoc} \textsc{erat} \textsc{in} \textsc{principio} \textsc{apud} \textsc{deum} \\
-% aquesto era en prin\c{c}ipio {\c{c}erca de} dios \\
-% Ella estaba {en el} principio con Dios \\
-% \glt
-% ``He was in the beginning with God.''
+%   \sn
+%   \glll
+%   \textsc{hoc} \textsc{erat} \textsc{in} \textsc{principio} \textsc{apud} \textsc{deum} \\
+%   aquesto era en prin\c{c}ipio {\c{c}erca de} dios \\
+%   Ella estaba {en el} principio con Dios \\
+%   \glt
+%   ``He was in the beginning with God.''
 % \end{exe}
 
 % \subsection{Ioannes 1:3}
@@ -1812,6 +1957,18 @@ Sometimes this sound change is attributed to the Romance-Basque bilingualism in 
 % \footnotetext{\href{https://www.youtube.com/watch?v=AW97QTNf5ig}{The Purpose of Life.}}
 
 % Erd\H{o}s P\'{a}l talks about ``The Book, in which God maintains the perfect proofs for mathematical theorems, following the dictum of G. H. Hardy that there is no permanent place for ugly mathematics'' \parencite[p.~5]{proofs_from_the_book}. I, too, think that there exists a \emph{Book} of sound laws that can be formalized computationally in a beautiful computer language (it has to be \emph{beautiful}, in the same spirit of Hardy's words, very little place is reserved for ugly linguistics). And this, dare I say, \emph{program} is what I want dedicate the next few years of my life to. \\
+
+\chapter{Acknowledgements}
+
+\epigraph{En adelanto van estos lugares: \\ ya tienen su diosa coronada.}{Leandro Díaz}
+
+Finally, special thanks to Professor \textsc{Iosephus Ignatius Hualdus}, for his invaluable helps and advices in the writing of this paper. 
+
+\begin{flushright}
+  Champaign, Illinois \\
+  Cambridge, England \\
+  C.Z.Y
+\end{flushright}
 
 \nocite{*}
 

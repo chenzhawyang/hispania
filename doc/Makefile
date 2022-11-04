@@ -1,7 +1,7 @@
 TEX = xelatex
 DOC = hispania
 
-all:
+compile:
 	xelatex $(DOC).tex
 	biber $(DOC)
 	xelatex $(DOC).tex
@@ -10,6 +10,8 @@ all:
 clean:
 	/usr/bin/rm $(DOC).bbl $(DOC).aux $(DOC).bcf $(DOC).blg $(DOC).log $(DOC).run.xml $(DOC).toc $(DOC).out
 
-.PHONY: clean
+all: clean compile
 
-.DEFAULT_GOAL := all
+.PHONY: clean compile all
+
+.DEFAULT_GOAL := compile
