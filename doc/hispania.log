@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2022.10.26)  4 NOV 2022 08:15
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2022.10.26)  4 NOV 2022 16:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1972,26 +1972,26 @@ LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
 ]
 Chapter 2.
 LaTeX Font Info:    Trying to load font information for T3+LibertinusSerif(0) o
-n input line 166.
-LaTeX Font Info:    No file T3LibertinusSerif(0).fd. on input line 166.
+n input line 168.
+LaTeX Font Info:    No file T3LibertinusSerif(0).fd. on input line 168.
 
 LaTeX Font Warning: Font shape `T3/LibertinusSerif(0)/m/n' undefined
-(Font)              using `T3/cmr/m/n' instead on input line 166.
+(Font)              using `T3/cmr/m/n' instead on input line 168.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--182
+Underfull \hbox (badness 10000) in paragraph at lines 181--184
 
  []
 
 [9
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 187--191
+Underfull \hbox (badness 10000) in paragraph at lines 189--193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--205
+Underfull \hbox (badness 10000) in paragraph at lines 202--207
 
  []
 
@@ -1999,7 +1999,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 200--205
 Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 264.
+(hyperref)                removing `\\' on input line 266.
 
 [13
 
@@ -2007,7 +2007,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 441.
+(hyperref)                removing `\\' on input line 443.
 
 [18
 
@@ -2025,94 +2025,94 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 \myCenter3=\dimen360
 \myScoreEnd3=\dimen361
 
-Overfull \hbox (65.6109pt too wide) in paragraph at lines 594--600
+Overfull \hbox (65.6109pt too wide) in paragraph at lines 614--620
  [] 
  []
 
-[22] [23
+[22] [23] [24] [25
 
 ]
 Chapter 5.
-[24
+[26
 
 ]
 File: ../pics//augustine.jpg Graphic file (type bmp)
 <../pics//augustine.jpg>
- [25]
+ [27]
 Chapter 6.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 635.
+(hyperref)                removing `\\' on input line 689.
 
-[26
+[28
 
-] [27] [28] [29] [30]
-Overfull \hbox (29.71326pt too wide) in paragraph at lines 979--979
+] [29] [30] [31] [32]
+Overfull \hbox (29.71326pt too wide) in paragraph at lines 1033--1033
 [] 
  []
 
-[31] [32] [33] [34] [35] [36]
-Underfull \hbox (badness 10000) in paragraph at lines 1239--1240
+[33] [34] [35] [36] [37] [38]
+Underfull \hbox (badness 10000) in paragraph at lines 1320--1321
 
  []
 
-[37] [38] [39]
+[39] [40] [41] [42]
 File: ../pics//isidorus.jpeg Graphic file (type bmp)
 <../pics//isidorus.jpeg>
 
-Overfull \hbox (51.79408pt too wide) in paragraph at lines 1372--1373
+Overfull \hbox (51.79408pt too wide) in paragraph at lines 1447--1448
 [][] 
  []
 
-[40]
+[43]
 Chapter 7.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 1378.
+(hyperref)                removing `\\' on input line 1453.
 
-[41
+[44
 
-] [42] [43] [44]
+] [45] [46] [47]
 File: ../pics//alfonso_x.jpg Graphic file (type bmp)
 <../pics//alfonso_x.jpg>
 
 Overfull \vbox (93.94745pt too high) has occurred while \output is active []
 
 
-[45]
+[48]
 Chapter 8.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 1550.
+(hyperref)                removing `\\' on input line 1625.
 
-[46
+[49
 
-] [47] [48] [49] [50]
+] [50] [51] [52] [53]
 File: ../pics//marquez.jpg Graphic file (type bmp)
 <../pics//marquez.jpg>
 
-Overfull \hbox (21.68176pt too wide) in paragraph at lines 1766--1767
+Overfull \hbox (21.68176pt too wide) in paragraph at lines 1843--1844
 [][] 
  []
 
-[51]
+[54]
 Chapter 9.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 1772.
+(hyperref)                removing `\\' on input line 1849.
 
-[52
+[55
 
-] [53]
+] [56]
 Chapter 10.
-[54
+[57
 
 ]
 Chapter 11.
-[55
+[58
 
 ]
-Overfull \hbox (3.91498pt too wide) in paragraph at lines 1978--1978
+Overfull \hbox (3.91498pt too wide) in paragraph at lines 2057--2057
 [][]\TU/LibertinusSerif(0)/m/n/10 Kondrak, Grzegorz (2002). \TU/LibertinusSerif
 (0)/m/it/10 Algorithms for Language Reconstruction\TU/LibertinusSerif(0)/m/n/10
  . \TU/LibertinusSerif(0)/m/sc/10 url\TU/LibertinusSerif(0)/m/n/10 : [][]$[][][
@@ -2120,7 +2120,7 @@ Overfull \hbox (3.91498pt too wide) in paragraph at lines 1978--1978
  []
 
 
-Overfull \hbox (94.97496pt too wide) in paragraph at lines 1978--1978
+Overfull \hbox (94.97496pt too wide) in paragraph at lines 2057--2057
 [][]\TU/LibertinusSerif(0)/m/n/10 Hartman, Steven Lee (2003a). \TU/LibertinusSe
 rif(0)/m/it/10 Modeling Phonological Change\TU/LibertinusSerif(0)/m/n/10 . \TU/
 LibertinusSerif(0)/m/sc/10 url\TU/LibertinusSerif(0)/m/n/10 : [][]$[][][][][] [
@@ -2129,16 +2129,16 @@ LibertinusSerif(0)/m/sc/10 url\TU/LibertinusSerif(0)/m/n/10 : [][]$[][][][][] [
  []
 
 
-Overfull \hbox (21.64708pt too wide) in paragraph at lines 1980--1980
+Overfull \hbox (21.64708pt too wide) in paragraph at lines 2059--2059
 \TU/LibertinusSerif(0)/m/n/10 quences in Romance”. In: \TU/LibertinusSerif(0)/m
 /it/10 Phonology \TU/LibertinusSerif(0)/m/n/10 24, pp. 37–75. \TU/LibertinusSer
 if(0)/m/sc/10 doi\TU/LibertinusSerif(0)/m/n/10 : [][]$[][][][][] [] [] [] [][][
 ] [] [][][] [] [][] [] [][][][] [] [][][][][][][][][][][][][][][][][]$[][]. 
  []
 
-[56
+[59
 
-] [57] [58] (./hispania.aux)
+] [60] [61] (./hispania.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2147,12 +2147,12 @@ Package logreq Info: Writing requests to 'hispania.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52584 strings out of 477220
- 1131147 string characters out of 5832721
- 2043300 words of memory out of 5000000
- 71533 multiletter control sequences out of 15000+600000
- 412596 words of font info for 131 fonts, out of 8000000 for 9000
+ 52601 strings out of 477220
+ 1131488 string characters out of 5832721
+ 2043803 words of memory out of 5000000
+ 71549 multiletter control sequences out of 15000+600000
+ 412604 words of font info for 132 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  125i,33n,120p,1604b,5362s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on hispania.pdf (59 pages).
+Output written on hispania.pdf (62 pages).

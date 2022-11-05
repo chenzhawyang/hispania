@@ -112,9 +112,11 @@
 
 \pagebreak
 
-\chapter{\emph{España en el corazón}: \\ Introduction}
+\chapter{\emph{España en nuestros corazones}: \\ Introduction}
 
 \epigraph{Eternal vigilance is the price of knowledge.}{George Santayana}
+
+\section{\emph{La lengua española}}
 
 \section{Seasoned Techniques}
 
@@ -506,9 +508,7 @@ Here is how it would be applied to a Latin word such as \textsc{lucem}:
 
 \section{Representation of Sound Changes}
 
-\subsection{Contexts of Sound Change}
-
-\subsection{Common Sound Change Patterns}
+\subsection{Sound Change Patterns}
 
 \subsubsection{Elision}\label{sec:elision_lam}
 
@@ -531,7 +531,7 @@ similarly, the elision of syllable final [s]:
                                                                                      & \textbf{in}\ [\text{ρ} \rightarrow \text{ρ}']\ \text{σ}
                                                                                    \end{aligned} \\  
 \end{align*}
-One may observe that these two sound changes differ only by the what kind of consonant they elide.
+One may observe that these two sound changes differ only by the what kind of consonant they elide. As we can see from the following template that elides an arbitrary consonant \textbf{C} (although this is not a grammatical function):
 \begin{align*}
     \text{elision}_\text{\textbf{C}} &\ :\ \text{Syllable} \rightarrow \text{Syllable} \\
   \text{σ} \quad \vdash \Tree [.\text{ρ} [.\text{ν} ] [.K [.\text{κ} [.\textbf{C} ] ] ] ] & \Rightarrow
@@ -540,7 +540,7 @@ One may observe that these two sound changes differ only by the what kind of con
                                                                                      & \textbf{in}\ [\text{ρ} \rightarrow \text{ρ}']\ \text{σ}
                                                                                    \end{aligned} \\  
 \end{align*}
-
+A grammatical function would have to take another argument, which is the segment that is to be elided:
 \begin{align*}
   \text{\textcolor{magenta}{elide$_\text{cons}$}} &\ : \ \text{Consonant} \rightarrow \text{Syllable} \rightarrow \text{Syllable} \\
   \begin{aligned}\begin{tabular}{|c|c|}
@@ -551,9 +551,22 @@ One may observe that these two sound changes differ only by the what kind of con
                                               \begin{aligned}
                                                 & \textbf{let}\ \text{ρ}' = [\text{\textcolor{violet}{cons}} \rightarrow \varnothing]\ \text{ρ} \\
                                                 & \textbf{in}\ [\text{ρ} \rightarrow \text{ρ}']\ \text{σ}
-                                              \end{aligned} \\  
-\\
-                                                  & \\
+                                              \end{aligned} \\
+\end{align*}
+One can see that \textcolor{magenta}{elide$_\text{cons}$} is able to construct arbitrary elision sound changes that elides any consonant at the end of a syllable:
+\begin{align*}
+  \text{\textcolor{magenta}{elide$_\text{cons}$}}\ \text{m} & \equiv \text{\textcolor{magenta}{elide$_\text{m}$}}\ :\ \text{Syllable} \rightarrow \text{Syllable} \\
+  \text{\textcolor{magenta}{elide$_\text{cons}$}}\ \text{s} & \equiv \text{\textcolor{magenta}{elide$_\text{s}$}}\ :\ \text{Syllable} \rightarrow \text{Syllable}
+\end{align*}
+\addtocounter{footnote}{-1}
+\stepcounter{footnote}\footnotetext{
+  This tree would look like this in full expansion: \\
+  \begin{forest}
+    [ρ [ν] [Κ [κ[\textcolor{violet}{cons}]]]]
+  \end{forest}
+}
+But it still has one last problem: \textcolor{magenta}{elide$_\text{cons}$} only constructs sound changes that rewrites a \textbf{syllable}, not a phonological word. Thus it is not really useful since not all words in the lexicon are monosyllabic words; we need to construct sound changes that elide some \textbf{word-final} consonant instead of only syllable final consonant. It turns out that we are actually not too far away from this goal, only two functions away:
+\begin{align*}
   \text{\textcolor{magenta}{elide$_σ$}} &\ :\ (\text{Syllable} \rightarrow \text{Syllable}) \rightarrow \text{Lexeme} \rightarrow \text{Lexeme} \\
   \begin{tabular}{|c|c|}
     \hline
@@ -567,30 +580,37 @@ One may observe that these two sound changes differ only by the what kind of con
                               & \textbf{in}\ \text{\textcolor{magenta}{elide$_{σ}$}}\ \textcolor{magenta}{f} \\
                             \end{aligned}
 \end{align*}
-\addtocounter{footnote}{-2}
-\stepcounter{footnote}\footnotetext{
-  This tree would look like this in full expansion: \\
-  \begin{forest}
-    [ρ [ν] [Κ [κ[\textcolor{violet}{cons}]]]]
-  \end{forest}}
+\addtocounter{footnote}{-1}
 \stepcounter{footnote}\footnotetext{\textcolor{magenta}{$f$} : Syallble $\rightarrow$ Syllable.}
-
+Let us break it down bit by bit. First, recall that the \textbf{let}-expression is equivalent to substitution:
 \begin{equation*}
   \llbracket\ \textbf{let}\ \text{exp} = \text{exp}'\ \textbf{in}\ \text{exp}\ \rrbracket \coloneq [\text{exp} \rightarrow \text{exp}']\ \text{exp} \Rightarrow \text{exp}'
 \end{equation*}
-
-\begin{align*}
-  \text{\textcolor{magenta}{elide$_λ$}} & \coloneq [\text{\textcolor{magenta}{f}} \rightarrow \text{\textcolor{magenta}{elide$_{\text{cons}}$}}\ \text{cons}]\ \text{\textcolor{magenta}{elide$_{σ}$}}\ \textcolor{magenta}{f} \\
-                                        & \\
-  \text{\textcolor{magenta}{elide$_λ$}}\ \text{cons} & \Rightarrow \text{\textcolor{magenta}{elide$_σ$}} (\text{\textcolor{magenta}{elide$_\text{cons}$}} \text{cons}) 
-\end{align*}
-
+Thus, the function \textcolor{magenta}{elide$_λ$}, whose meaning may seem to be obscured at first glance, is a shorthand for this expression, using the [exp $\rightarrow$ exp$'$] notation:
+\begin{equation*}
+  \text{\textcolor{magenta}{elide$_λ$}} \coloneq [\text{\textcolor{magenta}{f}} \rightarrow \text{\textcolor{magenta}{elide$_{\text{cons}}$}}\ \text{cons}]\ \text{\textcolor{magenta}{elide$_{σ}$}}\ \textcolor{magenta}{f} \\
+\end{equation*}
+or, it can also look like this:
+\begin{equation*}
+  \text{\textcolor{magenta}{elide$_λ$}}\ \text{cons} \Rightarrow \text{\textcolor{magenta}{elide$_σ$}} (\text{\textcolor{magenta}{elide$_\text{cons}$}}\ \text{cons}) 
+\end{equation*}
+A concrete example of (a) constructing a sound change that elides word-final [t] and (b) applying the sound change to a word in one expression:
 \begin{align*}
   \text{\textcolor{magenta}{elide$_{λ}$}}\ \text{t}\ \textsc{bibit}\footnotemark & \Rightarrow \textsc{bibi} \\
 \end{align*}
 \addtocounter{footnote}{-1}
-\stepcounter{footnote}\footnotetext{Internally looks like $[\textsc{bi}\ \dblcolon\ \textsc{bit}]$.}
-
+\stepcounter{footnote}\footnotetext{Internally looks like $[\textsc{b\'{i}}\ \dblcolon\ \textsc{bit}]$.}
+To see a more rigorous picture, I have provided the following proof tree for this expression:
+\begin{prooftree}
+  \AxiomC{\textcolor{magenta}{elide$_λ$} : Consonant $\rightarrow$ Lexeme $\rightarrow$ Lexeme}
+  \AxiomC{t : Consonant}
+  \BinaryInfC{\textcolor{magenta}{elide$_λ$} t : Lexeme $\rightarrow$ Lexeme}
+  \AxiomC{\textsc{bibit} : Lexeme}
+  \BinaryInfC{(\textcolor{magenta}{elide$_λ$} t) \textsc{bibit} : Lexeme}
+\end{prooftree}
+The proof tree above is not the whole picture, here I provide a complete proof tree for the expression 
+\[   \text{\textcolor{magenta}{elide$_λ$}}\ \text{cons} \Rightarrow \text{\textcolor{magenta}{elide$_σ$}} (\text{\textcolor{magenta}{elide$_\text{cons}$}}\ \text{cons}) \]
+after expansion:
 \begin{prooftree}
   \AxiomC{\textcolor{magenta}{elide$_σ$} : (Syllable $\rightarrow$ Syllable) $\rightarrow$ Lexeme $\rightarrow$ Lexeme}
   \AxiomC{\textcolor{magenta}{elide$_\text{cons}$} : Consonant $\rightarrow$ Syllable $\rightarrow$ Syllable}
@@ -599,13 +619,35 @@ One may observe that these two sound changes differ only by the what kind of con
   \BinaryInfC{\textcolor{magenta}{elide$_σ$} (\textcolor{magenta}{elide$_\text{cons}$} \text{t}) : Lexeme $\rightarrow$ Lexeme}
 \end{prooftree}
 
-\begin{prooftree}
-  \AxiomC{\textcolor{magenta}{elide$_λ$} : Consonant $\rightarrow$ Lexeme $\rightarrow$ Lexeme}
-  \AxiomC{t : Consonant}
-  \BinaryInfC{\textcolor{magenta}{elide$_λ$} t : Lexeme $\rightarrow$ Lexeme}
-  \AxiomC{\textsc{bibit} : Lexeme}
-  \BinaryInfC{(\textcolor{magenta}{elide$_λ$} t) \textsc{bibit} : Lexeme}
-\end{prooftree}
+\subsubsection{Vowel Shifts}\label{sec:vowel_shift_lam}
+
+\subsubsection{Intervocalic Lenition}\label{sec:lenition_lam}
+
+\subsubsection{Apocope}\label{sec:apocope_lam}
+
+\subsubsection{Syncope}\label{sec:syncope_lam}
+
+\subsection{Context of Sound Changes}
+
+\subsection{Application of Sound Changes}
+
+\subsubsection{Composing Sound Changes}
+
+\begin{align*}
+  \emph{luz} & :\ \text{Lexme} \\
+  \emph{luz} & \coloneq \textsc{l\={u}cem} & \\
+             & \gg \textsc{lucem} \lhd \text{\nameref{sec:loss_of_quantity}} \\
+             & \gg \textsc{luce} \lhd \text{\nameref{sec:m_elision}} \\
+             & \gg \text{luʧe} \lhd \text{\nameref{sec:velar_palatalization}} \\
+             & \gg \text{lu\textipa{\texttslig}e} \lhd \text{\nameref{sec:palatal_affric_fronting}} \\
+             & \gg \text{lu\textipa{\textdzlig}e} \lhd \text{\nameref{sec:lenition_1}} \\
+             & \gg \text{lu\textipa{\textdzlig}} \lhd \text{\nameref{sec:apocope}} \\
+             & \gg \text{lu\textipa{\textsubbridge{z}}} \lhd  \text{\nameref{sec:deaffric_dental_affric}}\\
+             & \gg \text{lu\textipa{\textsubbridge{s}}} \lhd \text{\nameref{sec:devoice_fric}} \\
+             & \gg \text{luθ} \lhd \text{\nameref{sec:desibil_dental_fric}} \\
+\end{align*}
+
+\subsection{Admissibility of Sound Changes}
 
 \section{Representation of Phonotactics}
 
@@ -614,6 +656,18 @@ One may observe that these two sound changes differ only by the what kind of con
 \epigraph{Die ganzen Zahlen hat der liebe Gott gemachet, alles andere ist Menschenwerk.}{Leopold Kronecker}
 
 Recall that the natural numbers look like this: $\mathbb{N} \coloneq 0 \sqsubset 1 \sqsubset 2 \sqsubset 3 \sqsubset \dots \sqsubset \omega$.
+
+\begin{center}
+  \begin{tabular}{c|c}
+    no. & \\
+    \hline
+    0 & \nameref{sec:deaffric_dental_affric} \\
+    \hline
+    1 & \nameref{sec:devoice_fric} \\
+    \hline
+    2 & \nameref{sec:desibil_dental_fric} \\
+  \end{tabular}
+\end{center}
 
 \part{\emph{Los elementos de Fonología histórica española}}
 
@@ -1033,6 +1087,33 @@ Likewise, in Visigothic documents, the spelling exhibits the ``[c]onfusion of \e
 
 (PrBsq. *euscala $\rightarrow$) \textsc{lat.} \textsc{vasconem} $\rightarrow$ Es. Gasc\'{o}n
 
+\paragraph{Delabialization of Postconsonantal [w]}
+
+Other than yods, dehiaticization also results in postconsonantal [w] that was subject to deletion\footcite[p.~134-135]{lloyd_spanish}:
+\begin{center}
+  \begin{tabular}{c c}
+    \textsc{lat.} & Es. \\
+    \hline
+    \textsc{battu\={o}} & bato \\
+    \textsc{mortuu} & muerto \\
+    \textsc{quattuor} & cuatro \\
+    \textsc{febru\={a}riu} & febrero \\
+    \textsc{consuere} & coser \\
+  \end{tabular}
+\end{center}
+This [w] deletes after velars as well, even though labiovelars [kʷ] [ɡʷ] were part of the Latin-Romance inventory: \textsc{ant\={i}quu} $\rightarrow$ Es. \emph{antigo}, \textsc{qu\={o}mod\={o}} $\rightarrow$ Es. \emph{como} \parencite[p.~135]{lloyd_spanish}. When the labiovelar is followed by an [a], the [w] can be preserved\footcite[p.~135]{lloyd_spanish}:
+\begin{center}
+  \begin{tabular}{c c}
+    \textsc{lat.} & Es. \\
+    \hline
+    \textsc{quand\={o}} & cuando \\
+    \textsc{quantu} & cuanto \\
+    \textsc{qu\={a}le} & cual \\
+    \textsc{aqua} & agua \\
+    \textsc{aequ\={a}le} & igual \\
+  \end{tabular}
+\end{center}
+
 \subsubsection{Yod Fortition}
 
 \begin{tcolorbox}
@@ -1238,12 +1319,6 @@ And some that are reflected in Spanish\footcite[p.~29]{romance_his}:
 \end{enumerate}
 Occationally the syncopated and unsyncopated forms coexist in Spanish, usually the unsyncopated form being a \emph{cultismo} e.g. parab\textcolor{red}{o}la v. parabla. \\
 
-\subsubsection{Apocope}
-
-\begin{tcolorbox}
-
-\end{tcolorbox}
-
 \subsubsection{Metaphony}
 
 \begin{tcolorbox}
@@ -1288,7 +1363,7 @@ This phenomenon is attested in the Visigothic documents\footcite[p.~159]{latin_p
   \textsc{c\={o}\textcolor{red}{g}it\={a}re} & cuidar \\
 \end{tabular}
 
-\subsubsection{Elision of Coda [m]}
+\subsubsection{Elision of [m]}\label{sec:m_elision}
 
 \begin{tcolorbox}
   \[ \text{m}\ \# \Rightarrow \varnothing\ \# \]
@@ -1673,6 +1748,8 @@ Many Latin words with word-initial singleton onset \textsc{f}- now have zero ons
 \end{center}
 Sometimes this sound change is attributed to the Romance-Basque bilingualism in the areas where Old Castilian was developed; recent discovery in Basque historical phonology has challenged this view \parencite{manterola_hualde}.
 
+\subsubsection{Fronting of Palatal Affricates}\label{sec:palatal_affric_fronting}
+
 \subsection{Structural Changes}
 
 \subsubsection{Metaphony}
@@ -1700,7 +1777,7 @@ Sometimes this sound change is attributed to the Romance-Basque bilingualism in 
   \textsc{m\textcolor{red}{u}liere} & m\textcolor{magenta}ujer \\
 \end{tabular}
 
-\subsubsection{Reduction of Final Vowels}
+\subsubsection{Apocope}\label{sec:apocope}
 
 \begin{tcolorbox}
 
@@ -1797,7 +1874,7 @@ Sometimes this sound change is attributed to the Romance-Basque bilingualism in 
 
 \end{tcolorbox}
 
-\subsubsection{Devoicing of Fricatives}
+\subsubsection{Devoicing of Fricatives}\label{sec:devoice_fric}
 
 \begin{tcolorbox}
   \begin{align*}
@@ -1807,7 +1884,7 @@ Sometimes this sound change is attributed to the Romance-Basque bilingualism in 
   \end{align*}
 \end{tcolorbox}
 
-\subsubsection{The Fate of Dental Affricates}
+\subsubsection{Deaffrication of Dental Affricates}\label{sec:deaffric_dental_affric}
 
 \begin{tcolorbox}
   \begin{align*}
@@ -1815,6 +1892,8 @@ Sometimes this sound change is attributed to the Romance-Basque bilingualism in 
     \text{\textipa{\textdzlig}} & \Rightarrow \text{\textipa{\textsubbridge{z}}} \\
   \end{align*}
 \end{tcolorbox}
+
+\subsubsection{Desibilation of Dental Fricatives}\label{sec:desibil_dental_fric}
 
 \begin{tcolorbox}
   \[ \text{\textipa{\textsubbridge{s}}} \Rightarrow \text{\textipa{T}} \]
