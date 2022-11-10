@@ -2,10 +2,10 @@ TEX = xelatex
 DOC = hispania
 
 compile:
-	xelatex $(DOC).tex
+	$(TEX) $(DOC).tex
 	biber $(DOC)
-	xelatex $(DOC).tex
-	xelatex $(DOC).tex
+	$(TEX) $(DOC).tex
+	$(TEX) $(DOC).tex
 
 clean:
 	/usr/bin/rm $(DOC).bbl $(DOC).aux $(DOC).bcf $(DOC).blg $(DOC).log $(DOC).run.xml $(DOC).toc $(DOC).out

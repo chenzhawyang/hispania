@@ -1045,6 +1045,42 @@
       \field{year}{2011}
       \keyw{romance}
     \endentry
+    \entry{istanbul_jsp}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f0c1cbd395983c006f76fa31c882acbc}{%
+           family={Hualde},
+           familyi={H\bibinitperiod},
+           given={José\bibnamedelima Ignacio},
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d24f26bee5eef80dc0d06044eac6e801}{%
+           family={Şaul},
+           familyi={Ş\bibinitperiod},
+           given={Mahir},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{36654f7bfee532d9768b41803c888b20}
+      \strng{fullhash}{36654f7bfee532d9768b41803c888b20}
+      \strng{bibnamehash}{36654f7bfee532d9768b41803c888b20}
+      \strng{authorbibnamehash}{36654f7bfee532d9768b41803c888b20}
+      \strng{authornamehash}{36654f7bfee532d9768b41803c888b20}
+      \strng{authorfullhash}{36654f7bfee532d9768b41803c888b20}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the International Phonetic Association}
+      \field{number}{1}
+      \field{title}{Istanbul Judeo-Spanish}
+      \field{volume}{41}
+      \field{year}{2011}
+      \field{pages}{89\bibrangedash 110}
+      \range{pages}{22}
+      \keyw{romance}
+    \endentry
     \entry{cam_romance}{book}{}
       \name{editor}{3}{}{%
         {{un=0,uniquepart=base,hash=302f9bcac13f700f83b2f5c6723dd8d7}{%

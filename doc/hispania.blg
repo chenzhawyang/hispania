@@ -1,15 +1,15 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'hispania.blg'
-[53] biber:340> INFO - === Fri Nov  4, 2022, 16:53:41
-[62] Biber.pm:415> INFO - Reading 'hispania.bcf'
-[115] Biber.pm:949> INFO - Using all citekeys in bib section 0
-[125] Biber.pm:4340> INFO - Processing section 0
-[132] Biber.pm:4531> INFO - Looking for bibtex format file 'hispania.bib' for section 0
-[133] bibtex.pm:1689> INFO - LaTeX decoding ...
+[54] biber:340> INFO - === Thu Nov 10, 2022, 08:58:54
+[64] Biber.pm:415> INFO - Reading 'hispania.bcf'
+[116] Biber.pm:949> INFO - Using all citekeys in bib section 0
+[126] Biber.pm:4340> INFO - Processing section 0
+[133] Biber.pm:4531> INFO - Looking for bibtex format file 'hispania.bib' for section 0
+[134] bibtex.pm:1689> INFO - LaTeX decoding ...
 [167] bibtex.pm:1494> INFO - Found BibTeX data source 'hispania.bib'
-[385] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[385] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[385] Biber.pm:4168> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-US'
-[385] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[419] bbl.pm:654> INFO - Writing 'hispania.bbl' with encoding 'UTF-8'
-[438] bbl.pm:757> INFO - Output to hispania.bbl
+[419] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[419] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[419] Biber.pm:4168> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-US'
+[419] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[452] bbl.pm:654> INFO - Writing 'hispania.bbl' with encoding 'UTF-8'
+[472] bbl.pm:757> INFO - Output to hispania.bbl

@@ -627,7 +627,6 @@
     <bcf:option datatype="boolean">related</bcf:option>
     <bcf:option datatype="boolean">dashed</bcf:option>
     <bcf:option datatype="boolean">mergedate</bcf:option>
-    <bcf:option datatype="boolean">ibidpage</bcf:option>
     <bcf:option datatype="boolean">bibtexcaseprotection</bcf:option>
     <bcf:option datatype="integer">mincrossrefs</bcf:option>
     <bcf:option datatype="integer">minxrefs</bcf:option>
@@ -2428,6 +2427,15 @@
     <bcf:citekey order="78">lloyd_spanish</bcf:citekey>
     <bcf:citekey order="79">romance_his</bcf:citekey>
     <bcf:citekey order="80">manterola_hualde</bcf:citekey>
+    <bcf:citekey order="81">lloyd_spanish</bcf:citekey>
+    <bcf:citekey order="82">istanbul_jsp</bcf:citekey>
+    <bcf:citekey order="83">lloyd_spanish</bcf:citekey>
+    <bcf:citekey order="84">lloyd_spanish</bcf:citekey>
+    <bcf:citekey order="85">lloyd_spanish</bcf:citekey>
+    <bcf:citekey order="86">lloyd_spanish</bcf:citekey>
+    <bcf:citekey order="87">lloyd_spanish</bcf:citekey>
+    <bcf:citekey order="88">hualde_sp</bcf:citekey>
+    <bcf:citekey order="89">lloyd_spanish</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

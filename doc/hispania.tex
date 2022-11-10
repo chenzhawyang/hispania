@@ -17,7 +17,7 @@
 \usepackage{tikz-cd}
 \usepackage{tipa}
 \usepackage{listings}
-\usepackage[backend=biber, sorting=ynt, style=authoryear-icomp]{biblatex}
+\usepackage[backend=biber, sorting=ynt, style=authoryear-comp]{biblatex}
 \addbibresource{hispania.bib}
 \usepackage{xcolor}
 \usepackage{epigraph}
@@ -44,10 +44,11 @@
 \setmathfont{Libertinus Math}
 \usepackage{langsci-gb4e}
 \usepackage{nameref}
+\usepackage[inline]{enumitem}
 
 \setlength\parindent{0pt}
 \setlength\footnotemargin{0pt}
-% \setcounter{secnumdepth}{3}
+\setcounter{secnumdepth}{3}
 
 \renewcommand*{\postnotedelim}{\addcolon\ } % add colon to authoryear citations
 
@@ -112,7 +113,7 @@
 
 \pagebreak
 
-\chapter{\emph{España en nuestros corazones}: \\ Introduction}
+\chapter{\emph{Introduccíon}: \\ \emph{España en nuestros corazones}}
 
 \epigraph{Eternal vigilance is the price of knowledge.}{George Santayana}
 
@@ -220,7 +221,7 @@ Not so surprisingly, giving \textcolor{magenta}{raise} an [a] would yield an [e]
 
 Consider this sound change for some hypothetical language that has \{s z n m \textipa{\r*n} \textipa{\r*m}\}.
 \begin{align*}
-  \text{\textcolor{magenta}{obstruentize}} &\ :\ \text{Consonant} \rightarrow \text{Consonant} \\
+  \text{\textcolor{magenta}{occlude}} &\ :\ \text{Consonant} \rightarrow \text{Consonant} \\
   \textbf{C} \vdash \text{fricative} & \Rightarrow [\text{fricative} \rightarrow \text{stop}]\ \textbf{C} \\
   \textbf{C} \vdash \text{nasal} & \Rightarrow \textbf{match}\ \text{\textcolor{magenta}{voice}}\ \textbf{C}
                                    \begin{cases}
@@ -230,12 +231,12 @@ Consider this sound change for some hypothetical language that has \{s z n m \te
 \end{align*}
 
 \begin{align*}
-  \text{\textcolor{magenta}{obstruentize}}\ \text{s} & \Rightarrow \text{t} \\
-  \text{\textcolor{magenta}{obstruentize}}\ \text{z} & \Rightarrow \text{d} \\
-  \text{\textcolor{magenta}{obstruentize}}\ \text{n} & \Rightarrow \text{d} \\
-  \text{\textcolor{magenta}{obstruentize}}\ \text{m} & \Rightarrow \text{b} \\
-  \text{\textcolor{magenta}{obstruentize}}\ \text{\textipa{\r*n}} & \Rightarrow \text{\textipa{t\super h}} \\
-  \text{\textcolor{magenta}{obstruentize}}\ \text{\textipa{\r*m}} & \Rightarrow \text{p\super h} \\
+  \text{\textcolor{magenta}{occlude}}\ \text{s} & \Rightarrow \text{t} \\
+  \text{\textcolor{magenta}{occlude}}\ \text{z} & \Rightarrow \text{d} \\
+  \text{\textcolor{magenta}{occlude}}\ \text{n} & \Rightarrow \text{d} \\
+  \text{\textcolor{magenta}{occlude}}\ \text{m} & \Rightarrow \text{b} \\
+  \text{\textcolor{magenta}{occlude}}\ \text{\textipa{\r*n}} & \Rightarrow \text{\textipa{t\super h}} \\
+  \text{\textcolor{magenta}{occlude}}\ \text{\textipa{\r*m}} & \Rightarrow \text{p\super h} \\
 \end{align*}
 
 \begin{align*}
@@ -303,7 +304,7 @@ Consider this sound change for some hypothetical language that has \{s z n m \te
   consonant ::= manner (:$\times$:) place (:$\times$:) voice
 
   manner ::= nasal
-  | stop
+  | stop  
   | fricative
   | non-siblant fricative
   | affricate
@@ -331,17 +332,17 @@ Consider this sound change for some hypothetical language that has \{s z n m \te
   syllable ::= onset rhyme
 
   onset ::= zero-onset
-  | monoonset consonant
-  | dionset consonant(:$_1$:) consonant(:$_2$:)
-  | trionset consonant(:$_1$:) consonant(:$_2$:) consonant(:$_3$:)
+  | monoonset (:\textbf{of}:) consonant
+  | dionset (:\textbf{of}:) consonant(:$_1$:) consonant(:$_2$:)
+  | trionset (:\textbf{of}:) consonant(:$_1$:) consonant(:$_2$:) consonant(:$_3$:)
   
   rhyme ::= nucleus coda
 
-  nucleus ::= zero-nucleus | monophthong vowel | diphthong vowel(:$_1$:) vowel(:$_2$:)
+  nucleus ::= zero-nucleus | monophthong (:\textbf{of}:) vowel | diphthong (:\textbf{of}:) vowel(:$_1$:) vowel(:$_2$:)
 
   coda ::= zero-coda
-  | monocoda consonant
-  | dicoda consonant(:$_1$:) consonant(:$_2$:)
+  | monocoda (:\textbf{of}:) consonant
+  | dicoda (:\textbf{of}:) consonant(:$_1$:) consonant(:$_2$:)
 \end{lstlisting}
 
 \Tree [.$\sigma$ [.$\Omega$ [.π ] [.$\omega$ ] [.$\mu$ ] ] [.$\rho$ [\qroof{μν. | δφ.}.$\nu$ ] [.K [.$\kappa$ ] [.$\kappa'$ ] ] ] ]
@@ -505,6 +506,22 @@ Here is how it would be applied to a Latin word such as \textsc{lucem}:
 \end{align*}
 
 \subsection{Metrical Level}
+
+No sound change can be applied below the level of phonological word. In fact, we shall give \emph{sound change} a type synonym as such:
+\[ \text{sound change}_τ \coloneq \text{Lexeme} \rightarrow \text{Lexeme} \]
+
+\begin{center}
+  \begin{tabular}{c c}
+    \begin{tabular}{c c c c c}
+      [ & \={σ} & σ & σ & ] \\
+        & \textsc{\={o}} & \textsc{cu} & \textsc{lu} & \\
+    \end{tabular} \quad \Rightarrow &
+    \begin{tabular}{c c c c}
+      [ & \={σ} & σ & ] \\
+        & \textsc{\={o}} & \textsc{clu} \\
+    \end{tabular}
+  \end{tabular}
+\end{center}
 
 \section{Representation of Sound Changes}
 
@@ -675,9 +692,45 @@ Recall that the natural numbers look like this: $\mathbb{N} \coloneq 0 \sqsubset
 
 \section{Sources for Lat.-Rom.-Es. Gloss.}
 
-The majority of the words in examples in this paper comes from \cite{romance_his}, \cite{lloyd_spanish}, and \cite{penny_spanish}. 
+The majority of the words in examples in this paper comes from \cite{romance_his}, \cite{lloyd_spanish}, and \cite{penny_spanish}.
+
+\section{Abbreviations for Languages}
+
+\begin{center}
+  \begin{tabular}{c c}
+    lingua. & abbrv. \\
+    \hline
+    \textsc{latina} & \textsc{lat.} \\
+    Proto-Romance & PrRom. \\
+    Western Romance & WRom. \\
+            & \\
+    Germanic & Gm. \\
+            & \\
+    Old Spanish & OSp. \\
+    Modern Spanish & Es. \\
+    Portugese & Port. \\
+    Catalan & Cat. \\
+    French & Fr. \\
+    Italian & It. \\
+  \end{tabular}
+\end{center}
 
 \section{Organization of Each Chapter}
+
+In the beginning of each chapter, we give our reconstruction of the \textbf{Segmental Inventory} of the language in focus. In the first chapter on Proto-Romance, we also list the reconstructed Latin segments. After the listing of the inventory, the rest of each chapter is dedicated to the sound changes from the previous stage of the language to its current stage. Regrettably, not all sound changes in the history of the Spanish language are listed in this paper -- not even close.
+
+\section{Criteria for Selecting Sound Changes}
+
+Only a relatively small portion of all the sound changes in the history of Spanish were listed in this paper, and the criteria for selecting each sound change should be justified. Our main aims behind the selection of each sound change is
+\begin{enumerate*}[label=(\alph*)]
+\item to cover the widest variety of sound changes possible,
+\item to implement sound changes that operates on the syllabic and metrical level, whose representation in causal phonological notations always seemed awkward, and
+\item to identify sound changes that form chain shifts or ordinally related and implement them in a way that preserves their rule interactions.
+\end{enumerate*}
+
+\section{The Final Result}
+
+At the very end of this part, we want to roughly derive a very conservative Northern-Central Peninsular dialect of Castilian.
 
 \pagebreak
 
@@ -686,7 +739,7 @@ The majority of the words in examples in this paper comes from \cite{romance_his
 
 \pagebreak
 
-\chapter{\textsc{Civitas Dei}: \\ Proto-Romance}
+\chapter{Proto-Romance}
 
 \epigraph{\textsc{finis origine pendent}}{\textsc{marcvs manilivs}}
 
@@ -715,23 +768,23 @@ The majority of the words in examples in this paper comes from \cite{romance_his
 \subsection{Consonantal}
 
 \begin{tcolorbox}[title=Proto-Romance Consonants, hbox]
-  \begin{tabular}{|c|c|c|c|c|c|c|c|}
+  \begin{tabular}{|c|c|c|c|c|c|c|}
     \hline
-    & Bilabial & Labiodental & Dental & Alveolar & Palatal & Velar & Labiovelar \\
+    & Bilabial & Dental & Alveolar & Palatal & Velar & Labiovelar \\
     \hline
-    Nasal & m & & \multicolumn{2}{c|}{n} & \textipa{\textltailn} & & \\
+    Nasal & m & \multicolumn{2}{c|}{n} & \textipa{\textltailn} & & \\
     \hline
-    Stop & p \quad b & & t \quad d & & & k \quad g & \textipa{k\super w} \quad \textipa{g\super w} \\
+    Stop & p \quad b & t \quad d & & & k \quad g & \textipa{k\super w} \quad \textipa{g\super w} \\
     \hline
-    Fricative & \textipa{B} & f & & & \textipa{J} & & \\
+    Fricative & ɸ \quad \textipa{B} & & & \textipa{J} & & \\
     \hline
-    \textquotedbl & & & & s \quad z & & & \\
+    \textquotedbl & & & s \quad z & & & \\
     \hline
-    Affricate & & & \textipa{\texttslig} \quad \textipa{\textdzlig} & & \textipa{\textteshlig} \quad \textipa{\textdyoghlig} & & \\
+    Affricate & & \textipa{\texttslig} \quad \textipa{\textdzlig} & & \textipa{\textteshlig} \quad \textipa{\textdyoghlig} & & \\
     \hline
-    Trill & & & \multicolumn{2}{c|}{r} & & & \\
+    Trill & & \multicolumn{2}{c|}{r} & & & \\
     \hline
-    Lateral & & & \multicolumn{2}{c|}{l} & \textipa{L} & & \\
+    Lateral & & \multicolumn{2}{c|}{l} & \textipa{L} & & \\
     \hline
   \end{tabular}
 \end{tcolorbox}
@@ -809,7 +862,7 @@ The long vowels [i:], [u:], [e:], and [o:] did not change in quality, as it can 
 \end{center}
 The long [a:] merges with the short [a]; while the short vowels [i], [u], [e] and [o] would experience lowering \parencite[p.~13]{romance_his}. As an interesting sidenote: in Sardinian, long and short vowels merge without changes in quality,yielding a five-vowel system \parencite[p.~112]{lloyd_spanish}.
 
-\begin{tcolorbox}
+\begin{tcolorbox}[title=Metaphono]
   \begin{align*}\tag{Loss of Quantity}\label{eq:loss_of_quantity}
     \text{\textcolor{magenta}{loss of quantity}} &\ :\ \text{Vowel} \rightarrow \text{Vowel} \\
     \textbf{V} \vdash \text{long} & \Rightarrow [\text{long} \rightarrow \text{short}]\ \textbf{V} \\
@@ -1013,26 +1066,26 @@ And \textsc{au} gives a long vowel [o:]\footcite[p.~24]{romance_his}:
 \begin{tcolorbox}[hbox, title=Latin Consonants]
   \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
     \hline
-    & Bilabial & Labiodental & Dental & Alveolar & Palatal & Velar & Labiovelar & Glottal \\
+    & Bilabial & Dental & Alveolar & Palatal & Velar & Labiovelar & Glottal \\
     \hline
-    Nasal & m & & \multicolumn{2}{c|}{n} & & & & \\
+    Nasal & m & \multicolumn{2}{c|}{n} & & & & \\
     \hline
-    Stop & p \quad b & & t \quad d & & & k \quad g & \textipa{k\super w} \textipa{g\super w} & \\
+    Stop & p \quad b & t \quad d & & & k \quad g & \textipa{k\super w} \textipa{g\super w} & \\
     \hline
-    Fricative & & f & & & & & & \cellcolor{gray} h \\
+    Fricative & ɸ & & & & & & \cellcolor{gray} h \\
     \hline
-    \textquotedbl & & & & s \quad z & & & & \\
+    \textquotedbl & & & s \quad z & & & & \\
     \hline
-    Approximant & & & & & \cellcolor{gray} j & & \cellcolor{gray} w & \\
+    Approximant & & & & \cellcolor{gray} j & & \cellcolor{gray} w & \\
     \hline
-    Trill & & & \multicolumn{2}{c|}{r} & & & & \\
+    Trill & & \multicolumn{2}{c|}{r} & & & & \\
     \hline
-    Lateral & & & \multicolumn{2}{c|}{l} & & & & \\
+    Lateral & & \multicolumn{2}{c|}{l} & & & & \\
     \hline
   \end{tabular}
 \end{tcolorbox}
 
-\subsubsection{Betacism I}
+\subsubsection{Betacism I}\label{sec:betacism_1}
 
 \begin{tcolorbox}
   \[ \text{w} \Rightarrow \text{\textipa{B}} \]
@@ -1123,30 +1176,35 @@ This [w] deletes after velars as well, even though labiovelars [kʷ] [ɡʷ] were
   \end{align*}
 \end{tcolorbox}
 
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{\textcolor{red}{i}ocu} & \textcolor{magenta}{j}uego \quad [x] \\
-  \textsc{\textcolor{red}{i}vis} & \textcolor{magenta}{j}ueves \quad [x] \\
-  \textsc{\textcolor{red}{i}uvene} & \textcolor{magenta}{j}oven \quad [x] \\
-  \textsc{\textcolor{red}{i}udice} & \textcolor{magenta}{j}uez \quad [x] \\
-\end{tabular}
+\begin{center}
+  \begin{tabular}{c c}
+    \textsc{lat.} & Es. \\
+    \hline
+    \textsc{\textcolor{red}{i}ocu} & \textcolor{magenta}{j}uego \quad [x] \\
+    \textsc{\textcolor{red}{i}vis} & \textcolor{magenta}{j}ueves \quad [x] \\
+    \textsc{\textcolor{red}{i}uvene} & \textcolor{magenta}{j}oven \quad [x] \\
+    \textsc{\textcolor{red}{i}udice} & \textcolor{magenta}{j}uez \quad [x] \\
+  \end{tabular}
+\end{center}
 
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{ma\textcolor{red}{i}us} & ma\textcolor{magenta}{y}o \\
-  \textsc{ma\textcolor{red}{i}ore} & ma\textcolor{magenta}{y}or \\
-  \textsc{cu\textcolor{red}{i}us} & cu\textcolor{magenta}{y}o \\
-\end{tabular}
+\begin{center}
+  \begin{tabular}{c c}
+    \textsc{lat.} & Es. \\
+    \hline
+    \textsc{ma\textcolor{red}{i}us} & ma\textcolor{magenta}{y}o \\
+    \textsc{ma\textcolor{red}{i}ore} & ma\textcolor{magenta}{y}or \\
+    \textsc{cu\textcolor{red}{i}us} & cu\textcolor{magenta}{y}o \\
+  \end{tabular}
+\end{center}
 
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{\textcolor{red}{i}acet} & \textcolor{magenta}{y}ace \\
-  \textsc{\textcolor{red}{i}am} & \textcolor{magenta}{y}a \\
-\end{tabular}
-
+\begin{center}
+  \begin{tabular}{c c}
+    \textsc{lat.} & Es. \\
+    \hline
+    \textsc{\textcolor{red}{i}acet} & \textcolor{magenta}{y}ace \\
+    \textsc{\textcolor{red}{i}am} & \textcolor{magenta}{y}a \\
+  \end{tabular}
+\end{center}
 Visigothic document witnesses ``[t]he use of \emph{g} instead of \emph{j} [\dots] (\emph{magor}) or \emph{i} instead of \emph{g} (\emph{ienitor})'', cf. \textsc{maior}, \textsc{genitor} \parencite[p.~159]{latin_palaeography}.
 
 \subsubsection{Palatalization and Affrication of Dentals}\label{sec:dental_palatalization}
@@ -1319,16 +1377,10 @@ And some that are reflected in Spanish\footcite[p.~29]{romance_his}:
 \end{enumerate}
 Occationally the syncopated and unsyncopated forms coexist in Spanish, usually the unsyncopated form being a \emph{cultismo} e.g. parab\textcolor{red}{o}la v. parabla. \\
 
-\subsubsection{Metaphony}
-
-\begin{tcolorbox}
-
-\end{tcolorbox}
-
 \subsubsection{Prothesis}
 
 \begin{tcolorbox}
-  \[ \#\ \text{s} \Rightarrow \#\ \text{is} \]
+  \[ [_w\ \text{s} \Rightarrow [_w\ \text{is} \]
 \end{tcolorbox}
 
 This phenomenon is attested in the Visigothic documents\footcite[p.~159]{latin_palaeography}:
@@ -1366,7 +1418,7 @@ This phenomenon is attested in the Visigothic documents\footcite[p.~159]{latin_p
 \subsubsection{Elision of [m]}\label{sec:m_elision}
 
 \begin{tcolorbox}
-  \[ \text{m}\ \# \Rightarrow \varnothing\ \# \]
+  \[ \text{m}\ _w] \Rightarrow \varnothing\ _w] \]
 \end{tcolorbox}
 
 The traces of this sound change go back to Old Latin (\emph{CIL} I\textsuperscript{2}.9) \parencite[p.~17]{companion_to_latin}: \\
@@ -1390,11 +1442,13 @@ Also, ``[i]n metrical texts, where the the final syllables of words ending in /\
 We have evidence that initial /h/ already weakens in Latin: ``[i]n metrical texts final vowels are elided before words beginning with /h\textbf{V}/, exactly as before initial /\textbf{V}/.'' \parencite[p.~87]{companion_to_latin} \\
 An orthographic evidence for this sound change was the fact that the letter <h> sometime was used to indicate hiatus between vowels in inscriptions \parencite[p.~18]{companion_to_latin}: \textsc{ahenvm}\footnote{cf. \textsc{a\={e}num}} [aeːnʊm] (\emph{CIL} I\textsuperscript{2}.581), \textsc{ahena}\footnote{cf. \textsc{a\={e}na}} (\emph{CIL} I\textsuperscript{2}.2093).
 
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{hispalis} & Sevilla
-\end{tabular}
+\begin{center}
+  \begin{tabular}{c c}
+    \textsc{lat.} & Es. \\
+    \hline
+    \textsc{hispalis} & Sevilla
+  \end{tabular}
+\end{center}
 
 \subsubsection{Nasal Spirant Law}
 
@@ -1403,22 +1457,6 @@ An orthographic evidence for this sound change was the fact that the letter <h> 
 \end{tcolorbox}
 
 Old Latin inscriptions reflect this change \parencite[p.~17]{companion_to_latin}: \textsc{cosol} v. Class. Lat. \textsc{consul}, \textsc{cesor} v. Class. Lat. \textsc{censor} (\emph{CIL} I\textsuperscript{2}.8).
-
-\subsubsection{New Clusters from Syncope and Their Resolution}
-
-\paragraph*{Nasal Liquid Cluster from Syncope}
-
-\begin{center}
-  \begin{tabular}{c c}
-    \textsc{lat.} & Es. \\
-    \hline
-    \textsc{te\textcolor{red}{ner}u} & tie\textcolor{magenta}{rn}o \\
-    \textsc{ge\textcolor{red}{ner}u} & ye\textcolor{magenta}{rn}o \\
-    \textsc{tre\textcolor{red}{mul}at} & tie\textcolor{magenta}{mbl}a \\
-  \end{tabular}
-\end{center}
-
-\paragraph*{Nasal Nasal Cluster from Syncope}
 
 \subsubsection{Syllabification of the [Cr] Cluster}
 
@@ -1436,12 +1474,6 @@ Spanish have reflexes of some Latin words contains [\textbf{C}r-] in the ultimat
   \end{tabular}
 \end{center}
 
-\subsubsection{Simplification of Clusters}
-
-\begin{tcolorbox}
-  
-\end{tcolorbox}
-
 \pagebreak
 
 \includegraphics[scale=5.0]{isidorus.jpeg}
@@ -1450,7 +1482,7 @@ Spanish have reflexes of some Latin words contains [\textbf{C}r-] in the ultimat
 
 \pagebreak
 
-\chapter{\textsc{Etymologiae}: \\ Western Romance}\label{cap:western_romance}
+\chapter{Western Romance}\label{cap:western_romance}
 
 \epigraph{\textsc{venite igitvr descendamvs et confvndamvs ibi lingvam eorvm vt non avdiat vnvsqvisqve vocem proximi svi}}{\textsc{genesis} \textsc{xi}$\bullet$\textsc{vii}}
 
@@ -1475,23 +1507,23 @@ Spanish have reflexes of some Latin words contains [\textbf{C}r-] in the ultimat
 \subsection{Consonantal}
 
 \begin{tcolorbox}[title=Western Romance Consonants, hbox]
-  \begin{tabular}{|c|c|c|c|c|c|c|c|}
+  \begin{tabular}{|c|c|c|c|c|c|c|}
     \hline
-    & Bilabial & Labiodental & Dental & Alveolar & Palatal & Velar & Labiovelar \\
+    & Bilabial & Dental & Alveolar & Palatal & Velar & Labiovelar \\
     \hline
-    Nasal & m & & \multicolumn{2}{c|}{n} & \textipa{\textltailn} & & \\
+    Nasal & m & \multicolumn{2}{c|}{n} & \textipa{\textltailn} & & \\
     \hline
-    Stop & p \quad b & & t \quad d & & & k \quad g & \textipa{k\super w} \quad \textipa{g\super w} \\
+    Stop & p \quad b & t \quad d & & & k \quad g & \textipa{k\super w} \quad \textipa{g\super w} \\
     \hline
-    Fricative & \textipa{B} & f & \textipa{D} & & & \textipa{G} & \\
+    Fricative & ɸ \quad \textipa{B} & \textipa{D} & & & \textipa{G} & \\
     \hline
-    \textquotedbl & & & & s \quad z & & & \\
+    \textquotedbl & & & s \quad z & & & \\
     \hline
-    Affricate & & & \textipa{\texttslig} \quad \textipa{\textdzlig} & & \textipa{\textteshlig} \quad \textipa{\textdyoghlig} & & \\
+    Affricate & & \textipa{\texttslig} \quad \textipa{\textdzlig} & & \textipa{\textteshlig} \quad \textipa{\textdyoghlig} & & \\
     \hline
-    Trill & & & \multicolumn{2}{c|}{r} & & & \\
+    Trill & & \multicolumn{2}{c|}{r} & & & \\
     \hline
-    Lateral & & & \multicolumn{2}{c|}{l} & \textipa{L} & & \\
+    Lateral & & \multicolumn{2}{c|}{l} & \textipa{L} & & \\
     \hline
   \end{tabular}
 \end{tcolorbox}
@@ -1533,86 +1565,110 @@ In Spanish [\textipa{E}] also diphthongizes in closed syllables (\nameref{sec:di
 \subsubsection{Degemination}
 
 \begin{tcolorbox}
-  
+  \[ \textbf{CC} \Rightarrow \textbf{C} \]
 \end{tcolorbox}
 
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{o\textcolor{red}{ss}u} & hue\textcolor{magenta}{s}o \\
-  \textsc{su\textcolor{red}{mm}a} & su\textcolor{magenta}{m}a \\
-  \textsc{a\textcolor{red}{pp}e\textcolor{red}{ll}at} & a\textcolor{magenta}{p}e\textcolor{magenta}{l}a \\
-  \textsc{li\textcolor{red}{tt}era} & le\textcolor{magenta}{t}ra \\
-  \textsc{si\textcolor{red}{cc}u} & se\textcolor{magenta}{c}o \\
-\end{tabular}
+\begin{center}
+  \begin{tabular}{c c}
+    \textsc{lat.} & Es. \\
+    \hline
+    \textsc{o\textcolor{red}{ss}u} & hue\textcolor{magenta}{s}o \\
+    \textsc{su\textcolor{red}{mm}a} & su\textcolor{magenta}{m}a \\
+    \textsc{a\textcolor{red}{pp}e\textcolor{red}{ll}at} & a\textcolor{magenta}{p}e\textcolor{magenta}{l}a \\
+    \textsc{li\textcolor{red}{tt}era} & le\textcolor{magenta}{t}ra \\
+    \textsc{si\textcolor{red}{cc}u} & se\textcolor{magenta}{c}o \\
+  \end{tabular}
+\end{center}
 
 \subsubsection{Lenition I}\label{sec:lenition_1}
 
 \begin{tcolorbox}
-  
+  \begin{align*}
+    \textbf{V.GV} & \Rightarrow \textbf{V.ΓV} \\
+    \textbf{V.CV} & \Rightarrow \textbf{V.GV}
+  \end{align*}
 \end{tcolorbox}
 
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{sa\textcolor{red}{p}ore} & sa\textcolor{magenta}{b}or [\textipa{B}] \\
-  \textsc{ca\textcolor{red}{p}ut} & ca\textcolor{magenta}{b}o [\textipa{B}] \\
-  \textsc{co\textcolor{red}{p}ertu} & cu\textcolor{magenta}{b}ierto [\textipa{B}] \\
-                & \\
-  \textsc{vi\textcolor{red}{t}a} & vi\textcolor{magenta}{d}a [\textipa{D}] \\
-  \textsc{fa\textcolor{red}{t}a} & ha\textcolor{magenta}{d}a [\textipa{D}] \\
-  \textsc{ca\textcolor{red}{t}ena} & ca\textcolor{magenta}{d}ena [\textipa{D}] \\
-                & \\
-  \textsc{ami\textcolor{red}{c}a} & ami\textcolor{magenta}{g}a [\textipa{G}] \\
-  \textsc{se\textcolor{red}{c}uru} & se\textcolor{magenta}{g}uro [\textipa{G}] \\
-  \textsc{fo\textcolor{red}{c}u} & fue\textcolor{magenta}{g}o [\textipa{G}] \\
-\end{tabular}
+\begin{center}
+  \begin{tabular}{c c}
+    \textsc{lat.} & Es. \\
+    \hline
+    \textsc{sa\textcolor{red}{p}ore} & sa\textcolor{magenta}{b}or [\textipa{B}] \\
+    \textsc{ca\textcolor{red}{p}ut} & ca\textcolor{magenta}{b}o [\textipa{B}] \\
+    \textsc{co\textcolor{red}{p}ertu} & cu\textcolor{magenta}{b}ierto [\textipa{B}] \\
+                  & \\
+    \textsc{vi\textcolor{red}{t}a} & vi\textcolor{magenta}{d}a [\textipa{D}] \\
+    \textsc{fa\textcolor{red}{t}a} & ha\textcolor{magenta}{d}a [\textipa{D}] \\
+    \textsc{ca\textcolor{red}{t}ena} & ca\textcolor{magenta}{d}ena [\textipa{D}] \\
+                  & \\
+    \textsc{ami\textcolor{red}{c}a} & ami\textcolor{magenta}{g}a [\textipa{G}] \\
+    \textsc{se\textcolor{red}{c}uru} & se\textcolor{magenta}{g}uro [\textipa{G}] \\
+    \textsc{fo\textcolor{red}{c}u} & fue\textcolor{magenta}{g}o [\textipa{G}] \\
+  \end{tabular}
+\end{center}
 
-\begin{tabular}{c c}
-  \textsc{lat} & Es. \\
-  \hline
-  \textsc{ca\textcolor{red}{b}allu} & ca\textcolor{magenta}{b}allo [\textipa{B}] \\
-  \textsc{de\textcolor{red}{b}ere} & de\textcolor{magenta}{b}er [\textipa{B}] \\
-  \textsc{ha\textcolor{red}{b}ere} & ha\textcolor{magenta}{b}er [\textipa{B}] \\
-               & \\
-  \textsc{cru\textcolor{red}{d}u} & cru\textcolor{magenta}{d}o [\textipa{D}] \\
-  \textsc{pe\textcolor{red}{d}e} & pie \\
-               & \\
-  \textsc{au\textcolor{red}{g}ustu} & a\textcolor{magenta}{g}osto [\textipa{G}] \\
-  \textsc{li\textcolor{red}{g}are} & li\textcolor{magenta}{g}ar [\textipa{G}] \\
-  \textsc{pa\textcolor{red}{g}anu} & pa\textcolor{magenta}{g}ano [\textipa{G}] \\
-\end{tabular}
+\begin{center}
+  \begin{tabular}{c c}
+    \textsc{lat} & Es. \\
+    \hline
+    \textsc{ca\textcolor{red}{b}allu} & ca\textcolor{magenta}{b}allo [\textipa{B}] \\
+    \textsc{de\textcolor{red}{b}ere} & de\textcolor{magenta}{b}er [\textipa{B}] \\
+    \textsc{ha\textcolor{red}{b}ere} & ha\textcolor{magenta}{b}er [\textipa{B}] \\
+                 & \\
+    \textsc{cru\textcolor{red}{d}u} & cru\textcolor{magenta}{d}o [\textipa{D}] \\
+    \textsc{pe\textcolor{red}{d}e} & pie \\
+                 & \\
+    \textsc{au\textcolor{red}{g}ustu} & a\textcolor{magenta}{g}osto [\textipa{G}] \\
+    \textsc{li\textcolor{red}{g}are} & li\textcolor{magenta}{g}ar [\textipa{G}] \\
+    \textsc{pa\textcolor{red}{g}anu} & pa\textcolor{magenta}{g}ano [\textipa{G}] \\
+  \end{tabular}
+\end{center}
 
-\begin{tabular}{c c}  
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{le\textcolor{red}{p}re} & lie\textcolor{magenta}{b}re [\textipa{B}] \\
-  \textsc{ca\textcolor{red}{p}ra} & ca\textcolor{magenta}{b}ra [\textipa{B}] \\
-                & \\
-  \textsc{pe\textcolor{red}{t}ra} & pie\textcolor{magenta}{d}ra [\textipa{D}] \\
-  \textsc{pa\textcolor{red}{t}re} & pa\textcolor{magenta}{d}re [\textipa{D}] \\
-                & \\
-  \textsc{hemi-\textcolor{red}{c}rania} & mi\textcolor{magenta}{g}raña [\textipa{G}] \\
-\end{tabular}
+\begin{center}
+  \begin{tabular}{c c}  
+    \textsc{lat.} & Es. \\
+    \hline
+    \textsc{le\textcolor{red}{p}re} & lie\textcolor{magenta}{b}re [\textipa{B}] \\
+    \textsc{ca\textcolor{red}{p}ra} & ca\textcolor{magenta}{b}ra [\textipa{B}] \\
+                  & \\
+    \textsc{pe\textcolor{red}{t}ra} & pie\textcolor{magenta}{d}ra [\textipa{D}] \\
+    \textsc{pa\textcolor{red}{t}re} & pa\textcolor{magenta}{d}re [\textipa{D}] \\
+                  & \\
+    \textsc{hemi-\textcolor{red}{c}rania} & mi\textcolor{magenta}{g}raña [\textipa{G}] \\
+  \end{tabular}
+\end{center}
 
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{ser\textcolor{red}{p}ente} & ser\textcolor{magenta}{p}iente \\
-  \textsc{al\textcolor{red}{p}es} & a\textcolor{magenta}{p}les \\
-  \textsc{rum\textcolor{red}{p}ere} & rum\textcolor{magenta}{p}er \\
-                & \\
-  \textsc{or\textcolor{red}{t}ica} & or\textcolor{magenta}{t}iga \\
-  \textsc{men\textcolor{red}{t}a} & men\textcolor{magenta}{t}a \\
-                & \\
-  \textsc{ar\textcolor{red}{c}u} & ar\textcolor{magenta}{c}o \\
-  \textsc{fal\textcolor{red}{c}one} & hal\textcolor{magenta}{c}ón \\
-\end{tabular}
+\begin{center}
+  \begin{tabular}{c c}
+    \textsc{lat.} & Es. \\
+    \hline
+    \textsc{ser\textcolor{red}{p}ente} & ser\textcolor{magenta}{p}iente \\
+    \textsc{al\textcolor{red}{p}es} & a\textcolor{magenta}{p}les \\
+    \textsc{rum\textcolor{red}{p}ere} & rum\textcolor{magenta}{p}er \\
+                  & \\
+    \textsc{or\textcolor{red}{t}ica} & or\textcolor{magenta}{t}iga \\
+    \textsc{men\textcolor{red}{t}a} & men\textcolor{magenta}{t}a \\
+                  & \\
+    \textsc{ar\textcolor{red}{c}u} & ar\textcolor{magenta}{c}o \\
+    \textsc{fal\textcolor{red}{c}one} & hal\textcolor{magenta}{c}ón \\
+  \end{tabular}
+\end{center}
 
 The orthography of Visigothic texts shows signs of lenition and the confusion was caused by it \parencite[p.~159]{latin_palaeography}:
 \begin{quote}
   The use of \emph{b} instead of \emph{p} (\emph{abtum}) or \emph{p} for \emph{b} (\emph{puplicum}), \emph{g} for \emph{c} (\emph{eglesia}\footnote{cf. Es. \emph{iglesia}}) or the reverse (\emph{intecritate}), \emph{k} for \emph{c} (\emph{kaput}), \emph{t} for \emph{d} (\emph{aput}) or \emph{d} for \emph{t} (\emph{sustinead}).
 \end{quote}
+
+\begin{tcolorbox}
+  \begin{align*}
+    \textbf{V} _σ] [_σ [_Ω \textbf{C}\vdash \text{stop; voiced} ] [_ρ \textbf{V} ] ]
+    & \Rightarrow
+      \textbf{V} _σ] [_σ [_Ω [\text{stop} \rightarrow \text{friactive}]\ \textbf{C} ] [_ρ \textbf{V} ] ] \\
+    \textbf{V} _σ] [_σ [_Ω \textbf{C}\vdash \text{stop; voiceless} ] [_ρ \textbf{V} ] ]
+    & \Rightarrow
+      \textbf{V} _σ] [_σ [_Ω [\text{voiceless} \rightarrow \text{voiced}]\ \textbf{C} ] [_ρ \textbf{V} ] ]
+  \end{align*}
+\end{tcolorbox}
 
 \pagebreak
 
@@ -1622,7 +1678,7 @@ The orthography of Visigothic texts shows signs of lenition and the confusion wa
 
 \pagebreak
 
-\chapter{\emph{El rey sabio}: \\ Old Spanish}
+\chapter{Old Spanish}
 
 \epigraph{Ya lo vedes, que partirnos emos en vida, yo iré e vós fincaredes remanida.}{Cantar de mio Cid}
 
@@ -1657,7 +1713,7 @@ The orthography of Visigothic texts shows signs of lenition and the confusion wa
     \hline
     Fricative & \textipa{F} \quad \textipa{B} & \textipa{D} & & \textipa{J} & \textipa{G} & & h \\
     \hline
-    \textquotedbl & & & s \quad z & \textipa{S} \quad \textipa{Z} & & & \\
+    \textquotedbl & & & s̺ \quad z̺ & \textipa{S} \quad ʒ & & & \\
     \hline
     Affricate & & \textipa{\texttslig} \quad \textipa{\textdzlig} & & \textipa{\textteshlig} \quad \textipa{\textdyoghlig} & & & \\
     \hline
@@ -1722,13 +1778,13 @@ The diphthongization of [\textipa{E}] (cf. \nameref{sec:diphthongization_1}) and
 
 \subsection{Consonantism}
 
-\subsubsection{Debuccalization of [f]}
+\subsubsection{Debuccalization of [ɸ]}
 
 \begin{tcolorbox}
-  \[ \text{f}\textbf{V} \Rightarrow \text{h}\textbf{V} \]
+  \[ \text{ɸ}\textbf{V} \Rightarrow \text{h}\textbf{V} \]
 \end{tcolorbox}
 
-Many Latin words with word-initial singleton onset \textsc{f}- now have zero onset in Modern Spanish (once was [h] and written as such <h> in Old Spanish), while in clusters [f] is preserved\footcite[p.~50]{romance_his}:
+Many Latin words with word-initial singleton onset \textsc{f}- now have zero onset in Modern Spanish (once was [h] and written as such <h> in Old Spanish), while in clusters [f] ($\leftarrow$ [ɸ]) is preserved\footcite[p.~50]{romance_his}:
 \begin{center}
   \begin{tabular}{c c}
     \textsc{lat.} & Es. \\
@@ -1750,87 +1806,106 @@ Sometimes this sound change is attributed to the Romance-Basque bilingualism in 
 
 \subsubsection{Fronting of Palatal Affricates}\label{sec:palatal_affric_fronting}
 
+\begin{tcolorbox}
+  \[ \text{ʧ} \Rightarrow \text{\textipa{\texttslig}} \]
+\end{tcolorbox}
+
+The palatal affricate [ʧ] coming from palatalized [k]'s fronts to merge with the dental affricate [\textipa{\texttslig}], both written with a cedilla <\c{c}> in Old Spanish\footcites[p.~258-259]{lloyd_spanish}:
+\begin{center}
+  \begin{tabular}{c c}
+    \textsc{lat.} & OSp. \\
+    \hline
+    \textsc{caepulla} & \textcolor{magenta}{\c{c}}ebolla [\textipa{\texttslig}] \\
+    \textsc{c\={e}na} & \textcolor{magenta}{\c{c}}ena [\textipa{\texttslig}] \\
+    \textsc{centu} & \textcolor{magenta}{\c{c}}iento [\textipa{\texttslig}] \\
+    \textsc{cinque} & \textcolor{magenta}{\c{c}}inco [\textipa{\texttslig}] \\
+                  & \\
+    \textsc{martiu} & mar\textcolor{magenta}{\c{c}}o [\textipa{\texttslig}] \\
+    \textsc{terti\={a}riu} & ter\textcolor{magenta}{\c{c}}ero [\textipa{\texttslig}] \\
+  \end{tabular}
+\end{center}
+
 \subsection{Structural Changes}
 
 \subsubsection{Metaphony}
 
 \begin{tcolorbox}
-  
+  \[ [_σ \textbf{V} ] \dblcolon [_σ \textbf{V} \vdash \text{high} ] \Rightarrow [_σ \text{[height+1]}\ \textbf{V} ] \dblcolon [_σ \textbf{V} ] \]
 \end{tcolorbox}
 
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{m\textcolor{red}{u}ltu} & m\textcolor{magenta}{u}cho \\
-  \textsc{ausc\textcolor{red}{u}ltat} & esc\textcolor{magenta}{u}cha \\
-  \textsc{l\textcolor{red}{u}cta} & l\textcolor{magenta}{u}cha \\
-  \textsc{l\textcolor{red}{a}cte} & l\textcolor{magenta}{e}che \\
-  \textsc{f\textcolor{red}{a}ctu} & h\textcolor{magenta}{e}cho \\
-  \textsc{b\textcolor{red}{a}siu} & b\textcolor{magenta}{e}so \\
-  \textsc{c\textcolor{red}{a}seu} & q\textcolor{magenta}{ue}so \\
-  \textsc{r\textcolor{red}{e}ni\={o}ne} & r\textcolor{magenta}{i}ñón \\
-  \textsc{g\textcolor{red}{e}nesta} & h\textcolor{magenta}{i}niesta \\
-  \textsc{c\textcolor{red}{ae}mentum} & c\textcolor{magenta}{i}miento \\
-  \textsc{t\textcolor{red}{e}nebras} & t\textcolor{magenta}{i}nieblas \\
-  \textsc{c\textcolor{red}{o}chle\={a}re} & c\textcolor{magenta}{u}chara \\
-  \textsc{c\textcolor{red}{o}gn\={a}tu} & c\textcolor{magenta}{u}ñado \\
-  \textsc{m\textcolor{red}{u}liere} & m\textcolor{magenta}ujer \\
-\end{tabular}
+\begin{center}
+  \begin{tabular}{c c}
+    \textsc{lat.} & Es. \\
+    \hline
+    \textsc{m\textcolor{red}{u}ltu} & m\textcolor{magenta}{u}cho \\
+    \textsc{ausc\textcolor{red}{u}ltat} & esc\textcolor{magenta}{u}cha \\
+    \textsc{l\textcolor{red}{u}cta} & l\textcolor{magenta}{u}cha \\
+    \textsc{l\textcolor{red}{a}cte} & l\textcolor{magenta}{e}che \\
+    \textsc{f\textcolor{red}{a}ctu} & h\textcolor{magenta}{e}cho \\
+    \textsc{b\textcolor{red}{a}siu} & b\textcolor{magenta}{e}so \\
+    \textsc{c\textcolor{red}{a}seu} & q\textcolor{magenta}{ue}so \\
+    \textsc{r\textcolor{red}{e}ni\={o}ne} & r\textcolor{magenta}{i}ñón \\
+    \textsc{g\textcolor{red}{e}nesta} & h\textcolor{magenta}{i}niesta \\
+    \textsc{c\textcolor{red}{ae}mentum} & c\textcolor{magenta}{i}miento \\
+    \textsc{t\textcolor{red}{e}nebras} & t\textcolor{magenta}{i}nieblas \\
+    \textsc{c\textcolor{red}{o}chle\={a}re} & c\textcolor{magenta}{u}chara \\
+    \textsc{c\textcolor{red}{o}gn\={a}tu} & c\textcolor{magenta}{u}ñado \\
+    \textsc{m\textcolor{red}{u}liere} & m\textcolor{magenta}ujer \\
+  \end{tabular}
+\end{center}
 
 \subsubsection{Apocope}\label{sec:apocope}
 
 \begin{tcolorbox}
-
+  \[ \textbf{V}\ _w] \Rightarrow \varnothing\ _w] \]
 \end{tcolorbox}
 
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{v\={e}n\={i}} & vine \\  
-\end{tabular}
+\begin{center}
+  \begin{tabular}{c c}
+    OSp. & Es. \\
+    \hline
+    primer\textcolor{red}{o} & primer \\
+    tercer\textcolor{red}{o} & tercer \\
+    sant\textcolor{red}{o} & san \\
+    segund\textcolor{red}{o} & según \\
+  \end{tabular}
+\end{center}
 
-\begin{tabular}{c c}
-  OSp. & Es. \\
-  \hline
-  m\textcolor{red}{ía} & (*m\textcolor{red}{íe} $\rightarrow$) m\textcolor{magenta}{i} \\
-  du\textcolor{red}{a}s & du\textcolor{magenta}{e}s \\
-  primer\textcolor{red}{o} & primer \\
-  tercer\textcolor{red}{o} & tercer \\
-  sant\textcolor{red}{o} & san \\
-  segund\textcolor{red}{o} & según \\
-\end{tabular}
-
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{pariet\textcolor{red}{e}} & pared \\
-  \textsc{merced\textcolor{red}{e}} & merced \\
-  \textsc{p\={a}n\textcolor{red}{e}} & pan \\
-  \textsc{mar\textcolor{red}{e}} & mar \\
-  \textsc{fid\={e}l\textcolor{red}{e}} & fiel \\
-  \textsc{p\={a}c\textcolor{red}{e}} & paz \\
-  \textsc{calc\textcolor{red}{e}} & coz \\
-  \textsc{falc\textcolor{red}{e}} & hoz \\
-  \textsc{fasc\textcolor{red}{e}} & haz \\
-  \textsc{pisc\textcolor{red}{e}} & pez \\
-\end{tabular}
+\begin{center}
+  \begin{tabular}{c c}
+    \textsc{lat.} & Es. \\
+    \hline
+    \textsc{pariet\textcolor{red}{e}} & pared \\
+    \textsc{merced\textcolor{red}{e}} & merced \\
+    \textsc{p\={a}n\textcolor{red}{e}} & pan \\
+    \textsc{mar\textcolor{red}{e}} & mar \\
+    \textsc{fid\={e}l\textcolor{red}{e}} & fiel \\
+    \textsc{p\={a}c\textcolor{red}{e}} & paz \\
+    \textsc{calc\textcolor{red}{e}} & coz \\
+    \textsc{falc\textcolor{red}{e}} & hoz \\
+    \textsc{fasc\textcolor{red}{e}} & haz \\
+    \textsc{pisc\textcolor{red}{e}} & pez \\
+  \end{tabular}
+\end{center}
 
 \subsubsection{Palatalization of Clusters}
 
 \begin{tcolorbox}
-
+  \[ \textsc{-ct-} \Rightarrow \text{ʧ} \]
 \end{tcolorbox}
 
-\begin{tabular}{c c}
-  \textsc{lat.} & Es. \\
-  \hline
-  \textsc{di\textcolor{red}{ct}u} & di\textcolor{magenta}{ch}o [\textipa{\textteshlig}] \\
-  \textsc{stri\textcolor{red}{ct}u} & estre\textcolor{magenta}{ch}o [\textipa{\textteshlig}] \\
-  \textsc{pe\textcolor{red}{ct}u} & pe\textcolor{magenta}{ch}o [\textipa{\textteshlig}] \\
-  \textsc{te\textcolor{red}{ct}u} & te\textcolor{magenta}{ch}o [\textipa{\textteshlig}] \\
-  \textsc{no\textcolor{red}{ct}e} & no\textcolor{magenta}{ch}e [\textipa{\textteshlig}] \\
-  \textsc{o\textcolor{red}{ct}o} & o\textcolor{magenta}{ch}o [\textipa{\textteshlig}] \\
-\end{tabular}
+\begin{center}
+  \begin{tabular}{c c}
+    \textsc{lat.} & Es. \\
+    \hline
+    \textsc{di\textcolor{red}{ct}u} & di\textcolor{magenta}{ch}o [\textipa{\textteshlig}] \\
+    \textsc{stri\textcolor{red}{ct}u} & estre\textcolor{magenta}{ch}o [\textipa{\textteshlig}] \\
+    \textsc{pe\textcolor{red}{ct}u} & pe\textcolor{magenta}{ch}o [\textipa{\textteshlig}] \\
+    \textsc{te\textcolor{red}{ct}u} & te\textcolor{magenta}{ch}o [\textipa{\textteshlig}] \\
+    \textsc{no\textcolor{red}{ct}e} & no\textcolor{magenta}{ch}e [\textipa{\textteshlig}] \\
+    \textsc{o\textcolor{red}{ct}o} & o\textcolor{magenta}{ch}o [\textipa{\textteshlig}] \\
+  \end{tabular}
+\end{center}
 
 \subsubsection{Metathesis}
 
@@ -1846,7 +1921,7 @@ Sometimes this sound change is attributed to the Romance-Basque bilingualism in 
 
 \pagebreak
 
-\chapter{\emph{Cien a\~{n}os de soledad}: \\ Modern Spanish}
+\chapter{Modern Spanish}
 
 \epigraph{Todo está cumplido.}{Juan 19:30}
 
@@ -1854,7 +1929,47 @@ Sometimes this sound change is attributed to the Romance-Basque bilingualism in 
 
 \subsection{Vocalic}
 
+\begin{tcolorbox}[title=Modern Spanish Monophthongs, hbox]
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    & Front & Central & Back \\
+    \hline
+    High & i & & u \\
+    \hline
+    Mid & e & & o \\
+    \hline
+    Low & & a & \\
+    \hline
+  \end{tabular}
+\end{tcolorbox}
+
 \subsection{Consonantal}
+
+\begin{tcolorbox}[title=Modern Spanish Consonants, hbox]
+  \begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    & Bilabial & Labiodental & Dental & Alveolar & Palatal & Velar & Labiovelar \\
+    \hline
+    Nasal & m & & \multicolumn{2}{c|}{n} & \textipa{\textltailn} & & \\
+    \hline
+    Stop & p \quad b & & t \quad d & & & k \quad g & \textipa{k\super w} \quad \textipa{g\super w} \\
+    \hline
+    Fricative & \textipa{B} & f & θ \quad \textipa{D} & & ʝ & \textipa{G} & \\
+    \hline
+    \textquotedbl & & & & s̺ \quad z̺ & & & \\
+    \hline
+    Affricate & & & & & \textipa{\textteshlig} & & \\
+    \hline
+    Approximant & & & & & & & w \\
+    \hline
+    Trill & & & \multicolumn{2}{c|}{r} & & & \\
+    \hline
+    Tap & & & \multicolumn{2}{c|}{ɾ} & & & \\
+    \hline
+    Lateral & & & \multicolumn{2}{c|}{l} & \textipa{L} & & \\
+    \hline
+  \end{tabular}
+\end{tcolorbox}
 
 \section{Sound Changes}
 
@@ -1865,14 +1980,26 @@ Sometimes this sound change is attributed to the Romance-Basque bilingualism in 
 \subsubsection{Betacism II}\label{sec:betacism_2}
 
 \begin{tcolorbox}
-  \[ \#\ \text{\textipa{B}} \Rightarrow \#\ \text{b} \]
+  \[ [_w\ \text{\textipa{B}} \Rightarrow [_w\ \text{b} \]
 \end{tcolorbox}
 
-\subsubsection{Deaffrication of Palatal Affricates}
+As a continuation of the change \nameref{sec:betacism_1}, word-initial [b] and [β] merged in Modern Spanish.
+
+\subsubsection{Labiodentalization}
 
 \begin{tcolorbox}
-
+  \[ \text{ɸ} \Rightarrow \text{f} \]
 \end{tcolorbox}
+
+Modern Castilian has a labiodental production of the Latin \textsc{<f>}.
+
+\subsubsection{Deaffrication of [\textipa{\textdyoghlig}]}
+
+\begin{tcolorbox}
+  \[ \text{\textipa{\textdyoghlig}} \Rightarrow \text{ʒ} \]
+\end{tcolorbox}
+
+At some point after 1492, Castilian [\textipa{\textdyoghlig}] were deaffricated to [ʒ], mirroring the change in French. Judeo-Spanish retains [\textipa{\textdyoghlig}]: \emph{gente} is [\textipa{\textdyoghlig}ente] \parencite[p.~92]{istanbul_jsp}.
 
 \subsubsection{Devoicing of Fricatives}\label{sec:devoice_fric}
 
@@ -1881,8 +2008,21 @@ Sometimes this sound change is attributed to the Romance-Basque bilingualism in 
     \textbf{V}.\text{\textipa{\textsubbridge{z}}}\textbf{V} & \Rightarrow \text{\textipa{\textsubbridge{s}}} \\
     \textbf{V}.\text{\textipa{\textinvsubbridge{z}}}\textbf{V} & \Rightarrow \text{\textipa{\textinvsubbridge{s}}} \\
     \textbf{V}.\text{\textipa{Z}}\textbf{V} & \Rightarrow \text{\textipa{S}} \\
+                                                            & \\
+    [_w\ \text{ʒ} & \Rightarrow [_w\ \text{ʃ} \\
   \end{align*}
 \end{tcolorbox}
+
+Alfonsino Spanish had sibilants represented as such orthographically \parencite[p.~328]{lloyd_spanish}:
+\begin{center}
+  \begin{tabular}{c c c c}
+    & dental affricate & alveolo-apical & palatal \\
+    \hline
+    voiceless & \c{c} [\textipa{\texttslig}] ($\rightarrow$ [s̪]) & -ss- [s̺] & x [ʃ] \\
+    voiced & z [\textipa{\textdzlig}] ($\rightarrow$ [z̪]) & -s- [z̺] & j, ge, gi [ʒ] ($\leftarrow$ [\textipa{\textdyoghlig}]) \\
+  \end{tabular}
+\end{center}
+As a part of the sibilant shifts from Old Spanish to Modern Spanish, the voicing of these sibilants would neutralize.
 
 \subsubsection{Deaffrication of Dental Affricates}\label{sec:deaffric_dental_affric}
 
@@ -1893,29 +2033,123 @@ Sometimes this sound change is attributed to the Romance-Basque bilingualism in 
   \end{align*}
 \end{tcolorbox}
 
+``Medieval Jews in Spain preponderantly transcribed \emph{\c{c}} with the letter \textbf{samech} ם rather than the letter \textbf{tsade} צ from the thirteenth to the fifteenth centuries'' \parencite[p.~333]{lloyd_spanish}. 
+
 \subsubsection{Desibilation of Dental Fricatives}\label{sec:desibil_dental_fric}
 
 \begin{tcolorbox}
   \[ \text{\textipa{\textsubbridge{s}}} \Rightarrow \text{\textipa{T}} \]
 \end{tcolorbox}
 
+``We find the word \emph{capuz} spelled \emph{capud} in 1495 [\dots] [i]n 1547 there appear such spellings as \emph{Trinidaz}, and \emph{paternidaz} for \emph{Trinidad} and \emph{paternidad}'' \parencite[p.~334]{lloyd_spanish}.
+
 \subsubsection{Retraction of Palatal Fricative}
 
 \begin{tcolorbox}
-  \[ \text{\textipa{S}} \Rightarrow x \]  
+  \[ \text{\textipa{S}} \Rightarrow \text{x} \]
 \end{tcolorbox}
+
+The palatal fricative [ʃ] seemed to be in a pretty unstable state toward the end of the Old Spanish era, possibly influenced by the deaffrication of [\textipa{\textdyoghlig}] $\rightarrow$ [ʒ], these two sounds of different origins started to be interpreted as a \emph{voiceless} : \emph{voiced} pair just like many other sounds in Spanish. In some documents we can see them being alternated \parencite[p.~342]{lloyd_spanish}:
+\begin{center}
+  \begin{tabular}{c c}
+    [ʃ] & [ʒ] \\
+    \hline
+    celosía & celogía \\
+    frisol & frijol \\
+    iglesia & eclegia \\
+    quise & quije \\
+    resistir & registir \\
+    visitar & vigitar \\
+    residente & regidente \\
+        & \\
+    relisión & religión \\
+    colesio & colegio \\
+    disistir & digestir \\
+    mesor & mejor \\
+    parasismo & parajismo \\
+    sanguisuela & sangijuela \\
+  \end{tabular}
+\end{center}
+Eventually in the final result of the consonantal rearrangement from Old Spanish to Modern Spanish, the sibilant [ʃ] retracted to [x]. Curiously, this sound is identified with the [h] $\leftarrow$ [ɸ] in some speeches \parencite[p.~343]{lloyd_spanish}:
+\begin{center}
+  \begin{tabular}{c c}
+    hizo & gizo \\
+    harán & garan \\
+    Herrera & gerera \\
+    harta & garta \\
+  \end{tabular}
+\end{center}
 
 \subsection{Structural Changes}
 
 \subsubsection{Lenition II}\label{sec:lenition_2}
 
 \begin{tcolorbox}
-
+  \begin{align*}
+    \textbf{V.}\text{b}\textbf{V} & \Rightarrow \text{β} \\
+    \textbf{V.}\text{d}\textbf{V} & \Rightarrow \text{ð} \\
+    \textbf{V.}\text{g}\textbf{V} & \Rightarrow \text{ɣ} \\
+                                  & \\
+    \textbf{V.}\text{\textipa{\texttslig}}\textbf{V} & \Rightarrow \text{\textipa{\textdzlig}} \\
+  \end{align*}
 \end{tcolorbox}
 
-\chapter{Anthology of Sound Changes}
+At the dawn of Modern Spanish, the final stage of intervocalic lenition is completed. This sound change had greatly disturbed the Alfonsino orthography. Just take the case of the merger between [β] and [b] intervocalically \parencite[p.~279]{hualde_sp}. At the time of Alfonso X, Old Spanish orthography has <v> for Latin \textsc{<v>}:
+\begin{center}
+  \begin{tabular}{c c}
+    \textsc{lat.} & OSp. \\
+    \hline
+    \textsc{lav\={a}re} & la\textcolor{magenta}{v}ar [β] \\
+    \textsc{vacca} & \textcolor{magenta}{v}aca [β] \\
+  \end{tabular}
+\end{center}
+and also for Latin \textsc{<b>} intervocalically:
+\begin{center}
+  \begin{tabular}{c c}
+    \textsc{lat.} & OSp. \\
+    \hline
+    \textsc{deb\={e}re} & de\textcolor{magenta}{v}er [β] \\
+    \textsc{caballu} & ca\textcolor{magenta}{v}allo [β] \\
+    \textsc{hab\={e}re} & a\textcolor{magenta}{v}er [β] \\
+    \textsc{cant\={a}b\={a}s} & canta\textcolor{magenta}{v}as [β] \\
+  \end{tabular}
+\end{center}
+While some Old Spanish <b> is from Latin intervocalic \textsc{<p>}:
+\begin{center}
+  \begin{tabular}{c c}
+    \textsc{lat.} & OSp. \\
+    \hline
+    \textsc{sap\={e}re} & sa\textcolor{magenta}{b}er [b] \\
+    \textsc{lupu} & lo\textcolor{magenta}{b}o [b] \\
+  \end{tabular}
+\end{center}
+After this sound change and \nameref{sec:betacism_2} had both been installed, the contrast between [β] and [b] collapsed, even at word-initial position. The pairs [ɡ] : [ɣ] and [d] : [ð] must have undergone the same change; but without a letter like <v> to give us direct hints about the fricative stage, the history of lenition for these two pairs is more obscured than the pair [b] : [β] (although later on around the time of sound change \nameref{sec:desibil_dental_fric}, <z> [z̪] and <d> [ð] were sometimes confused). \\
+Another participant of lenition is the [\textipa{\texttslig}] from [ʧ] ($\leftarrow$ [kʲ]) and [tʲ], which irregularly undergoes lenition\footcite[p.~261]{lloyd_spanish}:
+\begin{center}
+  \begin{tabular}{c c c}
+    \textsc{lat.} & PrRom. & OSp. \\
+    \hline
+    \textsc{rati\={o}ne} & [\textipa{\texttslig}] & ra\textcolor{magenta}{z}ón [\textipa{\textdzlig}] \\
+    \textsc{puteu} & [\textipa{\texttslig}] & po\textcolor{magenta}{z}o [\textipa{\textdzlig}] \\
+                  & \\
+    \textsc{capitia} & [\textipa{\texttslig}] & cabe\textcolor{magenta}{\c{c}}a [\textipa{\texttslig}] \\
+    \textsc{platea} & [\textipa{\texttslig}] & pla\textcolor{magenta}{\c{c}}a [\textipa{\texttslig}] \\
+                  & \\
+    \textsc{aci\={a}riu} & [ʧ] & a\textcolor{magenta}{z}ero [\textipa{\textdzlig}] \\
+    \textsc{corticea} & [ʧ] & corte\textcolor{magenta}{z}a [\textipa{\textdzlig}] \\
+                  & \\
+    \textsc{cor\={a}cea} & [ʧ] & cora\textcolor{magenta}{\c{c}}a [\textipa{\texttslig}] \\
+    \textsc{pell\={i}cea} & [ʧ] & pelli\textcolor{magenta}{\c{c}}a [\textipa{\texttslig}] \\
+  \end{tabular}
+\end{center}
 
-% \chapter{Sunday School with the Wug}
+\chapter{Glossarium Latinocastellanum}
+
+\section{Nominal}
+
+\section{Numeral}
+
+% \chapter{Morphosyntax}
 
 % The linguistic history part of this paper is over; but Spanish and her predecessors are so rich in morpho-syntax. It would be a shame to write a paper on Spanish without having a single paper dedicated to its morpho-syntactic aspect, hence we compensate by having a small chapter dedicated to a couple verses in the \emph{Gospel of John} and a couple \emph{sayings on the cross}, comparing the scripture in Latin, Old Spanish, and Modern Spanish. \\
 % The Latin verses are from \textsc{Nova Vulgata}, the Old Spanish verses from \emph{Evangelios y Epístolas paulinas de Mart\'{i}n de Lucena} \footcite{osp_nt} (the text presented here is normalized by me), and Modern Spanish ones from \emph{La Biblia de Jerusal\'{e}n}. The English glosses and exegetic notes are taken from the beloved \emph{Oxford Annotated Bible}\footcite{oab}, based on the \emph{New Revised Standard Version} translation. Since we are dealing with the Bible in many languages, the abbreviation of the Gospels will be in Latin, \textsc{e.g.} \textsc{Ioannes}, instead of \emph{Juan} or \emph{John}.
@@ -2037,17 +2271,17 @@ Sometimes this sound change is attributed to the Romance-Basque bilingualism in 
 
 % Erd\H{o}s P\'{a}l talks about ``The Book, in which God maintains the perfect proofs for mathematical theorems, following the dictum of G. H. Hardy that there is no permanent place for ugly mathematics'' \parencite[p.~5]{proofs_from_the_book}. I, too, think that there exists a \emph{Book} of sound laws that can be formalized computationally in a beautiful computer language (it has to be \emph{beautiful}, in the same spirit of Hardy's words, very little place is reserved for ugly linguistics). And this, dare I say, \emph{program} is what I want dedicate the next few years of my life to. \\
 
-\chapter{Acknowledgements}
+% \chapter{Acknowledgements}
 
-\epigraph{En adelanto van estos lugares: \\ ya tienen su diosa coronada.}{Leandro Díaz}
+% \epigraph{En adelanto van estos lugares: \\ ya tienen su diosa coronada.}{Leandro Díaz}
 
-Finally, special thanks to Professor \textsc{Iosephus Ignatius Hualdus}, for his invaluable helps and advices in the writing of this paper. 
+% Finally, special thanks to Professor \textsc{Iosephus Ignatius Hualdus}, for his invaluable helps and advices in the writing of this paper. 
 
-\begin{flushright}
-  Champaign, Illinois \\
-  Cambridge, England \\
-  C.Z.Y
-\end{flushright}
+% \begin{flushright}
+%   Champaign, Illinois \\
+%   Cambridge, England \\
+%   C.Z.Y
+% \end{flushright}
 
 \nocite{*}
 
