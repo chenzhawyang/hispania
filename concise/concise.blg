@@ -1,0 +1,15 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'concise.blg'
+[51] biber:340> INFO - === Thu Nov 10, 2022, 17:58:10
+[61] Biber.pm:415> INFO - Reading 'concise.bcf'
+[108] Biber.pm:949> INFO - Using all citekeys in bib section 0
+[117] Biber.pm:4340> INFO - Processing section 0
+[124] Biber.pm:4531> INFO - Looking for bibtex format file 'concise.bib' for section 0
+[125] bibtex.pm:1689> INFO - LaTeX decoding ...
+[159] bibtex.pm:1494> INFO - Found BibTeX data source 'concise.bib'
+[377] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[378] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[378] Biber.pm:4168> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-US'
+[378] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[411] bbl.pm:654> INFO - Writing 'concise.bbl' with encoding 'UTF-8'
+[430] bbl.pm:757> INFO - Output to concise.bbl

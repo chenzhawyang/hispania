@@ -1,0 +1,106 @@
+\documentclass{article}[12pt]
+
+\usepackage{geometry}[a4paper]
+\usepackage{inputenc}[uft8]
+\usepackage{xeCJK}
+\setCJKmainfont{Noto Serif CJK TC}
+\usepackage{fontenc}[T1]
+\usepackage{fontspec}
+\setmainfont{Libertinus Serif}
+\usepackage{bussproofs}
+\usepackage{qtree}
+\usepackage{forest}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{tikz-cd}
+\usepackage{tipa}
+\usepackage{listings}
+\usepackage[backend=biber, sorting=ynt, style=authoryear-comp]{biblatex}
+\addbibresource{concise.bib}
+\usepackage{xcolor}
+\usepackage{epigraph}
+\usepackage{bookmark}
+\usepackage{tcolorbox}
+\usepackage{colortbl}
+\usepackage{mathtools}
+\usepackage{stmaryrd}
+\usepackage{setspace} % alaways before hyperref, enabling correct footnote links
+\usepackage{hyperref}[pdfencoding=auto, psdextra]
+\hypersetup{
+  colorlinks=true,
+  linkcolor=violet,
+  filecolor=magenta,
+  citecolor=violet,
+}
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+\makesavenoteenv{table}
+\usepackage{footmisc}[hang, flushmargin, bottom]
+\usepackage{unicode-math}
+\setmathfont{Libertinus Math}
+\usepackage{langsci-gb4e}
+\usepackage{nameref}
+\usepackage[inline]{enumitem}
+
+\setlength\parindent{0pt}
+\setlength\footnotemargin{0pt}
+\setcounter{secnumdepth}{3}
+
+\usepackage{minted}
+\setminted[sml]{autogobble=true, mathescape=true, escapeinside=||}
+
+\renewcommand*{\postnotedelim}{\addcolon\ } % add colon to authoryear citations
+
+\title{Automated Deduction in Phonology: \\ A Case Study of Spanish Historical Phonology}
+\author{陳朝陽 \\ Chen Zhaoyang \\ \texttt{zc23@illinois.edu}}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{\emph{Introduccíon: \\ Fonología automatizada}}
+
+\begin{minted}{sml}
+  type soundChange = PhWord |$\rightarrow$| PhWord
+\end{minted}
+
+\section{Representation of Segments, Syllables, and Phonological Words}
+
+\section{Representation of Sound Changes}
+
+\subsection{Feature and Segmental Level Changes}
+
+\subsection{Syllabic and Phonological Word Level Changes}
+
+\section{\emph{Los elementos de Fonología histórica española}}
+
+\subsection{Vowel Shifts from Latin to Romance}
+
+\subsection{Palatalization}
+
+\subsection{Loss of Hiatus}
+
+\subsection{Lenition}
+
+\subsection{Palatalization}
+
+\subsection{Sibilant Reorganization}
+
+\section{Conclusion}
+
+\nocite{*}
+
+\section{Bibliography}
+
+\printbibliography[heading=subbibintoc, keyword=phone, title={Phonology}]
+
+\printbibliography[heading=subbibintoc, keyword=romance, title={Romance Historical Linguistics}]
+
+\printbibliography[heading=subbibintoc, keyword=tcs, title={Computation}]
+
+\end{document}
