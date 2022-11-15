@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2022.10.26)  10 NOV 2022 17:58
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2022.10.26)  12 NOV 2022 23:02
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2172,23 +2172,15 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 
 )
-\openout8 = `concise.pyg'.
-
-
-(./_minted-concise/default-pyg-prefix.pygstyle)
-(./_minted-concise/default.pygstyle)
-(./_minted-concise/679BF05ABBF7392332462A17645061E6C920A1ADA2A057D9347136E83AB4
-4879.pygtex
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
-(Font)              scaled to size 10.00107pt on input line 2.
-LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 2.
-) [1
+[1
 
 ]
-Overfull \hbox (3.91498pt too wide) in paragraph at lines 100--100
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+(Font)              scaled to size 10.00107pt on input line 96.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 96.
+
+Overfull \hbox (3.91498pt too wide) in paragraph at lines 96--96
 [][]\TU/LibertinusSerif(0)/m/n/10 Kondrak, Grzegorz (2002). \TU/LibertinusSerif
 (0)/m/it/10 Algorithms for Language Reconstruction\TU/LibertinusSerif(0)/m/n/10
  . \TU/LibertinusSerif(0)/m/sc/10 url\TU/LibertinusSerif(0)/m/n/10 : [][]$[][][
@@ -2196,7 +2188,7 @@ Overfull \hbox (3.91498pt too wide) in paragraph at lines 100--100
  []
 
 
-Overfull \hbox (94.97496pt too wide) in paragraph at lines 100--100
+Overfull \hbox (94.97496pt too wide) in paragraph at lines 96--96
 [][]\TU/LibertinusSerif(0)/m/n/10 Hartman, Steven Lee (2003a). \TU/LibertinusSe
 rif(0)/m/it/10 Modeling Phonological Change\TU/LibertinusSerif(0)/m/n/10 . \TU/
 LibertinusSerif(0)/m/sc/10 url\TU/LibertinusSerif(0)/m/n/10 : [][]$[][][][][] [
@@ -2205,7 +2197,7 @@ LibertinusSerif(0)/m/sc/10 url\TU/LibertinusSerif(0)/m/n/10 : [][]$[][][][][] [
  []
 
 [2]
-Overfull \hbox (21.64708pt too wide) in paragraph at lines 102--102
+Overfull \hbox (21.64708pt too wide) in paragraph at lines 98--98
 \TU/LibertinusSerif(0)/m/n/10 quences in Romance”. In: \TU/LibertinusSerif(0)/m
 /it/10 Phonology \TU/LibertinusSerif(0)/m/n/10 24, pp. 37–75. \TU/LibertinusSer
 if(0)/m/sc/10 doi\TU/LibertinusSerif(0)/m/n/10 : [][]$[][][][][] [] [] [] [][][
@@ -2213,37 +2205,27 @@ if(0)/m/sc/10 doi\TU/LibertinusSerif(0)/m/n/10 : [][]$[][][][][] [] [] [] [][][
  []
 
 LaTeX Font Info:    Trying to load font information for T3+LibertinusSerif(0) o
-n input line 102.
-LaTeX Font Info:    No file T3LibertinusSerif(0).fd. on input line 102.
+n input line 98.
+LaTeX Font Info:    No file T3LibertinusSerif(0).fd. on input line 98.
 
 LaTeX Font Warning: Font shape `T3/LibertinusSerif(0)/m/n' undefined
-(Font)              using `T3/cmr/m/n' instead on input line 102.
-
-
-Overfull \hbox (27.36725pt too wide) in paragraph at lines 102--102
-\TU/LibertinusSerif(0)/m/it/10 paulinas\TU/LibertinusSerif(0)/m/n/10 . Spanish 
-Biblical Texts. Digital Library of Old Spanish Texts. \TU/LibertinusSerif(0)/m/
-sc/10 url\TU/LibertinusSerif(0)/m/n/10 : [][]$[][][][] [] [] [] [][][] [] [][][
-][][][][][][][][][][][][][] []
- []
+(Font)              using `T3/cmr/m/n' instead on input line 98.
 
 [3] [4] (./concise.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-runsystem(rm concise.pyg)...executed.
 
 Package logreq Info: Writing requests to 'concise.run.xml'.
 \openout1 = `concise.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 54254 strings out of 477220
- 1171849 string characters out of 5832721
- 2139659 words of memory out of 5000000
- 73180 multiletter control sequences out of 15000+600000
- 409087 words of font info for 94 fonts, out of 8000000 for 9000
+ 54038 strings out of 477220
+ 1168560 string characters out of 5832721
+ 2138537 words of memory out of 5000000
+ 72977 multiletter control sequences out of 15000+600000
+ 409079 words of font info for 93 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 116i,7n,116p,1603b,4940s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 116i,7n,116p,1603b,4970s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on concise.pdf (4 pages).

@@ -13,25 +13,22 @@ datatype nucleus = Monophthong of vowel
 datatype coda = ZeroCoda
               | Codetta of consonant
               | CodaC of consonant * consonant
-
-datatype rhyme = Rhyme of nucleus * coda
+	      | CodaCC of consonant * consonant * consonant
 
 datatype stress = Stressed | Unstressed
 
-datatype syllable = Syllable of onset * rhyme * stress
+datatype syllable = Syllable of onset * nucleus * coda * stress
 						
 (* syllable weight *)
 
 datatype weight = Light | Heavy					    
 
-fun weight (Syllable (_, rhyme, _)) =
-    let fun weight' (Rhyme (Monophthong _, ZeroCoda)) = Light
-	  | weight' _ = Heavy
-    in weight' rhyme end
+(* fun weight (Syllable (_, rhyme, _)) = *)
+(*     let fun weight' (Rhyme (Monophthong _, ZeroCoda)) = Light *)
+(* 	  | weight' _ = Heavy *)
+(*     in weight' rhyme end *)
 
 (* assign stress *)
-
-	
 						    
 (* print syllables *)
 						    
@@ -48,15 +45,15 @@ fun nucToStr (Monophthong v) = vocToStr v
 fun codToStr ZeroCoda = ""
   | codToStr (Codetta cons) = consToStr cons
   | codToStr (CodaC (cons1, cons2)) = (consToStr cons1) ^ (consToStr cons2)
+  | codToStr (CodaCC (cons1, cons2, cons3)) = (consToStr cons1) ^ (consToStr cons2) ^ (consToStr cons3)
 
-fun rhymToStr (Rhyme (nuc, cod)) = (nucToStr nuc) ^ (codToStr cod)
-
-fun syllToStr (Syllable (onset, rhyme, stress)) =
-    let val o' = onsToStr onset
-	val r' = rhymToStr rhyme
+fun syllToStr (Syllable (on, nuc, cod, stress)) =
+    let val on' = onsToStr on
+	val nuc' = nucToStr nuc
+	val cod' = codToStr cod
     in if stress = Stressed
-       then "[|" ^ o' ^ r' ^ "|]"
-       else "[" ^ o' ^ r' ^ "]"
+       then "[|" ^ on' ^ nuc' ^ cod' ^ "|]"
+       else "[" ^ on' ^ nuc' ^ cod' ^ "]"
     end
 
 (* phonological word *)
