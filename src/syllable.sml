@@ -65,4 +65,6 @@ type pWord = syllable list
 fun pWordToStr [] = ""
   | pWordToStr (x :: xs) = (syllToStr x) ^ (pWordToStr xs)
 
+fun pWordToStrLn pword = (pWordToStr pword) ^ "\n"
+
 fun printPWord pword = (print o pWordToStr) pword						  

@@ -25,8 +25,8 @@ fun mkSyllF (Onsetism f) (Syllable (on, nuc, cod, stress))
     = let val cod' = f cod
       in Syllable (on, nuc, cod', stress) end
           
-fun mkSyllabism (r : rewrite) context 
-    = let val f = mkSyllF r
+fun mkSyllabism rewrite context 
+    = let val f = mkSyllF rewrite
       in Syllabism (f, context) end
 
 (* sound changes with a name *)
@@ -43,6 +43,8 @@ fun mkSoundChange (Syllabism (f, context)) name
 (* reflext with its phonological history *)
 
 datatype reflex = Reflex of pWord * string
+
+fun mkRefl pword name = Reflex (pword, name)
 	 
 (* apply the sound change to a word and keep a record of its history *)
 
@@ -56,12 +58,12 @@ fun apply (SoundChange (f, name)) (Reflex (pword, history))
 			 else history ^ (newHistory pword pword' name)
       in Reflex (pword', history') end
 
-(* chain shift *)    
-
-(* type chainShift = soundChange list *)	 
-
 (* print reflex *)
 
 (* datatype reflex = Reflex of pWord * string (* this string is the phonological history of this reflex *)	  *)
 
-(* fun printRefl (Reflex (_, history)) = print history	  *)
+fun printRefl (Reflex (_, history)) = print history
+
+(* chain shift *)    
+
+(* type chainShift = soundChange list *)	 

@@ -3,16 +3,19 @@ use "syllable.sml";
 use "sound_change.sml";
 
 local val lu =
-	  let val on = Onset seg_l
+          let val on = Onset seg_l
 	      val nuc = Monophthong seg_u
 	      val cod = ZeroCoda
-	  in Syllable (on, nuc, cod, Stressed) end
+          in Syllable (on, nuc, cod, Stressed) end
       val pu =
-	  let val on = Onset seg_p
+          let val on = Onset seg_p
 	      val nuc = Monophthong seg_u
 	      val cod = ZeroCoda
-	  in Syllable (on, nuc, cod, Unstressed) end
-in val lupu = Reflex ([lu, pu], "") end
+          in Syllable (on, nuc, cod, Unstressed) end
+in val lupu : reflex = mkRefl [lu, pu] ""
+end
+
+(* in val lupu : reflex = Reflex ([lu, pu], "") end *)
 
 (* local val ca = *)
 (* 	  let val onset = Onset seg_k *)
