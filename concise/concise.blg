@@ -1,15 +1,15 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'concise.blg'
-[59] biber:340> INFO - === Sat Nov 12, 2022, 23:01:57
-[69] Biber.pm:415> INFO - Reading 'concise.bcf'
-[118] Biber.pm:949> INFO - Using all citekeys in bib section 0
-[127] Biber.pm:4340> INFO - Processing section 0
-[134] Biber.pm:4531> INFO - Looking for bibtex format file 'concise.bib' for section 0
-[137] bibtex.pm:1689> INFO - LaTeX decoding ...
-[170] bibtex.pm:1494> INFO - Found BibTeX data source 'concise.bib'
-[389] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[389] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[389] Biber.pm:4168> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-US'
-[389] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[423] bbl.pm:654> INFO - Writing 'concise.bbl' with encoding 'UTF-8'
-[442] bbl.pm:757> INFO - Output to concise.bbl
+[400] biber:340> INFO - === Wed Nov 16, 2022, 05:40:44
+[467] Biber.pm:415> INFO - Reading 'concise.bcf'
+[536] Biber.pm:949> INFO - Using all citekeys in bib section 0
+[547] Biber.pm:4340> INFO - Processing section 0
+[558] Biber.pm:4531> INFO - Looking for bibtex format file 'concise.bib' for section 0
+[560] bibtex.pm:1689> INFO - LaTeX decoding ...
+[601] bibtex.pm:1494> INFO - Found BibTeX data source 'concise.bib'
+[915] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[915] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[915] Biber.pm:4168> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-US'
+[915] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[961] bbl.pm:654> INFO - Writing 'concise.bbl' with encoding 'UTF-8'
+[990] bbl.pm:757> INFO - Output to concise.bbl
