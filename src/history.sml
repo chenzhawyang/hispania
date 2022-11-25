@@ -24,7 +24,7 @@ val loss_quant : soundChange
 structure Dehiaticization = struct
 
 end
-                                
+
 (* great merger *)
 
 fun great_merger_subst (Monophthong v)
@@ -121,7 +121,7 @@ val deasp = let val syllabism = mkSyllabism deasp_rewrite NoContext
                 val name = "Deaspiration of [h]"
             in mkSoundChange syllabism name end
 
-(* fortition of word-initial [w]*)
+(* fortition of [w]*)
 
 fun fortition_w_subst onset
     = case onset of
@@ -136,149 +136,189 @@ val fortition_w = let val syllabism = mkSyllabism fortition_w_rewrite NoContext
                       val name = "Fortition of [w]"
                   in mkSoundChange syllabism name end
 
+(* fortition of [j] *)
+
+structure FortitionJ = struct
+    fun subst onset
+        = case onset of
+              Onset on => if on = seg_j
+                          then Onset seg_dg
+                          else onset
+            | _ => onset
+
+    val sound_change =
+        let val rewrite = Onsetism subst
+            val syllabism = mkSyllabism rewrite NoContext
+            val name = "Fortition of [j]"
+        in mkSoundChange syllabism name end
+end
+
+val fortition_j = FortitionJ.sound_change
+
+(* prothesis *)
+
+structure Prothesis = struct
+    val proclitic = let val on = ZeroOnset
+                        val nuc = Monophthong seg_i
+                        val cod = Codetta seg_s
+                    in Syllable (on, nuc, cod, Unstressed) end
+
+    fun prothesize syll =
+        let val Syllable (on, nuc, cod, stress) = syll
+            val on' = case on of
+                          POnset (cons1, cons2) => Onset cons2
+                        | POnsetM (cons1, cons2, cons3) => OnsetM (cons2, cons3)
+                        | _ => on
+            val syll' = Syllable (on', nuc, cod, stress)
+        in (proclitic, syll') end
+
+    fun pred [] = false
+      | pred (x :: xs)
+        = let val Syllable (on, nuc, cod, stress) = x
+          in
+              case on of
+                  POnset (cons1, cons2) => (cons1 = seg_s)
+                | POnsetM (cons1, cons2, cons3) => (cons1 = seg_s)
+                | _ => false
+          end
+
+    fun pWordF pword =
+        let val (x :: xs) = pword
+        in
+            if pred pword
+            then let val (syll1, syll2) = prothesize x
+                 in (syll1 :: syll2 :: xs) end
+            else pword
+        end
+
+    val sound_change = let val name = "Prothesis"
+                       in SoundChange (pWordF, name) end
+end
+
+val prothesis = Prothesis.sound_change
+
 (* palatalization *)
 
 structure Palatalize = struct
-    fun palatalize_subst input output onset =
+    fun mkSubst input output onset =
         case onset of
             Onset cons => if cons = input
                           then Onset output
                           else onset
           | _ => onset
 
-    fun mkSyllF onsetism syll =
-        let val (Syllable (onset, nuc, cod, stress)) = syll
-            val onset' = onsetism onset
-        in Syllable (onset', nuc, cod, stress) end
+    fun mkPal input output nucleusism pred name =
+        let val subst = mkSubst input output
+            fun f syll =
+                let val Syllable (on, nuc, cod, stress) = syll
+                    val on' = subst on
+                    val nuc' = nucleusism nuc
+                in Syllable (on', nuc', cod, stress) end
+            val syllabism = Syllabism (f, pred)
+        in mkSoundChange syllabism name end
+end
 
-    fun mkPalPred (nuc_pred : nucleus -> bool) syll =
-        let val (Syllable (_, nuc, _, _)) = syll
-        in nuc_pred nuc end
+fun id x = x
+
+structure PrRomDentalPalatalization = struct
+    fun mkDentPal input output =
+        let fun nucleusism nuc =
+                case nuc of
+                    Diphthong (v1, v2) => Monophthong v2
+                  | _ => nuc
+            fun p syll =
+                let val Syllable (on, nuc, cod, stress) = syll
+                    val onset_context =
+                        case on of
+                            Onset cons => cons = input
+                          | _ => false
+                    val nuc_context =
+                        case nuc of
+                            Diphthong (v1, v2) => v1 = seg_i
+                          | _ => false
+                in onset_context andalso nuc_context end
+            val pred = Predicate p
+            val name = "Palatalization of [" ^ consToStr input ^ "]"
+        in Palatalize.mkPal input output nucleusism pred name end
+end
+
+structure PrRomVelarPalatalization = struct
+    fun mkVelarPal input output =
+        let fun nucleusism nuc =
+                case nuc of
+                    Monophthong _ => nuc
+                  | Diphthong (v1, v2) => Monophthong v2
+                  | _ => nuc
+            fun p syll =
+                let val Syllable (on, nuc, cod, stress) = syll
+                    val onset_context =
+                        case on of
+                            Onset cons => cons = input
+                          | _ => false
+                    val nuc_context =
+                        case nuc of
+                            Monophthong v =>
+                            v = seg_i orelse v = seg_e orelse v = seg_e'
+                          |  Diphthong (v1, v2) => v1 = seg_i
+                          | _ => false
+                in onset_context andalso nuc_context end
+            val pred = Predicate p
+            val name = "Palatalization of [" ^ consToStr input ^ "]"
+        in Palatalize.mkPal input output nucleusism pred name end
 end
 
 (* palatalization of [t] *)
 
-structure PalatalizeT = struct
-    val subst =
-        let val input = seg_t
-            val output = seg_ts
-        in Palatalize.palatalize_subst input output end
-
-    fun nuc_context (Monophthong v) = (v = seg_i)
-      | nuc_context (Diphthong (v1, v2)) = (v1 = seg_i)
-      | nuc_context _ = false
-
-    fun syllF onsetism syll =
-        let val Syllable (on, nuc, cod, stress) = syll
-            val on' = onsetism on
-            val nuc' = case nuc of
-                           Monophthong _ => nuc
-                         | Diphthong (v1, v2) => Monophthong v2
-                         | _ => nuc
-        in Syllable (on', nuc', cod, stress) end
-
-    val syllabism = let val context = Palatalize.mkPalPred nuc_context
-                    in Syllabism (syllF subst, Predicate context) end
-
-    val sound_change = let val name = "Palatalization of [t]"
-                       in mkSoundChange syllabism name end
-end
-
-val palatalize_t = PalatalizeT.sound_change
+val palatalize_t = PrRomDentalPalatalization.mkDentPal seg_t seg_ts
 
 (* palatalization of [d] *)
 
-structure PalatalizeD = struct
-    val subst =
-        let val input = seg_d
-            val output = seg_dg
-        in Palatalize.palatalize_subst input output end
-
-    fun nuc_context (Monophthong v) = (v = seg_i)
-      | nuc_context (Diphthong (v1, v2)) = (v1 = seg_i)
-      | nuc_context _ = false
-
-    fun syllF onsetism syll =
-        let val Syllable (on, nuc, cod, stress) = syll
-            val on' = onsetism on
-            val nuc' = case nuc of
-                           Monophthong _ => nuc
-                         | Diphthong (v1, v2) => Monophthong v2
-                         | _ => nuc
-        in Syllable (on', nuc', cod, stress) end
-
-    val syllabism = let val context = Palatalize.mkPalPred nuc_context
-                    in Syllabism (syllF subst, Predicate context) end
-
-    val sound_change = let val name = "Palatalization of [d]"
-                       in mkSoundChange syllabism name end
-end
-
-val palatalize_d = PalatalizeD.sound_change
+val palatalize_d = PrRomDentalPalatalization.mkDentPal seg_d seg_dg
 
 (* palatalization of [k] *)
 
-structure PalatalizeK = struct
-    val subst =
-        let val input = seg_k
-            val output = seg_ch
-        in Palatalize.palatalize_subst input output end
-
-    fun nuc_context (Monophthong v) =
-        if v = seg_i orelse v = seg_e orelse v = seg_e'
-        then true
-        else false
-      | nuc_context (Diphthong (v1, v2)) = (v1 = seg_i)
-      | nuc_context nuc = false
-
-    val syll_context = Palatalize.mkPalPred nuc_context
-
-    val sound_change =
-        let val syllabism = let val syllF = Palatalize.mkSyllF subst
-                                val pred = Predicate syll_context
-                            in Syllabism (syllF, pred) end
-            val name = "Palatalization of [k]"
-        in mkSoundChange syllabism name end
-
-end
-
-val palatalize_k = PalatalizeK.sound_change
+val palatalize_k = PrRomVelarPalatalization.mkVelarPal seg_k seg_ch
 
 (* palatalization of [g] *)
 
-structure PalatalizeG = struct
-    val palatalize_g_subst =
-        let val input = seg_g
-            val output = seg_dg
-        in Palatalize.palatalize_subst input output end
+val palatalize_g = PrRomVelarPalatalization.mkVelarPal seg_g seg_dg
 
-    fun nuc_context (Monophthong v) =
-        if v = seg_i orelse v = seg_e orelse v = seg_e'
-        then true
-        else false
-      | nuc_context (Diphthong (v1, v2)) = (v1 = seg_i)
-      | nuc_context nuc = false
+(* palatalization of [l] *)
 
-    val syll_context = Palatalize.mkPalPred nuc_context
-
-    val palatalize_g =
-        let val syllabism = let val syllF = Palatalize.mkSyllF palatalize_g_subst
-                                val pred = Predicate syll_context
-                            in Syllabism (syllF, pred) end
-            val name = "Palatalization of [g]"
-        in mkSoundChange syllabism name end
+structure PrRomLateralPalatalization = struct
+    fun mkLatPal input output = 
+        let fun nucleusism nuc =
+                case nuc of
+                    Diphthong (v1, v2) => Monophthong v2
+                  | _ => nuc
+            fun p syll =
+                let val Syllable (on, nuc, cod, stress) = syll
+                    val onset_context =
+                        case on of
+                            Onset cons => cons = input
+                          | _ => false
+                    val nuc_context =
+                        case nuc of
+                            Diphthong (v1, v2) => v1 = seg_i
+                          | _ => false
+                in onset_context andalso nuc_context end
+            val pred = Predicate p
+            val name = "Palatalization of [" ^ consToStr input ^ "]"
+        in Palatalize.mkPal input output nucleusism pred name end
 end
 
-val palatalize_g = PalatalizeG.palatalize_g
+val palatalize_l = PrRomLateralPalatalization.mkLatPal seg_l seg_lh
 
 (* proto-romance consonantal shift *)
 
 local val sc1 = elide_m
       val sc2 = deasp
-in val prRom_early_cons_shift = [sc1, sc2] end
+      val sc3 = prothesis
+in val prRom_early_cons_shift = [sc1, sc2, sc3] end
 
 local val sc1 = fortition_w
-in val prRom_cons_shift = [sc1] end
+      val sc2 = fortition_j
+in val prRom_cons_shift = [sc1, sc2] end
 
 local val sc1 = palatalize_t
     val sc2 = palatalize_d
@@ -288,13 +328,17 @@ local val sc1 = palatalize_g
       val sc2 = palatalize_k
 in val velar_palatalizations = [sc1, sc2] end
 
+local val sc1 = palatalize_l
+in val sonorant_palatalizations = [sc1] end
+
 (* proto-romance sound changes *)
 
 local val consonantism_1 = prRom_early_cons_shift
       val vocalism = prRom_vowel_shift
       val consonantism_2 = prRom_cons_shift
-      val palatalizations = dental_palatalizations @ velar_palatalizations
-in val prRom_lang_shift = [consonantism_1, vocalism, consonantism_2, palatalizations] end
+      val palatalizations = dental_palatalizations @ velar_palatalizations @ sonorant_palatalizations
+in val prRom_lang_shift = [consonantism_1, vocalism, consonantism_2, palatalizations]
+end
 
 (* western romance vocalism *)
 
@@ -344,7 +388,7 @@ structure Lenition = struct
     fun mkSubstF f onset =
         case onset of
             Onset cons => Onset (f cons)
-          | OnsetM (cons1, cons2) => let val cons1' = f cons1 
+          | OnsetM (cons1, cons2) => let val cons1' = f cons1
                                      in OnsetM (cons1', cons2) end
           | _ => onset
 
@@ -353,23 +397,23 @@ structure Lenition = struct
             val on' = f on
         in Syllable (on', nuc, cod, stress) end
 
-    local 
-        fun context syll1 syll2 = 
+    local
+        fun context syll1 syll2 =
             let fun context1 syll =
                     let val Syllable (on, nuc, cod, stress) = syll
                     in case cod of
                            ZeroCoda => true
                          | _ => false
                     end
-                fun context2 syll = 
+                fun context2 syll =
                     let val Syllable (on, nuc, cod, stress) = syll
-                    in case on of 
+                    in case on of
                            Onset _ => true
                          | OnsetM _ => true
                          | _ => false
                     end
             in (context1 syll1) andalso (context2 syll2) end
-    in 
+    in
         fun mkPWordF f pword =
             case pword of
                 [] => pword
@@ -436,6 +480,12 @@ val diph_open_o = let val syllabism = mkSyllabism diph_open_o_rewrite (Predicate
                       val name = "Diphthongization of [\201\148]"
                    in mkSoundChange syllabism name end
 
+(* apocope *)
+
+structure Apocope = struct
+        
+end
+
 (* old spanish vowel shift *)
 
 local val sc1 = diph_epsilon_2
@@ -443,6 +493,53 @@ local val sc1 = diph_epsilon_2
 in val OSp_vowel_shift = [sc1, sc2] end
 
 (* old spanish consonantism *)
+
+(* spirantization of [lh] *)
+
+structure SpirantizationLL = struct
+    fun subst onset =
+        case onset of 
+            Onset cons => if cons = seg_lh
+                          then Onset seg_zh
+                          else onset
+          | _ => onset
+
+    val sound_change = 
+        let val rewrite = Onsetism subst
+            val syllabism = mkSyllabism rewrite NoContext
+            val name = "Spirantization of [\202\142]"
+        in mkSoundChange syllabism name end
+end
+
+val spirantize_lh = SpirantizationLL.sound_change
+
+(* debuccalization of [phi] *)
+
+structure Debuccalization = struct
+    fun subst onset =
+        case onset of
+            Onset cons => if cons = seg_ph
+                          then Onset seg_h
+                          else onset
+          | _ => onset
+
+    fun p syll = 
+        let val Syllable (on, nuc, cod, stress) = syll
+        in case nuc of
+               Diphthong (v1, v2) => not (v1 = seg_u)
+             | _ => true
+        end
+
+    val sound_change =
+        let val syllabism =
+                let val rewrite = Onsetism subst
+                    val pred = Predicate p
+                in mkSyllabism rewrite pred end
+            val name = "Debuccalization of [\201\184]"
+        in mkSoundChange syllabism name end
+end
+
+val debuccalize_f = Debuccalization.sound_change
 
 (* fronting of palatal affricates *)
 
@@ -481,8 +578,10 @@ val lenition_2 = LenitionII.sound_change
 (* old spanish consonantal shifts *)
 
 local val sc1 = fronting_palatal
-      val sc2 = lenition_2
-in val OSp_cons_shift = [sc1, sc2] end
+      val sc2 = debuccalize_f
+      val sc3 = lenition_2
+      val sc4 = spirantize_lh                        
+in val OSp_cons_shift = [sc1, sc2, sc3, sc4] end
 
 (* old spanish sound changes *)
 
@@ -513,6 +612,25 @@ structure Betacism = struct
 end
 
 val betacism = Betacism.sound_change
+
+(* labiodentalization *)
+
+structure Labiodentalization = struct
+    fun subst onset =
+        case onset of
+            Onset cons => if cons = seg_ph
+                          then Onset seg_f
+                          else onset
+          | _ => onset
+
+    val sound_change =
+        let val rewrite = Onsetism subst
+            val syllabism = mkSyllabism rewrite NoContext
+            val name = "Labiodentalization of [\201\184]"
+        in mkSoundChange syllabism name end 
+end
+
+val labiodentalization = Labiodentalization.sound_change
 
 (* deaffrication of [dg] *)
 
@@ -632,11 +750,13 @@ val retraction_sh = let val syllabism = mkSyllabism retraction_sh_rewrite NoCont
 (* modern spanish consonantal shift *)
 
 local val sc1 = betacism
-in val Es_cons_shift = [sc1] end
+      val sc2 = deasp
+      val sc3 = labiodentalization
+in val Es_cons_shift = [sc1, sc2, sc3] end
 
 local val sc1 = deaffric_dg
-      val sc2 = devoice_sibil
-      val sc3 = deaffric_dent
+      val sc2 = deaffric_dent
+      val sc3 = devoice_sibil
       val sc4 = desibil_dent
       val sc5 = retraction_sh
 in val Es_sibil_shift = [sc1, sc2, sc3, sc4, sc5] end

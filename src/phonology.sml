@@ -1,33 +1,33 @@
 datatype height = Low
-		| LowMid
-		| Mid
-		| HighMid
-		| High
+                | LowMid
+                | Mid
+                | HighMid
+                | High
 
 datatype centrality = Front
-		    | Central
-		    | Back
+                    | Central
+                    | Back
 
 datatype vowel = Vowel of height * centrality
 
 datatype voice = Voiced | Voiceless
 
 datatype place = Bilabial | Labiodental
-	       | Dental
-	       | Alveolar
-	       | Palatal
-	       | Velar | Labiovelar
-	       | Glottal
+               | Dental
+               | Alveolar
+               | Palatal
+               | Velar | Labiovelar
+               | Glottal
 
 datatype manner = Nasal
-		| Stop
-		| NonSibil
-		| Sibilant
-		| Affricate
-		| Approximant
-		| Tap
-		| Trill
-		| Lateral
+                | Stop
+                | NonSibil
+                | Sibilant
+                | Affricate
+                | Approximant
+                | Tap
+                | Trill
+                | Lateral
 
 datatype consonant = Consonant of voice * place * manner
 
@@ -57,6 +57,8 @@ val seg_b = Consonant (Voiced, Bilabial, Stop)
 val seg_ph = Consonant (Voiceless, Bilabial, NonSibil)
 val seg_bh = Consonant (Voiced, Bilabial, NonSibil)
 val seg_m = Consonant (Voiced, Bilabial, Nasal)
+
+val seg_f = Consonant (Voiceless, Labiodental, NonSibil)
 
 val seg_t = Consonant (Voiceless, Dental, Stop)
 val seg_d = Consonant (Voiced, Dental, Stop)
@@ -104,6 +106,7 @@ fun consToStr (Consonant (Voiceless, Bilabial, Stop)) = "p"
   | consToStr (Consonant (Voiceless, Bilabial, NonSibil)) = "\201\184"
   | consToStr (Consonant (Voiced, Bilabial, NonSibil)) = "\206\178"
   | consToStr (Consonant (Voiced, Bilabial, Nasal)) = "m"
+  | consToStr (Consonant (Voiceless, Labiodental, NonSibil)) = "f"
   | consToStr (Consonant (Voiceless, Dental, Stop)) = "t"
   | consToStr (Consonant (Voiced, Dental, Stop)) = "d"
   | consToStr (Consonant (Voiceless, Dental, NonSibil)) = "\206\184"
@@ -137,19 +140,19 @@ fun consToStr (Consonant (Voiceless, Bilabial, Stop)) = "p"
   | consToStr _ = "()"
 
 datatype onset = ZeroOnset
-	       | Onset of consonant
+               | Onset of consonant
                | POnset of consonant * consonant
                | OnsetM of consonant * consonant
-	       | POnsetM of consonant * consonant * consonant
+               | POnsetM of consonant * consonant * consonant
 
 datatype nucleus = Monophthong of vowel
-		 | Diphthong of vowel * vowel
-		 | LongVowel of vowel
+                 | Diphthong of vowel * vowel
+                 | LongVowel of vowel
 
 datatype coda = ZeroCoda
               | Codetta of consonant
               | CodaC of consonant * consonant
-	      | CodaCC of consonant * consonant * consonant
+              | CodaCC of consonant * consonant * consonant
 
 datatype stress = Stressed | Unstressed
 
@@ -161,7 +164,7 @@ datatype weight = Light | Heavy
 
 (* fun weight (Syllable (_, rhyme, _)) = *)
 (*     let fun weight' (Rhyme (Monophthong _, ZeroCoda)) = Light *)
-(* 	  | weight' _ = Heavy *)
+(*        | weight' _ = Heavy *)
 (*     in weight' rhyme end *)
 
 (* assign stress *)
@@ -185,8 +188,8 @@ fun codToStr ZeroCoda = ""
 
 fun syllToStr (Syllable (on, nuc, cod, stress)) =
     let val on' = onsToStr on
-	val nuc' = nucToStr nuc
-	val cod' = codToStr cod
+        val nuc' = nucToStr nuc
+        val cod' = codToStr cod
     in if stress = Stressed
        then "'" ^ on' ^ nuc' ^ cod'
        else on' ^ nuc' ^ cod'
@@ -209,8 +212,8 @@ fun printPWord pword = (print o pWordToStr) pword
 (* rewrites that changes a constituent of the syllable *)
 
 datatype rewrite = Onsetism of (onset -> onset)
-		 | Nucleusism of (nucleus -> nucleus)
-		 | Codism of (coda -> coda)
+                 | Nucleusism of (nucleus -> nucleus)
+                 | Codism of (coda -> coda)
 
 (* syllabism that rewrites a syllable to another *)
 
@@ -276,9 +279,9 @@ fun newHistory pword1 pword2 name
 
 fun applySC (SoundChange (f, name)) (Reflex (pword, history))
     = let val pword' = f pword
-	  val history' = if pword = pword'
-			 then history
-			 else history ^ (newHistory pword pword' name)
+          val history' = if pword = pword'
+                         then history
+                         else history ^ (newHistory pword pword' name)
       in Reflex (pword', history') end
 
 (* print reflex *)

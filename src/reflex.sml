@@ -1,5 +1,35 @@
 use "history.sml";
 
+(* numerals *)
+
+local val sep = let val on = Onset seg_s
+                    val nuc = Monophthong seg_e
+                    val cod = Codetta seg_p
+                in Syllable (on, nuc, cod, Stressed) end
+      val tem = let val on = Onset seg_t
+                    val nuc = Monophthong seg_e
+                    val cod = Codetta seg_m
+                in Syllable (on, nuc, cod, Unstressed) end
+      val pword = [sep, tem]
+in val septem_lat = mkEtymon pword end
+
+val septem_refl = MenendezPidal historia septem_lat
+
+local val de = let val on = Onset seg_d
+                   val nuc = Monophthong seg_e
+                   val cod = ZeroCoda
+               in Syllable (on, nuc, cod, Stressed) end
+      val cem = let val on = Onset seg_k
+                    val nuc = Monophthong seg_e
+                    val cod = Codetta seg_m
+                in Syllable (on, nuc, cod, Unstressed) end
+      val pword = [de, cem]
+in val decem_lat = mkEtymon pword end
+
+val decem_refl = MenendezPidal historia decem_lat
+
+(* misc. nouns *)
+
 local val lu =
           let val on = Onset seg_l
 	      val nuc = Monophthong seg_u
@@ -144,30 +174,86 @@ in val casam_lat = mkEtymon pword end
 
 val casam_refl = MenendezPidal historia casam_lat
 
-(* numerals *)
-
-local val sep = let val on = Onset seg_s
-                    val nuc = Monophthong seg_e
-                    val cod = Codetta seg_p
-                in Syllable (on, nuc, cod, Stressed) end
-      val tem = let val on = Onset seg_t
-                    val nuc = Monophthong seg_e
-                    val cod = Codetta seg_m
-                in Syllable (on, nuc, cod, Unstressed) end
-      val pword = [sep, tem]
-in val septem_lat = mkEtymon pword end
-
-val septem_refl = MenendezPidal historia septem_lat
-
-local val de = let val on = Onset seg_d
-                   val nuc = Monophthong seg_e
+local val luu = let val on = Onset seg_l
+                   val nuc = LongVowel seg_u
                    val cod = ZeroCoda
                in Syllable (on, nuc, cod, Stressed) end
       val cem = let val on = Onset seg_k
                     val nuc = Monophthong seg_e
                     val cod = Codetta seg_m
                 in Syllable (on, nuc, cod, Unstressed) end
-      val pword = [de, cem]
-in val decem_lat = mkEtymon pword end
+      val pword = [luu, cem]
+in val luucem_lat = mkEtymon pword end
 
-val decem_refl = MenendezPidal historia decem_lat
+val luucem_refl = MenendezPidal historia luucem_lat 
+
+local val scho = let val on = let val cons1 = seg_s
+                                  val cons2 = seg_k
+                              in POnset (cons1, cons2) end
+                     val nuc = Monophthong seg_o
+                     val cod = ZeroCoda
+                 in Syllable (on, nuc, cod, Stressed) end
+      val lam = let val on = Onset seg_l
+                    val nuc = Monophthong seg_a
+                    val cod = Codetta seg_m
+                in Syllable (on, nuc, cod, Unstressed) end
+      val pword = [scho, lam]
+in val scholam_lat = mkEtymon pword end
+
+val scholam_refl = MenendezPidal historia scholam_lat
+
+local val io = let val on = Onset seg_j
+                   val nuc = Monophthong seg_o
+                   val cod = ZeroCoda
+               in Syllable (on, nuc, cod, Stressed) end
+      val cum = let val on = Onset seg_k
+                    val nuc = Monophthong seg_u
+                    val cod = Codetta seg_m
+                in Syllable (on, nuc, cod, Unstressed) end
+      val pword = [io, cum]
+in val iocum_lat = mkEtymon pword end
+
+val iocum_refl = MenendezPidal historia iocum_lat
+
+local val fo = let val on = Onset seg_ph
+                   val nuc = Monophthong seg_o
+                   val cod = ZeroCoda
+               in Syllable (on, nuc, cod, Stressed) end
+      val lia = let val on = Onset seg_l
+                    val nuc = let val v1 = seg_i
+                                  val v2 = seg_a
+                              in Diphthong (v1, v2) end
+                    val cod = ZeroCoda
+                in Syllable (on, nuc, cod, Unstressed) end
+      val pword = [fo, lia]
+in val folia_lat = mkEtymon pword end
+
+val folia_refl = MenendezPidal historia folia_lat
+
+local val fi = let val on = Onset seg_ph
+                   val nuc = LongVowel seg_i
+                   val cod = ZeroCoda
+               in Syllable (on, nuc, cod, Stressed) end
+      val lium = let val on = Onset seg_l
+                     val nuc = let val v1 = seg_i
+                                   val v2 = seg_u
+                               in Diphthong (v1, v2) end
+                     val cod = Codetta seg_m
+                 in Syllable (on, nuc, cod, Unstressed) end
+      val pword = [fi, lium]
+in val filium_lat = mkEtymon pword end
+
+val filium_refl = MenendezPidal historia filium_lat
+
+local val fo = let val on = Onset seg_ph
+                   val nuc = Monophthong seg_o
+                   val cod = ZeroCoda
+               in Syllable (on, nuc, cod, Stressed) end
+      val cum = let val on = Onset seg_k
+                    val nuc = Monophthong seg_u
+                    val cod = Codetta seg_m
+                in Syllable (on, nuc, cod, Unstressed) end
+      val pword = [fo, cum]
+in val focum_lat = mkEtymon pword end
+
+val focum_refl = MenendezPidal historia focum_lat
