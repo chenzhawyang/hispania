@@ -1,6 +1,6 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2022.10.26)  10 NOV 2022 16:53
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2022.11.16)  27 NOV 2022 23:32
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **slides.tex
 (./slides.tex
@@ -753,16 +753,386 @@ Package: amsthm 2020/05/29 v2.20.6
 \beamer@dimb=\dimen283
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty)))
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeCambridgeUS.sty
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemebeaver.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerfontthemeprofessionalfont
+s.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerfontthemeserif.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2021-01-09 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2020-01-29 L3 backend support: XeTeX
+
+(|extractbb --version)
+\c__kernel_sys_dvipdfmx_version_int=\count319
+\l__color_backend_stack_int=\count320
+\g__graphics_track_int=\count321
+\l__pdf_internal_box=\box73
+\g__pdf_backend_object_int=\count322
+\g__pdf_backend_annotation_int=\count323
+\g__pdf_backend_link_int=\count324
+))
+Package: xparse 2020-10-27 L3 Experimental document command parser
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex))
+Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count325
+\l__fontspec_language_int=\count326
+\l__fontspec_strnum_int=\count327
+\l__fontspec_tmp_int=\count328
+\l__fontspec_tmpa_int=\count329
+\l__fontspec_tmpb_int=\count330
+\l__fontspec_tmpc_int=\count331
+\l__fontspec_em_int=\count332
+\l__fontspec_emdef_int=\count333
+\l__fontspec_strong_int=\count334
+\l__fontspec_strongdef_int=\count335
+\l__fontspec_tmpa_dim=\dimen284
+\l__fontspec_tmpb_dim=\dimen285
+\l__fontspec_tmpc_dim=\dimen286
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+
+Package fontspec Info: Font family 'LibertinusSerif(0)' created for font
+(fontspec)             'Libertinus Serif' with options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Libertinus
+(fontspec)             Serif/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Libertinus
+(fontspec)             Serif/OT:script=latn;language=dflt;+smcp;mapping=tex-tex
+t;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Libertinus
+(fontspec)             Serif/B/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"Libertinus
+(fontspec)             Serif/B/OT:script=latn;language=dflt;+smcp;mapping=tex-t
+ext;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Libertinus
+(fontspec)             Serif/I/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"Libertinus
+(fontspec)             Serif/I/OT:script=latn;language=dflt;+smcp;mapping=tex-t
+ext;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Libertinus
+(fontspec)             Serif/BI/OT:script=latn;language=dflt;mapping=tex-text;"
+
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"Libertinus
+(fontspec)             Serif/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-
+text;"
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/unicode-math/unicode-math.sty
+Package: unicode-math 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
+Package: unicode-math-xetex 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLa
+TeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2020-10-27 LaTeX2e option processing using LaTeX3 keys
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+))
+\g__um_fam_int=\count336
+\g__um_fonts_used_int=\count337
+\l__um_primecount_int=\count338
+\g__um_primekern_muskip=\muskip18
+
+(/usr/share/texlive/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex)))
+
+Package fontspec Info: Could not resolve font "Libertinus Math/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Font family 'LibertinusMath(0)' created for font
+(fontspec)             'Libertinus Math' with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
+=Math].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Libertinus
+(fontspec)             Math/OT:script=math;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+
+Package fontspec Info: Could not resolve font "Libertinus Math/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Font family 'LibertinusMath(1)' created for font
+(fontspec)             'Libertinus Math' with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
+=Math,SizeFeatures={{Size=9.855-},{Size=7.665-9.855,Font=Libertinus
+(fontspec)             Math,Style=MathScript},{Size=-7.665,Font=Libertinus
+(fontspec)             Math,Style=MathScriptScript}}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <9.855->"Libertinus
+(fontspec)             Math/OT:script=math;language=dflt;"<7.665-9.855>"Liberti
+nus
+(fontspec)             Math/OT:script=math;language=dflt;+ssty=0;"<-7.665>"Libe
+rtinus
+(fontspec)             Math/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 9.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/LibertinusMath(1)/m/n on input line 
+9.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 9.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/LibertinusMath(1)/b/n on input line
+ 9.
+
+Package fontspec Info: Libertinus Math scale = 1.0001.
+
+
+Package fontspec Info: Could not resolve font "Libertinus Math/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Libertinus Math scale = 1.0001.
+
+
+Package fontspec Info: Libertinus Math scale = 1.0001.
+
+
+Package fontspec Info: Libertinus Math scale = 1.0001.
+
+
+Package fontspec Info: Font family 'LibertinusMath(2)' created for font
+(fontspec)             'Libertinus Math' with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
+=Math,SizeFeatures={{Size=9.855-},{Size=7.665-9.855,Font=Libertinus
+(fontspec)             Math,Style=MathScript},{Size=-7.665,Font=Libertinus
+(fontspec)             Math,Style=MathScriptScript}},ScaleAgain=1.0001,FontAdju
+stment={\fontdimen
+(fontspec)             8\font =6.351pt\relax \fontdimen 9\font =5.256pt\relax
+(fontspec)             \fontdimen 10\font =5.1465pt\relax \fontdimen 11\font
+(fontspec)             =7.665pt\relax \fontdimen 12\font =5.256pt\relax
+(fontspec)             \fontdimen 13\font =4.10625pt\relax \fontdimen 14\font
+(fontspec)             =4.10625pt\relax \fontdimen 15\font =3.3945pt\relax
+(fontspec)             \fontdimen 16\font =2.2995pt\relax \fontdimen 17\font
+(fontspec)             =2.2995pt\relax \fontdimen 18\font =2.5185pt\relax
+(fontspec)             \fontdimen 19\font =0.49275pt\relax \fontdimen 22\font
+(fontspec)             =2.847pt\relax \fontdimen 20\font =0pt\relax \fontdimen
+(fontspec)             21\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <9.855->s*[1.0001]"Libertinus
+(fontspec)             Math/OT:script=math;language=dflt;"<7.665-9.855>s*[1.000
+1]"Libertinus
+(fontspec)             Math/OT:script=math;language=dflt;+ssty=0;"<-7.665>s*[1.
+0001]"Libertinus
+(fontspec)             Math/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =6.351pt\relax \fontdimen 9\font
+(fontspec)             =5.256pt\relax \fontdimen 10\font =5.1465pt\relax
+(fontspec)             \fontdimen 11\font =7.665pt\relax \fontdimen 12\font
+(fontspec)             =5.256pt\relax \fontdimen 13\font =4.10625pt\relax
+(fontspec)             \fontdimen 14\font =4.10625pt\relax \fontdimen 15\font
+(fontspec)             =3.3945pt\relax \fontdimen 16\font =2.2995pt\relax
+(fontspec)             \fontdimen 17\font =2.2995pt\relax \fontdimen 18\font
+(fontspec)             =2.5185pt\relax \fontdimen 19\font =0.49275pt\relax
+(fontspec)             \fontdimen 22\font =2.847pt\relax \fontdimen 20\font
+(fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 9.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> TU/LibertinusMath(2)/m/n on input line
+ 9.
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 9.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> TU/LibertinusMath(2)/b/n on input line
+ 9.
+
+Package fontspec Info: Libertinus Math scale = 0.9999.
+
+
+Package fontspec Info: Could not resolve font "Libertinus Math/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Libertinus Math scale = 0.9999.
+
+
+Package fontspec Info: Libertinus Math scale = 0.9999.
+
+
+Package fontspec Info: Libertinus Math scale = 0.9999.
+
+
+Package fontspec Info: Font family 'LibertinusMath(3)' created for font
+(fontspec)             'Libertinus Math' with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
+=Math,SizeFeatures={{Size=9.855-},{Size=7.665-9.855,Font=Libertinus
+(fontspec)             Math,Style=MathScript},{Size=-7.665,Font=Libertinus
+(fontspec)             Math,Style=MathScriptScript}},ScaleAgain=0.9999,FontAdju
+stment={\fontdimen
+(fontspec)             8\font =0.71175pt\relax \fontdimen 9\font
+(fontspec)             =1.6425pt\relax \fontdimen 10\font =1.6425pt\relax
+(fontspec)             \fontdimen 11\font =2.7375pt\relax \fontdimen 12\font
+(fontspec)             =6.789pt\relax \fontdimen 13\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <9.855->s*[0.9999]"Libertinus
+(fontspec)             Math/OT:script=math;language=dflt;"<7.665-9.855>s*[0.999
+9]"Libertinus
+(fontspec)             Math/OT:script=math;language=dflt;+ssty=0;"<-7.665>s*[0.
+9999]"Libertinus
+(fontspec)             Math/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =0.71175pt\relax \fontdimen 9\font
+(fontspec)             =1.6425pt\relax \fontdimen 10\font =1.6425pt\relax
+(fontspec)             \fontdimen 11\font =2.7375pt\relax \fontdimen 12\font
+(fontspec)             =6.789pt\relax \fontdimen 13\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 9
+.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> TU/LibertinusMath(3)/m/n on input line
+ 9.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 9.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> TU/LibertinusMath(3)/b/n on input line
+ 9.
+(/usr/share/texlive/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
+Package: xeCJK 2020/10/19 v3.8.6 Typesetting CJK scripts with XeLaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+Package: xtemplate 2020-10-27 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen287
+\l__xtemplate_tmp_int=\count339
+\l__xtemplate_tmp_muskip=\muskip19
+\l__xtemplate_tmp_skip=\skip63
+)
+\l__xeCJK_tmp_int=\count340
+\l__xeCJK_tmp_box=\box74
+\l__xeCJK_tmp_dim=\dimen288
+\l__xeCJK_tmp_skip=\skip64
+
+(/usr/share/texlive/texmf-dist/tex/latex/ctex/ctexhook.sty
+Package: ctexhook 2020/10/19 v2.5.5 Document and package hooks (CTEX)
+)
+\g__xeCJK_space_factor_int=\count341
+\l__xeCJK_begin_int=\count342
+\l__xeCJK_end_int=\count343
+\c__xeCJK_CJK_class_int=\XeTeXcharclass1
+\c__xeCJK_FullLeft_class_int=\XeTeXcharclass2
+\c__xeCJK_FullRight_class_int=\XeTeXcharclass3
+\c__xeCJK_HalfLeft_class_int=\XeTeXcharclass4
+\c__xeCJK_HalfRight_class_int=\XeTeXcharclass5
+\c__xeCJK_NormalSpace_class_int=\XeTeXcharclass6
+\c__xeCJK_CM_class_int=\XeTeXcharclass7
+\c__xeCJK_HangulJamo_class_int=\XeTeXcharclass8
+\l__xeCJK_last_skip=\skip65
+\g__xeCJK_node_int=\count344
+\c__xeCJK_CJK_node_dim=\dimen289
+\c__xeCJK_CJK-space_node_dim=\dimen290
+\c__xeCJK_default_node_dim=\dimen291
+\c__xeCJK_default-space_node_dim=\dimen292
+\c__xeCJK_CJK-widow_node_dim=\dimen293
+\c__xeCJK_normalspace_node_dim=\dimen294
+\l__xeCJK_ccglue_skip=\skip66
+\l__xeCJK_ecglue_skip=\skip67
+\l__xeCJK_punct_kern_skip=\skip68
+\l__xeCJK_last_penalty_int=\count345
+\l__xeCJK_last_bound_dim=\dimen295
+\l__xeCJK_last_kern_dim=\dimen296
+\l__xeCJK_widow_penalty_int=\count346
+
+Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
+(xtemplate)             argument(s) on line 2341.
+
+\l__xeCJK_fixed_punct_width_dim=\dimen297
+\l__xeCJK_mixed_punct_width_dim=\dimen298
+\l__xeCJK_middle_punct_width_dim=\dimen299
+\l__xeCJK_fixed_margin_width_dim=\dimen300
+\l__xeCJK_mixed_margin_width_dim=\dimen301
+\l__xeCJK_middle_margin_width_dim=\dimen302
+\l__xeCJK_bound_punct_width_dim=\dimen303
+\l__xeCJK_bound_margin_width_dim=\dimen304
+\l__xeCJK_margin_minimum_dim=\dimen305
+\l__xeCJK_kerning_total_width_dim=\dimen306
+\l__xeCJK_same_align_margin_dim=\dimen307
+\l__xeCJK_different_align_margin_dim=\dimen308
+\l__xeCJK_kerning_margin_width_dim=\dimen309
+\l__xeCJK_kerning_margin_minimum_dim=\dimen310
+\l__xeCJK_bound_dim=\dimen311
+\l__xeCJK_reverse_bound_dim=\dimen312
+\l__xeCJK_margin_dim=\dimen313
+\l__xeCJK_minimum_bound_dim=\dimen314
+\l__xeCJK_kerning_margin_dim=\dimen315
+\g__xeCJK_family_int=\count347
+\l__xeCJK_fam_int=\count348
+\g__xeCJK_fam_allocation_int=\count349
+\l__xeCJK_verb_case_int=\count350
+\l__xeCJK_verb_exspace_skip=\skip69
+
+(/usr/share/texlive/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
+File: xeCJK.cfg 2020/10/19 v3.8.6 Configuration file for xeCJK package
+))
+
+Package fontspec Info: Could not resolve font "Noto Serif CJK TC/I" (it
+(fontspec)             probably doesn't exist).
+
+
+Package fontspec Info: Font family 'NotoSerifCJKTC(0)' created for font 'Noto
+(fontspec)             Serif CJK TC' with options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Noto Serif CJK
+(fontspec)             TC/OT:script=hani;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Noto Serif CJK
+(fontspec)             TC/B/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Noto Serif
+(fontspec)             CJK TC/BI/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2020/12/31 v3.16 programmable bibliographies (PK/MW)
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count319
+\lrq@indent=\count351
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -770,62 +1140,62 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count320
-\c@listtotal=\count321
-\c@listcount=\count322
-\c@liststart=\count323
-\c@liststop=\count324
-\c@citecount=\count325
-\c@citetotal=\count326
-\c@multicitecount=\count327
-\c@multicitetotal=\count328
-\c@instcount=\count329
-\c@maxnames=\count330
-\c@minnames=\count331
-\c@maxitems=\count332
-\c@minitems=\count333
-\c@citecounter=\count334
-\c@maxcitecounter=\count335
-\c@savedcitecounter=\count336
-\c@uniquelist=\count337
-\c@uniquename=\count338
-\c@refsection=\count339
-\c@refsegment=\count340
-\c@maxextratitle=\count341
-\c@maxextratitleyear=\count342
-\c@maxextraname=\count343
-\c@maxextradate=\count344
-\c@maxextraalpha=\count345
-\c@abbrvpenalty=\count346
-\c@highnamepenalty=\count347
-\c@lownamepenalty=\count348
-\c@maxparens=\count349
-\c@parenlevel=\count350
-\blx@tempcnta=\count351
-\blx@tempcntb=\count352
-\blx@tempcntc=\count353
-\blx@maxsection=\count354
-\blx@maxsegment@0=\count355
-\blx@notetype=\count356
-\blx@parenlevel@text=\count357
-\blx@parenlevel@foot=\count358
-\blx@sectionciteorder@0=\count359
-\blx@entrysetcounter=\count360
-\blx@biblioinstance=\count361
-\labelnumberwidth=\skip63
-\labelalphawidth=\skip64
-\biblabelsep=\skip65
-\bibitemsep=\skip66
-\bibnamesep=\skip67
-\bibinitsep=\skip68
-\bibparsep=\skip69
-\bibhang=\skip70
+\c@tabx@nest=\count352
+\c@listtotal=\count353
+\c@listcount=\count354
+\c@liststart=\count355
+\c@liststop=\count356
+\c@citecount=\count357
+\c@citetotal=\count358
+\c@multicitecount=\count359
+\c@multicitetotal=\count360
+\c@instcount=\count361
+\c@maxnames=\count362
+\c@minnames=\count363
+\c@maxitems=\count364
+\c@minitems=\count365
+\c@citecounter=\count366
+\c@maxcitecounter=\count367
+\c@savedcitecounter=\count368
+\c@uniquelist=\count369
+\c@uniquename=\count370
+\c@refsection=\count371
+\c@refsegment=\count372
+\c@maxextratitle=\count373
+\c@maxextratitleyear=\count374
+\c@maxextraname=\count375
+\c@maxextradate=\count376
+\c@maxextraalpha=\count377
+\c@abbrvpenalty=\count378
+\c@highnamepenalty=\count379
+\c@lownamepenalty=\count380
+\c@maxparens=\count381
+\c@parenlevel=\count382
+\blx@tempcnta=\count383
+\blx@tempcntb=\count384
+\blx@tempcntc=\count385
+\blx@maxsection=\count386
+\blx@maxsegment@0=\count387
+\blx@notetype=\count388
+\blx@parenlevel@text=\count389
+\blx@parenlevel@foot=\count390
+\blx@sectionciteorder@0=\count391
+\blx@entrysetcounter=\count392
+\blx@biblioinstance=\count393
+\labelnumberwidth=\skip70
+\labelalphawidth=\skip71
+\biblabelsep=\skip72
+\bibitemsep=\skip73
+\bibnamesep=\skip74
+\bibinitsep=\skip75
+\bibparsep=\skip76
+\bibhang=\skip77
 \blx@bcfin=\read3
 \blx@bcfout=\write5
 \blx@langwohyphens=\language86
-\c@mincomprange=\count362
-\c@maxcomprange=\count363
-\c@mincompwidth=\count364
+\c@mincomprange=\count394
+\c@maxcomprange=\count395
+\c@mincompwidth=\count396
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -833,91 +1203,91 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 File: blx-dm.def 2020/12/31 v3.16 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'authoryear-comp.dbx' not found.
+Package biblatex Info: ... file 'verbose-ibid.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count365
-\c@savedafterword=\count366
-\c@annotator=\count367
-\c@savedannotator=\count368
-\c@author=\count369
-\c@savedauthor=\count370
-\c@bookauthor=\count371
-\c@savedbookauthor=\count372
-\c@commentator=\count373
-\c@savedcommentator=\count374
-\c@editor=\count375
-\c@savededitor=\count376
-\c@editora=\count377
-\c@savededitora=\count378
-\c@editorb=\count379
-\c@savededitorb=\count380
-\c@editorc=\count381
-\c@savededitorc=\count382
-\c@foreword=\count383
-\c@savedforeword=\count384
-\c@holder=\count385
-\c@savedholder=\count386
-\c@introduction=\count387
-\c@savedintroduction=\count388
-\c@namea=\count389
-\c@savednamea=\count390
-\c@nameb=\count391
-\c@savednameb=\count392
-\c@namec=\count393
-\c@savednamec=\count394
-\c@translator=\count395
-\c@savedtranslator=\count396
-\c@shortauthor=\count397
-\c@savedshortauthor=\count398
-\c@shorteditor=\count399
-\c@savedshorteditor=\count400
-\c@labelname=\count401
-\c@savedlabelname=\count402
-\c@institution=\count403
-\c@savedinstitution=\count404
-\c@lista=\count405
-\c@savedlista=\count406
-\c@listb=\count407
-\c@savedlistb=\count408
-\c@listc=\count409
-\c@savedlistc=\count410
-\c@listd=\count411
-\c@savedlistd=\count412
-\c@liste=\count413
-\c@savedliste=\count414
-\c@listf=\count415
-\c@savedlistf=\count416
-\c@location=\count417
-\c@savedlocation=\count418
-\c@organization=\count419
-\c@savedorganization=\count420
-\c@origlocation=\count421
-\c@savedoriglocation=\count422
-\c@origpublisher=\count423
-\c@savedorigpublisher=\count424
-\c@publisher=\count425
-\c@savedpublisher=\count426
-\c@language=\count427
-\c@savedlanguage=\count428
-\c@origlanguage=\count429
-\c@savedoriglanguage=\count430
-\c@pageref=\count431
-\c@savedpageref=\count432
-\shorthandwidth=\skip71
-\shortjournalwidth=\skip72
-\shortserieswidth=\skip73
-\shorttitlewidth=\skip74
-\shortauthorwidth=\skip75
-\shorteditorwidth=\skip76
-\locallabelnumberwidth=\skip77
-\locallabelalphawidth=\skip78
-\localshorthandwidth=\skip79
-\localshortjournalwidth=\skip80
-\localshortserieswidth=\skip81
-\localshorttitlewidth=\skip82
-\localshortauthorwidth=\skip83
-\localshorteditorwidth=\skip84
+\c@afterword=\count397
+\c@savedafterword=\count398
+\c@annotator=\count399
+\c@savedannotator=\count400
+\c@author=\count401
+\c@savedauthor=\count402
+\c@bookauthor=\count403
+\c@savedbookauthor=\count404
+\c@commentator=\count405
+\c@savedcommentator=\count406
+\c@editor=\count407
+\c@savededitor=\count408
+\c@editora=\count409
+\c@savededitora=\count410
+\c@editorb=\count411
+\c@savededitorb=\count412
+\c@editorc=\count413
+\c@savededitorc=\count414
+\c@foreword=\count415
+\c@savedforeword=\count416
+\c@holder=\count417
+\c@savedholder=\count418
+\c@introduction=\count419
+\c@savedintroduction=\count420
+\c@namea=\count421
+\c@savednamea=\count422
+\c@nameb=\count423
+\c@savednameb=\count424
+\c@namec=\count425
+\c@savednamec=\count426
+\c@translator=\count427
+\c@savedtranslator=\count428
+\c@shortauthor=\count429
+\c@savedshortauthor=\count430
+\c@shorteditor=\count431
+\c@savedshorteditor=\count432
+\c@labelname=\count433
+\c@savedlabelname=\count434
+\c@institution=\count435
+\c@savedinstitution=\count436
+\c@lista=\count437
+\c@savedlista=\count438
+\c@listb=\count439
+\c@savedlistb=\count440
+\c@listc=\count441
+\c@savedlistc=\count442
+\c@listd=\count443
+\c@savedlistd=\count444
+\c@liste=\count445
+\c@savedliste=\count446
+\c@listf=\count447
+\c@savedlistf=\count448
+\c@location=\count449
+\c@savedlocation=\count450
+\c@organization=\count451
+\c@savedorganization=\count452
+\c@origlocation=\count453
+\c@savedoriglocation=\count454
+\c@origpublisher=\count455
+\c@savedorigpublisher=\count456
+\c@publisher=\count457
+\c@savedpublisher=\count458
+\c@language=\count459
+\c@savedlanguage=\count460
+\c@origlanguage=\count461
+\c@savedoriglanguage=\count462
+\c@pageref=\count463
+\c@savedpageref=\count464
+\shorthandwidth=\skip78
+\shortjournalwidth=\skip79
+\shortserieswidth=\skip80
+\shorttitlewidth=\skip81
+\shortauthorwidth=\skip82
+\shorteditorwidth=\skip83
+\locallabelnumberwidth=\skip84
+\locallabelalphawidth=\skip85
+\localshorthandwidth=\skip86
+\localshortjournalwidth=\skip87
+\localshortserieswidth=\skip88
+\localshorttitlewidth=\skip89
+\localshortauthorwidth=\skip90
+\localshorteditorwidth=\skip91
 Package biblatex Info: Trying to load enhanced support for Unicode engines...
 Package biblatex Info: ... file 'blx-unicode.def' found.
 
@@ -933,43 +1303,43 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
-\c@textcitecount=\count433
-\c@textcitetotal=\count434
-\c@textcitemaxnames=\count435
-\c@biburlbigbreakpenalty=\count436
-\c@biburlbreakpenalty=\count437
-\c@biburlnumpenalty=\count438
-\c@biburlucpenalty=\count439
-\c@biburllcpenalty=\count440
-\biburlbigskip=\muskip18
-\biburlnumskip=\muskip19
-\biburlucskip=\muskip20
-\biburllcskip=\muskip21
-\c@smartand=\count441
+\c@textcitecount=\count465
+\c@textcitetotal=\count466
+\c@textcitemaxnames=\count467
+\c@biburlbigbreakpenalty=\count468
+\c@biburlbreakpenalty=\count469
+\c@biburlnumpenalty=\count470
+\c@biburlucpenalty=\count471
+\c@biburllcpenalty=\count472
+\biburlbigskip=\muskip20
+\biburlnumskip=\muskip21
+\biburlucskip=\muskip22
+\biburllcskip=\muskip23
+\c@smartand=\count473
 )
-Package biblatex Info: Trying to load bibliography style 'authoryear-comp'...
-Package biblatex Info: ... file 'authoryear-comp.bbx' found.
+Package biblatex Info: Trying to load bibliography style 'verbose-ibid'...
+Package biblatex Info: ... file 'verbose-ibid.bbx' found.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/authoryear-comp.bbx
-File: authoryear-comp.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
-Package biblatex Info: Trying to load bibliography style 'authoryear'...
-Package biblatex Info: ... file 'authoryear.bbx' found.
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/verbose-ibid.bbx
+File: verbose-ibid.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'authortitle'...
+Package biblatex Info: ... file 'authortitle.bbx' found.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
-File: authoryear.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/authortitle.bbx
+File: authortitle.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count442
-\c@bbx:relatedtotal=\count443
+\c@bbx:relatedcount=\count474
+\c@bbx:relatedtotal=\count475
 )))
-Package biblatex Info: Trying to load citation style 'authoryear-comp'...
-Package biblatex Info: ... file 'authoryear-comp.cbx' found.
+Package biblatex Info: Trying to load citation style 'verbose-ibid'...
+Package biblatex Info: ... file 'verbose-ibid.cbx' found.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/authoryear-comp.cbx
-File: authoryear-comp.cbx 2020/12/31 v3.16 biblatex citation style (PK/MW)
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/verbose-ibid.cbx
+File: verbose-ibid.cbx 2020/12/31 v3.16 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -977,11 +1347,6 @@ Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
-Package biblatex Info: Redefining '\cites'.
-Package biblatex Info: Redefining '\parencites'.
-Package biblatex Info: Redefining '\footcites'.
-Package biblatex Info: Redefining '\footcitetexts'.
-Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
@@ -989,52 +1354,419 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/epigraph/epigraph.sty
+Package: epigraph 2020/01/02 v1.5e typesetting epigraphs
+
+(/usr/share/texlive/texmf-dist/tex/latex/nextpage/nextpage.sty
+Package: nextpage 2009/09/03 v1.1a additional page commands
+)
+\beforeepigraphskip=\skip92
+\afterepigraphskip=\skip93
+\epigraphwidth=\skip94
+\epigraphrule=\skip95
+)
+(/usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
+Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
+
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2021/01/20 v3.7 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count476
+\FV@InFile=\read4
+\FV@TabBox=\box75
+\c@FancyVerbLine=\count477
+\FV@StepNumber=\count478
+\FV@OutFile=\write6
+)
+(/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+))
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.
+\linenopenalty=\count479
+\output=\toks44
+\linenoprevgraf=\count480
+\linenumbersep=\dimen316
+\linenumberwidth=\dimen317
+\c@linenumber=\count481
+\c@pagewiselinenumber=\count482
+\c@LN@truepage=\count483
+\c@internallinenumber=\count484
+\c@internallinenumbers=\count485
+\quotelinenumbersep=\dimen318
+\bframerule=\dimen319
+\bframesep=\dimen320
+\bframebox=\box76
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\c@FV@TrueTabGroupLevel=\count486
+\c@FV@TrueTabCounter=\count487
+\FV@TabBox@Group=\box77
+\FV@TmpLength=\skip96
+\c@FV@HighlightLinesStart=\count488
+\c@FV@HighlightLinesStop=\count489
+\FV@LoopCount=\count490
+\FV@NCharsBox=\box78
+\FV@BreakIndent=\dimen321
+\FV@BreakIndentNChars=\count491
+\FV@BreakSymbolSepLeft=\dimen322
+\FV@BreakSymbolSepLeftNChars=\count492
+\FV@BreakSymbolSepRight=\dimen323
+\FV@BreakSymbolSepRightNChars=\count493
+\FV@BreakSymbolIndentLeft=\dimen324
+\FV@BreakSymbolIndentLeftNChars=\count494
+\FV@BreakSymbolIndentRight=\dimen325
+\FV@BreakSymbolIndentRightNChars=\count495
+\c@FancyVerbLineBreakLast=\count496
+\FV@LineBox=\box79
+\FV@LineIndentBox=\box80
+\FV@LineWidth=\dimen326
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count497
+\calc@Bcount=\count498
+\calc@Adimen=\dimen327
+\calc@Bdimen=\dimen328
+\calc@Askip=\skip97
+\calc@Bskip=\skip98
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count499
+\calc@Cskip=\skip99
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+(/usr/share/texlive/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+runsystem(uname -s > "slides.w18")...executed.
+
+ (./slides.w18)
+runsystem(rm -- "slides.w18")...executed.
+
+)
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count500
+Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
+\decimalpart=\count501
+Invalid UTF-8 byte or sequence at line 79 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 79 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 83 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 86 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 102 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 114 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 120 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 125 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 147 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 147 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 147 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 182 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 182 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 182 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 183 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 184 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 185 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 185 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 185 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 189 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 189 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 190 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 190 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 193 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 208 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 208 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 208 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 208 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 208 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 208 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 221 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 221 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 241 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 241 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 241 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 241 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 266 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 284 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 295 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 300 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 300 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 301 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 301 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 301 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 302 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 303 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 332 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 332 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 332 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 332 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 333 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 334 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 334 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 334 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 406 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 406 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 409 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 410 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 428 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 434 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 457 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 457 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 464 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 464 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 466 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 466 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 541 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 541 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 541 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 586 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 586 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 588 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 588 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 595 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 597 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 599 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 602 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 605 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 605 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 610 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 615 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 632 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 632 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 633 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 635 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 637 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 647 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 653 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 678 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 700 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 705 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 715 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 715 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 715 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 719 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 732 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 732 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 741 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 741 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 742 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 742 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 762 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 773 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 773 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 774 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 774 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 774 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 797 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 797 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 810 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 824 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 824 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 831 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 838 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 838 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 846 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 846 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 861 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 862 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 864 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 864 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 908 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 909 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 909 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 934 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 934 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 936 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 936 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 940 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 940 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 962 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 962 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 964 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 965 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 1006 replaced by U+FFFD.
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip100
+\fb@frw=\dimen329
+\fb@frh=\dimen330
+\FrameRule=\dimen331
+\FrameSep=\dimen332
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count502
+\float@exts=\toks45
+\float@box=\box81
+\@float@everytoks=\toks46
+\@floatcapt=\box82
+)
+\minted@appexistsfile=\read5
+\minted@bgbox=\box83
+\minted@code=\write7
+\c@minted@FancyVerbLineTemp=\count503
+\c@minted@pygmentizecounter=\count504
+\@float@every@listing=\toks47
+\c@listing=\count505
+)
+runsystem(mkdir -p _minted-slides)...executed.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2020/10/09 version 4.42 text color boxes
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfnodeparttextbox=\box84
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@nodesepstart=\dimen333
+\pgf@nodesepend=\dimen334
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
+)) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks48
+\verbatim@line=\toks49
+\verbatim@in@stream=\read6
+)
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box85
+\tcb@upperbox=\box86
+\tcb@lowerbox=\box87
+\tcb@phantombox=\box88
+\c@tcbbreakpart=\count506
+\c@tcblayer=\count507
+\c@tcolorbox@number=\count508
+\tcb@temp=\box89
+\tcb@temp=\box90
+\tcb@temp=\box91
+\tcb@temp=\box92
+\tcb@out=\write8
+\tcb@record@out=\write9
+)
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen335
+\ar@mcellbox=\box93
+\extrarowheight=\dimen336
+\NC@list=\toks50
+\extratabsurround=\skip101
+\backup@length=\skip102
+\ar@cellbox=\box94
+)
+\everycr=\toks51
+\minrowclearance=\skip103
+)
+(/usr/share/texmf/tex/latex/tipa/tipa.sty
+Package: tipa 2002/08/08 TIPA version 1.1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+
+(/usr/share/texmf/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(0)/m/sl' in size <10.95> not
+ available
+(Font)              Font shape `TU/LibertinusSerif(0)/m/it' tried instead on in
+put line 316.
+
+
+Package xeCJK Warning: Unknown CJK family `\CJKsfdefault' is being ignored.
+(xeCJK)                
+(xeCJK)                Try to use `\setCJKsansfont[...]{...}' to define it.
+
+LaTeX Font Info:    Trying to load font information for T3+lmss on input line 3
+57.
+LaTeX Font Info:    No file T3lmss.fd. on input line 357.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 35
+7.
+(/usr/share/texmf/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+
+LaTeX Font Warning: Font shape `T3/lmss/m/n' undefined
+(Font)              using `T3/cmr/m/n' instead on input line 357.
+
+))) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeCambridgeUS.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemebeaver.sty))
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 13.
+(hyperref)                removing `\\' on input line 29.
 
-\@quotelevel=\count444
-\@quotereset=\count445
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
-File: l3backend-xetex.def 2020-01-29 L3 backend support: XeTeX
 
-(|extractbb --version)
-\c__kernel_sys_dvipdfmx_version_int=\count446
-\l__color_backend_stack_int=\count447
-\g__graphics_track_int=\count448
-\l__pdf_internal_box=\box73
-\g__pdf_backend_object_int=\count449
-\g__pdf_backend_annotation_int=\count450
-\g__pdf_backend_link_int=\count451
-) (./slides.aux)
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 29.
+
+\@quotelevel=\count509
+\@quotereset=\count510
+runsystem(which pygmentize && touch slides.aex)...executed.
+
+runsystem(rm slides.aex)...executed.
+
+(./slides.aux)
 \openout1 = `slides.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-5.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
-File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1070,7 +1802,7 @@ LaTeX Font Info:    ... okay on input line 15.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 15.
+Package hyperref Info: Link coloring OFF on input line 31.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -1080,58 +1812,16 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count452
+\c@section@level=\count511
 )
-LaTeX Info: Redefining \ref on input line 15.
-LaTeX Info: Redefining \pageref on input line 15.
-LaTeX Info: Redefining \nameref on input line 15.
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
 
 (./slides.out) (./slides.out)
-\@outlinefile=\write6
-\openout6 = `slides.out'.
+\@outlinefile=\write10
+\openout10 = `slides.out'.
 
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 15.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 15.
-\symnumbers=\mathgroup6
-\sympureletters=\mathgroup7
-LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmr/m/n on input line 15.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 15.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmss/b/n on input line 15.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmss/b/n on input line 15.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 15.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 15.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/m/n on input line 15.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 15.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmss/m/it on input line 15.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmss/m/it on input line 15.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 15.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 15.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 15.
-LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  TU/lmss/m/n --> TU/lmss/b/n on input line 15.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  TU/lmss/m/it --> TU/lmss/b/it on input line 15.
-LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> TU/lmr/b/n on input line 15.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  TU/lmss/b/n --> TU/lmss/b/n on input line 15.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  TU/lmss/m/n --> TU/lmss/b/n on input line 15.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  TU/lmss/m/it --> TU/lmss/b/it on input line 15.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  TU/lmtt/m/n --> TU/lmtt/b/n on input line 15.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1157,6 +1847,23 @@ Dictionary: translator-numbers-dictionary, Language: English
 ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  TU/LibertinusMath(1)/m/n --> TU/LibertinusSerif(0)/m/n 
+on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/LibertinusSerif(0)/m/it on input li
+ne 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/LibertinusSerif(0)/b/n on input lin
+e 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 31.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1168,68 +1875,177 @@ Package biblatex Info: XeTeX detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
 Package biblatex Info: Document encoding is UTF8 ....
-
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2021-01-09 L3 programming layer (loader) 
-)
 Package biblatex Info: ... and expl3
 (biblatex)             2021-01-09 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
-(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2020-10-27 L3 Experimental document command parser
-
-(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex))
 Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 )
 \openout5 = `slides.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'slides.bbl' found.
- (./slides.bbl)
-Package biblatex Info: Reference section=0 on input line 15.
-Package biblatex Info: Reference segment=0 on input line 15.
- (./slides.nav)
-Missing character: There is no 5 in font nullfont!
- [1
 
-] [2
+(./slides.bbl)
+Package biblatex Info: Reference section=0 on input line 31.
+Package biblatex Info: Reference segment=0 on input line 31.
+ (./slides.nav)
+
+Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
+(xeCJK)                
+(xeCJK)                Try to use `\setCJKmonofont[...]{...}' to define it.
+
+Missing character: There is no 5 in font nullfont!
+[1
+
+]
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+(Font)              scaled to size 10.95116pt on input line 44.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+(Font)              scaled to size 8.76093pt on input line 44.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+(Font)              scaled to size 6.5707pt on input line 44.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+(Font)              scaled to size 10.94882pt on input line 44.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+(Font)              scaled to size 8.75905pt on input line 44.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+(Font)              scaled to size 6.5693pt on input line 44.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 44.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 44.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [2
 
 ] [3
 
-] [4
+]
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+(Font)              scaled to size 9.00096pt on input line 54.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+(Font)              scaled to size 6.00064pt on input line 54.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+(Font)              scaled to size 5.00053pt on input line 54.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+(Font)              scaled to size 8.99904pt on input line 54.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 54.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 54.
+ [4
+
+] [5
 
 ]
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 33.
- [5
+[6
+
+] [7
+
+] [8
+
+] [9
+
+] [10
+
+] [11
+
+] [12
+
+] [13
+
+] [14
+
+] [15
 
 ]
-\tf@nav=\write7
-\openout7 = `slides.nav'.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+(Font)              scaled to size 14.40152pt on input line 135.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+(Font)              scaled to size 10.00107pt on input line 135.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+(Font)              scaled to size 7.00075pt on input line 135.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+(Font)              scaled to size 14.39845pt on input line 135.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 135.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 135.
+ [16
 
-\tf@toc=\write8
-\openout8 = `slides.toc'.
+]
+LaTeX Font Info:    Trying to load font information for T3+LibertinusSerif(0) o
+n input line 167.
+LaTeX Font Info:    No file T3LibertinusSerif(0).fd. on input line 167.
 
-\tf@snm=\write9
-\openout9 = `slides.snm'.
+
+LaTeX Font Warning: Font shape `T3/LibertinusSerif(0)/m/n' undefined
+(Font)              using `T3/cmr/m/n' instead on input line 167.
+
+[17
+
+] [18
+
+] [19
+
+] [20
+
+] [21
+
+] [22
+
+] [23
+
+] [24
+
+] [25
+
+] [26
+
+] [27
+
+]
+\beamer@bibiconwidth=\skip104
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+ [28
+
+]
+\tf@nav=\write11
+\openout11 = `slides.nav'.
+
+\tf@toc=\write12
+\openout12 = `slides.toc'.
+
+\tf@snm=\write13
+\openout13 = `slides.snm'.
 
  (./slides.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 Package rerunfilecheck Info: File `slides.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 06E27B416B3B1946CD705C501CA5B3BD;45.
 Package logreq Info: Writing requests to 'slides.run.xml'.
 \openout1 = `slides.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27709 strings out of 477220
- 521598 string characters out of 5832721
- 1260857 words of memory out of 5000000
- 46920 multiletter control sequences out of 15000+600000
- 403862 words of font info for 37 fonts, out of 8000000 for 9000
+ 41251 strings out of 477220
+ 837612 string characters out of 5832721
+ 1763872 words of memory out of 5000000
+ 60195 multiletter control sequences out of 15000+600000
+ 412414 words of font info for 121 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 131i,15n,132p,739b,759s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 131i,15n,132p,739b,5116s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on slides.pdf (5 pages).
+Output written on slides.pdf (28 pages).

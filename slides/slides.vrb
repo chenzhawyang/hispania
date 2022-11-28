@@ -1,0 +1,21 @@
+\begin{minted}{sml}
+  structure LossQuant = struct
+    fun loss_quant_subst (Monophthong v)
+        = let fun f (Vowel (High, height))
+                  = Vowel (HighMid, height)
+                | f (Vowel (Mid, height))
+                  = Vowel (LowMid, height)
+                | f v = v
+          in Monophthong (f v) end
+      | loss_quant_subst (LongVowel v) = Monophthong v
+      | loss_quant_subst nuc = nuc
+
+    val loss_quant_rewrite = Nucleusism loss_quant_subst
+
+    val loss_quant : soundChange
+        = let val syllabism
+                  = mkSyllabism loss_quant_rewrite NoContext
+              val name = "Loss of Vowel Quantity"
+          in mkSoundChange syllabism name end
+  end
+  \end{minted}

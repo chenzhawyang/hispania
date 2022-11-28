@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+    \PYG{k+kr}{datatype} \PYG{k+kt}{height} \PYG{p}{=} \PYG{n+nc}{Low} \PYG{p}{|} \PYG{n+nc}{Mid} \PYG{p}{|} \PYG{n+nc}{High}
+
+    \PYG{k+kr}{datatype} \PYG{k+kt}{centrality} \PYG{p}{=} \PYG{n+nc}{Front} \PYG{p}{|} \PYG{n+nc}{Central} \PYG{p}{|} \PYG{n+nc}{Back}
+
+    \PYG{k+kr}{datatype} \PYG{k+kt}{vowel} \PYG{p}{=} \PYG{n+nc}{Vowel} \PYG{k+kr}{of} \PYG{n}{height} \PYG{esc}{$\times$} \PYG{n}{centrality}
+
+    \PYG{k+kr}{fun} \PYG{n+nf}{merger} \PYG{p}{(}\PYG{n}{Vowel} \PYG{p}{(}\PYG{n}{High}\PYG{p}{,} \PYG{n}{centrality}\PYG{p}{)}\PYG{p}{)}
+        \PYG{p}{=} \PYG{n}{Vowel} \PYG{p}{(}\PYG{n}{Mid}\PYG{p}{,} \PYG{n}{centrality}\PYG{p}{)}
+      \PYG{p}{|} \PYG{n+nf}{merger} \PYG{n}{v} \PYG{p}{=} \PYG{n}{v}
+\end{Verbatim}

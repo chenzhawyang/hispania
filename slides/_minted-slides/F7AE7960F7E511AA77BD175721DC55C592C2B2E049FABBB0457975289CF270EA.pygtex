@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+    \PYG{k+kr}{datatype} \PYG{k+kt}{height} \PYG{p}{=} \PYG{n+nc}{Low} \PYG{p}{|} \PYG{n+nc}{Mid} \PYG{p}{|} \PYG{n+nc}{High}
+
+    \PYG{k+kr}{datatype} \PYG{k+kt}{centrality} \PYG{p}{=} \PYG{n+nc}{Front} \PYG{p}{|} \PYG{n+nc}{Central} \PYG{p}{|} \PYG{n+nc}{Back}
+\end{Verbatim}

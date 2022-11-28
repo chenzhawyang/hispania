@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+    \PYG{k+kr}{fun} \PYG{n+nf}{f} \PYG{n}{x} \PYG{p}{=} \PYG{n}{x}
+\end{Verbatim}

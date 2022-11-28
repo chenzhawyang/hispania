@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+  \PYG{k+kr}{structure} \PYG{n+nn}{LossQuant} \PYG{p}{=} \PYG{k+kr}{struct}
+    \PYG{k+kr}{fun} \PYG{n+nf}{loss\PYGZus{}quant\PYGZus{}subst} \PYG{p}{(}\PYG{n}{Monophthong} \PYG{n}{v}\PYG{p}{)}
+        \PYG{p}{=} \PYG{k+kr}{let} \PYG{k+kr}{fun} \PYG{n+nf}{f} \PYG{p}{(}\PYG{n}{Vowel} \PYG{p}{(}\PYG{n}{High}\PYG{p}{,} \PYG{n}{height}\PYG{p}{)}\PYG{p}{)} \PYG{p}{=} \PYG{n}{Vowel} \PYG{p}{(}\PYG{n}{HighMid}\PYG{p}{,} \PYG{n}{height}\PYG{p}{)}
+                \PYG{p}{|} \PYG{n+nf}{f} \PYG{p}{(}\PYG{n}{Vowel} \PYG{p}{(}\PYG{n}{Mid}\PYG{p}{,} \PYG{n}{height}\PYG{p}{)}\PYG{p}{)} \PYG{p}{=} \PYG{n}{Vowel} \PYG{p}{(}\PYG{n}{LowMid}\PYG{p}{,} \PYG{n}{height}\PYG{p}{)}
+                \PYG{p}{|} \PYG{n+nf}{f} \PYG{n}{v} \PYG{p}{=} \PYG{n}{v}
+          \PYG{k+kr}{in} \PYG{n}{Monophthong} \PYG{p}{(}\PYG{n}{f} \PYG{n}{v}\PYG{p}{)} \PYG{k+kr}{end}
+      \PYG{p}{|} \PYG{n+nf}{loss\PYGZus{}quant\PYGZus{}subst} \PYG{p}{(}\PYG{n}{LongVowel} \PYG{n}{v}\PYG{p}{)} \PYG{p}{=} \PYG{n}{Monophthong} \PYG{n}{v}
+      \PYG{p}{|} \PYG{n+nf}{loss\PYGZus{}quant\PYGZus{}subst} \PYG{n}{nuc} \PYG{p}{=} \PYG{n}{nuc}
+
+    \PYG{k+kr}{val} \PYG{n+nv}{loss\PYGZus{}quant\PYGZus{}rewrite} \PYG{p}{=} \PYG{n}{Nucleusism} \PYG{n}{loss\PYGZus{}quant\PYGZus{}subst}
+
+    \PYG{k+kr}{val} \PYG{n+nv}{loss\PYGZus{}quant} \PYG{err}{:} \PYG{n}{soundChange}
+        \PYG{p}{=} \PYG{k+kr}{let} \PYG{k+kr}{val} \PYG{n+nv}{syllabism} \PYG{p}{=} \PYG{n}{mkSyllabism} \PYG{n}{loss\PYGZus{}quant\PYGZus{}rewrite} \PYG{n}{NoContext}
+              \PYG{k+kr}{val} \PYG{n+nv}{name} \PYG{p}{=} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{L}\PYG{l+s+s2}{o}\PYG{l+s+s2}{s}\PYG{l+s+s2}{s}\PYG{l+s+s2}{ }\PYG{l+s+s2}{o}\PYG{l+s+s2}{f}\PYG{l+s+s2}{ }\PYG{l+s+s2}{V}\PYG{l+s+s2}{o}\PYG{l+s+s2}{w}\PYG{l+s+s2}{e}\PYG{l+s+s2}{l}\PYG{l+s+s2}{ }\PYG{l+s+s2}{Q}\PYG{l+s+s2}{u}\PYG{l+s+s2}{a}\PYG{l+s+s2}{n}\PYG{l+s+s2}{t}\PYG{l+s+s2}{i}\PYG{l+s+s2}{t}\PYG{l+s+s2}{y}\PYG{l+s+s2}{\PYGZdq{}}
+          \PYG{k+kr}{in} \PYG{n}{mkSoundChange} \PYG{n}{syllabism} \PYG{n}{name} \PYG{k+kr}{end}
+  \PYG{k+kr}{end}
+\end{Verbatim}

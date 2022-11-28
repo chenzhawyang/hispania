@@ -13,12 +13,12 @@ fun loss_quant_subst (Monophthong v)
   | loss_quant_subst nuc = nuc
 
 val loss_quant_rewrite = Nucleusism loss_quant_subst
-
-val loss_quant : soundChange
+                                    
+val loss_quant
     = let val syllabism = mkSyllabism loss_quant_rewrite NoContext
           val name = "Loss of Vowel Quantity"
       in mkSoundChange syllabism name end
-
+          
 (* dehiaticization *)
 
 structure Dehiaticization = struct
@@ -36,7 +36,7 @@ fun great_merger_subst (Monophthong v)
 
 val great_merger_rewrite = Nucleusism great_merger_subst
 
-val great_merger : soundChange
+val great_merger
     = let val syllabism = mkSyllabism great_merger_rewrite NoContext
           val name = "Great Merger"
       in mkSoundChange syllabism name end
@@ -286,7 +286,7 @@ val palatalize_g = PrRomVelarPalatalization.mkVelarPal seg_g seg_dg
 (* palatalization of [l] *)
 
 structure PrRomLateralPalatalization = struct
-    fun mkLatPal input output = 
+    fun mkLatPal input output =
         let fun nucleusism nuc =
                 case nuc of
                     Diphthong (v1, v2) => Monophthong v2
@@ -376,12 +376,6 @@ in val WRom_vowel_shift = [sc1] end
 
 (* western romance consonantism *)
 
-(* degemination *)
-
-structure Degemination = struct
-
-end
-
 (* lenition *)
 
 structure Lenition = struct
@@ -439,6 +433,7 @@ structure LenitionI = struct
     fun lenite (Consonant (Voiceless, place, Stop)) = Consonant (Voiced, place, Stop)
       | lenite (Consonant (Voiced, place, Stop)) = Consonant (Voiced, place, NonSibil)
       | lenite (Consonant (Voiceless, place, Sibilant)) = Consonant (Voiced, place, Sibilant)
+      | lenite (Consonant (Voiceless, place, NonSibil)) = Consonant (Voiced, place, NonSibil)
       | lenite cons = cons
 
     val sound_change = let val name = "Intervocalic Lenition I"
@@ -447,9 +442,53 @@ end
 
 val lenition_1 = LenitionI.sound_change
 
+(* degemination *)
+
+structure WRomDegemination = struct
+    fun subst coda =
+        case coda of
+            Codetta _ => ZeroCoda
+          | _ => coda
+
+    fun syllabism f syll =
+        let val Syllable (on, nuc, cod, stress) = syll
+            val cod' = f cod
+        in Syllable (on, nuc, cod', stress) end
+
+    fun context syll1 syll2 =
+        let val Syllable (_, _, cod1, _) = syll1
+            val Syllable (on2, _, _, _) = syll2
+        in
+            case (cod1, on2) of
+                (Codetta cons1, Onset cons2) => if cons1 = cons2
+                                                then true
+                                                else
+                                                    (cons1 = seg_t andalso cons2 = seg_ts)
+                                                    orelse (cons1 = seg_l andalso cons2 = seg_ch)
+              | (Codetta cons1, OnsetM (cons2, _)) => (cons1 = cons2)
+              | _ => false
+        end
+
+    fun pwordism f [] = []
+      | pwordism f [x] = [x]
+      | pwordism f (x :: y :: xs) = if context x y
+                                    then f x :: pwordism f (y :: xs)
+                                    else x :: pwordism f (y :: xs)
+
+    val sound_change =
+        let val f = syllabism subst
+            val g = pwordism f
+            val name = "Degemination"
+        in SoundChange (g, name) end
+end
+
+val degemination = WRomDegemination.sound_change
+
 (* western romance consonantal shift *)
 
-val WRom_cons_shift = [lenition_1]
+local val sc1 = lenition_1
+      val sc2 = degemination
+in val WRom_cons_shift = [sc1, sc2] end
 
 (* western romance sound changes *)
 
@@ -483,7 +522,7 @@ val diph_open_o = let val syllabism = mkSyllabism diph_open_o_rewrite (Predicate
 (* apocope *)
 
 structure Apocope = struct
-        
+
 end
 
 (* old spanish vowel shift *)
@@ -498,13 +537,13 @@ in val OSp_vowel_shift = [sc1, sc2] end
 
 structure SpirantizationLL = struct
     fun subst onset =
-        case onset of 
+        case onset of
             Onset cons => if cons = seg_lh
                           then Onset seg_zh
                           else onset
           | _ => onset
 
-    val sound_change = 
+    val sound_change =
         let val rewrite = Onsetism subst
             val syllabism = mkSyllabism rewrite NoContext
             val name = "Spirantization of [\202\142]"
@@ -523,7 +562,7 @@ structure Debuccalization = struct
                           else onset
           | _ => onset
 
-    fun p syll = 
+    fun p syll =
         let val Syllable (on, nuc, cod, stress) = syll
         in case nuc of
                Diphthong (v1, v2) => not (v1 = seg_u)
@@ -565,7 +604,6 @@ val fronting_palatal = FrontingPalatal.sound_change
 
 structure LenitionII = struct
     fun lenite (Consonant (Voiced, place, Stop)) = Consonant (Voiced, place, NonSibil)
-      | lenite (Consonant (Voiceless, place, Sibilant)) = Consonant (Voiced, place, Sibilant)
       | lenite (Consonant (Voiceless, place, Affricate)) = Consonant (Voiced, place, Affricate)
       | lenite cons = cons
 
@@ -580,7 +618,7 @@ val lenition_2 = LenitionII.sound_change
 local val sc1 = fronting_palatal
       val sc2 = debuccalize_f
       val sc3 = lenition_2
-      val sc4 = spirantize_lh                        
+      val sc4 = spirantize_lh
 in val OSp_cons_shift = [sc1, sc2, sc3, sc4] end
 
 (* old spanish sound changes *)
@@ -627,7 +665,7 @@ structure Labiodentalization = struct
         let val rewrite = Onsetism subst
             val syllabism = mkSyllabism rewrite NoContext
             val name = "Labiodentalization of [\201\184]"
-        in mkSoundChange syllabism name end 
+        in mkSoundChange syllabism name end
 end
 
 val labiodentalization = Labiodentalization.sound_change

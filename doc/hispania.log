@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2022.10.26)  10 NOV 2022 08:58
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2022.11.16)  26 NOV 2022 17:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2146,7 +2146,7 @@ Package logreq Info: Writing requests to 'hispania.run.xml'.
 Here is how much of TeX's memory you used:
  52946 strings out of 477220
  1137082 string characters out of 5832721
- 2052511 words of memory out of 5000000
+ 2052513 words of memory out of 5000000
  71890 multiletter control sequences out of 15000+600000
  412596 words of font info for 131 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
