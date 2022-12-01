@@ -2344,7 +2344,17 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">slides.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">hartman_phono</bcf:citekey>
+    <bcf:citekey order="1">williams_mechanise_phone</bcf:citekey>
+    <bcf:citekey order="2">smith69:_autom_simul_histor_chang</bcf:citekey>
+    <bcf:citekey order="3">burton-hunter76:_roman_etymol</bcf:citekey>
+    <bcf:citekey order="4">eastlack77:_progr_simul_system_sound_chang_ibero_roman</bcf:citekey>
+    <bcf:citekey order="5">hartman_phono</bcf:citekey>
+    <bcf:citekey order="6">macqueen20:_histor_stand_ml</bcf:citekey>
+    <bcf:citekey order="7">romance_his</bcf:citekey>
+    <bcf:citekey order="8">lloyd_spanish</bcf:citekey>
+    <bcf:citekey order="9">lloyd_spanish</bcf:citekey>
+    <bcf:citekey order="10">penny_spanish</bcf:citekey>
+    <bcf:citekey order="11">penny_spanish</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="ynt">

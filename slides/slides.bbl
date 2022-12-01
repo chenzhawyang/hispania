@@ -19,6 +19,148 @@
 
 \refsection{0}
   \datalist[entry]{ynt/global//global/global}
+    \entry{smith69:_autom_simul_histor_chang}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b93a6557f56cd3ac45cd5275f4be6cfc}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Raoul\bibnamedelima N.},
+           giveni={R\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{b93a6557f56cd3ac45cd5275f4be6cfc}
+      \strng{fullhash}{b93a6557f56cd3ac45cd5275f4be6cfc}
+      \strng{bibnamehash}{b93a6557f56cd3ac45cd5275f4be6cfc}
+      \strng{authorbibnamehash}{b93a6557f56cd3ac45cd5275f4be6cfc}
+      \strng{authornamehash}{b93a6557f56cd3ac45cd5275f4be6cfc}
+      \strng{authorfullhash}{b93a6557f56cd3ac45cd5275f4be6cfc}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{COLING 1969}
+      \field{title}{Automatic Simulation of Historical Change}
+      \field{year}{1969}
+      \verb{urlraw}
+      \verb https://aclanthology.org/C69-0901.pdf
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/C69-0901.pdf
+      \endverb
+    \endentry
+    \entry{burton-hunter76:_roman_etymol}{article}{}
+      \name{author}{1}{}{%
+        {{hash=4b7d8b507cfd69b99d1b22196b69633a}{%
+           family={Burton-Hunter},
+           familyi={B\bibinithyphendelim H\bibinitperiod},
+           given={Sarah\bibnamedelima K.},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{4b7d8b507cfd69b99d1b22196b69633a}
+      \strng{fullhash}{4b7d8b507cfd69b99d1b22196b69633a}
+      \strng{bibnamehash}{4b7d8b507cfd69b99d1b22196b69633a}
+      \strng{authorbibnamehash}{4b7d8b507cfd69b99d1b22196b69633a}
+      \strng{authornamehash}{4b7d8b507cfd69b99d1b22196b69633a}
+      \strng{authorfullhash}{4b7d8b507cfd69b99d1b22196b69633a}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers and the Humanities}
+      \field{number}{4}
+      \field{title}{Romance Etymology: A Computerized Model}
+      \field{volume}{10}
+      \field{year}{1976}
+      \field{pages}{217\bibrangedash 220}
+      \range{pages}{4}
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/30199805
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/30199805
+      \endverb
+    \endentry
+    \entry{eastlack77:_progr_simul_system_sound_chang_ibero_roman}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3f09cdd9a25f7a3dab07d19ed5e921c6}{%
+           family={Eastlack},
+           familyi={E\bibinitperiod},
+           given={Charles\bibnamedelima L.},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{3f09cdd9a25f7a3dab07d19ed5e921c6}
+      \strng{fullhash}{3f09cdd9a25f7a3dab07d19ed5e921c6}
+      \strng{bibnamehash}{3f09cdd9a25f7a3dab07d19ed5e921c6}
+      \strng{authorbibnamehash}{3f09cdd9a25f7a3dab07d19ed5e921c6}
+      \strng{authornamehash}{3f09cdd9a25f7a3dab07d19ed5e921c6}
+      \strng{authorfullhash}{3f09cdd9a25f7a3dab07d19ed5e921c6}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers and the Humanities}
+      \field{number}{2}
+      \field{title}{A Program to Simulate Systematic Sound Change in Ibero-Romance}
+      \field{volume}{11}
+      \field{year}{1977}
+      \field{pages}{81\bibrangedash 88}
+      \range{pages}{8}
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/30199864
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/30199864
+      \endverb
+    \endentry
+    \entry{lloyd_spanish}{book}{}
+      \name{author}{1}{}{%
+        {{hash=0e86678d5678ee2e7657d4ff90c6b710}{%
+           family={Lloyd},
+           familyi={L\bibinitperiod},
+           given={Paul\bibnamedelima M.},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Philosophical Society}%
+      }
+      \strng{namehash}{0e86678d5678ee2e7657d4ff90c6b710}
+      \strng{fullhash}{0e86678d5678ee2e7657d4ff90c6b710}
+      \strng{bibnamehash}{0e86678d5678ee2e7657d4ff90c6b710}
+      \strng{authorbibnamehash}{0e86678d5678ee2e7657d4ff90c6b710}
+      \strng{authornamehash}{0e86678d5678ee2e7657d4ff90c6b710}
+      \strng{authorfullhash}{0e86678d5678ee2e7657d4ff90c6b710}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{From Latin to Spanish}
+      \field{year}{1987}
+      \keyw{romance}
+    \endentry
+    \entry{penny_spanish}{book}{}
+      \name{author}{1}{}{%
+        {{hash=15b0543703c2c576b06fcf2882c171ab}{%
+           family={Penny},
+           familyi={P\bibinitperiod},
+           given={Ralph},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{15b0543703c2c576b06fcf2882c171ab}
+      \strng{fullhash}{15b0543703c2c576b06fcf2882c171ab}
+      \strng{bibnamehash}{15b0543703c2c576b06fcf2882c171ab}
+      \strng{authorbibnamehash}{15b0543703c2c576b06fcf2882c171ab}
+      \strng{authornamehash}{15b0543703c2c576b06fcf2882c171ab}
+      \strng{authorfullhash}{15b0543703c2c576b06fcf2882c171ab}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A History of the Spanish Language}
+      \field{year}{2002}
+      \keyw{romance}
+    \endentry
     \entry{hartman_phono}{misc}{}
       \name{author}{1}{}{%
         {{hash=31e179d815c5101a6e2b00e8b8f804d7}{%
@@ -50,6 +192,100 @@
       \verb https://langnhist.weebly.com/files/theme/ver40.pdf
       \endverb
       \keyw{phone}
+    \endentry
+    \entry{romance_his}{book}{}
+      \name{author}{2}{}{%
+        {{hash=2d79f5bf13f48cda3a07ab22f5ae8aa6}{%
+           family={Alkire},
+           familyi={A\bibinitperiod},
+           given={Ti},
+           giveni={T\bibinitperiod}}}%
+        {{hash=1bd14f69cb230b5be76c437b8a28dffd}{%
+           family={Rosen},
+           familyi={R\bibinitperiod},
+           given={Carol},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{0ba1723e381350a0852dc000c89c2e9e}
+      \strng{fullhash}{0ba1723e381350a0852dc000c89c2e9e}
+      \strng{bibnamehash}{0ba1723e381350a0852dc000c89c2e9e}
+      \strng{authorbibnamehash}{0ba1723e381350a0852dc000c89c2e9e}
+      \strng{authornamehash}{0ba1723e381350a0852dc000c89c2e9e}
+      \strng{authorfullhash}{0ba1723e381350a0852dc000c89c2e9e}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Romance Languages: A Historical Introduction}
+      \field{year}{2010}
+      \keyw{romance}
+    \endentry
+    \entry{williams_mechanise_phone}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0a045e8c6ead2ba701819be169f52db4}{%
+           family={Sims-Williams},
+           familyi={S\bibinithyphendelim W\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{0a045e8c6ead2ba701819be169f52db4}
+      \strng{fullhash}{0a045e8c6ead2ba701819be169f52db4}
+      \strng{bibnamehash}{0a045e8c6ead2ba701819be169f52db4}
+      \strng{authorbibnamehash}{0a045e8c6ead2ba701819be169f52db4}
+      \strng{authornamehash}{0a045e8c6ead2ba701819be169f52db4}
+      \strng{authorfullhash}{0a045e8c6ead2ba701819be169f52db4}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Transactions of the Philological Society}
+      \field{number}{3}
+      \field{title}{Mechanising Historical Phonology}
+      \field{volume}{116}
+      \field{year}{2018}
+      \field{pages}{555\bibrangedash 573}
+      \range{pages}{19}
+      \keyw{phone}
+    \endentry
+    \entry{macqueen20:_histor_stand_ml}{article}{}
+      \name{author}{3}{}{%
+        {{hash=58566aa2e90cecf8724664c479be467f}{%
+           family={MacQueen},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=73259fe928ce8add0f265e234f8de3a6}{%
+           family={Harper},
+           familyi={H\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=e489defc7ee890a22c7b2e3c1e141d2c}{%
+           family={Reppy},
+           familyi={R\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{6e3d902359b1907e53217040d6e1e7e0}
+      \strng{fullhash}{6e3d902359b1907e53217040d6e1e7e0}
+      \strng{bibnamehash}{6e3d902359b1907e53217040d6e1e7e0}
+      \strng{authorbibnamehash}{6e3d902359b1907e53217040d6e1e7e0}
+      \strng{authornamehash}{6e3d902359b1907e53217040d6e1e7e0}
+      \strng{authorfullhash}{6e3d902359b1907e53217040d6e1e7e0}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proc. of the ACM on Programming Languages}
+      \field{note}{HOPL}
+      \field{title}{The History of Standard ML}
+      \field{volume}{4}
+      \field{year}{2020}
+      \verb{doi}
+      \verb https://doi.org/10.1145/3386336
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

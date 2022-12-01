@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2022.11.16)  27 NOV 2022 23:32
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2022.10.26)  30 NOV 2022 23:16
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -755,7 +755,12 @@ Package: amsthm 2020/05/29 v2.20.6
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty)))
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerfontthemeprofessionalfont
 s.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerfontthemeserif.sty
-) (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks44
+\inpenc@posthook=\toks45
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2021-01-09 L3 programming layer (loader) 
@@ -895,15 +900,15 @@ rtinus
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 9.
+(Font)              `operators' in the math version `normal' on input line 10.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/LibertinusMath(1)/m/n on input line 
-9.
+10.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 9.
+(Font)              `operators' in the math version `bold' on input line 10.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/LibertinusMath(1)/b/n on input line
- 9.
+ 10.
 
 Package fontspec Info: Libertinus Math scale = 1.0001.
 
@@ -963,15 +968,15 @@ stment={\fontdimen
 (fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 9.
+(Font)              `symbols' in the math version `normal' on input line 10.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/cmsy/m/n --> TU/LibertinusMath(2)/m/n on input line
- 9.
+ 10.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 9.
+(Font)              `symbols' in the math version `bold' on input line 10.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> TU/LibertinusMath(2)/b/n on input line
- 9.
+ 10.
 
 Package fontspec Info: Libertinus Math scale = 0.9999.
 
@@ -1019,16 +1024,17 @@ stment={\fontdimen
 (fontspec)             =6.789pt\relax \fontdimen 13\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 9
-.
+(Font)              `largesymbols' in the math version `normal' on input line 1
+0.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> TU/LibertinusMath(3)/m/n on input line
- 9.
+ 10.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 9.
+(Font)              `largesymbols' in the math version `bold' on input line 10.
+
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> TU/LibertinusMath(3)/b/n on input line
- 9.
+ 10.
 (/usr/share/texlive/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
 Package: xeCJK 2020/10/19 v3.8.6 Typesetting CJK scripts with XeLaTeX
 
@@ -1391,7 +1397,7 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.
 \linenopenalty=\count479
-\output=\toks44
+\output=\toks46
 \linenoprevgraf=\count480
 \linenumbersep=\dimen316
 \linenumberwidth=\dimen317
@@ -1615,9 +1621,9 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count502
-\float@exts=\toks45
+\float@exts=\toks47
 \float@box=\box81
-\@float@everytoks=\toks46
+\@float@everytoks=\toks48
 \@floatcapt=\box82
 )
 \minted@appexistsfile=\read5
@@ -1625,7 +1631,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \minted@code=\write7
 \c@minted@FancyVerbLineTemp=\count503
 \c@minted@pygmentizecounter=\count504
-\@float@every@listing=\toks47
+\@float@every@listing=\toks49
 \c@listing=\count505
 )
 runsystem(mkdir -p _minted-slides)...executed.
@@ -1654,8 +1660,8 @@ Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
 Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
 )) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks48
-\verbatim@line=\toks49
+\every@verbatim=\toks50
+\verbatim@line=\toks51
 \verbatim@in@stream=\read6
 )
 (/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
@@ -1686,12 +1692,12 @@ Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
 \col@sep=\dimen335
 \ar@mcellbox=\box93
 \extrarowheight=\dimen336
-\NC@list=\toks50
+\NC@list=\toks52
 \extratabsurround=\skip101
 \backup@length=\skip102
 \ar@cellbox=\box94
 )
-\everycr=\toks51
+\everycr=\toks53
 \minrowclearance=\skip103
 )
 (/usr/share/texmf/tex/latex/tipa/tipa.sty
@@ -1902,45 +1908,45 @@ Missing character: There is no 5 in font nullfont!
 
 ]
 LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
-(Font)              scaled to size 10.95116pt on input line 44.
+(Font)              scaled to size 10.95116pt on input line 40.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
-(Font)              scaled to size 8.76093pt on input line 44.
+(Font)              scaled to size 8.76093pt on input line 40.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
-(Font)              scaled to size 6.5707pt on input line 44.
+(Font)              scaled to size 6.5707pt on input line 40.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
-(Font)              scaled to size 10.94882pt on input line 44.
+(Font)              scaled to size 10.94882pt on input line 40.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
-(Font)              scaled to size 8.75905pt on input line 44.
+(Font)              scaled to size 8.75905pt on input line 40.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
-(Font)              scaled to size 6.5693pt on input line 44.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 44.
+(Font)              scaled to size 6.5693pt on input line 40.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 40.
 
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 44.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 40.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2
 
-] [3
-
 ]
 LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
-(Font)              scaled to size 9.00096pt on input line 54.
+(Font)              scaled to size 9.00096pt on input line 47.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 54.
+(Font)              scaled to size 6.00064pt on input line 47.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 54.
+(Font)              scaled to size 5.00053pt on input line 47.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
-(Font)              scaled to size 8.99904pt on input line 54.
+(Font)              scaled to size 8.99904pt on input line 47.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 54.
+(Font)              scaled to size 5.99936pt on input line 47.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 54.
- [4
+(Font)              scaled to size 4.99947pt on input line 47.
+ [3
+
+] [4
 
 ] [5
 
@@ -1951,13 +1957,47 @@ LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
 
 ] [8
 
-] [9
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb
+\openout6 = `slides.pyg'.
+
+ (./_minted-slides/default-pyg-prefix.pygstyle)
+(./_minted-slides/default.pygstyle)
+(./_minted-slides/3A28CB60882098AF4EA26118CB94505892C2B2E049FABBB0457975289CF27
+0EA.pygtex
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 5.
+)) [9
 
 ] [10
 
-] [11
+]
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+(Font)              scaled to size 14.40152pt on input line 129.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+(Font)              scaled to size 10.00107pt on input line 129.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+(Font)              scaled to size 7.00075pt on input line 129.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+(Font)              scaled to size 14.39845pt on input line 129.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 129.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 129.
+ [11
 
-] [12
+]
+LaTeX Font Info:    Trying to load font information for T3+LibertinusSerif(0) o
+n input line 162.
+LaTeX Font Info:    No file T3LibertinusSerif(0).fd. on input line 162.
+
+
+LaTeX Font Warning: Font shape `T3/LibertinusSerif(0)/m/n' undefined
+(Font)              using `T3/cmr/m/n' instead on input line 162.
+
+[12
 
 ] [13
 
@@ -1965,31 +2005,9 @@ LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
 
 ] [15
 
-]
-LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
-(Font)              scaled to size 14.40152pt on input line 135.
-LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
-(Font)              scaled to size 10.00107pt on input line 135.
-LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 135.
-LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
-(Font)              scaled to size 14.39845pt on input line 135.
-LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 135.
-LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 135.
- [16
+] [16
 
-]
-LaTeX Font Info:    Trying to load font information for T3+LibertinusSerif(0) o
-n input line 167.
-LaTeX Font Info:    No file T3LibertinusSerif(0).fd. on input line 167.
-
-
-LaTeX Font Warning: Font shape `T3/LibertinusSerif(0)/m/n' undefined
-(Font)              using `T3/cmr/m/n' instead on input line 167.
-
-[17
+] [17
 
 ] [18
 
@@ -2007,17 +2025,33 @@ LaTeX Font Warning: Font shape `T3/LibertinusSerif(0)/m/n' undefined
 
 ] [25
 
-] [26
-
-] [27
-
 ]
 \beamer@bibiconwidth=\skip104
 File: beamericonarticle.pdf Graphic file (type pdf)
 <use beamericonarticle.pdf>
 File: beamericonarticle.pdf Graphic file (type pdf)
 <use beamericonarticle.pdf>
- [28
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+
+Overfull \vbox (110.66284pt too high) detected at line 391
+ []
+
+[26
 
 ]
 \tf@nav=\write11
@@ -2035,17 +2069,19 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `slides.out' has not changed.
 (rerunfilecheck)             Checksum: 06E27B416B3B1946CD705C501CA5B3BD;45.
+runsystem(rm slides.pyg)...executed.
+
 Package logreq Info: Writing requests to 'slides.run.xml'.
 \openout1 = `slides.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41251 strings out of 477220
- 837612 string characters out of 5832721
- 1763872 words of memory out of 5000000
- 60195 multiletter control sequences out of 15000+600000
- 412414 words of font info for 121 fonts, out of 8000000 for 9000
+ 41516 strings out of 477220
+ 842297 string characters out of 5832721
+ 1778468 words of memory out of 5000000
+ 60439 multiletter control sequences out of 15000+600000
+ 412430 words of font info for 123 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 131i,15n,132p,739b,5116s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 131i,15n,132p,739b,5585s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on slides.pdf (28 pages).
+Output written on slides.pdf (26 pages).

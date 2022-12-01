@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+    \PYG{k+kr}{fun} \PYG{n+nf}{mkSyllF} \PYG{p}{(}\PYG{n}{Onsetism} \PYG{n}{f}\PYG{p}{)} \PYG{p}{(}\PYG{n}{Syllable} \PYG{p}{(}\PYG{n}{on}\PYG{p}{,} \PYG{n}{nuc}\PYG{p}{,} \PYG{n}{cod}\PYG{p}{,} \PYG{n}{stress}\PYG{p}{)}\PYG{p}{)}
+        \PYG{p}{=} \PYG{k+kr}{let} \PYG{k+kr}{val} \PYG{n+nv}{on\PYGZsq{}} \PYG{p}{=} \PYG{n}{f} \PYG{n}{on}
+          \PYG{k+kr}{in} \PYG{n}{Syllable} \PYG{p}{(}\PYG{n}{on\PYGZsq{}}\PYG{p}{,} \PYG{n}{nuc}\PYG{p}{,} \PYG{n}{cod}\PYG{p}{,} \PYG{n}{stress}\PYG{p}{)} \PYG{k+kr}{end}
+      \PYG{p}{|} \PYG{n+nf}{mkSyllF} \PYG{p}{(}\PYG{n}{Nucleusism} \PYG{n}{f}\PYG{p}{)} \PYG{p}{(}\PYG{n}{Syllable} \PYG{p}{(}\PYG{n}{on}\PYG{p}{,} \PYG{n}{nuc}\PYG{p}{,} \PYG{n}{cod}\PYG{p}{,} \PYG{n}{stress}\PYG{p}{)}\PYG{p}{)}
+        \PYG{p}{=} \PYG{k+kr}{let} \PYG{k+kr}{val} \PYG{n+nv}{nuc\PYGZsq{}} \PYG{p}{=} \PYG{n}{f} \PYG{n}{nuc}
+          \PYG{k+kr}{in} \PYG{n}{Syllable} \PYG{p}{(}\PYG{n}{on}\PYG{p}{,} \PYG{n}{nuc\PYGZsq{}}\PYG{p}{,} \PYG{n}{cod}\PYG{p}{,} \PYG{n}{stress}\PYG{p}{)} \PYG{k+kr}{end}
+      \PYG{p}{|} \PYG{n+nf}{mkSyllF} \PYG{p}{(}\PYG{n}{Codism} \PYG{n}{f}\PYG{p}{)} \PYG{p}{(}\PYG{n}{Syllable} \PYG{p}{(}\PYG{n}{on}\PYG{p}{,} \PYG{n}{nuc}\PYG{p}{,} \PYG{n}{cod}\PYG{p}{,} \PYG{n}{stress}\PYG{p}{)}\PYG{p}{)}
+        \PYG{p}{=} \PYG{k+kr}{let} \PYG{k+kr}{val} \PYG{n+nv}{cod\PYGZsq{}} \PYG{p}{=} \PYG{n}{f} \PYG{n}{cod}
+          \PYG{k+kr}{in} \PYG{n}{Syllable} \PYG{p}{(}\PYG{n}{on}\PYG{p}{,} \PYG{n}{nuc}\PYG{p}{,} \PYG{n}{cod\PYGZsq{}}\PYG{p}{,} \PYG{n}{stress}\PYG{p}{)} \PYG{k+kr}{end}
+
+    \PYG{k+kr}{fun} \PYG{n+nf}{mkSyllabism} \PYG{n}{rewrite} \PYG{n}{context}
+        \PYG{p}{=} \PYG{k+kr}{let} \PYG{k+kr}{val} \PYG{n+nv}{f} \PYG{p}{=} \PYG{n}{mkSyllF} \PYG{n}{rewrite}
+          \PYG{k+kr}{in} \PYG{n}{Syllabism} \PYG{p}{(}\PYG{n}{f}\PYG{p}{,} \PYG{n}{context}\PYG{p}{)} \PYG{k+kr}{end}
+\end{Verbatim}

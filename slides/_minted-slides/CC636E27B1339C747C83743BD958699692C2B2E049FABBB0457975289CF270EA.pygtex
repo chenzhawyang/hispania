@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+      \PYG{c+cm}{(*}\PYG{c+cm}{ }\PYG{c+cm}{r}\PYG{c+cm}{e}\PYG{c+cm}{w}\PYG{c+cm}{r}\PYG{c+cm}{i}\PYG{c+cm}{t}\PYG{c+cm}{e}\PYG{c+cm}{s}\PYG{c+cm}{ }\PYG{c+cm}{t}\PYG{c+cm}{h}\PYG{c+cm}{a}\PYG{c+cm}{t}\PYG{c+cm}{ }\PYG{c+cm}{c}\PYG{c+cm}{h}\PYG{c+cm}{a}\PYG{c+cm}{n}\PYG{c+cm}{g}\PYG{c+cm}{e}\PYG{c+cm}{s}\PYG{c+cm}{ }\PYG{c+cm}{a}\PYG{c+cm}{ }\PYG{c+cm}{c}\PYG{c+cm}{o}\PYG{c+cm}{n}\PYG{c+cm}{s}\PYG{c+cm}{t}\PYG{c+cm}{i}\PYG{c+cm}{t}\PYG{c+cm}{u}\PYG{c+cm}{e}\PYG{c+cm}{n}\PYG{c+cm}{t}\PYG{c+cm}{ }\PYG{c+cm}{o}\PYG{c+cm}{f}\PYG{c+cm}{ }\PYG{c+cm}{t}\PYG{c+cm}{h}\PYG{c+cm}{e}\PYG{c+cm}{ }\PYG{c+cm}{s}\PYG{c+cm}{y}\PYG{c+cm}{l}\PYG{c+cm}{l}\PYG{c+cm}{a}\PYG{c+cm}{b}\PYG{c+cm}{l}\PYG{c+cm}{e}\PYG{c+cm}{ }\PYG{c+cm}{*)}
+
+      \PYG{k+kr}{datatype} \PYG{k+kt}{rewrite} \PYG{p}{=} \PYG{n+nc}{Onsetism} \PYG{k+kr}{of} \PYG{p}{(}\PYG{n}{onset} \PYG{p}{\PYGZhy{}\PYGZgt{}} \PYG{n}{onset}\PYG{p}{)}
+                       \PYG{p}{|} \PYG{n+nc}{Nucleusism} \PYG{k+kr}{of} \PYG{p}{(}\PYG{n}{nucleus} \PYG{p}{\PYGZhy{}\PYGZgt{}} \PYG{n}{nucleus}\PYG{p}{)}
+                       \PYG{p}{|} \PYG{n+nc}{Codism} \PYG{k+kr}{of} \PYG{p}{(}\PYG{n}{coda} \PYG{p}{\PYGZhy{}\PYGZgt{}} \PYG{n}{coda}\PYG{p}{)}
+
+      \PYG{c+cm}{(*}\PYG{c+cm}{ }\PYG{c+cm}{s}\PYG{c+cm}{y}\PYG{c+cm}{l}\PYG{c+cm}{l}\PYG{c+cm}{a}\PYG{c+cm}{b}\PYG{c+cm}{i}\PYG{c+cm}{s}\PYG{c+cm}{m}\PYG{c+cm}{ }\PYG{c+cm}{t}\PYG{c+cm}{h}\PYG{c+cm}{a}\PYG{c+cm}{t}\PYG{c+cm}{ }\PYG{c+cm}{r}\PYG{c+cm}{e}\PYG{c+cm}{w}\PYG{c+cm}{r}\PYG{c+cm}{i}\PYG{c+cm}{t}\PYG{c+cm}{e}\PYG{c+cm}{s}\PYG{c+cm}{ }\PYG{c+cm}{a}\PYG{c+cm}{ }\PYG{c+cm}{s}\PYG{c+cm}{y}\PYG{c+cm}{l}\PYG{c+cm}{l}\PYG{c+cm}{a}\PYG{c+cm}{b}\PYG{c+cm}{l}\PYG{c+cm}{e}\PYG{c+cm}{ }\PYG{c+cm}{t}\PYG{c+cm}{o}\PYG{c+cm}{ }\PYG{c+cm}{a}\PYG{c+cm}{n}\PYG{c+cm}{o}\PYG{c+cm}{t}\PYG{c+cm}{h}\PYG{c+cm}{e}\PYG{c+cm}{r}\PYG{c+cm}{ }\PYG{c+cm}{*)}
+
+      \PYG{k+kr}{datatype} \PYG{k+kt}{context} \PYG{p}{=} \PYG{n+nc}{NoContext}
+                       \PYG{p}{|} \PYG{n+nc}{Predicate} \PYG{k+kr}{of} \PYG{p}{(}\PYG{n}{syllable} \PYG{p}{\PYGZhy{}\PYGZgt{}} \PYG{n}{bool}\PYG{p}{)}
+                       \PYG{p}{|} \PYG{n+nc}{WordInit}
+                       \PYG{p}{|} \PYG{n+nc}{WordFinal}
+
+      \PYG{k+kr}{datatype} \PYG{k+kt}{syllabism} \PYG{p}{=} \PYG{n+nc}{Syllabism} \PYG{k+kr}{of} \PYG{p}{(}\PYG{n}{syllable} \PYG{p}{\PYGZhy{}\PYGZgt{}} \PYG{n}{syllable}\PYG{p}{)} \PYG{n}{*} \PYG{n}{context}
+\end{Verbatim}

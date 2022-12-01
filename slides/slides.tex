@@ -2,7 +2,8 @@
 
 \usefonttheme{professionalfonts}
 \usefonttheme{serif}
-\usepackage{fontspec}[T1]
+\usepackage{inputenc}[utf8]
+\usepackage{fontspec}
 \setmainfont{Libertinus Serif}
 \usepackage{unicode-math}
 \setmathfont{Libertinus Math}
@@ -25,7 +26,6 @@
 \usetheme{CambridgeUS}
 
 \title{Automated Deduction in Historical Phonology}
-\subtitle{Dearest Dream of My Youth}
 \author{陳朝陽 \\ Chen Zhaoyang \\ \texttt{zc23@illinois.edu}}
 
 \begin{document}
@@ -33,239 +33,361 @@
 \maketitle
 
 \begin{frame}
-  \frametitle{\textsc{tl; dr}}
+	\frametitle{\textsc{tl; dr}}
 
-  I wrote a small piece of program ($\sim$ 1,000 loc) that implements a couple dozen major phonological changes from Latin to Modern Spanish. The program is able to derive a good amount of Modern Spanish words from their Latin etymon. \\
-  This presentation is about
-  \begin{enumerate}
-  \item How it is done
-  \item Why do it in the first place
-  \end{enumerate}
+	I wrote a small piece of program ($\sim$ 1,000 loc) that implements a couple dozen major phonological changes from Latin to Modern Spanish. The program is able to derive a good amount of Modern Spanish words from their Latin etymon. \\
+	This presentation is about how it is done.
 \end{frame}
 
 \begin{frame}
-  \frametitle{Reviving a field that has been silent for a while}
+	\frametitle{Reviving a field that has been silent for a while}
 
+    Early attempts of works alike goes back the late '60s\footcites{williams_mechanise_phone}{smith69:_autom_simul_histor_chang}. Previous works on automated forward reconstruction has been done on Romance languages a couple times e.g. for Old French\footcite{burton-hunter76:_roman_etymol}, and Spanish\footcite{eastlack77:_progr_simul_system_sound_chang_ibero_roman}. \\
+    As of now, this field has been silent since the late '90s.
 \end{frame}
 
 \begin{frame}
-  One can see that very little of this project is new in the field by any means. In fact, an essentially identical project was done from the 1980s to early 2000s by S. Lee Hartman and is still accessible online as of now \footcite{hartman_phono}. \\
-  So why do it again? \\
-\end{frame}
-
-\begin{frame}
-  \frametitle{Seasoned Techniques}
-
-  This project is a synthesis of three techniques: rule-based phonology, Romance historical linguistics, and some elementary programming. All of which are well-established techniques. But to synthesize all of them, as I have said, is something that has not been done for a good while.
-\end{frame}
-
-\begin{frame}
-  \frametitle{Rule-based Phonology}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Romance Historical Linguistics}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Historical Phonology of the Spanish Language}
-\end{frame}
-
-\begin{frame}
-  \frametitle{The Standard ML Programming Language}
-
-  This small program is written entirely in Standard ML, without using \\
-  SML is a relatively small programming language that has been primarily used in programming language implementation and automated theorem proving. \\
-  Its \emph{Heimatland} was University of Edinburgh,
-\end{frame}
-
-\begin{frame}
-  \frametitle{Why SML?}
-
-  As of now, Python is the \emph{de facto} \textsc{lingua franca} of scientific computing, and, in our particular interest, computational linguistics. \\
-  One may ask: why choose a programming language that is little known\footnotemark\ to the historical linguistics community, which may potentially impose a language barrier when communicating the results? \\
-  \footnotetext{Although some members of the formal semantics community within linguistics are familiar with Haskell, which is a close relative of SML.}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Why SML? cont.}
-
-  The answer is that $\dots$ it is mostly personal preference and \emph{sectarian} reasons. \\
-  Any modern general purporse programming language is capable of writing this small piece of program, I just happen to come from the ML camp of programming languages.
-\end{frame}
-
-\begin{frame}
-  \frametitle{Implementing a Phonology}
-
-  This project has a simple two-layer structure: the first layer that defines ways of constructing the \emph{statics} of a phonology -- namely the segmental inventory, syllable structure, and the phonological word of the Spanish language and her predecessors -- and the second layer that defines ways of constructing the \emph{dynamics} of a phonology -- namely sound changes and how to compose them into chain shifts.
-\end{frame}
-
-\begin{frame}
-  \frametitle{The Statics}
-  \framesubtitle{Representing Features, Segments, Syllables, and the Phonological Word}
-
-
-\end{frame}
-
-\begin{frame}
-  \frametitle{The Dynamics}
-  \framesubtitle{Rewriting of Syllabic Constituents, Syllables, and Phonological Words}
-
-
-\end{frame}
-
-\begin{frame}
-  \frametitle{Pearls of Sound Changes from Latin to Romance}
-
-  In the remainder of this presentation, I am going to demonstrate
-\end{frame}
-
-\begin{frame}
-  \frametitle{Latin $\rightarrow$ Proto-Romance: \\ Romance Vowel Shifts}
-
-  Arguably the most fundamental change from Late Latin to Proto-Romance is the transformation of its vowel system. \\
-  The transformation has the following components:
-  \begin{enumerate}
-  \item Loss of Vowel Quantity
-  \item The Great Vowel Merger
-  \item Merger in Atonic Vowels
-  \item Reduction in Final Vowels
-  \end{enumerate}
-  Another important sound change, the loss of hiatus, unfortunately we are not going to cover in this presentation.
-\end{frame}
-
-\begin{frame}
-  \frametitle{Loss of Vowel Quantity}
-  \begin{tabular}{|c|c|c|c|c|c|c|}
-    \hline
-    & \multicolumn{2}{c|}{Front} & \multicolumn{2}{c|}{Cent.} & \multicolumn{2}{c|}{Back} \\
-    \hline
-    High & \cellcolor{gray} \textsc{\u{i}} & \textsc{\={i}} & & & \cellcolor{gray}  \textsc{\u{u}} & \textsc{\={u}} \\
-    \hline
-    Mid & \cellcolor{gray} \textsc{\u{e}} & \textsc{\={e}} & & & \cellcolor{gray}  \textsc{\u{o}} & \textsc{\={o}} \\
-    \hline
-    Low &  &  & \cellcolor{gray} \textsc{\u{a}} & \textsc{\={a}} & & \\
-    \hline
-  \end{tabular}
-  \vspace{0.2cm}
-  \begin{tabular}{|c|c|c|c|}
-    \hline
-    & Front & Central & Back \\
-    \hline
-    High & i & & u \\
-    \hline
-    High-Mid & \cellcolor{magenta} \textipa{I} & & \cellcolor{magenta} \textipa{U} \\
-    \hline
-    Mid & e & & o \\
-    \hline
-    Low-Mid & \cellcolor{magenta} \textipa{E} & & \cellcolor{magenta} \textipa{O} \\
-    \hline
-    Low & & a & \\
-    \hline
-  \end{tabular}
-
-\end{frame}
-
-\begin{frame}
-  \begin{tabular}{c c}
-    \textsc{latina} & Español \\
-    \hline
-    \textsc{v\textcolor{red}{\={i}}ta} & v\textcolor{magenta}{i}da \\
-    \textsc{vic\textcolor{red}{\={i}}na} & vec\textcolor{magenta}{i}na \\
-    \textsc{far\textcolor{red}{\={i}}na} & har\textcolor{magenta}{i}na \\
-    \textsc{l\textcolor{red}{\={u}}na} & l\textcolor{magenta}{u}na \\
-    \textsc{d\textcolor{red}{\={u}}ra} & d\textcolor{magenta}{u}ra \\
-    \textsc{m\textcolor{red}{\={u}}ru} & m\textcolor{magenta}{u}ro \\
-    \textsc{h\textcolor{red}{\={o}}ra} & h\textcolor{magenta}{o}ra \\
-    \textsc{c\textcolor{red}{\={o}}rte} & c\textcolor{magenta}{o}rte \\
-    \textsc{d\textcolor{red}{\={e}}bet} & d\textcolor{magenta}{e}be \\
-    \textsc{t\textcolor{red}{\={e}}rnu} & t\textcolor{magenta}{e}rno \\
-  \end{tabular}
-\end{frame}
-
-
-\begin{frame}
-  \frametitle{The Great Merger}
-
-  \begin{tabular}{|c|c|c|c|}
-    \hline
-    & Front & Central & Back \\
-    \hline
-    High & i & & u \\
-    \hline
-    High-Mid & \cellcolor{gray} \textipa{I} & & \cellcolor{gray} \textipa{U} \\
-    \hline
-    Mid & e & & o \\
-    \hline
-    Low-Mid & \textipa{E} & & \textipa{O} \\
-    \hline
-    Low & & a & \\
-    \hline
-  \end{tabular}
-  \vspace{0.2cm}
-  \begin{tabular}{|c|c|c|c|}
-    \hline
-    & Front & Central & Back \\
-    \hline
-    High & i & & u \\
-    \hline
-    Mid & \cellcolor{magenta} e & & \cellcolor{magenta} o \\
-    \hline
-    Low-Mid & \textipa{E} & & \textipa{O} \\
-    \hline
-    Low & & a & \\
-    \hline
-  \end{tabular}
-\end{frame}
-
-\begin{frame}
-    \begin{tabular}{c c c}
-    \textsc{latina} & PrRom & Español \\
-    \hline
-    \textsc{g\textcolor{red}{u}la} & [\textipa{U}] & g\textcolor{magenta}{o}la \\
-    \textsc{c\textcolor{red}{u}rrit} & [\textipa{U}] & c\textcolor{magenta}{o}rre \\
-    \textsc{m\textcolor{red}{\u{u}}sca} & [\textipa{U}] & m\textcolor{magenta}{o}sca \\
-    \textsc{b\textcolor{red}{i}b\textcolor{red}{i}t} & [\textipa{I}] & b\textcolor{magenta}{e}b\textcolor{magenta}{e} \\
-    \textsc{l\textcolor{red}{i}ttera} & [\textipa{I}] & l\textcolor{magenta}{e}tra \\
-    \textsc{v\textcolor{red}{\u{i}}ce} & [\textipa{I}] & v\textcolor{magenta}{e}z \\
-  \end{tabular}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Romance Vowel Shifts: Rule Ordering}
+    \frametitle{Why do it again?}
   
-  Loss of Quantity $\sqsubset$ Great Merger $\sqsubset$ Atonic Merger $\sqsubset$ Final Vowel Reduction\footnote{This notation means: 0 $\sqsubset$ 1 $\sqsubset$ 2 $\sqsubset \dots$}
+	An essentially identical project was done from the 1980s to early 2000s by S. Lee Hartman and is still accessible online as of now \footcite{hartman_phono}. \\
+	So why do it again? \\
+	The answer is that, sadly, this is field largely inactive as of now; many works were done in a time when publishing programs were not feasible, thus many works were simply lost. \\
+	Luckily, computing has made enough progress so that this work could be done rather quickly in a high-level programming language.
 \end{frame}
 
 \begin{frame}
-  \frametitle{Latin $\rightarrow$ Proto-Romance: \\ Fundamental Consonantal Shifts}
+	\frametitle{The Standard ML Programming Language}
+
+	This small system is written entirely in Standard ML. \\
+	SML is a relatively small and concise programming language that has been primarily used in programming language implementation and automated theorem proving. \\
+	Its \emph{Heimatland} was University of Edinburgh, frist implemented in the LCF (logic of computable functions) theorem prover\footcite{macqueen20:_histor_stand_ml} by Robin Milner and his collegues, whose predecessor is the Stanford LCF system, written in LISP, also by R. Milner. \\
 \end{frame}
 
 \begin{frame}
-  \frametitle{Proto-Romance $\rightarrow$ Western Romance: \\ Intervocalic Lenition}
+	\frametitle{Implementing a Phonology}
+
+	This project has a simple two-layer structure: the first layer that defines ways of constructing the \emph{statics} of a phonology -- namely the segmental inventory, syllable structure, and the phonological word of the Spanish language and her predecessors -- and the second layer that defines ways of constructing the \emph{dynamics} of a phonology -- namely sound changes and how to compose them into chain shifts.
 \end{frame}
 
 \begin{frame}
-  \frametitle{Proto-Romance $\rightarrow$ Western Romance: \\ Degemination}
+	\frametitle{The Statics}
+	\framesubtitle{Representing Features, Segments, Syllables, and the Phonological Word}
+
+    We define all of the \emph{static} element of this system through recursive types in ML. \\
+    Recursive types are basically a combination of \textbf{and} \& \textbf{or}'s.
 \end{frame}
 
 \begin{frame}
-  \frametitle{Westerm Romance $\rightarrow$ Old Spanish: \\ Debuccalization of [ɸ]}
+	\frametitle{The Dynamics}
+	\framesubtitle{Rewriting of Syllabic Constituents, Syllables, and Phonological Words}
+
+    ML provides extensive supports for composing functions.
+
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{minted}{sml}
+      
+      (* rewrites that changes
+      a constituent of the syllable *)
+
+      datatype rewrite = Onsetism of (onset -> onset)
+                       | Nucleusism of (nucleus -> nucleus)
+                       | Codism of (coda -> coda)
+
+      (* syllabism that rewrites a syllable to another *)
+
+      datatype context = NoContext
+                       | Predicate of (syllable -> bool)
+                       | WordInit
+                       | WordFinal
+
+      datatype syllabism
+      = Syllabism of (syllable -> syllable) * context
+
+    \end{minted}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Old Spanish $\rightarrow$ Modern Spanish: \\ The Spanish Sibilant Rearrangement}
+	\frametitle{Pearls of Sound Changes from Latin to Romance}
+
+	In the remainder of this presentation, I am going to demonstrate 6 sets of sound changes to demonstrate how this system works. The majority of the words in examples comes from \emph{Romance Languages: A Historical Introduction}\footcite{romance_his}, \citetitle{lloyd_spanish}\footcite{lloyd_spanish}, and \citetitle{penny_spanish}\footcite{penny_spanish}.
+
 \end{frame}
 
 \begin{frame}
-  \frametitle{Mein liebster Jugendtraum}
-  \framesubtitle{Old Chinese $\rightarrow$ Middle Chinese}
+	\frametitle{Latin $\rightarrow$ Proto-Romance: \\ Romance Vowel Shifts}
+
+	Arguably the most fundamental change from Late Latin to Proto-Romance is the transformation of its vowel system. \\
+	The transformation has the following components:
+	\begin{enumerate}
+		\item Loss of Vowel Quantity
+		\item The Great Vowel Merger
+		\item Merger in Atonic Vowels
+	\end{enumerate}
+	Another important sound change, the loss of hiatus, unfortunately we are not going to cover in this presentation.
 \end{frame}
 
 \begin{frame}
-  \frametitle{Bibliography}
+	\frametitle{Loss of Vowel Quantity}
 
-  \printbibliography
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline
+		     & \multicolumn{2}{c|}{Front}      & \multicolumn{2}{c|}{Cent.} & \multicolumn{2}{c|}{Back}                                                                            \\
+		\hline
+		High & \cellcolor{gray} \textsc{\u{i}} & \textsc{\={i}}             &                                 &                & \cellcolor{gray}  \textsc{\u{u}} & \textsc{\={u}} \\
+		\hline
+		Mid  & \cellcolor{gray} \textsc{\u{e}} & \textsc{\={e}}             &                                 &                & \cellcolor{gray}  \textsc{\u{o}} & \textsc{\={o}} \\
+		\hline
+		Low  &                                 &                            & \cellcolor{gray} \textsc{\u{a}} & \textsc{\={a}} &                                  &                \\
+		\hline
+	\end{tabular}
+	\vspace{0.2cm}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		         & Front                           & Central & Back                            \\
+		\hline
+		High     & i                               &         & u                               \\
+		\hline
+		High-Mid & \cellcolor{magenta} \textipa{I} &         & \cellcolor{magenta} \textipa{U} \\
+		\hline
+		Mid      & e                               &         & o                               \\
+		\hline
+		Low-Mid  & \cellcolor{magenta} \textipa{E} &         & \cellcolor{magenta} \textipa{O} \\
+		\hline
+		Low      &                                 & a       &                                 \\
+		\hline
+	\end{tabular}
+
+\end{frame}
+
+\begin{frame}
+	\begin{center}
+		\begin{tabular}{c c}
+			\textsc{latina}                      & Español                     \\
+			\hline
+			\textsc{v\textcolor{red}{\={i}}ta}   & v\textcolor{magenta}{i}da   \\
+			\textsc{vic\textcolor{red}{\={i}}na} & vec\textcolor{magenta}{i}na \\
+			\textsc{far\textcolor{red}{\={i}}na} & har\textcolor{magenta}{i}na \\
+			\textsc{l\textcolor{red}{\={u}}na}   & l\textcolor{magenta}{u}na   \\
+			\textsc{d\textcolor{red}{\={u}}ra}   & d\textcolor{magenta}{u}ra   \\
+			\textsc{m\textcolor{red}{\={u}}ru}   & m\textcolor{magenta}{u}ro   \\
+			\textsc{h\textcolor{red}{\={o}}ra}   & h\textcolor{magenta}{o}ra   \\
+			\textsc{c\textcolor{red}{\={o}}rte}  & c\textcolor{magenta}{o}rte  \\
+			\textsc{d\textcolor{red}{\={e}}bet}  & d\textcolor{magenta}{e}be   \\
+			\textsc{t\textcolor{red}{\={e}}rnu}  & t\textcolor{magenta}{e}rno  \\
+		\end{tabular}
+	\end{center}
+
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{The Great Merger}
+
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		         & Front                        & Central & Back                         \\
+		\hline
+		High     & i                            &         & u                            \\
+		\hline
+		High-Mid & \cellcolor{gray} \textipa{I} &         & \cellcolor{gray} \textipa{U} \\
+		\hline
+		Mid      & e                            &         & o                            \\
+		\hline
+		Low-Mid  & \textipa{E}                  &         & \textipa{O}                  \\
+		\hline
+		Low      &                              & a       &                              \\
+		\hline
+	\end{tabular}
+	\vspace{0.2cm}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		        & Front                 & Central & Back                  \\
+		\hline
+		High    & i                     &         & u                     \\
+		\hline
+		Mid     & \cellcolor{magenta} e &         & \cellcolor{magenta} o \\
+		\hline
+		Low-Mid & \textipa{E}           &         & \textipa{O}           \\
+		\hline
+		Low     &                       & a       &                       \\
+		\hline
+	\end{tabular}
+\end{frame}
+
+\begin{frame}
+	\begin{tabular}{c c c}
+		\textsc{latina}                                  & PrRom         & Español                                        \\
+		\hline
+		\textsc{g\textcolor{red}{u}la}                   & [\textipa{U}] & g\textcolor{magenta}{o}la                      \\
+		\textsc{c\textcolor{red}{u}rrit}                 & [\textipa{U}] & c\textcolor{magenta}{o}rre                     \\
+		\textsc{m\textcolor{red}{\u{u}}sca}              & [\textipa{U}] & m\textcolor{magenta}{o}sca                     \\
+		\textsc{b\textcolor{red}{i}b\textcolor{red}{i}t} & [\textipa{I}] & b\textcolor{magenta}{e}b\textcolor{magenta}{e} \\
+		\textsc{l\textcolor{red}{i}ttera}                & [\textipa{I}] & l\textcolor{magenta}{e}tra                     \\
+		\textsc{v\textcolor{red}{\u{i}}ce}               & [\textipa{I}] & v\textcolor{magenta}{e}z                       \\
+	\end{tabular}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Atonic Merger}
+
+	ɛ $\rightarrow$ e \\
+	ɔ $\rightarrow$ o \\
+	We can see that the Latin five vowel system is basically restored after these changes (after stressed [ɛ] and [ɔ] diphthongizes in Castilian, it is indeed fully restored.)
+\end{frame}
+
+\begin{frame}
+	\begin{center}
+		\begin{tabular}{c c}
+			\textsc{lat.}                            & Es.                      \\
+			\hline
+			\textsc{h\={i}bern\textcolor{red}{u}}    & iviern\textcolor{red}{o} \\
+			\textsc{c\textcolor{red}{i}rc\={a}re}    & c\textcolor{red}{e}rcar  \\
+			\textsc{v\={e}n\={a}t\textcolor{red}{u}} & vena\textcolor{red}d{o}  \\
+		\end{tabular}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Romance Vowel Shifts: Rule Ordering}
+
+	Loss of Quantity $<$ Great Merger $<$ Atonic Merger
+\end{frame}
+
+\begin{frame}
+	\frametitle{Latin $\rightarrow$ Proto-Romance: \\ Fundamental Consonantal Shifts}
+
+	m $\rightarrow \varnothing$ \\
+	j $\sim$ ʝ $\rightarrow$ dʒ $\sim$ ɟ \\
+	w $\rightarrow$ β \\
+	tʲ $\rightarrow$ ts \\
+	kʲ $\rightarrow$ tʃ \\
+	dʲ, ɡʲ $\rightarrow$ dʒ $\sim$ ɟ
+\end{frame}
+
+\begin{frame}
+	\frametitle{Proto-Romance $\rightarrow$ Western Romance: \\ Intervocalic Lenition I}
+
+	\begin{center}
+		\begin{tabular}{c c}
+			\textsc{lat}                      & Es.                                        \\
+			\hline
+			\textsc{ca\textcolor{red}{b}allu} & ca\textcolor{magenta}{b}allo [\textipa{B}] \\
+			\textsc{de\textcolor{red}{b}ere}  & de\textcolor{magenta}{b}er [\textipa{B}]   \\
+			\textsc{ha\textcolor{red}{b}ere}  & ha\textcolor{magenta}{b}er [\textipa{B}]   \\
+			                                  &                                            \\
+			\textsc{cru\textcolor{red}{d}u}   & cru\textcolor{magenta}{d}o [\textipa{D}]   \\
+			\textsc{pe\textcolor{red}{d}e}    & pie [$\varnothing$]                        \\
+			                                  &                                            \\
+			\textsc{au\textcolor{red}{g}ustu} & a\textcolor{magenta}{g}osto [\textipa{G}]  \\
+			\textsc{li\textcolor{red}{g}are}  & li\textcolor{magenta}{g}ar [\textipa{G}]   \\
+			\textsc{pa\textcolor{red}{g}anu}  & pa\textcolor{magenta}{g}ano [\textipa{G}]  \\
+		\end{tabular}
+	\end{center}
+
+\end{frame}
+
+\begin{frame}
+
+	\begin{center}
+		\begin{tabular}{c c}
+			\textsc{lat.}                     & Es.                                         \\
+			\hline
+			\textsc{sa\textcolor{red}{p}ore}  & sa\textcolor{magenta}{b}or [\textipa{B}]    \\
+			\textsc{ca\textcolor{red}{p}ut}   & ca\textcolor{magenta}{b}o [\textipa{B}]     \\
+			\textsc{co\textcolor{red}{p}ertu} & cu\textcolor{magenta}{b}ierto [\textipa{B}] \\
+			                                  &                                             \\
+			\textsc{vi\textcolor{red}{t}a}    & vi\textcolor{magenta}{d}a [\textipa{D}]     \\
+			\textsc{fa\textcolor{red}{t}a}    & ha\textcolor{magenta}{d}a [\textipa{D}]     \\
+			\textsc{ca\textcolor{red}{t}ena}  & ca\textcolor{magenta}{d}ena [\textipa{D}]   \\
+			                                  &                                             \\
+			\textsc{ami\textcolor{red}{c}a}   & ami\textcolor{magenta}{g}a [\textipa{G}]    \\
+			\textsc{se\textcolor{red}{c}uru}  & se\textcolor{magenta}{g}uro [\textipa{G}]   \\
+			\textsc{fo\textcolor{red}{c}u}    & fue\textcolor{magenta}{g}o [\textipa{G}]    \\
+		\end{tabular}
+	\end{center}
+
+\end{frame}
+
+\begin{frame}
+
+	\begin{center}
+		\begin{tabular}{c c}
+			\textsc{lat.}                      & Es.                            \\
+			\hline
+			\textsc{ser\textcolor{red}{p}ente} & ser\textcolor{magenta}{p}iente \\
+			\textsc{al\textcolor{red}{p}es}    & a\textcolor{magenta}{p}les     \\
+			\textsc{rum\textcolor{red}{p}ere}  & rum\textcolor{magenta}{p}er    \\
+			                                   &                                \\
+			\textsc{or\textcolor{red}{t}ica}   & or\textcolor{magenta}{t}iga    \\
+			\textsc{men\textcolor{red}{t}a}    & men\textcolor{magenta}{t}a     \\
+			                                   &                                \\
+			\textsc{ar\textcolor{red}{c}u}     & ar\textcolor{magenta}{c}o      \\
+			\textsc{fal\textcolor{red}{c}one}  & hal\textcolor{magenta}{c}ón    \\
+		\end{tabular}
+	\end{center}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Proto-Romance $\rightarrow$ Western Romance: \\ Degemination}
+
+	\begin{center}
+		\begin{tabular}{c c}
+			\textsc{lat.}                                       & Es.                                             \\
+			\hline
+			\textsc{o\textcolor{red}{ss}u}                      & hue\textcolor{magenta}{s}o                      \\
+			\textsc{su\textcolor{red}{mm}a}                     & su\textcolor{magenta}{m}a                       \\
+			\textsc{a\textcolor{red}{pp}e\textcolor{red}{ll}at} & a\textcolor{magenta}{p}e\textcolor{magenta}{l}a \\
+			\textsc{li\textcolor{red}{tt}era}                   & le\textcolor{magenta}{t}ra                      \\
+			\textsc{si\textcolor{red}{cc}u}                     & se\textcolor{magenta}{c}o                       \\
+		\end{tabular}
+	\end{center}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Westerm Romance $\rightarrow$ Old Spanish: \\ Debuccalization of [ɸ]}
+
+	\begin{center}
+		\begin{tabular}{c c}
+			\textsc{lat.}                     & Es.                         \\
+			\hline
+			\textsc{\textcolor{red}{f}ilu}    & \textcolor{magenta}{h}ilo   \\
+			\textsc{\textcolor{red}{f}erire}  & \textcolor{magenta}{h}erir  \\
+			\textsc{\textcolor{red}{f}erro}   & \textcolor{magenta}{h}ierro \\
+			\textsc{\textcolor{red}{f}alcone} & \textcolor{magenta}{h}alcón \\
+			                                  &                             \\
+			\textsc{\textcolor{red}{f}ocu}    & \textcolor{magenta}{f}uego  \\
+			\textsc{\textcolor{red}{f}ora}    & \textcolor{magenta}{f}uera  \\
+			\textsc{\textcolor{red}{f}onte}   & \textcolor{magenta}{f}uente \\
+			\textsc{\textcolor{red}{f}ronte}  & \textcolor{magenta}{f}rente \\
+			\textsc{\textcolor{red}{f}lore}   & \textcolor{magenta}{f}lor   \\
+			\textsc{\textcolor{red}{f}laccu}  & \textcolor{magenta}{f}laco  \\
+		\end{tabular}
+	\end{center}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Old Spanish $\rightarrow$ Modern Spanish: \\ The Spanish Sibilant Rearrangement}
+
+	The sibilants in Alfonsino Spanish:
+	\begin{center}
+		\begin{tabular}{c c c c}
+			          & dental affricate                                 & alveolo-apical & palatal                                                \\
+			\hline
+			voiceless & \c{c} [\textipa{\texttslig}] ($\rightarrow$ [s̪]) & -ss- [s̺]       & x [ʃ]                                                  \\
+			voiced    & z [\textipa{\textdzlig}] ($\rightarrow$ [z̪])     & -s- [z̺]        & j, ge, gi [ʒ] ($\leftarrow$ [\textipa{\textdyoghlig}]) \\
+		\end{tabular}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Bibliography}
+
+	\printbibliography
 \end{frame}
 
 \end{document}
