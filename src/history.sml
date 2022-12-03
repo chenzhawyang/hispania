@@ -96,10 +96,10 @@ in val prRom_vowel_shift = [sc1, sc2, sc3, sc4] end
 fun elide_m_subst cod
     = case cod of
           Codetta c => if c = seg_m
-                       then ZeroCoda
-                       else cod
+                      then ZeroCoda
+                      else cod
         | _ => cod
-                   
+                  
 val elide_m_rewrite = Codism elide_m_subst
 
 val elide_m = let val syllabism = mkSyllabism elide_m_rewrite WordFinal
@@ -111,8 +111,8 @@ val elide_m = let val syllabism = mkSyllabism elide_m_rewrite WordFinal
 fun deasp_subst onset
     = case onset of
           Onset on => if on = seg_h
-                      then ZeroOnset
-                      else onset
+                     then ZeroOnset
+                     else onset
         | _ => onset
 
 val deasp_rewrite = Onsetism deasp_subst
@@ -634,6 +634,7 @@ in val OSp_lang_shift = [vocalism, consonantism] end
 (* betacism *)
 
 structure Betacism = struct
+
 fun subst onset =
     case onset of
         Onset cons => if cons = seg_bh
@@ -647,6 +648,7 @@ val sound_change =
     let val syllabism = mkSyllabism rewrite WordInit
         val name = "Betacism"
     in mkSoundChange syllabism name end
+
 end
 
 val betacism = Betacism.sound_change
